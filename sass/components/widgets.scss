@@ -1,0 +1,16 @@
+aside.footer-bar {
+  @include section-wrapper(#fff, $gutter*3);
+  .footer-bar-content {
+    @include fixed-container;
+    > .footer-bar-widget {
+      @include span-columns(12);
+      @include media($sm-screen) {
+        @include span-columns(4);
+      }
+    }
+  }
+}
+
+.widget ul li a {
+  text-decoration: none;
+}

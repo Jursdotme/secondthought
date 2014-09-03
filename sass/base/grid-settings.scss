@@ -1,0 +1,97 @@
+@import "bower_components/neat/app/assets/stylesheets/neat-helpers";
+// Neat Overrides
+///////////////////////////////////////////////////////////////////////////////
+
+// $column: 90px;
+// $gutter: 30px;
+// $grid-columns: 12;
+// $max-width: em(1088);
+
+// Neat Breakpoints
+///////////////////////////////////////////////////////////////////////////////
+
+$small-screen: em(750);
+$medium-screen: em(970);
+$large-screen: em(1170);
+
+$col-sm: new-breakpoint(max-width $small-screen 12);
+$col-md: new-breakpoint(max-width $medium-screen 12);
+$col-lg: new-breakpoint(max-width $large-screen 12);
+
+// Extra small screen / phone
+$screen-xs:                  em(480) !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm:                  em(768) !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+$small-screen: $screen-sm;
+
+// Medium screen / desktop
+$screen-md:                  em(992) !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+$medium-screen: $screen-md;
+
+// Large screen / wide desktop
+$screen-lg:                  em(1200) !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+$large-screen: $screen-lg;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             ((em(720) + $gutter)) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            ((em(940) + $gutter)) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      ((em(1140) + $gutter)) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+// Greate breakpoints
+$sm-screen: new-breakpoint(min-width $screen-xs-min 12);
+$md-screen: new-breakpoint(min-width $screen-sm-min 12);
+$lg-screen: new-breakpoint(min-width $screen-md-min 12);
+
+
+$fg-column: $column;
+$fg-gutter: $gutter;
+
+// OMEGA RESET (http://joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat/)
+@mixin omega-reset($nth) {
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+// Fixed container widths
+@mixin fixed-container {
+  @include outer-container;
+  @include pad(0 $gutter);
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}

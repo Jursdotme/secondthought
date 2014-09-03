@@ -1,0 +1,43 @@
+form.search {
+  @include span-columns(12);
+  margin-top: 5px;
+  position: relative;
+  border-color: #efefef;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 3px;
+  .search-input {
+    @include span-columns(8);
+    @include pad(8);
+    border-radius: 3px;
+    font-size: 1em;
+    width: 85%;
+    margin: 0;
+    border: none;
+    background: none;
+    color: #777;
+    box-shadow: none;
+  }
+  .search-submit {
+    background: none;
+    position: absolute;
+    top: .15em;
+    right: 10px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    cursor: pointer;
+    overflow: visible;
+    width: auto;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    &:before {
+      font-family: FontAwesome;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 1.4em;
+      line-height: 1.5;
+    }
+  }
+}

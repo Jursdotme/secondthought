@@ -1,0 +1,16 @@
+.home {
+  main {
+    @include fixed-container;
+    @include pad(1em);
+    section {
+      @include span-columns(12);
+      @include media($sm-screen) {
+        @include span-columns(8);
+      }
+      @include media($md-screen) {
+        @include span-columns(9);
+      }
+
+    }
+  }
+}
