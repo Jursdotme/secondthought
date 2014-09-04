@@ -1,7 +1,11 @@
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-var sass = require('gulp-sass')
+var sass = require('gulp-ruby-sass');
+var bless = require('gulp-bless');
+var cssmin = require('gulp-minify-css');
+var prefix = require('gulp-autoprefixer');
+var imagemin = require('gulp-imagemin');
 var del = require('del');
 
 
@@ -27,11 +31,33 @@ gulp.task('scripts', function() {
   return gulp.src(paths.scripts)
     .pipe(concat('all.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('javascripts/build/'));
+    .pipe(gulp.dest('build/scripts'));
 });
 
 gulp.task('sass', function () {
     return gulp.src(paths.stylesheets)
-        .pipe(sass())
-        .pipe(gulp.dest('stylesheets'));
+        .pipe(sass({sourcemap: true, sourcemapPath: '../../sass'}))
+        .on('error', function (err) { console.log(err.message); })
+        .pipe(prefix())
+        .pipe(cssmin())
+        .pipe(bless({ imports: true }))
+        .pipe(gulp.dest('build/stylesheets'));
 });
+
+// Copy all static images
+gulp.task('images', function() {
+  return gulp.src(paths.images)
+    // Pass in options to the task
+    .pipe(imagemin({optimizationLevel: 5}))
+    .pipe(gulp.dest('build/img'));
+});
+
+// Rerun the task when a file changes
+gulp.task('watch', function() {
+  gulp.watch(paths.scripts, ['scripts']);
+  gulp.watch(paths.images, ['images']);
+  gulp.watch(paths.stylesheets, ['images']);
+});
+
+// The default task (called when you run `gulp` from cli)
+gulp.task('default', ['watch', 'scripts', 'sass', 'images']);

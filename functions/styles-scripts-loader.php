@@ -14,7 +14,7 @@ function secondthought_header_scripts()
         wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js", array(), '1.11.0', true); // jQuery
         wp_enqueue_script('jquery'); // Enqueue it!
 
-        wp_register_script('secondthoughtscripts', get_template_directory_uri() . '/javascripts/build/global.min.js', array('jquery'), '1.0.0', true); // Custom scripts
+        wp_register_script('secondthoughtscripts', get_template_directory_uri() . '/build/scripts/all.min.js', array('jquery'), '1.0.0', true); // Custom scripts
         wp_enqueue_script('secondthoughtscripts'); // Enqueue it!
     }
 }
@@ -34,7 +34,7 @@ function secondthought_conditional_scripts()
     }
 }
 
-add_action('wp_print_scripts', 'secondthought_conditional_scripts'); // Add Conditional Page Scripts
+// add_action('wp_print_scripts', 'secondthought_conditional_scripts'); // Add Conditional Page Scripts
 
 
 //////////////////////////////////////////////////////////////////////
@@ -43,14 +43,9 @@ add_action('wp_print_scripts', 'secondthought_conditional_scripts'); // Add Cond
 
 function secondthought_styles()
 {
-  if (current_user_can( 'manage_options' )) {
-    wp_register_style('secondthought', get_template_directory_uri() . '/stylesheets/build/global.autoprefixed.css', array(), '1.0', 'all');
-    wp_enqueue_style('secondthought'); // Enqueue it!
-  }
-  else {
-    wp_register_style('secondthought', get_template_directory_uri() . '/stylesheets/global.css', array(), '1.0', 'all');
-    wp_enqueue_style('secondthought'); // Enqueue it!
-  }
+  wp_register_style('secondthought', get_template_directory_uri() . '/build/stylesheets/style.css', array(), '1.0', 'all');
+  wp_enqueue_style('secondthought'); // Enqueue it!
+
   wp_register_style('awesomefonts', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css', array(), '1.0', 'all');
   wp_enqueue_style('awesomefonts'); // Enqueue it!
 }
