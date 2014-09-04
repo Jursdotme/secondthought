@@ -1,4 +1,4 @@
-@import "bower_components/neat/app/assets/stylesheets/neat-helpers";
+@import 'bower_components/neat/app/assets/stylesheets/neat-helpers';
 // Neat Overrides
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -76,8 +76,8 @@ $fg-gutter: $gutter;
 
 // OMEGA RESET (http://joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat/)
 @mixin omega-reset($nth) {
-  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
-  &:nth-child(#{$nth}+1) { clear: none }
+  &:nth-child(#{$nth}) { margin-right: flex-gutter();}
+  &:nth-child(#{$nth}+1) { clear: none; }
 }
 
 // Fixed container widths

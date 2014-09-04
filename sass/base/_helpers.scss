@@ -3,9 +3,9 @@
 // Motion with swift acceleration and gentle deceleration feels natural and delightful.
 // Curve helper: http://cubic-bezier.com/
 
-$authentic-motion-out: cubic-bezier(.4,0,.55,.10);
-$authentic-motion-in: cubic-bezier(0,1,.6,1);
-$authentic-motion: cubic-bezier(.2,0,.7,1);
+$authentic-motion-out: cubic-bezier(.4, 0, .55, .10);
+$authentic-motion-in: cubic-bezier(0, 1, .6, 1);
+$authentic-motion: cubic-bezier(.2, 0, .7, 1);
 
 $curve-out: $authentic-motion-out;
 $curve-in: $authentic-motion-in;
@@ -17,10 +17,10 @@ $curve: $authentic-motion;
 
 // Shadows consist of two layers: a top shadow for depth and a bottom shadow for definition.
 
-$shadow-lvl-1: 0px 1px 3px 0px rgba(0,0,0,0.17), 0px 1px 2px 0px rgba(0,0,0,0.24);
-$shadow-lvl-2: 0px 1px 3px 0px rgba(0,0,0,0.20), 0px 3px 7px 0px rgba(0,0,0,0.22);
-$shadow-lvl-3: 0px 10px 11px 0px rgba(0,0,0,0.19), 0px 5px 5px 0px rgba(0,0,0,0.23);
-$shadow-lvl-4: 0px 14px 19px 0px rgba(0,0,0,0.20), 0px 7px 6px 0px rgba(0,0,0,0.17);
-$shadow-lvl-5: 0px 20px 22px 0px rgba(0,0,0,0.22), 0px 10px 8px 0px rgba(0,0,0,0.16);
+$shadow-lvl-1: 0 1px 3px 0 rgba(0, 0, 0, 0.17),  0 1px 2px 0 rgba(0, 0, 0, 0.24);
+$shadow-lvl-2: 0 1px 3px 0 rgba(0, 0, 0, 0.20),  0 3px 7px 0 rgba(0, 0, 0, 0.22);
+$shadow-lvl-3: 0 10px 11px 0 rgba(0, 0, 0, 0.19),  0 5px 5px 0 rgba(0, 0, 0, 0.23);
+$shadow-lvl-4: 0 14px 19px 0 rgba(0, 0, 0, 0.20),  0 7px 6px 0 rgba(0, 0, 0, 0.17);
+$shadow-lvl-5: 0 20px 22px 0 rgba(0, 0, 0, 0.22),  0 10px 8px 0 rgba(0, 0, 0, 0.16);
 
 ///////////////////////////////////////////////

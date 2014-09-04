@@ -40,18 +40,11 @@ h2 {
 }
 
 h3 {
- font-family: $serif;
- font-size: 1em;
- font-weight: 600;
- text-transform: uppercase;
- line-height: 1.4em;
- margin-bottom: .5em;
-}
-
-p.date {
-  color: transparentize($base-font-color, .6);
   font-family: $serif;
-  font-size: .8em;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.4em;
   margin-bottom: .5em;
 }
 
@@ -66,6 +59,17 @@ p {
     font-weight: 600;
     font-size: .8em;
     text-transform: uppercase;
+  }
+
+  .author {
+    font-family: $serif;
+  }
+
+  .date {
+    color: transparentize($base-font-color, .6);
+    font-family: $serif;
+    font-size: .8em;
+    margin-bottom: .5em;
   }
 }
 
@@ -88,8 +92,4 @@ a.read-more {
 
 hr {
   width: 3em;
-}
-
-p.author {
-  font-family: $serif;
 }

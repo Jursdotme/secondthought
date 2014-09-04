@@ -59,6 +59,9 @@ table {
 		}
 		.product-thumbnail {
 			display: table-cell;
+      img {
+        max-width: 50px;
+      }
 		}
 		.product-price {
 			display: table-cell;
@@ -128,6 +131,8 @@ table {
 		border-collapse: separate;
 		margin-bottom: 1.5em;
 		td {
+      vertical-align: middle;
+      text-align: left;
 			@extend %extend_2;
 			p:last-child {
 				margin-bottom: 0;
@@ -294,4 +299,27 @@ table {
 	.notes {
 		clear: both;
 	}
+}
+
+dl.variation {
+	font-size: .857em;
+	&:after {
+		content: "\0020";
+		display: block;
+		height: 0;
+		overflow: hidden;
+		clear: both;
+	}
+	dt {
+		float: left;
+		clear: left;
+		margin-right: .236em;
+	}
+	dd {
+		margin-bottom: 0;
+	}
+}
+table.cart td.product-name dl.variation {
+	margin: 0;
+	font-style: italic;
 }

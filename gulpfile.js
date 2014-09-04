@@ -6,11 +6,12 @@ var bless = require('gulp-bless');
 var cssmin = require('gulp-minify-css');
 var prefix = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
+var scsslint = require('gulp-scss-lint');
 var del = require('del');
 
 
 var paths = {
-  stylesheets: 'sass/**/*.scss',
+  sass: 'sass/**/*.scss',
   images: 'img/**/*',
   scripts: [
     'bower_components/matchHeight/jquery.matchHeight.js',
@@ -25,6 +26,15 @@ gulp.task('clean', function(cb) {
   del(['build'], cb);
 });
 
+gulp.task('scss-lint', function() {
+  return gulp.src(paths.sass)
+    .pipe(scsslint({
+        'config': 'scss-lint.yml',
+        'reporterOutput': 'scssReport.xml'
+      })
+    );
+});
+
 gulp.task('scripts', function() {
   // Minify and copy all JavaScript (except vendor scripts)
   // with sourcemaps all the way down
@@ -35,7 +45,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('sass', function () {
-    return gulp.src(paths.stylesheets)
+    return gulp.src(paths.sass)
         .pipe(sass({sourcemap: true, sourcemapPath: '../../sass'}))
         .on('error', function (err) { console.log(err.message); })
         .pipe(prefix())
