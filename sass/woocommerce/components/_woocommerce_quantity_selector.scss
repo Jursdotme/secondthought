@@ -1,0 +1,37 @@
+.quantity {
+  float: left;
+  margin: 0 1em 0 0;
+  width: 4.236em;
+  position: relative;
+  .qty {
+    box-sizing: border-box;
+    margin: 0;
+    width: 4.236em;
+    height: 40px;
+    padding: 0 .618em;
+  }
+  .plus, .minus {
+    width: 1.618em;
+    padding: 0;
+    height: 50%;
+    text-align: center;
+    background: $brand-primary;
+    position: absolute;
+    right: 0;
+    border: 0;
+    color: #fff;
+    &:hover {
+      background: shade($brand-primary, 5%);
+    }
+  }
+  .plus {
+    top: 0;
+    border-radius: 0 0.327em 0 0;
+    background-clip: padding-box;
+  }
+  .minus {
+    bottom: 0;
+    border-radius: 0 0 0.327em 0;
+    background-clip: padding-box;
+  }
+}

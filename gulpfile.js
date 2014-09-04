@@ -10,7 +10,7 @@ var del = require('del');
 
 
 var paths = {
-  stylesheets: 'sass/style.scss',
+  stylesheets: 'sass/**/*.scss',
   images: 'img/**/*',
   scripts: [
     'bower_components/matchHeight/jquery.matchHeight.js',
@@ -56,7 +56,7 @@ gulp.task('images', function() {
 gulp.task('watch', function() {
   gulp.watch(paths.scripts, ['scripts']);
   gulp.watch(paths.images, ['images']);
-  gulp.watch(paths.stylesheets, ['images']);
+  gulp.watch(paths.stylesheets, ['sass']);
 });
 
 // The default task (called when you run `gulp` from cli)

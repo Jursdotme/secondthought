@@ -1,0 +1,33 @@
+%flash-alert {
+  @include flash($alert-color);
+}
+
+%flash-error {
+  @include flash($error-color);
+}
+
+%flash-notice {
+  @include flash($notice-color);
+}
+
+%flash-success {
+  @include flash($success-color);
+}
+
+.woocommerce-message {
+  @include flash($success-color);
+  border-radius: $base-border-radius;
+  .button.wc-forward {
+    @extend %button;
+    border-radius: $base-border-radius;
+    background: $brand-primary;
+    float: right;
+    display: inline-block;
+    margin-top: -5px;
+    &:after {
+      content: "\f061";
+      margin-left: 5px;
+      font: normal normal normal 14px/1 FontAwesome;
+    }
+  }
+}
