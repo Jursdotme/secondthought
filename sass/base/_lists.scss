@@ -10,7 +10,8 @@ ol {
   padding-left: $base-line-height;
 }
 
-ol, ul {
+ol,
+ul {
   &.no-style {
     margin: 0;
     padding: 0;

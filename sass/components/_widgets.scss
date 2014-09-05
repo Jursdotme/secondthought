@@ -1,7 +1,9 @@
 aside.footer-bar {
   @include section-wrapper(#fff, $gutter*3);
+
   .footer-bar-content {
     @include fixed-container;
+    
     > .footer-bar-widget {
       @include span-columns(12);
       @include media($sm-screen) {
@@ -11,6 +13,6 @@ aside.footer-bar {
   }
 }
 
-.widget ul li a {
+.widget ul a {
   text-decoration: none;
 }

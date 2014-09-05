@@ -5,6 +5,7 @@ $button-horizontal-padding: 10px;
   padding: $button-vertical-padding $button-horizontal-padding;
 }
 
-button, .button {
+button,
+.button {
   @extend %button;
 }

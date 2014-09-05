@@ -1,10 +1,12 @@
 img {
   max-width: 100%;
   height: auto;
+
   &.alignleft {
     float: left;
     margin-right: $gutter;
   }
+
   &.alignright {
     float: right;
     margin-left: $gutter;
@@ -12,29 +14,34 @@ img {
 }
 
 .wp-caption {
-  border: 1px solid lightgrey;
+  border: 1px solid #d3d3d3;
   width: auto;
   padding: 3px;
   max-width: 100%;
   border-radius: 3px;
-  margin: 0 0 0.75em;
+  margin: 0 0 .75em;
+
   .wp-caption-text {
-    color: grey;
+    color: #808080;
     margin: 0;
-    font-size: 0.9em;
+    font-size: .9em;
     margin-left: 5px;
   }
+
   img {
     max-width: 100%;
     height: auto;
   }
+
   &.aligncenter {
     margin: 0 auto;
   }
+
   &.alignleft {
     float: left;
     margin-right: $gutter;
   }
+
   &.alignright {
     float: right;
     margin-left: $gutter;

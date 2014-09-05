@@ -1,11 +1,14 @@
 .single-product {
+
   #container {
     @include fixed-container;
     @include pad(0 $gutter);
+
     #content {
       @include span-columns(12);
     }
   }
+
   .images {
     @include span-columns(12);
     @include media($sm-screen) {
@@ -19,15 +22,19 @@
       @include span-columns(6);
       @include omega();
     }
+
     .woocommerce-review-link {
       display: block;
       margin: 1em 0;
     }
+
     .price {
       font-size: 1.7em;
+
       del {
         color: tint($base-font-color, 50%);
       }
+
       ins {
         text-decoration: none;
       }
@@ -36,101 +43,123 @@
 
   .woocommerce-tabs {
     margin-top: 50px;
+
     .tabs {
       padding: 0;
       margin: 0;
       @include clearfix();
+
       li {
         list-style: none;
         float: left;
         margin-right: $gutter;
+
+        a {
+          @include button-inverse();
+        }
+
+        &.active a {
+          @include button-base();
+        }
+
         &:last-child {
           margin-right: 0;
         }
       }
-      li a {
-        @include button-inverse();
-      }
-      li.active a {
-        @include button-base();
-      }
     }
+
     .panel {
       margin-top: 30px;
     }
   }
 
-  button.button, #submit {
+  button.button,
+  #submit {
     @include button-base();
   }
 
-  .related.products, .woocommerce-tabs, .upsells.products {
+  .related.products,
+  .woocommerce-tabs,
+  .upsells.products {
     @include span-columns(12);
   }
 
-  /*--[ Reviews ]--------------------------------------------------------------------------------*/
+  // Reviews
 
-    #reviews {
-      h2 {
-        margin-bottom: .75em;
-      }
-      .commentlist {
-        list-style: none;
-        margin-bottom: 20px;
-        li {
-          background: none !important;
-          padding-bottom: 1.618em;
-          &:after {
-            content: "";
-            display: table;
-            clear: both;
-          }
-        }
-      }
-      .comment {
-        &.bypostauthor {
-          background: none;
-          border: 0;
-        }
-        &.thread-even {
-          border: 0;
-          background: none;
-        }
-      }
-      .comment_container {
-        padding: 20px 0;
-      }
-      .comment {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
-      }
-      img.avatar {
-        @include span-columns(1);
+  #reviews {
 
-        background: #fff;
-        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-        height: auto;
-        float: left;
-      }
-      .comment-text {
-        @include span-columns(11);
-        p:last-child {
-          margin-bottom: 0;
+    h2 {
+      margin-bottom: .75em;
+    }
+
+    .commentlist {
+      list-style: none;
+      margin-bottom: 20px;
+
+      li {
+        background: none !important;
+        padding-bottom: 1.618em;
+
+        &:after {
+          content: '';
+          display: table;
+          clear: both;
         }
-      }
-      .star-rating {
-        float: right;
       }
     }
 
-    #fancybox-outer {
-      padding: 20px;
-      #respond {
-        margin-top: 0;
+    .comment {
+      border-bottom: 1px solid rgba(0, 0, 0, .1) !important;
+
+      &.bypostauthor {
+        background: none;
+        border: 0;
+      }
+
+      &.thread-even {
+        border: 0;
+        background: none;
       }
     }
+
+    .comment_container {
+      padding: 20px 0;
+    }
+
+    img.avatar {
+      @include span-columns(1);
+
+      background: #fff;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+      height: auto;
+      float: left;
+    }
+
+    .comment-text {
+      @include span-columns(11);
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .star-rating {
+      float: right;
+    }
+  }
+
+  #fancybox-outer {
+    padding: 20px;
+
+    #respond {
+      margin-top: 0;
+    }
+  }
+
   h2 {
     font-size: 28px;
   }
+
   h3.comment-reply-title {
     font-size: 28px;
   }

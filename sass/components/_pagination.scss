@@ -1,4 +1,5 @@
-.pagination, .woocommerce-pagination {
+.pagination,
+.woocommerce-pagination {
   $pagination-border-color: $base-border-color;
   $pagination-border: 1px solid $pagination-border-color;
   $pagination-background: lighten($pagination-border-color, 10);
@@ -13,6 +14,25 @@
 
     li {
       display: inline;
+
+      a {
+        @include transition (all .2s ease-in-out);
+        background: $pagination-background;
+        border-radius: $base-border-radius;
+        border: $pagination-border;
+        color: $pagination-color;
+        padding: $base-line-height/4 $gutter/2;
+
+        &:hover,
+        &:focus {
+          background: $pagination-hover-background;
+          color: $base-link-color;
+        }
+
+        &:active {
+          background: $pagination-background;
+        }
+      }
     }
 
     ul li {
@@ -26,25 +46,6 @@
 
       @include media($large-screen) {
         display: inline;
-      }
-    }
-
-    li a {
-      @include transition (all 0.2s ease-in-out);
-      background: $pagination-background;
-      border-radius: $base-border-radius;
-      border: $pagination-border;
-      color: $pagination-color;
-      padding: $base-line-height/4 $gutter/2;
-
-      &:hover,
-      &:focus {
-        background: $pagination-hover-background;
-        color: $base-link-color;
-      }
-
-      &:active {
-        background: $pagination-background;
       }
     }
   }

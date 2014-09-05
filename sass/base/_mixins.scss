@@ -11,15 +11,15 @@
 @mixin button-base($background:$brand-primary, $text-color:#fff) {
   background: shade($background, 0%);;
   color: $text-color;
-  border: none;
+  border: 0;
   border-radius: 3px;
   padding: 12px 17px;
   font-weight: 600;
   line-height: 1;
-  @include transition (all 0.5s curve);
+  @include transition (all .5s curve);
   &:hover {
     background: shade($background, 10%);
-    @include transition (all 0.5s curve);
+    @include transition (all .5s curve);
   }
 }
 
@@ -31,9 +31,9 @@
   padding: 10px 15px;
   font-weight: 600;
   line-height: 1;
-  @include transition (all 0.5s curve);
+  @include transition (all .5s curve);
   &:hover {
     color: shade($background, 10%);
-    @include transition (all 0.5s curve);
+    @include transition (all .5s curve);
   }
 }

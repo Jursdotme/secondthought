@@ -79,8 +79,8 @@ linters:
     extra_properties: []
 
   SelectorDepth:
-    enabled: true
-    max_depth: 3
+    enabled: false
+    max_depth: 4
 
   Shorthand:
     enabled: true

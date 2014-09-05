@@ -61,11 +61,11 @@ p {
     text-transform: uppercase;
   }
 
-  .author {
+  &.author {
     font-family: $serif;
   }
 
-  .date {
+  &.date {
     color: transparentize($base-font-color, .6);
     font-family: $serif;
     font-size: .8em;

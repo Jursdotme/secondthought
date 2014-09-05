@@ -5,6 +5,7 @@
 %top-lvl-link {
   float: left;
   padding: 0 10px;
+
   a {
     color: $base-font-color;
   }
@@ -13,48 +14,57 @@
 .desktop-navigation {
   @include span-columns(9);
   display: none;
+
   @include media($sm-screen) {
-    display:block;
+    display: block;
   }
+
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    &.sub-menu {
+      display: none;
+
+      &.visible {
+        display: block;
+        position: absolute;
+        margin-top: 10px;
+        background: #fff;
+        padding: 10px 0;
+        z-index: 10000;
+        border-radius: 3px;
+
+        &:before {
+          content: '';
+          @include triangle(12px, #fff, up);
+          position: absolute;
+          top: -6px;
+          left: 8px;
+        }
+      }
+
+      li {
+
+        &:hover {
+          background: $gray-light-1;
+        }
+
+        a {
+          display: block;
+          font-size: 14px;
+          padding: 5px 15px;
+        }
+      }
+    }
   }
-  ul#navigation-menu {
+
+  #navigation-menu {
     float: right;
+
     > li {
       @extend %top-lvl-link;
-    }
-  }
-  ul.sub-menu {
-    display: none;
-    &.visible {
-      display: block;
-      position: absolute;
-      margin-top: 10px;
-      background: #fff;
-      padding: 10px 0;
-      z-index: 10000;
-      border-radius: 3px;
-      &:before {
-        content: "";
-        @include triangle(12px, #fff, up);
-        position: absolute;
-        top: -6px;
-        left: 8px;
-      }
-    }
-    li {
-
-      &:hover {
-        background: $gray-light-1;
-      }
-      a {
-        display: block;
-        font-size: 14px;
-        padding: 5px 15px;
-      }
     }
   }
 }

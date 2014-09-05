@@ -14,26 +14,26 @@ $base-border-radius: em(3);
 // Colors
 
 // Brand Colors
-$brand-primary: #F6C400;
-$brand-secondary: #B5C445;
+$brand-primary: #f6c400;
+$brand-secondary: #b5c445;
 
 // Grays
-$gray-dark-1: #4D4D4D;
+$gray-dark-1: #4d4d4d;
 $gray-dark-2: #222326;
 $gray-dark-3: #141414;
 
-$gray-light-1: #E6E6E6;
-$gray-light-2: #E6E6E6;
-$gray-light-3: #E6E6E6;
+$gray-light-1: #e6e6e6;
+$gray-light-2: #e6e6e6;
+$gray-light-3: #e6e6e6;
 
 // Colors
-$light-gray: #DDD;
-$light-red: #FBE3E4;
-$light-yellow: #FFF6BF;
-$light-green: #E6EFC2;
+$light-gray: #ddd;
+$light-red: #fbe3e4;
+$light-yellow: #fff6bf;
+$light-green: #e6efc2;
 
 // Background Color
-$base-background-color: #F8F8F8;
+$base-background-color: #f8f8f8;
 
 // Font Colors
 $base-font-color: #363636;
@@ -59,7 +59,7 @@ $form-border-color: $base-border-color;
 $form-border-color-hover: darken($base-border-color, 10);
 $form-border-color-focus: $base-accent-color;
 $form-border-radius: $base-border-radius;
-$form-box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), .7);
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
