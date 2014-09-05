@@ -30,7 +30,6 @@ gulp.task('scss-lint', function() {
   return gulp.src(paths.sass)
     .pipe(scsslint({
         'config': 'scss-lint.yml',
-        'reporterOutput': 'scssReport.xml'
       })
     );
 });
