@@ -53,6 +53,14 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('build/stylesheets'));
 });
 
+gulp.task('sass-dev', function () {
+    return gulp.src(paths.sass)
+        .pipe(sass({sourcemap: true, sourcemapPath: '../../sass'}))
+        .on('error', function (err) { console.log(err.message); })
+        .pipe(prefix())
+        .pipe(gulp.dest('build/stylesheets'));
+});
+
 // Copy all static images
 gulp.task('images', function() {
   return gulp.src(paths.images)
@@ -65,7 +73,7 @@ gulp.task('images', function() {
 gulp.task('watch', function() {
   gulp.watch(paths.scripts, ['scripts']);
   gulp.watch(paths.images, ['images']);
-  gulp.watch(paths.stylesheets, ['sass']);
+  gulp.watch(paths.sass, ['sass']);
 });
 
 // The default task (called when you run `gulp` from cli)

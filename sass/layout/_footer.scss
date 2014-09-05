@@ -1,7 +1,12 @@
 footer.footer {
   @include fixed-container;
   @include pad(1em);
+
   .copyright {
     @include span-columns(12);
+
+    p {
+      margin: 0;
+    }
   }
 }

@@ -2,10 +2,9 @@
 			<footer class="footer" role="contentinfo">
 
 				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'secondthought'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//secondthought.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
+				<div class="copyright">
+					<p><?php echo get_option('footer_message'); ?></p>
+				</div>
 				<!-- /copyright -->
 
 			</footer>
