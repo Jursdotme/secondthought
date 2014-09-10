@@ -20,6 +20,7 @@ require_once( 'functions/pagination.php' ); // Build custom pagination
 require_once( 'functions/widget-areas.php' ); // Declare Widget Areas
 require_once( 'functions/woocommerce-functions.php' ); // Woo Commerce Functions
 require_once( 'functions/custom_settings.php' ); // Woo Commerce Functions
+require_once( 'functions/admin_dashboard.php' ); // Custom Admin Dashboard settings
 
 /*------------------------------------*\
 	Theme Support

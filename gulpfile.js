@@ -15,7 +15,7 @@ var paths = {
   images: 'img/**/*',
   scripts: [
     'bower_components/matchHeight/jquery.matchHeight.js',
-    'javascripts/scripts.js'
+    'javascripts/scripts.js',
   ]
 };
 
