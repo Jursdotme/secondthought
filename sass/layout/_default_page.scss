@@ -1,9 +1,10 @@
-.page-template-default {
+.page-template-default,
+.error404 {
   main {
     @include fixed-container;
     @include pad($gutter*3 $gutter);
     section {
-      
+
       @include span-columns(12);
       @include media($sm-screen) {
         @include span-columns(10);

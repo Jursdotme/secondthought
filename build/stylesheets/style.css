@@ -1,5 +1,4 @@
-@import url("//fonts.googleapis.com/css?family=Questrial");
-@import url("//fonts.googleapis.com/css?family=Sanchez:400italic,400");
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300|Roboto+Slab:400,700,300|Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100);
 sub, sup, table.cart td.actions .input-text, table.cart td.actions .button, table.cart td.actions .checkout-button {
   font-size: 75%;
   line-height: 0;
@@ -279,7 +278,7 @@ cite {
 .type {
   border-bottom: 1px solid;
   display: inline-block;
-  font-family: "Questrial", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: .7em;
   font-weight: 800;
   margin-bottom: 2em;
@@ -288,7 +287,7 @@ cite {
   text-transform: uppercase; }
 
 h1 {
-  font-family: "Sanchez", serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 1.8em;
   font-weight: 700;
   margin-bottom: .5em; }
@@ -297,7 +296,7 @@ h1 {
       font-size: 2.6em; } }
 
 h2 {
-  font-family: "Sanchez", serif;
+  font-family: "Roboto Slab", sans-serif;
   font-style: italic;
   font-size: 1.2em;
   font-weight: 400;
@@ -308,7 +307,7 @@ h2 {
       font-size: 1.3em; } }
 
 h3 {
-  font-family: "Sanchez", serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   line-height: 1.3em;
@@ -316,31 +315,31 @@ h3 {
 
 p
 p {
-  font-family: "Questrial", sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.5em;
   font-size: 1.05em;
   margin-bottom: 1.5em; }
   p
   p.date {
     color: rgba(54, 54, 54, 0.4);
-    font-family: "Sanchez", serif;
+    font-family: "Roboto Slab", sans-serif;
     font-style: italic;
     font-size: .9em;
     margin-bottom: .3em; }
   p
   p.author {
-    font-family: "Questrial", sans-serif; }
+    font-family: "Roboto", sans-serif; }
 
 a.read-more {
   display: inline-block;
-  font-family: "Questrial", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: .8em;
   text-transform: uppercase;
   margin-left: .2em;
   position: relative; }
   a.read-more span {
-    font-family: "Questrial", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     position: absolute;
     font-size: 1.5em;
@@ -479,6 +478,18 @@ button,
 .button, .comment-respond #submit, .woocommerce-message .button.wc-forward {
   padding: 5px 10px; }
 
+button,
+.button {
+  background: #ff6b45;
+  margin: 0;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.1875em; }
+  button:hover,
+  .button:hover {
+    background: #e5603e;
+    color: #fff; }
+
 aside.footer-bar {
   background: #fff;
   padding: 4.854em 0; }
@@ -557,7 +568,7 @@ form.search {
   form.search .search-submit {
     background: none;
     position: absolute;
-    top: .15em;
+    top: 0;
     right: 10px;
     border: 0;
     margin: 0;
@@ -1872,49 +1883,64 @@ footer.footer {
         .search main section:last-child {
           margin-right: 0; } }
 
-.page-template-default main {
+.page-template-default main,
+.error404 main {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.618em;
   padding: 4.854em 1.618em; }
-  .page-template-default main:after {
+  .page-template-default main:after,
+  .error404 main:after {
     content: "";
     display: table;
     clear: both; }
   @media (min-width: 48em) {
-    .page-template-default main {
+    .page-template-default main,
+    .error404 main {
       width: 46.618em; } }
   @media (min-width: 62em) {
-    .page-template-default main {
+    .page-template-default main,
+    .error404 main {
       width: 60.368em; } }
   @media (min-width: 75em) {
-    .page-template-default main {
+    .page-template-default main,
+    .error404 main {
       width: 72.868em; } }
-  .page-template-default main section {
+  .page-template-default main section,
+  .error404 main section {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-    .page-template-default main section:last-child {
+    .page-template-default main section:last-child,
+    .error404 main section:last-child {
       margin-right: 0; }
     @media screen and (min-width: 30em) {
-      .page-template-default main section {
+      .page-template-default main section,
+      .error404 main section {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 82.94039%;
         margin-left: 8.5298%; }
-        .page-template-default main section:last-child {
+        .page-template-default main section:last-child,
+        .error404 main section:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 48em) {
-      .page-template-default main section {
+      .page-template-default main section,
+      .error404 main section {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 65.88078%;
         margin-left: 17.05961%; }
-        .page-template-default main section:last-child {
+        .page-template-default main section:last-child,
+        .error404 main section:last-child {
           margin-right: 0; } }
+
+#post-404 h1,
+#post-404 h2 {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,8 @@
-@import url("//fonts.googleapis.com/css?family=Questrial");
-@import url("//fonts.googleapis.com/css?family=Sanchez:400italic,400");
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300|Roboto+Slab:400,700,300|Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100);
 
-$sans-serif: 'Questrial', sans-serif;
-$serif: 'Sanchez', serif;
+$sans-serif: 'Roboto', sans-serif;
+$condensed: 'Roboto Condensed', sans-serif;
+$slab: 'Roboto Slab', sans-serif;
 
 .type {
   border-bottom: 1px solid;
@@ -17,7 +17,7 @@ $serif: 'Sanchez', serif;
 }
 
 h1 {
-  font-family: $serif;
+  font-family: $slab;
   font-size: 1.8em;
   font-weight: 700;
   margin-bottom: .5em;
@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-  font-family: $serif;
+  font-family: $slab;
   font-style: italic;
   font-size: 1.2em;
   font-weight: 400;
@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-  font-family: $serif;
+  font-family: $slab;
   font-size: 1.4em;
   font-weight: 400;
   line-height: 1.3em;
@@ -58,7 +58,7 @@ p {
 
   &.date {
     color: transparentize($base-font-color, .6);
-    font-family: $serif;
+    font-family: $slab;
     font-style: italic;
     font-size: .9em;
     margin-bottom: .3em;

@@ -10,12 +10,7 @@
 @import 'base/typography';
 @import 'base/mixins';
 
-@import 'base/typography_systems/type-system-geometric';
-//@import 'base/typography_systems/type-system-rounded';
-//@import 'base/typography_systems/type-system-sans';
-//@import 'base/typography_systems/type-system-serif';
-//@import 'base/typography_systems/type-system-slab';
-//@import 'base/typography_systems/type-system-traditional';
+@import 'base/base_typography';
 
 @import 'base/image_alignment';
 @import 'base/lists';
@@ -38,3 +33,4 @@
 @import 'layout/frontpage';
 @import 'layout/news';
 @import 'layout/default_page';
+@import 'layout/404';
