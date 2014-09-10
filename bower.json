@@ -19,9 +19,9 @@
     "modernizr": "~2.8.2",
     "conditionizr": "~4.4.0",
     "matchHeight": "~0.5.2",
-    "owl.carousel": "*",
     "bitters": "~0.10.0",
     "bourbon": "~4.0.2",
-    "neat": "~1.6.0"
+    "neat": "~1.6.0",
+    "owl-carousel2": "*"
   }
 }

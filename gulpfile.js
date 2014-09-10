@@ -7,6 +7,7 @@ var cssmin = require('gulp-minify-css');
 var prefix = require('gulp-autoprefixer');
 var imagemin = require('gulp-imagemin');
 var scsslint = require('gulp-scss-lint');
+var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
 
 
@@ -15,7 +16,8 @@ var paths = {
   images: 'img/**/*',
   scripts: [
     'bower_components/matchHeight/jquery.matchHeight.js',
-    'javascripts/scripts.js',
+    'bower_components/owl-carousel2/dist/owl.carousel.js',
+    'javascripts/concat/*.js',
   ]
 };
 
@@ -43,9 +45,17 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('build/scripts'));
 });
 
+gulp.task('scripts-dev', function() {
+  // Minify and copy all JavaScript (except vendor scripts)
+  // with sourcemaps all the way down
+  return gulp.src(paths.scripts)
+    .pipe(concat('all.min.js'))
+    .pipe(gulp.dest('build/scripts'));
+});
+
 gulp.task('sass', function () {
     return gulp.src(paths.sass)
-        .pipe(sass({sourcemap: true, sourcemapPath: '../../sass'}))
+        .pipe(sass())
         .on('error', function (err) { console.log(err.message); })
         .pipe(prefix())
         .pipe(cssmin())
@@ -57,7 +67,6 @@ gulp.task('sass-dev', function () {
     return gulp.src(paths.sass)
         .pipe(sass({sourcemap: true, sourcemapPath: '../../sass'}))
         .on('error', function (err) { console.log(err.message); })
-        .pipe(prefix())
         .pipe(gulp.dest('build/stylesheets'));
 });
 
@@ -76,5 +85,16 @@ gulp.task('watch', function() {
   gulp.watch(paths.sass, ['sass']);
 });
 
+// Rerun the task when a file changes
+gulp.task('watch-dev', function() {
+  gulp.watch(paths.scripts, ['scripts']);
+  gulp.watch(paths.images, ['images']);
+  gulp.watch(paths.sass, ['sass-dev']);
+});
+
+gulp.task('dev', ['watch-dev', 'scripts-dev', 'sass-dev', 'images']);
+
+gulp.task('default', ['watch-dev', 'scripts-dev', 'sass-dev', 'images']);
+
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['watch', 'scripts', 'sass', 'images']);
+gulp.task('release', ['watch', 'scripts', 'sass', 'images']);

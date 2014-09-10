@@ -51,7 +51,3 @@ $('.menu-item-has-children > a').bind('click', function(){
 });
 
 /*-------------------  End of Mobile Navigation  --------------------*/
-
-$(document).ready(function(){
-  $('li.product').matchHeight();
-});

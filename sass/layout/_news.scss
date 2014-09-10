@@ -1,5 +1,6 @@
 .news,
-.single-post {
+.single-post,
+.search {
   main {
     @include fixed-container;
     @include pad(1em);

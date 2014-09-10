@@ -1,9 +1,9 @@
 @import 'base/normalize';
-@import 'bower_components/bourbon/dist/bourbon';
+@import '../bower_components/bourbon/dist/bourbon';
 @import 'base/grid-settings';
-@import 'bower_components/neat/app/assets/stylesheets/neat';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
 
-@import 'bower_components/bitters/app/assets/stylesheets/mixins/flash';
+@import '../bower_components/bitters/app/assets/stylesheets/mixins/flash';
 
 @import 'base/colors';
 @import 'base/variables';
@@ -29,6 +29,7 @@
 @import 'components/mobile_navigation';
 @import 'components/pagination';
 @import 'components/header';
+@import 'components/frontpage_slider';
 
 @import 'woocommerce/woocommerce_base';
 

@@ -3,7 +3,7 @@ aside.footer-bar {
 
   .footer-bar-content {
     @include fixed-container;
-    
+
     > .footer-bar-widget {
       @include span-columns(12);
       @include media($sm-screen) {
@@ -15,4 +15,13 @@ aside.footer-bar {
 
 .widget ul a {
   text-decoration: none;
+}
+
+.widget-area {
+  margin-bottom: $gutter;
+}
+
+.widget_search {
+  // searchform has no height, this is a work around.
+  margin-bottom: $gutter+em(36);
 }
