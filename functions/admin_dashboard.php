@@ -120,8 +120,7 @@ you like.
 
 // Custom Stylesheet
 function toro_custom_wp_admin_style() {
-        wp_enqueue_style( 'custom_wp_admin_css', get_template_directory_uri() . '/stylesheets/backend.css', false );
-
+  wp_enqueue_style( 'custom_wp_admin_css', get_template_directory_uri() . '/stylesheets/backend.css', false );
 }
 // add_action( 'admin_enqueue_scripts', 'toro_custom_wp_admin_style' );
 
@@ -184,13 +183,13 @@ function my_mce_before_init_insert_formats( $init_array ) {
 }
 
 // Attach callback to 'tiny_mce_before_init'
-// add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
+add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 
 function my_theme_add_editor_styles() {
-		add_editor_style( 'stylesheets/build/min/global.min.css' );
+		add_editor_style( 'build/stylesheets/editor.css' );
 }
 
-// add_action( 'init', 'my_theme_add_editor_styles' );
+add_action( 'init', 'my_theme_add_editor_styles' );
 
 /************* LIMIT SIZE OF UPLOADED IMAGE *******************/
 

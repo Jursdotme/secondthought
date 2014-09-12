@@ -74,7 +74,8 @@ $lg-screen: new-breakpoint(min-width $screen-md-min 12);
 $fg-column: $column;
 $fg-gutter: $gutter;
 
-$navigation-breakpoint: $screen-sm;
+$navigation-breakpoint: $screen-xs;
+$type-scaling-breakpoint: $screen-xs;
 
 // OMEGA RESET (http://joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat/)
 @mixin omega-reset($nth) {
