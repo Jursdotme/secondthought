@@ -1,0 +1,158 @@
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300|Roboto+Slab:400,700,300|Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100);
+
+$sans-serif: 'Roboto', sans-serif;
+$condensed: 'Roboto Condensed', sans-serif;
+$slab: 'Roboto Slab', sans-serif;
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  font-family: $sans-serif;
+  font-size: $base-font-size * .8;
+  line-height: $base-line-height;
+
+  @include media($type-scaling-breakpoint) {
+    font-size: $base-font-size;
+  }
+}
+
+h1 {
+  font-family: $slab;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: .5em;
+
+  @include media($medium-screen) {
+    font-size: 2.6em;
+  }
+}
+
+h2 {
+  font-family: $slab;
+  font-style: italic;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-bottom: 1.1em;
+
+  @include media($medium-screen) {
+    font-size: 1.3em;
+  }
+}
+
+h3 {
+  font-family: $slab;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: .4em;
+}
+
+p {
+  font-family: $sans-serif;
+  line-height: 1.5em;
+  font-size: 1em; // same as $base-font-size
+  margin-bottom: 1.5em;
+
+  &.date {
+    color: transparentize($base-font-color, .6);
+    font-family: $slab;
+    font-style: italic;
+    font-size: .9em;
+    margin-bottom: .3em;
+  }
+
+  &.author {
+    font-family: $sans-serif;
+  }
+
+  &.lead {
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+}
+
+hr {
+  width: 3em;
+  border-bottom: 1px solid $base-border-color;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-line-height 0;
+}
+
+a {
+  @include transition(color .1s linear);
+  color: $base-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-link-color;
+  }
+
+  &:active,
+  &:focus {
+    color: $hover-link-color;
+    outline: none;
+  }
+
+  a.read-more {
+    display: inline-block;
+    font-family: $sans-serif;
+    font-weight: 700;
+    font-size: .8em;
+    text-transform: uppercase;
+    margin-left: .2em;
+    position: relative;
+
+    span {
+      font-family: $sans-serif;
+      font-style: normal;
+      position: absolute;
+      font-size: 1.5em;
+      top: -1px;
+      right: -12px;
+    }
+  }
+}
+
+img {
+  margin: 0;
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: 2px solid $base-border-color;
+  color: lighten($base-font-color, 15);
+  margin: $base-line-height 0;
+  padding-left: ($base-font-size * $base-line-height) / 2;
+}
+
+cite {
+  color: lighten($base-font-color, 25);
+  font-style: italic;
+
+  &:before {
+    content: '\2014 \00A0';
+  }
+}
+
+// Description Lists
+dl {
+  margin-top: 0; // Remove browser default
+  margin-bottom: floor($computed-line-height * .75);
+}
+
+dt,
+dd {
+  line-height: $base-line-height;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0; // Undo browser default
+}
