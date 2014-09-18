@@ -46,7 +46,7 @@
       @include span-columns(6);
     }
   }
-  // 2 row fields
+  // 1 row fields
   #order_review,
   #order_review_heading {
     @include span-columns(12);
@@ -98,7 +98,7 @@
     thead th {
       padding: $gutter;
       border-right: 1px dotted #e4e4e3;
-      border-bottom: 1px solid #e6e6e6;
+      border-bottom: 0;
       text-transform: uppercase;
       padding: $gutter/3 $gutter/4;
       vertical-align: middle;

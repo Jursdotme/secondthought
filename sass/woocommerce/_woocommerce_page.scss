@@ -9,6 +9,15 @@
   }
 }
 
+.woocommerce-result-count {
+  margin: 0 0 $gutter/2 0;
+  float: right;  
+}
+
+.woocommerce-ordering {
+  margin-bottom: $gutter/2;
+}
+
 ul.products {
   @include span-columns(12);
   margin: 0;

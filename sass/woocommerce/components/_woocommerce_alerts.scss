@@ -58,3 +58,8 @@
     }
   }
 }
+
+.woocommerce-error {
+  @extend %flash-error;
+  list-style-type: none;
+}
