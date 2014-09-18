@@ -29,6 +29,7 @@ label {
 textarea,
 #{$all-text-inputs},
 select[multiple=multiple] {
+  @extend %button;
   @include box-sizing(border-box);
   @include transition(border-color);
   background-color: #fff;
@@ -38,7 +39,6 @@ select[multiple=multiple] {
   font-family: $sans-serif;
   font-size: 1em;
   margin-bottom: $base-line-height/2;
-  padding: $base-line-height/3;
   width: 100%;
 
   &:hover {

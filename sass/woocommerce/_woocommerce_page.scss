@@ -19,7 +19,7 @@ ul.products {
 li.product {
   @include span-columns(12);
   padding-bottom: $gutter*2;
-  
+
   @include media($sm-screen) {
     @include span-columns(6);
     @include omega(2n);
@@ -65,4 +65,9 @@ li.product {
     padding: 5px 10px;
     border-radius: $base-border-radius;
   }
+}
+
+.added_to_cart {
+  display: block;
+  text-align: center;
 }

@@ -28,4 +28,12 @@ function container_closing_div( $enqueue_styles ) {
 function content_closing_div( $enqueue_styles ) {
   echo "</div>";
 }
+
+// Change remove item button in cart
+add_filter('woocommerce_cart_item_remove_link', 'change_removeitem_button');
+function change_removeitem_button ($content)
+{
+    $content = str_replace('&times;', '<span class="fa fa-times"></span>',$content);
+    return $content;
+}
 ?>

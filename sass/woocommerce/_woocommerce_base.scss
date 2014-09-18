@@ -1,8 +1,11 @@
-@import 'woocommerce_quantity_selector';
+
 
 @import 'woocommerce_page';
 @import 'woocommerce_widgets';
 @import 'star_rating';
 @import 'woocommerce_product_single';
+@import 'cart/woocommerce_cart';
+@import 'cart/woocommerce_checkout';
+
+@import 'woocommerce_quantity_selector';
 @import 'woocommerce_alerts';
-@import 'woocommerce_cart';

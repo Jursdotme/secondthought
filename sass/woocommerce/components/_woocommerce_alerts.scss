@@ -1,22 +1,47 @@
+@mixin flash($color) {
+  background: $color;
+  color: darken($color, 60);
+
+  a {
+    color: darken($color, 70);
+
+    &:hover {
+      color: darken($color, 90);
+    }
+  }
+}
+
+%flash-base {
+  font-weight: bold;
+  margin-bottom: $gutter / 2;
+  padding: $gutter / 2;
+  border-radius: $base-border-radius;
+}
+
 %flash-alert {
+  @extend %flash-base;
   @include flash($alert-color);
 }
 
 %flash-error {
+  @extend %flash-base;
   @include flash($error-color);
 }
 
 %flash-notice {
+  @extend %flash-base;
   @include flash($notice-color);
 }
 
 %flash-success {
+  @extend %flash-base;
   @include flash($success-color);
 }
 
-.woocommerce-message {
-  @include flash($success-color);
-  border-radius: $base-border-radius;
+
+.woocommerce-message,
+.woocommerce-info {
+  @extend %flash-success;
 
   .button.wc-forward {
     @extend %button;
