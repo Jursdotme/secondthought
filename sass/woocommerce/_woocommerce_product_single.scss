@@ -55,11 +55,11 @@
         margin-right: $gutter;
 
         a {
-          @include button-inverse();
+          @include button($brand-secondary);
         }
 
         &.active a {
-          @include button-base();
+          @include button($brand-primary);
         }
 
         &:last-child {
@@ -75,7 +75,7 @@
 
   button.button,
   #submit {
-    @include button-base();
+    @include button($brand-primary);
   }
 
   .related.products,

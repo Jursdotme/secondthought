@@ -7,33 +7,40 @@
 
 
 // Button
-
-@mixin button-base($background:$brand-primary, $text-color:#fff) {
-  background: shade($background, 0%);;
-  color: $text-color;
-  border: 0;
-  border-radius: 3px;
-  padding: 12px 17px;
-  font-weight: 600;
-  line-height: 1;
-  @include transition (all .5s curve);
-  &:hover {
-    background: shade($background, 10%);
-    @include transition (all .5s curve);
+@mixin button($bg){
+  display: inline-block;
+  background: $bg;
+  @include transition(.3s $curve);
+  $color: black;
+  font:{
+    weight: 500;
+    size: .8em;
   }
-}
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: $gutter/3 $gutter/2;
+  border-radius: $base-border-radius;
+  position: relative;
+  border: 0;
 
-@mixin button-inverse($background:$brand-primary, $text-color:#fff) {
-  background: none;
-  color: shade($background, 0%);
-  border: 2px solid $background;
-  border-radius: 3px;
-  padding: 10px 15px;
-  font-weight: 600;
-  line-height: 1;
-  @include transition (all .5s curve);
-  &:hover {
-    color: shade($background, 10%);
-    @include transition (all .5s curve);
+  @if lightness($bg) > 68% {
+    $color: desaturate(shade($bg, 35%), 70);
+    &:hover, &:focus {
+      background: darken($bg, 5);
+      color: darken($color, 5);
+    }
+  }
+  @else {
+    $color: #fff;
+    &:hover, &:focus {
+      background: darken($bg, 5);
+      color: lighten($color, 5);
+    }
+  }
+
+  color: $color;
+  &:hover, &:focus {
+    background: shade($bg, 10%);
   }
 }

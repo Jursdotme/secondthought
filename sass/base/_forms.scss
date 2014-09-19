@@ -40,6 +40,7 @@ select[multiple=multiple] {
   font-size: 1em;
   margin-bottom: $base-line-height/2;
   width: 100%;
+  padding: $gutter/3 $gutter/2;
 
   &:hover {
     border-color: $form-border-color-hover;

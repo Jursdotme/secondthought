@@ -15,20 +15,6 @@ function jk_dequeue_styles( $enqueue_styles ) {
 	return $enqueue_styles;
 }
 
-// Move sidebar inside the container div
-
-// remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
-
-// add_action( 'woocommerce_sidebar', 'container_closing_div', 11 );
-function container_closing_div( $enqueue_styles ) {
-  echo "</div>";
-}
-
-// add_action( 'woocommerce_sidebar', 'content_closing_div', 9 );
-function content_closing_div( $enqueue_styles ) {
-  echo "</div>";
-}
-
 // Change remove item button in cart
 add_filter('woocommerce_cart_item_remove_link', 'change_removeitem_button');
 function change_removeitem_button ($content)
@@ -36,4 +22,17 @@ function change_removeitem_button ($content)
     $content = str_replace('&times;', '<span class="fa fa-times"></span>',$content);
     return $content;
 }
-?>
+
+
+// Add meta wrapper to product content withing loops
+
+add_action( 'woocommerce_before_shop_loop_item_title', 'opening_meta_div', 11 );
+add_action( 'woocommerce_after_shop_loop_item_title', 'closing_meta_div', 11 );
+
+function opening_meta_div( $enqueue_styles ) {
+  echo '<div class="meta">';
+}
+
+function closing_meta_div( $enqueue_styles ) {
+  echo '</div>';
+}

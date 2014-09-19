@@ -7,15 +7,5 @@ $button-horizontal-padding: 10px;
 
 button,
 .button {
-  @extend %button;
-  background: $brand-primary;
-  margin: 0;
-  text-decoration: none;
-  color: #fff;
-  border-radius: $base-border-radius;
-  border: 0;
-  &:hover {
-    background: shade($brand-primary, 10%);
-    color: #fff;
-  }
+  @include button($brand-primary);
 }

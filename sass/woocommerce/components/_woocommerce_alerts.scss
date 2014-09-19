@@ -45,8 +45,9 @@
 
   .button.wc-forward {
     @extend %button;
+    color: #fff;
     border-radius: $base-border-radius;
-    background: $brand-primary;
+    background: shade($success-color, 20%);
     float: right;
     display: inline-block;
     margin-top: -5px;

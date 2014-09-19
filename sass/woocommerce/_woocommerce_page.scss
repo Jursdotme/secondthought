@@ -11,7 +11,7 @@
 
 .woocommerce-result-count {
   margin: 0 0 $gutter/2 0;
-  float: right;  
+  float: right;
 }
 
 .woocommerce-ordering {
@@ -57,6 +57,10 @@ li.product {
     margin: 10px 0 0 10px;
   }
 
+  .meta {
+    padding: 10px 0;
+  }
+
   h3 {
     color: $base-font-color;
     font-size: 18px;
@@ -67,12 +71,10 @@ li.product {
   }
 
   .add_to_cart_button {
+    font-style: normal;
+    font-variant: normal;
     display: block;
     text-align: center;
-    background: $brand-primary;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: $base-border-radius;
   }
 }
 
