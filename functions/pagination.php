@@ -1,15 +1,38 @@
-<?php // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
-function secondthoughtwp_pagination()
+<?php // http://www.kriesi.at/archives/how-to-build-a-wordpress-post-pagination-without-plugin
+function kriesi_pagination($pages = '', $range = 2)
 {
-    global $wp_query;
-    $big = 999999999;
-    echo paginate_links(array(
-        'base' => str_replace($big, '%#%', get_pagenum_link($big)),
-        'format' => '?paged=%#%',
-        'current' => max(1, get_query_var('paged')),
-        'total' => $wp_query->max_num_pages
-    ));
-}
+     $showitems = ($range * 2)+1;
 
-add_action('init', 'secondthoughtwp_pagination'); // Add our secondthought Pagination
+     global $paged;
+     if(empty($paged)) $paged = 1;
+
+     if($pages == '')
+     {
+         global $wp_query;
+         $pages = $wp_query->max_num_pages;
+         if(!$pages)
+         {
+             $pages = 1;
+         }
+     }
+
+     if(1 != $pages)
+     {
+         echo "<ul>";
+         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo;</a>";
+         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a>";
+
+         for ($i=1; $i <= $pages; $i++)
+         {
+             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+             {
+                 echo ($paged == $i)? "<li><span class='current'>".$i."</span></li>":"<li><a href='".get_pagenum_link($i)."' class='inactive' >".$i."</a></li>";
+             }
+         }
+
+         if ($paged < $pages && $showitems < $pages) echo "<li><a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a></li>";
+         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>&raquo;</a>";
+         echo "</ul>\n";
+     }
+}
  ?>

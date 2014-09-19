@@ -1,4 +1,4 @@
 
 $(document).ready(function(){
-  $('li.product').matchHeight();
+  $('li.product .meta').matchHeight();
 });

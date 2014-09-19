@@ -9,19 +9,25 @@
   text-align: center;
 
   ul {
-    display: inline;
+    display: block;
     text-align: center;
+    padding: 0;
 
     li {
       display: inline;
+      margin-right: 2px;
+      &:last-child {
+        margin-right: 0;
+      }
 
-      a {
+      a,
+      span {
+        @extend %button;
         @include transition (all .2s ease-in-out);
         background: $pagination-background;
         border-radius: $base-border-radius;
         border: $pagination-border;
         color: $pagination-color;
-        padding: $base-line-height/4 $gutter/2;
 
         &:hover,
         &:focus {
@@ -31,6 +37,15 @@
 
         &:active {
           background: $pagination-background;
+        }
+        &.current {
+          background: $pagination-hover-background;
+          color: $base-link-color;
+          &:hover,
+          &:focus {
+            background: $pagination-hover-background;
+            color: $base-link-color;
+          }
         }
       }
     }
