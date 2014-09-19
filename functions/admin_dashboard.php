@@ -95,11 +95,11 @@ add_action( 'wp_dashboard_setup', 'toro_custom_dashboard_widgets' );
 //Updated to proper 'enqueue' method
 //http://codex.wordpress.org/Plugin_API/Action_Reference/login_enqueue_scripts
 function toro_login_css() {
-	wp_enqueue_style( 'toro_login_css', get_template_directory_uri() . '/stylesheets/backend.css', true );
+	wp_enqueue_style( 'toro_login_css', get_template_directory_uri() . '/build/stylesheets/admin.css', true );
 }
 
 // changing the logo link from wordpress.org to your site
-function toro_login_url() {  return home_url('http://www.inzite.dk/'); }
+function toro_login_url() {  return 'http://www.inzite.dk/'; }
 
 // changing the alt text on the logo to show your site name
 function toro_login_title() { return get_option( 'INZITE Media & Marketing' ); }
@@ -120,9 +120,9 @@ you like.
 
 // Custom Stylesheet
 function toro_custom_wp_admin_style() {
-  wp_enqueue_style( 'custom_wp_admin_css', get_template_directory_uri() . '/stylesheets/backend.css', false );
+  wp_enqueue_style( 'custom_wp_admin_css', get_template_directory_uri() . '/build/stylesheets/admin.css', false );
 }
-// add_action( 'admin_enqueue_scripts', 'toro_custom_wp_admin_style' );
+add_action( 'admin_enqueue_scripts', 'toro_custom_wp_admin_style' );
 
 // Custom Backend Footer
 function toro_custom_admin_footer() {
@@ -130,7 +130,7 @@ function toro_custom_admin_footer() {
 }
 
 // adding it to the admin area
-// add_filter( 'admin_footer_text', 'toro_custom_admin_footer' );
+add_filter( 'admin_footer_text', 'toro_custom_admin_footer' );
 
 /********* ADD CUSTOM EDITOR CLASSES TO TINYMCE ***********/
 
