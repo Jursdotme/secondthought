@@ -1346,7 +1346,7 @@ header.header {
       margin-right: 0; }
 
 .woocommerce-result-count {
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
   float: right; }
 
 .woocommerce-ordering {
@@ -1761,7 +1761,7 @@ li.product {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   background-clip: padding-box;
-  box-shadow: 0 1px 2px 0 #ffffff;
+  box-shadow: 0 1px 2px 0 #fff;
   border-collapse: separate;
   vertical-align: middle; }
 .page-template-default.cart table.cart th.product-remove,
@@ -1787,13 +1787,15 @@ li.product {
   @media screen and (min-width: 768px) {
     .page-template-default.cart table thead th {
       padding: 30px; } }
-.page-template-default.cart table td, .page-template-default.cart table th {
+.page-template-default.cart table td,
+.page-template-default.cart table th {
   padding: 10px 7.5px;
   text-align: left;
   border-right: 1px solid #e6e6e6;
   vertical-align: middle; }
   @media screen and (min-width: 768px) {
-    .page-template-default.cart table td, .page-template-default.cart table th {
+    .page-template-default.cart table td,
+    .page-template-default.cart table th {
       padding: 15px 30px; } }
 .page-template-default.cart td.product-thumbnail img {
   max-width: 50px; }
@@ -2111,7 +2113,7 @@ li.product {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   background-clip: padding-box;
-  box-shadow: 0 1px 2px 0 #ffffff;
+  box-shadow: 0 1px 2px 0 #fff;
   border-collapse: separate; }
   .page-template-default.woocommerce-checkout table.shop_table thead th {
     padding: 30px;
@@ -2155,7 +2157,7 @@ li.product {
   border-radius: 3px;
   background-clip: padding-box; }
   .page-template-default.woocommerce-checkout #payment:after {
-    content: "\0020";
+    content: '\0020';
     display: block;
     height: 0;
     overflow: hidden;
@@ -2292,7 +2294,7 @@ li.product {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   background-clip: padding-box;
-  box-shadow: 0 1px 2px 0 #ffffff;
+  box-shadow: 0 1px 2px 0 #fff;
   border-collapse: separate; }
   .page-template-default.woocommerce-account table.shop_table thead th {
     padding: 30px;

@@ -25,7 +25,7 @@
     border: 1px solid #e6e6e6;
     border-radius: 4px;
     background-clip: padding-box;
-    box-shadow: 0 1px 2px 0 #ffffff;
+    box-shadow: 0 1px 2px 0 #fff;
     border-collapse: separate;
     vertical-align: middle;
   }
@@ -37,6 +37,7 @@
   table.cart th.product-price,
   table.cart td.product-price {
     display: none;
+
     @include media($md-screen) {
       display: table-cell;
     }
@@ -54,11 +55,13 @@
     }
   }
 
-  table td, table th {
+  table td,
+  table th {
     padding: $gutter/3 $gutter/4;
     text-align: left;
     border-right: 1px solid #e6e6e6;
     vertical-align: middle;
+
     @include media($md-screen) {
       padding: $gutter/2 $gutter;
     }
@@ -109,6 +112,7 @@
         @include span-columns(6);
         @include shift(0);
       }
+
       float: left;
       border: 0;
       text-align: left;
@@ -127,6 +131,7 @@
           @include span-columns(6);
           @include shift(0);
         }
+        
         margin-right: 2%;
         display: inline;
         padding: ($gutter/3)-1 $gutter/2;

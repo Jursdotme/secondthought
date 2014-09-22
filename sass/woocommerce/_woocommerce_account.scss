@@ -25,14 +25,16 @@
       @include span-columns(3);
     }
   }
+
   table.shop_table {
     border-spacing: 0;
     width: 100%;
     border: 1px solid #e6e6e6;
     border-radius: 4px;
     background-clip: padding-box;
-    box-shadow: 0 1px 2px 0 #ffffff;
+    box-shadow: 0 1px 2px 0 #fff;
     border-collapse: separate;
+
     thead th {
       padding: $gutter;
       border-right: 1px dotted #e4e4e3;
@@ -40,6 +42,7 @@
       text-transform: uppercase;
       padding: $gutter/3 $gutter/4;
       vertical-align: middle;
+      
       @include media($sm-screen) {
         padding: $gutter/2;
       }
@@ -59,6 +62,7 @@
       border-right: 1px solid #e6e6e6;
       padding: $gutter/3 $gutter/4;
       vertical-align: middle;
+
       @include media($sm-screen) {
         padding: $gutter/2;
       }
@@ -69,6 +73,7 @@
 
       &.order-actions a {
         margin-right: 5px;
+
         &:last-child {
           margin-right: 0;
         }
@@ -97,6 +102,7 @@
     .order-number,
     .order-status {
       display: none;
+
       @include media($md-screen) {
         display: table-cell;
       }
@@ -135,6 +141,7 @@
       @include span-columns(6);
       @include omega();
     }
+
     @include omega();
   }
 
@@ -149,7 +156,7 @@
   #billing_phone_field,
   #shipping_last_name_field,
   #shipping_city_field,
-  #shipping_phone_field  {
+  #shipping_phone_field {
     @include omega();
   }
 
@@ -158,6 +165,7 @@
       display: inline-block;
       margin-right: 5px;
     }
+
     .inline {
       display: inline-block;
     }
