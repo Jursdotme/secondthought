@@ -15,6 +15,10 @@
 
 		<?php wp_footer(); ?>
 
+		<?php if ( is_page_template( 'page_templates/contact.php' ) ) {
+			get_template_part('partials/acf-google-maps');
+		} ?>
+
 		<!-- analytics -->
 		<script>
 		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
