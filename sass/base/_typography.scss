@@ -9,7 +9,7 @@ body {
   background-color: $base-background-color;
   color: $base-font-color;
   font-family: $sans-serif;
-  font-size: $base-font-size * .8;
+  font-size: $base-font-size * .8; // Scale typography on mobile
   line-height: $base-line-height;
 
   @include media($type-scaling-breakpoint) {

@@ -2824,7 +2824,22 @@ footer.footer {
   width: 100%;
   height: 400px;
   border: 0;
-  margin: 20px 0; }
+  margin: 20px 0;
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 100%; }
+  .page-template-page_templatescontact-php .acf-map:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 480px) {
+    .page-template-page_templatescontact-php .acf-map {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 40.42553%;
+      margin-right: 0; }
+      .page-template-page_templatescontact-php .acf-map:last-child {
+        margin-right: 0; } }
 .page-template-page_templatescontact-php .gm-style img {
   max-width: none; }
 .page-template-page_templatescontact-php .wpcf7 {
@@ -2841,22 +2856,6 @@ footer.footer {
       margin-right: 2.12766%;
       width: 57.44681%; }
       .page-template-page_templatescontact-php .wpcf7:last-child {
-        margin-right: 0; } }
-.page-template-page_templatescontact-php .acf-map {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 100%; }
-  .page-template-page_templatescontact-php .acf-map:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 480px) {
-    .page-template-page_templatescontact-php .acf-map {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 40.42553%;
-      margin-right: 0; }
-      .page-template-page_templatescontact-php .acf-map:last-child {
         margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */

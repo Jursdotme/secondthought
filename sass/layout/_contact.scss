@@ -73,6 +73,11 @@
     height: 400px;
     border: 0;
     margin: 20px 0;
+    @include span-columns(12);
+    @include media($sm-screen) {
+      @include span-columns(5);
+      @include omega();
+    }
   }
 
   .gm-style img { max-width: none; }
@@ -81,14 +86,6 @@
     @include span-columns(12);
     @include media($sm-screen) {
       @include span-columns(7);
-    }
-  }
-
-  .acf-map {
-    @include span-columns(12);
-    @include media($sm-screen) {
-      @include span-columns(5);
-      @include omega();
     }
   }
 }

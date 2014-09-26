@@ -1,109 +1,202 @@
 <?php
-
-/*-----------------------------------------------*
+/*--------------------------------------------*
  * Menus
-/*-----------------------------------------------*
+/*--------------------------------------------*/
 
 /**
- * Adds the 'Demo Theme Options' to the 'Settings' menu in the WordPress
- * Dashboard.
- */
-function demo_add_options_page() {
+ * Adds the 'Inzite Options' to the 'Settings' menu in the Wordpress Dashboard.
+ **/
+function inzite_add_options_page() {
 
-	// This will introduce a new link in the 'Settings' Menu
-	add_options_page(
-		'Demo Theme Options',			// The text to be displayed in the browser title bar
-		'Demo Theme Options',			// The text to be used for the menu
-		'manage_options',				// The required capability of users to access this menu
-		'demo-theme-options',			// The slug by which this menu item is accessible
-		'demo_theme_options_display'	// The name of the function used to display the page content
+	// This will create a new top-level menu page.
+	add_menu_page(
+		__('Inzite Options', 'toro'),   // The text to be displayed in the title bar
+		__('Inzite Options', 'toro'),   // The text to be used for the menu
+		'manage_options', 				      // The capability required for this menu to be displayed to the user.
+		'inzite-options', 				      // The slug name to refer to this menu by (should be unique for this menu).
+		'inzite_user_options_display', 	// The function to be called to output the content for this page
+		'dashicons-smiley',							// Provides a smiley icon to the page 'http://melchoyce.github.io/dashicons/'
+		'59.1'														// The position in the menu order this menu should appear.
 	);
 
-} // end demo_add_options_page
-add_action( 'admin_menu', 'demo_add_options_page' );
+} // END inzite_add_options_page
 
-/*-----------------------------------------------*
- * Sections, Settings, and Fields
-/*-----------------------------------------------*
+add_action( 'admin_menu', 'inzite_add_options_page' );
+
+
+// END Menus
+
+
+/*--------------------------------------------*
+ * Sections, Settings & Fields
+/*--------------------------------------------*/
 
 /**
- * Registers a new settings field on the 'General Settings' page of the WordPress dashboard.
- */
-function demo_initialize_theme_options() {
+* Registers a new settings field on the 'General Settings' page of the Wordpress Dashboard.
+**/
 
-	// Let's introduce a section to be rendered on the new options page
-	add_settings_section(
-		'footer_section',					// The ID to use for this section in attribute tags
-		'Footer Options',					// The title of the section rendered to the screen
-		'demo_footer_options_display',		// The function used to render the options for this section
-		'demo-theme-options'				// The ID of the page on which this section is rendered
-	);
+function secondthought_initialize_theme_options() {
 
-	// Define the settings field
-	add_settings_field(
-		'footer_message', 					// The ID (or the name) of the field
-		'Theme Footer Message', 			// The text used to label the field
-		'demo_footer_message_display', 		// The callback function used to render the field
-		'demo-theme-options',				// The page on which we'll be rendering this field
-		'footer_section'					// The section to which we're adding the setting
-	);
+		// Define section
+		add_settings_section(
+			'company_section',   // String for use in the 'id' attribute of tags
+			'Company Info', 	   // Title of the section
+			'company_info_section_display', // Function that fills the section with the desired content. The function should echo its output
+			'inzite-options'     // The menu page on which to display this section (Should match $menu_slug)
+		);
 
-	// Register the 'footer_message' setting with the 'General' section
-	register_setting(
-		'footer_section',					// The name of the group of settings
-		'footer_options'					// The name of the actual option (or setting)
-	);
+		// Define settings field.
+		add_settings_field(
+			'companyname',                       	// The ID (name) of the field
+			__('Company Name', 'secondthought '),	// The text used to label the field
+			'company_name_display', 							// Callback function to render the field
+			'inzite-options', 										// The menu page on which to display this field. Should match $menu_slug
+			'company_section'                     // The section to which we're adding the setting
+		);
 
-} // end demo_initialize_theme_options
-add_action( 'admin_init', 'demo_initialize_theme_options' );
+		// Define settings field.
+		add_settings_field(
+			'companyaddress',                       	// The ID (name) of the field
+			__('Address', 'secondthought '),	// The text used to label the field
+			'company_address_display', 							// Callback function to render the field
+			'inzite-options', 										// The menu page on which to display this field. Should match $menu_slug
+			'company_section'                     // The section to which we're adding the setting
+		);
 
-/*-----------------------------------------------*
+		// Define settings field.
+		add_settings_field(
+			'companyzip',                       	// The ID (name) of the field
+			__('Zip Code', 'secondthought '),	// The text used to label the field
+			'company_zip_display', 							// Callback function to render the field
+			'inzite-options', 										// The menu page on which to display this field. Should match $menu_slug
+			'company_section'                     // The section to which we're adding the setting
+		);
+
+		// Define settings field.
+		add_settings_field(
+			'companycity',                       	// The ID (name) of the field
+			__('City', 'secondthought '),	// The text used to label the field
+			'company_city_display', 							// Callback function to render the field
+			'inzite-options', 										// The menu page on which to display this field. Should match $menu_slug
+			'company_section'                     // The section to which we're adding the setting
+		);
+
+		// Define settings field.
+		add_settings_field(
+			'companyphone',                       	// The ID (name) of the field
+			__('Phone number', 'secondthought '),	// The text used to label the field
+			'company_phone_display', 							// Callback function to render the field
+			'inzite-options', 										// The menu page on which to display this field. Should match $menu_slug
+			'company_section'                     // The section to which we're adding the setting
+		);
+
+		// Define settings field.
+		add_settings_field(
+			'companyemail',                       	// The ID (name) of the field
+			__('Email address', 'secondthought '),	// The text used to label the field
+			'company_email_display', 							// Callback function to render the field
+			'inzite-options', 										// The menu page on which to display this field. Should match $menu_slug
+			'company_section'                     // The section to which we're adding the setting
+		);
+
+		// Register the 'companyname' setting with the 'Company Info' section.
+		register_setting(
+			'company_section', // A settings group name. Must exist prior to the register_setting call. This must match the group name in 'settings_fields()'
+			'company_options'  // The name of an option to sanitize and save
+		);
+
+} // END secondthought_initialize_theme_options
+
+add_action( 'admin_init', 'secondthought_initialize_theme_options');
+
+// END Sections, Settings & Fields
+
+
+/*--------------------------------------------*
  * Callbacks
-/*-----------------------------------------------*
+/*--------------------------------------------*/
 
-/**
- * Renders the content of the options page for the
- */
-function demo_theme_options_display() {
-?>
-	<div class="wrap">
-		<div id="icon-options-general" class="icon32"></div>
-		<h2>Demo Theme Options</h2>
-		<form method="post" action="options.php">
-			<?php
+function inzite_user_options_display() {
+	?>
+		<div class="wrap">
+			<h2>Inzite Options</h2>
+			<form method="post" action="options.php" >
+				<?php
 
-				// Render the settings for the settings section identified as 'Footer Section'
-				settings_fields( 'footer_section' );
+					// Render the settings for the settings section idetified as Firmainfo
+					settings_fields('company_section');
 
-				// Renders all of the settings for 'demo-theme-options' section
-				do_settings_sections( 'demo-theme-options' );
+					// Renders all of the settings for 'inzite-options' section
+					do_settings_sections('inzite-options');
 
-				// Add the submit button to serialize the options
-				submit_button();
-
-			?>
-		</form>
-	</div><!-- /.wrap -->
-<?php
-} // end demo_theme_options_display
+					// Add submit button to serialize options
+					submit_button();
+				?>
+			</form>
+		</div>
+	<?php
+}
 
 /**
  * Renders the description of the setting below the title of the section
  * and the above the actual settings.
  */
-function demo_footer_options_display() {
-	echo "These options are designed to help you control what's displayed in your footer.";
-} // end demo_footer_options_display
+function company_info_section_display() {
+	_e('Options to define and use the company info across the whole site.', 'secondthought');
+}
 
 /**
- * Renders the input field for the 'Footer Message' setting in the 'General Settings' section.
- */
-function demo_footer_message_display() {
+* Registers the input field for the 'Footer Message' setting in the 'General Settings' section.
+**/
 
-	// Read the options for the footer message section
-	$options = (array)get_option( 'footer_options' );
-	$message = $options['message'];
+function company_name_display() {
 
-	echo '<input type="text" name="footer_options[message]" id="footer_options[value]" value="' . $message . '" />';
+	$options = (array)get_option('company_options');
+	$name = $options['companyname'];
 
-} // end demo_footer_message_display
+	echo '<input type="text" name="company_options[companyname]" id="company_options[value]" value="' . $name . '" />';
+} // END company_name_display
+
+function company_address_display() {
+
+	$options = (array)get_option('company_options');
+	$address = $options['companyaddress'];
+
+	echo '<input type="text" name="company_options[companyaddress]" id="company_options[value]" value="' . $address . '" />';
+} // END company_address_display
+
+function company_zip_display() {
+
+	$options = (array)get_option('company_options');
+	$zip = $options['companyzip'];
+
+	echo '<input type="text" name="company_options[companyzip]" id="company_options[value]" value="' . $zip . '" />';
+} // END company_address_display
+
+function company_city_display() {
+
+	$options = (array)get_option('company_options');
+	$city = $options['companycity'];
+
+	echo '<input type="text" name="company_options[companycity]" id="company_options[value]" value="' . $city . '" />';
+} // END company_address_display
+
+function company_phone_display() {
+
+	$options = (array)get_option('company_options');
+	$phone = $options['companyphone'];
+
+	echo '<input type="tel" name="company_options[companyphone]" id="company_options[value]" value="' . $phone . '" />';
+} // END company_address_display
+
+function company_email_display() {
+
+	$options = (array)get_option('company_options');
+	$email = $options['companyemail'];
+
+	echo '<input type="email" name="company_options[companyemail]" id="company_options[value]" value="' . $email . '" />';
+} // END company_address_display
+
+// END Callbacks
+
+?>
