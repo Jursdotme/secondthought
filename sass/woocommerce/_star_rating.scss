@@ -2,9 +2,9 @@
 .star-rating {
   overflow: hidden;
   position: relative;
-  height: 1em;
-  line-height: 1em;
-  font-size: 1em;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 1rem;
   width: em(76);
   font-family: FontAwesome;
 
@@ -21,7 +21,7 @@
     top: 0;
     left: 0;
     position: absolute;
-    padding-top: 1.5em;
+    padding-top: 1.5rem;
   }
 
   span:before {
@@ -34,7 +34,7 @@
 }
 
 .woocommerce-product-rating {
-  line-height: 2em;
+  line-height: 2rem;
   display: block;
 
   .star-rating {
@@ -45,13 +45,13 @@
 .products {
   .star-rating {
     display: block;
-    margin: 0 0 .5em;
+    margin: 0 0 .5rem;
     float: none;
   }
 }
 
 .hreview-aggregate {
-	
+
   .star-rating {
     margin: 10px 0 0;
   }

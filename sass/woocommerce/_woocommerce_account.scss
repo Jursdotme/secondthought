@@ -42,7 +42,7 @@
       text-transform: uppercase;
       padding: $gutter/3 $gutter/4;
       vertical-align: middle;
-      
+
       @include media($sm-screen) {
         padding: $gutter/2;
       }
@@ -86,7 +86,7 @@
         dt {
           float: left;
           clear: left;
-          margin-right: .236em;
+          margin-right: .236rem;
         }
 
         dd {

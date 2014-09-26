@@ -85,7 +85,7 @@
         dt {
           float: left;
           clear: left;
-          margin-right: .236em;
+          margin-right: .236rem;
         }
 
         dd {
@@ -131,11 +131,11 @@
           @include span-columns(6);
           @include shift(0);
         }
-        
+
         margin-right: 2%;
         display: inline;
         padding: ($gutter/3)-1 $gutter/2;
-        font-size: .8em;
+        font-size: .8rem;
       }
     }
 

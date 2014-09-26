@@ -136,7 +136,7 @@ dfn {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
   margin: .67em 0;
 }
 
@@ -151,12 +151,12 @@ small {
 
 sub {
   @extend %extend-1;
-  bottom: -.25em;
+  bottom: -.25rem;
 }
 
 sup {
   @extend %extend-1;
-  top: -.5em;
+  top: -.5rem;
 }
 
 img {
@@ -172,22 +172,22 @@ hr {
 pre {
   overflow: auto;
   font-family: $font-1, $font-1;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 code {
   font-family: $font-1, $font-1;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 kbd {
   font-family: $font-1, $font-1;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 samp {
   font-family: $font-1, $font-1;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 button {
@@ -269,7 +269,7 @@ input[type="search"] {
 fieldset {
   border: 1px solid $silver;
   margin: 0 2px;
-  padding: .35em .625em .75em;
+  padding: .35rem .625rem .75rem;
 }
 
 legend {

@@ -10,7 +10,7 @@ label,
 select {
   display: block;
   font-family: $sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 label {
@@ -37,7 +37,7 @@ select[multiple=multiple] {
   border: 1px solid $form-border-color;
   box-shadow: $form-box-shadow;
   font-family: $sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   margin-bottom: $base-line-height/2;
   width: 100%;
   padding: $gutter/3 $gutter/2;

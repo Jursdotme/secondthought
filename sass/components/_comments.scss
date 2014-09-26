@@ -1,7 +1,7 @@
 .comment-body {
-  $comment-gutter: 1.4em;
+  $comment-gutter: 1.4rem;
   $comment-image-padding: 0;
-  $comment-image-width: 4em;
+  $comment-image-width: 4rem;
   $comment-color: $base-font-color;
   $comment-background: lighten($base-accent-color, 15);
   $comment-detail-color: transparentize($comment-color, .5);
@@ -10,7 +10,7 @@
   display: table;
   width: 100%;
   margin-bottom: $gutter;
-  padding-bottom: 1em;
+  padding-bottom: 1rem;
   border-bottom: 1px solid transparentize($comment-color, .9);
 
   .comment-author.vcard,
@@ -42,16 +42,16 @@
     width: 100%;
 
     h4 {
-      font-size: 1em;
-      margin-bottom: .5em;
+      font-size: 1rem;
+      margin-bottom: .5rem;
     }
 
     p {
-      margin-bottom: .5em;
+      margin-bottom: .5rem;
 
       &.comment-detail {
         font-style: italic;
-        font-size: .9em;
+        font-size: .9rem;
         color: $comment-detail-color;
       }
     }
