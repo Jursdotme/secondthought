@@ -24,6 +24,13 @@ $(document).ready(function() {
   });
 });
 
+$('.menu-item-has-children > a').bind('click', function(){
+  $(this).parent().find('> .sub-menu').toggleClass('visible');
+ // apply the toggle to the ul
+  $(this).toggleClass('is-expanded');
+  event.preventDefault();
+});
+
 /*-------------------  End of Top Navigation  --------------------*/
 
 /*=======================  Mobile Navigation  =======================*/
@@ -43,8 +50,10 @@ $(document).ready(function(){
   });
 });
 
-$('.menu-item-has-children > a').bind('click', function(){
-  $(this).parent().find('> .sub-menu').toggleClass('visible');
+
+
+$('.mobile-menu .menu-item-has-children > a').bind('click', function(){
+  $(this).parent().find('> .sub-menu').slideToggle('slow');
  // apply the toggle to the ul
   $(this).toggleClass('is-expanded');
   event.preventDefault();

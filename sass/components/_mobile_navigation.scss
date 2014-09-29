@@ -101,13 +101,14 @@ $mobile-menu-width             : 220px;
   -webkit-overflow-scrolling: touch;
 
   .sub-menu {
-    height: 0;
+    // height: 0;
     overflow: hidden;
-    @include transition (max-height 2s $authentic-motion);
+    display: none;
+    // @include transition (max-height 2s $authentic-motion);
 
     &.visible {
-      height: 100%;
-      @include transition (max-height 2s $authentic-motion);
+      // height: 100%;
+      // @include transition (max-height 2s $authentic-motion);
     }
   }
 
