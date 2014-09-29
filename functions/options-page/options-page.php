@@ -10,8 +10,8 @@ function inzite_add_options_page() {
 
 	// This will create a new top-level menu page.
 	add_menu_page(
-		__('Inzite Options', 'toro'),   // The text to be displayed in the title bar
-		__('Inzite Options', 'toro'),   // The text to be used for the menu
+		__('Inzite Options', 'secondthought'),   // The text to be displayed in the title bar
+		__('Inzite Options', 'secondthought'),   // The text to be used for the menu
 		'manage_options', 				      // The capability required for this menu to be displayed to the user.
 		'inzite-options', 				      // The slug name to refer to this menu by (should be unique for this menu).
 		'inzite_user_options_display', 	// The function to be called to output the content for this page
@@ -44,7 +44,7 @@ function secondthought_initialize_theme_options() {
 			// Define section
 			add_settings_section(
 				'company_location',   // String for use in the 'id' attribute of tags
-				__('Company Address', 'toro'), 	   // Title of the section
+				__('Company Address', 'secondthought'), 	   // Title of the section
 				'company_info_section_display', // Function that fills the section with the desired content. The function should echo its output
 				'inzite-options'     // The menu page on which to display this section (Should match $menu_slug)
 			);
@@ -94,7 +94,7 @@ function secondthought_initialize_theme_options() {
 			// Define section
 			add_settings_section(
 				'company_contact',   // String for use in the 'id' attribute of tags
-				__('Contact Information', 'toro'), 	   // Title of the section
+				__('Contact Information', 'secondthought'), 	   // Title of the section
 				'company_info_section_display', // Function that fills the section with the desired content. The function should echo its output
 				'inzite-options'     // The menu page on which to display this section (Should match $menu_slug)
 			);
@@ -126,7 +126,7 @@ function secondthought_initialize_theme_options() {
 			// Define section
 			add_settings_section(
 				'company_social',   							// String for use in the 'id' attribute of tags
-				__('Social Accounts', 'toro'), 		// Title of the section
+				__('Social Accounts', 'secondthought'), 		// Title of the section
 				'company_info_section_display', 	// Function that fills the section with the desired content. The function should echo its output
 				'inzite-options'     						  // The menu page on which to display this section (Should match $menu_slug)
 			);

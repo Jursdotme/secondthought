@@ -1,6 +1,6 @@
 <?php
 
-$replyText = '<span class="fa fa-reply"></span> ' . __('Reply', 'seconthought');
+$replyText = '<span class="fa fa-reply"></span> ' . __('Reply', 'secondthought');
 
 // Remove wp_head() injected Recent Comment styles
 function my_remove_recent_comments_style()
@@ -64,15 +64,15 @@ function secondthought_comments($comment, $args, $depth)
       <div class="comment-content">
 
         <?php if ($comment->comment_approved == '0') : ?>
-          <em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em>
+          <em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.', 'secondthought') ?></em>
           <br />
         <?php endif; ?>
 
-        <h4><?php printf(__('%s <span class="says">says:</span>'), get_comment_author_link()) ?></h4>
+        <h4><?php printf(__('%s <span class="says">says:</span>', 'secondthought'), get_comment_author_link()) ?></h4>
 
         <?php comment_text() ?>
         <p class="comment-detail">
-          <?php printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?><?php edit_comment_link('<span class="fa fa-pencil-square-o"></span>','  ','' ); ?>
+          <?php printf( __('%1$s at %2$s', 'secondthought'), get_comment_date(),  get_comment_time()) ?><?php edit_comment_link('<span class="fa fa-pencil-square-o"></span>','  ','' ); ?>
         </p>
 
         <div class="reply">

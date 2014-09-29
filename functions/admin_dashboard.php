@@ -52,7 +52,7 @@ http://digwp.com/2010/10/customize-wordpress-dashboard/
 */
 
 // RSS Dashboard Widget
-function toro_rss_dashboard_widget() {
+function secondthought_rss_dashboard_widget() {
 	if ( function_exists( 'fetch_feed' ) ) {
 		include_once( ABSPATH . WPINC . '/feed.php' );               // include the required file
 		$feed = fetch_feed( 'http://inzite.dk.linux13.curanetserver.dk/feed/rss/' );        // specify the source feed
@@ -75,8 +75,8 @@ function toro_rss_dashboard_widget() {
 }
 
 // calling all custom dashboard widgets
-function toro_custom_dashboard_widgets() {
-	wp_add_dashboard_widget( 'toro_rss_dashboard_widget', __( 'Latest News from INZITE', 'secondthought' ), 'toro_rss_dashboard_widget' );
+function secondthought_custom_dashboard_widgets() {
+	wp_add_dashboard_widget( 'secondthought_rss_dashboard_widget', __( 'Latest News from INZITE', 'secondthought' ), 'secondthought_rss_dashboard_widget' );
 	/*
 	Be sure to drop any other created Dashboard Widgets
 	in this function and they will all load.
@@ -86,7 +86,7 @@ function toro_custom_dashboard_widgets() {
 // removing the dashboard widgets
 add_action( 'admin_menu', 'disable_default_dashboard_widgets' );
 // adding any custom widgets
-add_action( 'wp_dashboard_setup', 'toro_custom_dashboard_widgets' );
+add_action( 'wp_dashboard_setup', 'secondthought_custom_dashboard_widgets' );
 
 /************* CUSTOM LOGIN PAGE *****************/
 
@@ -94,20 +94,20 @@ add_action( 'wp_dashboard_setup', 'toro_custom_dashboard_widgets' );
 
 //Updated to proper 'enqueue' method
 //http://codex.wordpress.org/Plugin_API/Action_Reference/login_enqueue_scripts
-function toro_login_css() {
-	wp_enqueue_style( 'toro_login_css', get_template_directory_uri() . '/build/stylesheets/admin.css', true );
+function secondthought_login_css() {
+	wp_enqueue_style( 'secondthought_login_css', get_template_directory_uri() . '/build/stylesheets/admin.css', true );
 }
 
 // changing the logo link from wordpress.org to your site
-function toro_login_url() {  return 'http://www.inzite.dk/'; }
+function secondthought_login_url() {  return 'http://www.inzite.dk/'; }
 
 // changing the alt text on the logo to show your site name
-function toro_login_title() { return get_option( 'INZITE Media & Marketing' ); }
+function secondthought_login_title() { return get_option( 'INZITE Media & Marketing' ); }
 
 // calling it only on the login page
-add_action( 'login_enqueue_scripts', 'toro_login_css', 10 );
-add_filter( 'login_headerurl', 'toro_login_url' );
-add_filter( 'login_headertitle', 'toro_login_title' );
+add_action( 'login_enqueue_scripts', 'secondthought_login_css', 10 );
+add_filter( 'login_headerurl', 'secondthought_login_url' );
+add_filter( 'login_headertitle', 'secondthought_login_title' );
 
 /************* CUSTOMIZE ADMIN *******************/
 
@@ -119,18 +119,18 @@ you like.
 */
 
 // Custom Stylesheet
-function toro_custom_wp_admin_style() {
+function secondthought_custom_wp_admin_style() {
   wp_enqueue_style( 'custom_wp_admin_css', get_template_directory_uri() . '/build/stylesheets/admin.css', false );
 }
-add_action( 'admin_enqueue_scripts', 'toro_custom_wp_admin_style' );
+add_action( 'admin_enqueue_scripts', 'secondthought_custom_wp_admin_style' );
 
 // Custom Backend Footer
-function toro_custom_admin_footer() {
+function secondthought_custom_admin_footer() {
 	_e( 'Made by Inzite', 'secondthought' );
 }
 
 // adding it to the admin area
-add_filter( 'admin_footer_text', 'toro_custom_admin_footer' );
+add_filter( 'admin_footer_text', 'secondthought_custom_admin_footer' );
 
 /********* ADD CUSTOM EDITOR CLASSES TO TINYMCE ***********/
 
@@ -206,7 +206,7 @@ function tomjn_deny_giant_images($file){
 }
 // add_filter('wp_handle_upload_prefilter','tomjn_deny_giant_images');
 
-/************* LOAD CUSTOM TORO ADMIN COLOR SCHEME *******************/
+/************* LOAD CUSTOM secondthought ADMIN COLOR SCHEME *******************/
 
 function load_custom_wp_admin_style() {
 				wp_register_script( 'custom_wp_admin_css', get_template_directory_uri() . '/javascripts/admin-scripts.js', true, '1.0.0' );
@@ -215,7 +215,7 @@ function load_custom_wp_admin_style() {
 
 // add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
 
-/************* LOAD CUSTOM TORO ADMIN WELCOME MESSAGE *******************/
+/************* LOAD CUSTOM secondthought ADMIN WELCOME MESSAGE *******************/
 
 add_action( 'admin_bar_menu', 'wp_admin_bar_my_custom_account_menu', 11 );
 
