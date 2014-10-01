@@ -25,6 +25,16 @@ require_once( 'functions/comments.php' ); // Custom Comments callback
 require_once( 'functions/options-page/options-page.php' ); // Custom Comments callback
 require_once( 'functions/contact-form-7-fixes.php' ); // Custom Comments callback
 
+
+/*--------------------------------------------*
+ * OPTIONS FRAMEWORK
+/*--------------------------------------------*/
+
+  define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/functions/options_pages/' );
+  require_once dirname( __FILE__ ) . '/functions/options_pages/options-framework.php';
+
+// END OPTIONS FRAMEWORK
+
 /*------------------------------------*\
 	Theme Support
 \*------------------------------------*/
