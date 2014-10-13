@@ -1,12 +1,12 @@
-@mixin flash($color) {
-  background: $color;
-  color: darken($color, 60);
-
+@mixin flash($bg-color) {
+  background: $bg-color;
+  color: tint($bg-color, 70%);
   a {
-    color: darken($color, 70);
+    color: tint($bg-color, 85%);
+    text-decoration: underline;
 
     &:hover {
-      color: darken($color, 90);
+      color: tint($bg-color, 90%);
     }
   }
 }
@@ -36,4 +36,22 @@
 %flash-success {
   @extend %flash-base;
   @include flash($success-color);
+}
+
+// Default Alerts
+
+.success {
+  @extend %flash-success;
+}
+
+.notice {
+  @extend %flash-notice;
+}
+
+.alert {
+  @extend %flash-alert;
+}
+
+.error {
+  @extend %flash-error;
 }

@@ -5,7 +5,6 @@
 
 @import '../bower_components/bitters/app/assets/stylesheets/mixins/flash';
 
-@import 'base/colors';
 @import 'base/variables';
 @import 'base/typography';
 @import 'base/mixins';
@@ -26,6 +25,7 @@
 @import 'components/header';
 @import 'components/frontpage_slider';
 @import 'components/comments';
+@import 'components/google-maps';
 
 @import 'woocommerce/woocommerce_base';
 

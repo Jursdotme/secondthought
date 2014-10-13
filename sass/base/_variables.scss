@@ -13,19 +13,25 @@ $brand-primary: #3877bc;
 $brand-secondary: #b5c445;
 
 // Grays
-$gray-dark-1: #4d4d4d;
-$gray-dark-2: #222326;
-$gray-dark-3: #141414;
+$dark-gray-1-color: #4d4d4d;
+$dark-gray-2-color: #222326;
+$dark-gray-3-color: #141414;
 
-$gray-light-1: #e6e6e6;
-$gray-light-2: #e6e6e6;
-$gray-light-3: #e6e6e6;
+$light-gray-1-color: #e6e6e6;
+$light-gray-2-color: #e6e6e6;
+$light-gray-3-color: #e6e6e6;
 
-// Colors
-$light-gray: #ddd;
-$light-red: #fbe3e4;
-$light-yellow: #fff6bf;
-$light-green: #e6efc2;
+// Flash Colors
+$alert-color: #f1c40f; // A yellow/Orange color
+$error-color: #e74c3c; // A red color
+$notice-color: #9b59b6; // A Blue color
+$success-color: #2ecc71; // A green color
+
+// Light Flash Colors
+$light-alert-color: tint($alert-color, 50%);
+$light-error-color: tint($error-color, 50%);
+$light-notice-color: tint($notice-color, 50%);
+$light-success-color: tint($success-color, 50%);
 
 // Background Color
 $base-background-color: #f8f8f8;
@@ -41,13 +47,7 @@ $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 
 // Border color
-$base-border-color: $light-gray;
-
-// Flash Colors
-$alert-color: #f39c12;
-$error-color: #e74c3c;
-$notice-color: #9b59b6;
-$success-color: #2ecc71;
+$base-border-color: $light-gray-1-color;
 
 // Nice to have colors
 $facebook-color: #3B5998;

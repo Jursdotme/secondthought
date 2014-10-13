@@ -10,7 +10,7 @@
 
   &:before {
     content: '\f005\f005\f005\f005\f005';
-    color: $base-silver;
+    color: $light-gray-3-color;
     top: 0;
     left: 0;
     position: absolute;
@@ -29,7 +29,7 @@
     top: 0;
     position: absolute;
     left: 0;
-    color: $base-sunflower;
+    color: $alert-color;
   }
 }
 

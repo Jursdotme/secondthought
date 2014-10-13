@@ -65,7 +65,7 @@ gulp.task('sass', function () {
 
 gulp.task('sass-dev', function () {
     return gulp.src(paths.sass)
-        .pipe(sass({sourcemap: true, sourcemapPath: '../../sass'}))
+        .pipe(sass({sourcemap: true, style: 'nested', lineNumbers:true, sourcemapPath: '../../sass'}))
         .on('error', function (err) { console.log(err.message); })
         .pipe(gulp.dest('build/stylesheets'));
 });
