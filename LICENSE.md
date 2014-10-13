@@ -1,10 +1,12 @@
-# [HTML5 Blank](http://secondthought.com) License
+[HTML5 Blank](http://jurs.me) License
+=====================================
 
-## MIT License
+MIT License
+-----------
 
-Copyright &copy; 2013 HTML5 Blank // @secondthought
+Copyright &copy; 2013 SecondThought // @secondthought
 
-Built by Todd Motto // @toddmotto
+Built by Rasmus Jürs // @jursdotme
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
