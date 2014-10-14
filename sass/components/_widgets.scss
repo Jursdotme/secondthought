@@ -5,9 +5,17 @@ aside.footer-bar {
     @include fixed-container;
 
     > .footer-bar-widget {
-      @include span-columns(12);
-      @include media($sm-screen) {
-        @include span-columns(4);
+      @include media($lg) {
+        @include span-columns(4 of 12);
+      }
+      @include media($md) {
+        @include span-columns(4 of 12);
+      }
+      @include media($sm) {
+        @include span-columns(4 of 12);
+      }
+      @include media($xs) {
+        @include span-columns(12);
       }
     }
   }

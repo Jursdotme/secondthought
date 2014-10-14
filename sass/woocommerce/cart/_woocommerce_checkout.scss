@@ -5,15 +5,7 @@
 
     section {
       @include span-columns(12);
-      @include media($sm-screen) {
-        @include span-columns(12);
-        @include shift(0);
-      }
-
-      @include media($md-screen) {
-        @include span-columns(12);
-        @include shift(0);
-      }
+      @include shift(0)
     }
   }
 
@@ -23,8 +15,10 @@
 
   .login .form-row,
   .login .checkout_coupon {
-    @include span-columns(12);
-    @include media($sm-screen) {
+    @include media($sm-down) {
+      @include span-columns(12);
+    }
+    @include media($md-up) {
       @include span-columns(6);
     }
 
@@ -41,8 +35,10 @@
 
   .col-1,
   .col-2 {
-    @include span-columns(12);
-    @include media($sm-screen) {
+    @include media($xs) {
+      @include span-columns(12);
+    }
+    @include media($sm-up) {
       @include span-columns(6);
     }
   }
@@ -66,8 +62,10 @@
   #shipping_postcode_field,
   #shipping_email_field,
   #shipping_phone_field {
-    @include span-columns(12);
-    @include media($sm-screen) {
+    @include media($xs) {
+      @include span-columns(12);
+    }
+    @include media($sm-up) {
       @include span-columns(6);
     }
   }
@@ -102,10 +100,13 @@
       border-right: 1px dotted #e4e4e3;
       border-bottom: 0;
       text-transform: uppercase;
-      padding: $gutter/3 $gutter/4;
       vertical-align: middle;
 
-      @include media($sm-screen) {
+      @include media($xs) {
+        padding: $gutter/3 $gutter/4;
+      }
+
+      @include media($sm-up) {
         padding: $gutter/2;
       }
     }
@@ -113,10 +114,13 @@
     th {
       padding: $gutter;
       text-transform: uppercase;
-      padding: $gutter/3 $gutter/4;
       vertical-align: middle;
 
-      @include media($sm-screen) {
+      @include media($xs) {
+        padding: $gutter/3 $gutter/4;
+      }
+
+      @include media($sm-up) {
         padding: $gutter/2;
       }
     }
@@ -124,10 +128,13 @@
     td {
       text-align: left;
       border-right: 1px solid #e6e6e6;
-      padding: $gutter/3 $gutter/4;
       vertical-align: middle;
 
-      @include media($sm-screen) {
+      @include media($xs) {
+        padding: $gutter/3 $gutter/4;
+      }
+
+      @include media($sm-up) {
         padding: $gutter/2;
       }
 

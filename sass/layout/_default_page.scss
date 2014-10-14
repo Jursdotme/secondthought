@@ -4,16 +4,19 @@
     @include fixed-container;
     @include pad($gutter*3 $gutter);
     section {
-
-      @include span-columns(12);
-      @include media($sm-screen) {
+      @include media($lg) {
+        @include span-columns(8);
+        @include shift(2);
+      }
+      @include media($md) {
         @include span-columns(10);
         @include shift(1);
       }
-
-      @include media($md-screen) {
-        @include span-columns(8);
-        @include shift(2);
+      @include media($sm) {
+        @include span-columns(12);
+      }
+      @include media($xs) {
+        @include span-columns(12);
       }
     }
   }

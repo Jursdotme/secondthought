@@ -17,6 +17,11 @@ var paths = {
   scripts: [
     'bower_components/matchHeight/jquery.matchHeight.js',
     'bower_components/owl-carousel2/dist/owl.carousel.js',
+    'bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js',
+    'bower_components/fancybox/source/jquery.fancybox.js',
+    'bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js',
+    'bower_components/fancybox/source/helpers/jquery.fancybox-media.js',
+    'bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js',
     'javascripts/concat/*.js',
   ]
 };

@@ -12,6 +12,10 @@
 .woocommerce-result-count {
   margin: 0 0 $gutter/2;
   float: right;
+  @include media($xs) {
+    float: left;
+    margin-right: $gutter/2;
+  }
 }
 
 .woocommerce-ordering {
@@ -26,21 +30,24 @@ ul.products {
 }
 
 li.product {
-  @include span-columns(12);
-  padding-bottom: $gutter*2;
 
-  @include media($sm-screen) {
+  padding-bottom: $gutter*2;
+  @include media($xs) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+  @include media($sm) {
     @include span-columns(6);
     @include omega(2n);
   }
 
-  @include media($md-screen) {
+  @include media($md) {
     @include span-columns(4);
     @include omega-reset(2n);
     @include omega(3n);
   }
 
-  @include media($lg-screen) {
+  @include media($lg) {
     @include span-columns(3);
     @include omega-reset(3n);
     @include omega(4n);

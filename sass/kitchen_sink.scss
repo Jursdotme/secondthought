@@ -6,12 +6,11 @@ section.container {
   @include pad($gutter*3 $gutter);
   .wrapper {
 
-    @include span-columns(12);
-    @include media($sm-screen) {
+    @include media($sm-down) {
       @include span-columns(12);
     }
 
-    @include media($md-screen) {
+    @include media($md-up) {
       @include span-columns(12);
     }
   }
@@ -130,9 +129,11 @@ section.container {
   @include pad($gutter/2);
   @extend %color-snippet;
 
-  @include span-columns(6 of 12);
+  @include media($xs) {
+    @include span-columns(6 of 12);
+  }
 
-  @include media($sm-screen) {
+  @include media($sm-up) {
     @include span-columns(3 of 12);
 
   }

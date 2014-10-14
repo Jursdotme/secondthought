@@ -6,12 +6,12 @@
 
     section {
       @include span-columns(12);
-      @include media($sm-screen) {
+      @include media($sm-down) {
         @include span-columns(12);
         @include shift(0);
       }
 
-      @include media($md-screen) {
+      @include media($md-up) {
         @include span-columns(12);
         @include shift(0);
       }
@@ -38,7 +38,7 @@
   table.cart td.product-price {
     display: none;
 
-    @include media($md-screen) {
+    @include media($md-up) {
       display: table-cell;
     }
   }
@@ -47,23 +47,28 @@
     border-right: 1px dotted #e4e4e3;
     border-bottom: 0;
     text-transform: uppercase;
-    padding: $gutter/3 $gutter/4;
 
+    @include media($sm-down) {
+      padding: $gutter/3 $gutter/4;
+    }
 
-    @include media($md-screen) {
+    @include media($md-up) {
       padding: $gutter;
     }
   }
 
   table td,
   table th {
-    padding: $gutter/3 $gutter/4;
     text-align: left;
     border-right: 1px solid #e6e6e6;
     vertical-align: middle;
 
-    @include media($md-screen) {
-      padding: $gutter/2 $gutter;
+    @include media($sm-down) {
+      padding: $gutter/3 $gutter/4;
+    }
+
+    @include media($md-up) {
+      padding: $gutter/2;
     }
   }
 
@@ -107,8 +112,11 @@
     text-align: right;
 
     .coupon {
-      @include span-columns(12);
-      @include media($md-screen) {
+      @include media($sm-down) {
+        @include span-columns(12);
+        @include shift(0);
+      }
+      @include media($md-up) {
         @include span-columns(6);
         @include shift(0);
       }
@@ -126,8 +134,11 @@
       }
 
       input.input-text {
-        @include span-columns(6);
-        @include media($md-screen) {
+        @include media($sm-down) {
+          @include span-columns(6);
+          @include shift(0);
+        }
+        @include media($md-up) {
           @include span-columns(6);
           @include shift(0);
         }
@@ -148,17 +159,22 @@
   }
 
   .cross-sells {
-    @include span-columns(6);
-    @include media($md-screen) {
+    @include media($sm-down) {
+      @include span-columns(6);
+      @include shift(0);
+    }
+    @include media($md-up) {
       @include span-columns(6);
       @include shift(0);
     }
 
     li.product {
-      @include span-columns(12);
       padding-bottom: $gutter*2;
+      @include media($xs) {
+        @include span-columns(12);
+      }
 
-      @include media($sm-screen) {
+      @include media($sm-up) {
         @include span-columns(6);
         @include omega(2n);
       }
@@ -166,16 +182,20 @@
   }
 
   .cart_totals {
-    @include span-columns(6);
-    @include media($md-screen) {
+    @include media($xs) {
+      @include span-columns(6);
+    }
+    @include media($md-up) {
       @include span-columns(6);
       @include omega();
     }
   }
 
   .shipping_calculator {
-    @include span-columns(6);
-    @include media($md-screen) {
+    @include media($xs) {
+      @include span-columns(6);
+    }
+    @include media($md-up) {
       @include span-columns(6);
       @include shift(0);
     }

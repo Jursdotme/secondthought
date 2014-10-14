@@ -3,13 +3,18 @@
     @include fixed-container;
     @include pad($gutter*3 $gutter);
     section {
-
-      @include span-columns(12);
-      @include media($sm-screen) {
+      @include media($lg) {
+        @include span-columns(8);
+        @include shift(2);
+      }
+      @include media($md) {
+        @include span-columns(10);
+        @include shift(1);
+      }
+      @include media($sm) {
         @include span-columns(12);
       }
-
-      @include media($md-screen) {
+      @include media($xs) {
         @include span-columns(12);
       }
     }
@@ -20,23 +25,29 @@
   }
 
   .form-row {
-    @include span-columns(12);
-    @include media($sm-screen) {
+    @include media($xs) {
+      @include span-columns(12);
+    }
+    @include media($sm-up) {
       @include span-columns(6);
     }
 
 
 
     &.zip {
-      @include span-columns(12);
-      @include media($sm-screen) {
+      @include media($xs) {
+        @include span-columns(12);
+      }
+      @include media($sm-up) {
         @include span-columns(3);
       }
     }
 
     &.city {
-      @include span-columns(12);
-      @include media($sm-screen) {
+      @include media($xs) {
+        @include span-columns(12);
+      }
+      @include media($sm-up) {
         @include span-columns(9);
       }
     }
@@ -47,8 +58,10 @@
   }
 
   .form-row-wide {
-    @include span-columns(12);
-    @include media($sm-screen) {
+    @include media($xs) {
+      @include span-columns(12);
+    }
+    @include media($sm-up) {
       @include span-columns(12);
     }
   }
@@ -73,8 +86,10 @@
     height: 400px;
     border: 0;
     margin: 20px 0;
-    @include span-columns(12);
-    @include media($sm-screen) {
+    @include media($xs) {
+      @include span-columns(12);
+    }
+    @include media($sm-up) {
       @include span-columns(5);
       @include omega();
     }
@@ -83,8 +98,10 @@
   .gm-style img { max-width: none; }
 
   .wpcf7 {
-    @include span-columns(12);
-    @include media($sm-screen) {
+    @include media($xs) {
+      @include span-columns(12);
+    }
+    @include media($sm-up) {
       @include span-columns(7);
     }
   }

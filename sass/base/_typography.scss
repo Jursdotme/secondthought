@@ -18,17 +18,21 @@ body {
 
 h1 {
   font-family: $slab;
-  line-height: 1.25;
-  font-size: 2rem;
+
   font-weight: 700;
   margin: 1rem 0 .6875rem;
 
-  @include media($medium-screen) {
+  @include media($sm-down) {
+    line-height: 1.25;
+    font-size: 2rem;
+  }
+
+  @include media($md) {
     font-size: 2.5rem;
     line-height: 1.125;
   }
 
-  @include media($large-screen) {
+  @include media($lg) {
     font-size: 3rem;
     line-height: 1.05;
   }
@@ -37,17 +41,20 @@ h1 {
 h2 {
   font-family: $slab;
   font-style: italic;
-  font-size: 1.625rem;
   font-weight: 400;
-  line-height: 1.15384615;
   margin: 1rem 0 .6875rem;
 
-  @include media($medium-screen) {
+  @include media($sm-down) {
+    font-size: 1.625rem;
+    line-height: 1.15384615;
+  }
+
+  @include media($md) {
     font-size: 2rem;
     line-height: 1.125;
   }
 
-  @include media($large-screen) {
+  @include media($lg) {
     font-size: 2.25rem;
     line-height: 1.25;
   }
@@ -55,17 +62,20 @@ h2 {
 
 h3 {
   font-family: $slab;
-  font-size: 1.375rem;
   font-weight: 400;
-  line-height: 1.13636364;
   margin: 1rem 0 .6875rem;
 
-  @include media($medium-screen) {
+  @include media($sm-down) {
+    font-size: 1.375rem;
+    line-height: 1.13636364;
+  }
+
+  @include media($md) {
     font-size: 1.5rem;
     line-height: 1.25;
   }
 
-  @include media($large-screen) {
+  @include media($lg) {
     font-size: 1.75rem;
     line-height: 1.25;
   }
@@ -73,17 +83,20 @@ h3 {
 
 h4 {
   font-family: $slab;
-  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.11111111;
   margin: 1rem 0 .6875rem;
 
-  @include media($medium-screen) {
+  @include media($sm-down) {
+    font-size: 1.125rem;
+    line-height: 1.11111111;
+  }
+
+  @include media($md) {
     font-size: 1.125rem;
     line-height: 1.22222222;
   }
 
-  @include media($large-screen) {
+  @include media($lg) {
     font-size: 1.125rem;
     line-height: 1.22222222;
   }

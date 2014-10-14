@@ -22,6 +22,7 @@
     "bitters": "~0.10.0",
     "bourbon": "~4.0.2",
     "neat": "~1.6.0",
-    "owl-carousel2": "*"
+    "owl-carousel2": "*",
+    "fancybox": "~2.1.5"
   }
 }
