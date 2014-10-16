@@ -45,10 +45,6 @@
 
 				<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 
-				<br class="clear">
-
-				<?php edit_post_link(); ?>
-
 			</article>
 			<!-- /article -->
 

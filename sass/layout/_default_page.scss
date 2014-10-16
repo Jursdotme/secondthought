@@ -1,4 +1,4 @@
-.page-template-default,
+.page-template-default:not(.home),
 .error404 {
   main {
     @include fixed-container;
