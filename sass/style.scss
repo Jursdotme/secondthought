@@ -30,11 +30,11 @@
 
 @import 'vendors/vendors';
 
-@import 'woocommerce/woocommerce_base';
-
 @import 'layout/footer';
 @import 'layout/frontpage';
 @import 'layout/news';
 @import 'layout/default_page';
 @import 'layout/404';
 @import 'layout/contact';
+
+@import 'woocommerce/woocommerce_base';

@@ -25,42 +25,42 @@ msgstr "Tag Arkiv:"
 # <button class="fa fa-search search-submit" type="submit" role="button"></button>
 # wpml-name: 330a56bc95a107e737f47476013e4f50
 msgid "To search, type and hit enter."
-msgstr "For at søge, indtast og tryk enter."
+msgstr "Skriv og tryk Enter for at søge."
 
 #
 # <h1><?php echo sprintf( __( '%s Search Results for ', 'secondthought' ), $wp_query->found_posts ); echo get_search_query(); ?></h1>
 #
 # wpml-name: 8c98c0f5ce62159cc4a3834bf42251b3
 msgid "%s Search Results for "
-msgstr "%s søgeresultater for"
+msgstr "%s Søgeresultater for"
 
 #
-# <h1><?php _e( 'Latest Posts', 'secondthought' ); ?></h1>
+# <h1><?php _e( 'Latest News', 'secondthought' ); ?></h1>
 #
-# wpml-name: 0d6be9e594068440406252ec37b9c1c3
-msgid "Latest Posts"
-msgstr "Seneste Posts"
+# wpml-name: 099afb04ddf259fff6a50c50d7eae060
+msgid "Latest News"
+msgstr "Seneste nyt"
 
 # register_sidebar(array(
 # 'name'          => __('Footer Right Widget Area 3', 'secondthought'),
 # 'description'   => __('Widget area for the footer, this is the Left column', 'secondthought'),
 # wpml-name: 7a90390df8213f1d3965a1a601853965
 msgid "Footer Right Widget Area 3"
-msgstr "Sidefod Højre Widget Område 3"
+msgstr "Sidefod Højre Widget område 3"
 
 # register_sidebar(array(
 # 'name'          => __('Footer Center Widget Area 2', 'secondthought'),
 # 'description'   => __('Widget area for the footer, this is the Left column', 'secondthought'),
 # wpml-name: 4e2190a4857253c8fdf5d11608ec953c
 msgid "Footer Center Widget Area 2"
-msgstr "Sidefod Midt Widget Område 2"
+msgstr "Sidefod Midterste Widget område 2"
 
 # 'name'          => __('Footer Left Widget Area', 'secondthought'),
 # 'description'   => __('Widget area for the footer, this is the Left column', 'secondthought'),
 # 'id'            => 'widget-area-1',
 # wpml-name: d8bd4fc32b3ee6ef8a549d094724655b
 msgid "Widget area for the footer, this is the Left column"
-msgstr "Widget område for sidefoden, Dette er den venstre colone"
+msgstr "Widgetområde for sidefod, dette er den venstre kolonne"
 
 # register_sidebar(array(
 # 'name'          => __('Footer Left Widget Area', 'secondthought'),
@@ -69,13 +69,27 @@ msgstr "Widget område for sidefoden, Dette er den venstre colone"
 msgid "Footer Left Widget Area"
 msgstr "Sidefod Venstre Widget område"
 
+# add_menu_page(
+# __('Inzite Options', 'secondthought'),   // The text to be displayed in the title bar
+# __('Inzite Options', 'secondthought'),   // The text to be used for the menu
+# wpml-name: 911746bd56fefd6d8d280df492b1081e
+msgid "Inzite Options"
+msgstr "Inzite Instillinger"
+
+# 'gallery_settings_section',   							// String for use in the 'id' attribute of tags
+# __('Gallery Settings', 'secondthought'), 		// Title of the section
+# 'gallery_section_display', 	// Function that fills the section with the desired content. The function should echo its output
+# wpml-name: 3e28f7c94f7a6dad9bdc6025cbd31278
+msgid "Gallery Settings"
+msgstr "Galleri Instillinger"
+
 # function company_info_section_display() {
 # _e('Options to define and use the company info across the whole site.', 'secondthought');
 # }
 # wpml-name: 81944b35a2934b4f03f794a16c9c82aa
 msgid "Options to define and use the company info across the whole site."
 msgstr ""
-"Instillinger for at definere og bruge Firma oplysninger over hele siden."
+"Instillinger til at definere og bruge firmaoplysninger over hele siden."
 
 # 'companylinkedin',                // The ID (name) of the field
 # __('LinkedIn', 'secondthought '),	// The text used to label the field
@@ -110,7 +124,7 @@ msgstr "Facebook"
 # 'company_info_section_display', 	// Function that fills the section with the desired content. The function should echo its output
 # wpml-name: 09efa11e0d5bea8aee3fe802a35f47fe
 msgid "Social Accounts"
-msgstr "Sociale kontoer"
+msgstr "Sociale Kontoer"
 
 # 'companyemail',                       	// The ID (name) of the field
 # __('Email address', 'secondthought '),	// The text used to label the field
@@ -124,56 +138,49 @@ msgstr "Email Adresse"
 # 'company_phone_display', 							// Callback function to render the field
 # wpml-name: 1f8261d17452a959e013666c5df45e07
 msgid "Phone number"
-msgstr "Telefon Nummer"
+msgstr "Telefonnummer"
 
 # 'company_contact',   // String for use in the 'id' attribute of tags
 # __('Contact Information', 'secondthought'), 	   // Title of the section
 # 'company_info_section_display', // Function that fills the section with the desired content. The function should echo its output
 # wpml-name: c00c8ee9c3a4382d270dc939649f9b53
 msgid "Contact Information"
-msgstr "Kontakt information"
+msgstr "Kontaktinfo"
 
 # 'companycity',                       	// The ID (name) of the field
-# __('City', 'secondthought '),	// The text used to label the field
+# __('City', 'secondthought '),	        // The text used to label the field
 # 'company_city_display', 							// Callback function to render the field
 # wpml-name: 57d056ed0984166336b7879c2af3657f
 msgid "City"
 msgstr "By"
 
-# 'companyzip',                       	// The ID (name) of the field
-# __('Zip Code', 'secondthought '),	// The text used to label the field
-# 'company_zip_display', 							// Callback function to render the field
+# 'companyzip',                       	 // The ID (name) of the field
+# __('Zip Code', 'secondthought '),	     // The text used to label the field
+# 'company_zip_display', 							   // Callback function to render the field
 # wpml-name: 5e178542b85fb18ca3c459e9a95f4f2e
 msgid "Zip Code"
 msgstr "Post nr."
 
-# 'companyaddress',                       	// The ID (name) of the field
-# __('Address', 'secondthought '),	// The text used to label the field
+# 'companyaddress',                       // The ID (name) of the field
+# __('Address', 'secondthought '),	      // The text used to label the field
 # 'company_address_display', 							// Callback function to render the field
 # wpml-name: dd7bf230fde8d4836917806aff6a6b27
 msgid "Address"
 msgstr "Adresse"
 
-# 'companyname',                       	// The ID (name) of the field
-# __('Company Name', 'secondthought '),	// The text used to label the field
-# 'company_name_display', 							// Callback function to render the field
+# 'companyname',                        	// The ID (name) of the field
+# __('Company Name', 'secondthought '), 	// The text used to label the field
+# 'company_name_display', 						    // Callback function to render the field
 # wpml-name: e7b47c58815acf1d3afa59a84b5db7fb
 msgid "Company Name"
 msgstr "Firmanavn"
 
-# 'company_location',   // String for use in the 'id' attribute of tags
-# __('Company Address', 'secondthought'), 	   // Title of the section
-# 'company_info_section_display', // Function that fills the section with the desired content. The function should echo its output
+# 'company_location',                     // String for use in the 'id' attribute of tags
+# __('Company Address', 'secondthought'), // Title of the section
+# 'company_info_section_display',         // Function that fills the section with the desired content. The function should echo its output
 # wpml-name: 3d45d512eecfa4e99ab022fb3478a56a
 msgid "Company Address"
-msgstr "Firma Adresse"
-
-# add_menu_page(
-# __('Inzite Options', 'secondthought'),   // The text to be displayed in the title bar
-# __('Inzite Options', 'secondthought'),   // The text to be used for the menu
-# wpml-name: 911746bd56fefd6d8d280df492b1081e
-msgid "Inzite Options"
-msgstr "Inzite Instillinger"
+msgstr "Firma adresse"
 
 # 'header-menu' => __('Header Menu', 'secondthought'), // Main Navigation
 # 'mobile_nav' => __('Mobile Menu', 'secondthought') // Main Navigation
@@ -187,14 +194,14 @@ msgstr "Mobil Menu"
 # 'mobile_nav' => __('Mobile Menu', 'secondthought') // Main Navigation
 # wpml-name: 68ddac81671c6c3d920b49dea2c73976
 msgid "Header Menu"
-msgstr "Sidehoved Menu"
+msgstr "Hoved Menu"
 
 # global $post;
 # return '... <a class="read-more" href="' . get_permalink($post->ID) . '">' . __('View Article', 'secondthought') . '</a>';
 # } ?>
 # wpml-name: 5c8a17e769d5f919d541ba2fd91ecc40
 msgid "View Article"
-msgstr "Se Artikel"
+msgstr "Se artikel"
 
 # $labels->not_found_in_trash = __( 'No News found in Trash', 'secondthought' );
 # $labels->all_items = __( 'All News', 'secondthought' );
@@ -208,7 +215,7 @@ msgstr "Alle Nyheder"
 # $labels->all_items = __( 'All News', 'secondthought' );
 # wpml-name: 722197e78a8e829712d63cdad8ff5ad8
 msgid "No News found in Trash"
-msgstr "Ingen nyheder fundet i Papirkurven"
+msgstr "Ingen Nyheder fundet i Papirkurven"
 
 # $labels->search_items = __( 'Search News', 'secondthought' );
 # $labels->not_found = __( 'No News found', 'secondthought' );
@@ -222,7 +229,7 @@ msgstr "Ingen Nyheder fundet"
 # $labels->not_found = __( 'No News found', 'secondthought' );
 # wpml-name: 49b906e8a737524f5765c1ee72cc8ff1
 msgid "Search News"
-msgstr "Søg i Nyheder"
+msgstr "Søg efter Nyhed"
 
 # $labels->new_item = __( 'News', 'secondthought' );
 # $labels->view_item = __( 'View News', 'secondthought' );
@@ -243,7 +250,7 @@ msgstr "Rediger Nyhed"
 # echo '';
 # wpml-name: 9e0365e706fe49396f8789702d89d6a6
 msgid "News Tags"
-msgstr "Nyheds tags"
+msgstr "Nyheds Tags"
 
 # $submenu['edit.php'][5][0] = __( 'News', 'secondthought' );
 # $submenu['edit.php'][10][0] = __( 'Add News', 'secondthought' );
@@ -264,14 +271,14 @@ msgstr "Nyheder"
 # <br />
 # wpml-name: 6954378552054e698cfff1a52b0eca9d
 msgid "Your comment is awaiting moderation."
-msgstr "Din kommentar afventer godkendelse"
+msgstr "Din kommentar afventer godkendelse."
 
 # <p class="comment-detail">
 # <?php printf( __('%1$s at %2$s', 'secondthought'), get_comment_date(),  get_comment_time()) ?><?php edit_comment_link('<span class="fa fa-pencil-square-o"></span>','  ','' ); ?>
 # </p>
 # wpml-name: 5862ba6b9399ea36ab7d486f299754c8
 msgid "%1$s at %2$s"
-msgstr "%1$s ved %2$s"
+msgstr "%1$s klokken %2$s"
 
 #
 # <h4><?php printf(__('%s <span class="says">says:</span>', 'secondthought'), get_comment_author_link()) ?></h4>
@@ -292,7 +299,7 @@ msgstr "Svar"
 # }
 # wpml-name: 8e43ba2167cb1ab855f469a3b838cfad
 msgid "Made by Inzite"
-msgstr "Mady by Inzite"
+msgstr "Lavet af Inzite"
 
 # $avatar = get_avatar( $user_id, 28 );
 # $howdy = sprintf( __('Welcome', 'secondthought'), $current_user->display_name );
@@ -306,7 +313,7 @@ msgstr "Velkommen"
 # /*
 # wpml-name: e02621f0b5acaf65a2c09d4f45627520
 msgid "Latest News from INZITE"
-msgstr "Seneste nyt fra INZITE"
+msgstr "Seneste nyt fra Inzite"
 
 # <h4 style="margin-bottom: 0;">
 # <a href="<?php echo $item->get_permalink(); ?>" title="<?php echo mysql2date( __( 'j F Y @ g:i a', 'secondthought' ), $item->get_date( 'Y-m-d H:i:s' ) ); ?>" target="_blank">
@@ -320,7 +327,7 @@ msgstr "j F Y @ g:i a"
 #
 # wpml-name: 45d0c00e348e85503405bed0b4822805
 msgid "Comments are closed here."
-msgstr "Kommentarer er lukket her."
+msgstr "Kommentarer er lukket på denne side."
 
 # <?php if (post_password_required()) : ?>
 # <p><?php _e( 'Post is password protected. Enter the password to view any comments.', 'secondthought' ); ?></p>
@@ -328,7 +335,7 @@ msgstr "Kommentarer er lukket her."
 # wpml-name: 8a41e748d87a0b23868a8aa1c444df9b
 msgid "Post is password protected. Enter the password to view any comments."
 msgstr ""
-"Denne artikel er kodeordsbeskyttet. Indtast kodeord for at se kommentarer."
+"Denne side er kodeordsbeskyttet. Skriv dit kodeord for at se kommentarer."
 
 #
 # <h1><?php _e( 'Categories for ', 'secondthought' ); single_cat_title(); ?></h1>
@@ -342,7 +349,7 @@ msgstr "Kategorier for"
 #
 # wpml-name: 1b6af009998337de94c148bd20ee8804
 msgid "Sorry, nothing to display."
-msgstr "Beklager, der er ikke noget at vise."
+msgstr "Her er desværre ikke noget at vise."
 
 # <span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
 # <span class="author"><?php _e( 'Published by', 'secondthought' ); ?> <?php the_author_posts_link(); ?></span>
@@ -384,7 +391,7 @@ msgstr "1 Kommentar"
 # <!-- /post details -->
 # wpml-name: ce5ab85eb995f870467ff1abdd631677
 msgid "Leave your thoughts"
-msgstr "Skriv et svar"
+msgstr "Skriv en kommentar"
 
 #
 # <h1><?php _e( 'Archives', 'secondthought' ); ?></h1>
@@ -398,7 +405,7 @@ msgstr "Arkiver"
 # </h2>
 # wpml-name: 5edc2cd7c172863b8c46b57d8512f2fd
 msgid "Return home?"
-msgstr "Tilbage til Forsiden?"
+msgstr "Tilbage til forsiden?"
 
 #
 # <h1><?php _e( 'Page not found', 'secondthought' ); ?></h1>

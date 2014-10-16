@@ -22,6 +22,25 @@
     @include media($lg) {
       @include span-columns(4);
     }
+
+    .thumbnails a {
+      @include media($xs) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+      @include media($sm) {
+        @include span-columns(4);
+        @include omega(3n);
+      }
+      @include media($md) {
+        @include span-columns(4);
+        @include omega(3n);
+      }
+      @include media($lg) {
+        @include span-columns(3);
+        @include omega(4n);
+      }
+    }
   }
 
   .entry-summary {
@@ -92,9 +111,14 @@
     }
   }
 
+  .variations_button {
+    margin-bottom: $gutter/2;
+  }
+
   button.button,
   #submit {
     @include button($brand-primary);
+    padding: 12px 15px 13px;
   }
 
   .related.products,
