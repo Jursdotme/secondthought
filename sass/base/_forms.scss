@@ -78,3 +78,41 @@ select {
   max-width: 100%;
   margin-bottom: $base-line-height;
 }
+
+.half-row {
+  @include span-columns(12);
+  @include media($md-up) {
+    @include span-columns(6);
+  }
+}
+
+.quarter-row {
+  @include span-columns(12);
+  @include media($md-up) {
+    @include span-columns(3);
+  }
+}
+
+.three-quarter-row {
+  @include span-columns(12);
+  @include media($md-up) {
+    @include span-columns(9);
+  }
+}
+
+.one-third-row {
+  @include span-columns(12);
+  @include media($md-up) {
+    @include span-columns(4);
+  }
+}
+
+.full-row {
+  @include span-columns(12);
+}
+
+.last {
+  @include media($md-up) {
+    @include omega();
+  }
+}
