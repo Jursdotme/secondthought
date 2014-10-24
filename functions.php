@@ -24,6 +24,7 @@ require_once( 'functions/admin_dashboard.php' ); // Custom Admin Dashboard setti
 require_once( 'functions/comments.php' ); // Custom Comments callback
 require_once( 'functions/options-page/options-page.php' ); // Custom Comments callback
 require_once( 'functions/contact-form-7-fixes.php' ); // Custom Comments callback
+require_once( 'functions/gallery.php' ); // Custom Comments callback
 
 /*------------------------------------*\
 	Theme Support
