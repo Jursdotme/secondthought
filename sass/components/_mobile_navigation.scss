@@ -21,7 +21,16 @@ $mobile-menu-width             : 220px;
   top: 5px;
   z-index: 9999999;
   transform: scale(.6);
-  &:focus {outline: 0;}
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:focus,
+  &:hover {
+    background: none;
+  }
+
   span {
     display: block;
   }
