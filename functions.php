@@ -22,7 +22,7 @@ require_once( 'functions/woocommerce-functions.php' ); // Woo Commerce Functions
 require_once( 'functions/custom_settings.php' ); // Woo Commerce Functions
 require_once( 'functions/admin_dashboard.php' ); // Custom Admin Dashboard settings
 require_once( 'functions/comments.php' ); // Custom Comments callback
-require_once( 'functions/options-page/options-page.php' ); // Custom Comments callback
+require_once( 'functions/options-pages.php' ); // Custom Comments callback
 require_once( 'functions/contact-form-7-fixes.php' ); // Custom Comments callback
 require_once( 'functions/gallery.php' ); // Custom Comments callback
 
