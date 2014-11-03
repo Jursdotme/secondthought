@@ -22,6 +22,8 @@ var paths = {
     'bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js',
     'bower_components/fancybox/source/helpers/jquery.fancybox-media.js',
     'bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js',
+    'bower_components/conditionizr/src/conditionizr.js',
+    // 'bower_components/modernizr/modernizr.js',
     'javascripts/concat/*.js',
   ]
 };
