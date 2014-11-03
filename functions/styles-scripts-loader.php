@@ -46,7 +46,7 @@ function secondthought_styles()
   wp_register_style('secondthought', get_template_directory_uri() . '/build/stylesheets/style.css', array(), '1.0', 'all');
   wp_enqueue_style('secondthought'); // Enqueue it!
 
-  wp_register_style('awesomefonts', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css', array(), '1.0', 'all');
+  wp_register_style('awesomefonts', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', array(), '1.0', 'all');
   wp_enqueue_style('awesomefonts'); // Enqueue it!
 }
 
