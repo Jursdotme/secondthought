@@ -1,12 +1,11 @@
-.page-template-default:not(.home):not(.buddypress),
-.error404 {
+.buddypress {
   main {
     @include fixed-container;
     @include pad($gutter*3 $gutter);
     section {
       @include media($lg) {
-        @include span-columns(8);
-        @include shift(2);
+        @include span-columns(12);
+        @include shift(0);
       }
       @include media($md) {
         @include span-columns(10);

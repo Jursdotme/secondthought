@@ -59,7 +59,27 @@ gulp.task('scripts-dev', function() {
 });
 
 gulp.task('sass', function () {
-    return gulp.src(paths.sass)
+    return gulp.src('sass/style.scss')
+        .pipe(sass())
+        .on('error', function (err) { console.log(err.message); })
+        .pipe(prefix())
+        .pipe(cssmin())
+        .pipe(bless({ imports: true }))
+        .pipe(gulp.dest('build/stylesheets'));
+});
+
+gulp.task('sass-editor', function () {
+    return gulp.src('sass/editor.scss')
+        .pipe(sass())
+        .on('error', function (err) { console.log(err.message); })
+        .pipe(prefix())
+        .pipe(cssmin())
+        .pipe(bless({ imports: true }))
+        .pipe(gulp.dest('build/stylesheets'));
+});
+
+gulp.task('sass-admin', function () {
+    return gulp.src('sass/admin.scss')
         .pipe(sass())
         .on('error', function (err) { console.log(err.message); })
         .pipe(prefix())
@@ -69,8 +89,8 @@ gulp.task('sass', function () {
 });
 
 gulp.task('sass-dev', function () {
-    return gulp.src(paths.sass)
-        .pipe(sass({sourcemap: true, style: 'nested', lineNumbers:true, sourcemapPath: '../../sass'}))
+    return gulp.src('sass/style.scss')
+        .pipe(sass({style: 'nested', lineNumbers:true, sourcemapPath: '../../sass'}))
         .on('error', function (err) { console.log(err.message); })
         .pipe(gulp.dest('build/stylesheets'));
 });
@@ -101,5 +121,9 @@ gulp.task('dev', ['watch-dev', 'scripts-dev', 'sass-dev', 'images']);
 
 gulp.task('default', ['watch-dev', 'scripts-dev', 'sass-dev', 'images']);
 
+gulp.task('admin', ['sass-admin']);
+
+gulp.task('editor', ['sass-editor']);
+
 // The default task (called when you run `gulp` from cli)
-gulp.task('release', ['watch', 'scripts', 'sass', 'images']);
+gulp.task('release', ['watch', 'scripts', 'sass', 'sass-editor', 'sass-admin', 'images']);

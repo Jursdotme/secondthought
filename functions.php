@@ -58,6 +58,9 @@ if (function_exists('add_theme_support'))
 	Functions
 \*------------------------------------*/
 
+// Force Yoast SEO metabox to be at the bottom
+add_filter( 'wpseo_metabox_prio', function() { return 'low';});
+
 // Remove invalid rel attribute values in the categorylist
 function remove_category_rel_from_category_list($thelist)
 {

@@ -1,0 +1,9 @@
+.bbpress {
+  main {
+    @include fixed-container;
+    @include pad($gutter*3 $gutter);
+    section {
+      @include span-columns(12);
+    }
+  }
+}
