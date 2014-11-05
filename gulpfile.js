@@ -114,7 +114,7 @@ gulp.task('watch', function() {
 
 // Rerun the task when a file changes
 gulp.task('watch-dev', function() {
-  gulp.watch(paths.scripts, ['scripts']);
+  gulp.watch(paths.scripts, ['scripts-dev']);
   gulp.watch(paths.images, ['images']);
   gulp.watch(paths.sass, ['sass-dev']);
 });
