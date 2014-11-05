@@ -23,6 +23,7 @@
   border-radius: $base-border-radius;
   position: relative;
   border: 0;
+  box-shadow: $shadow-lvl-1-depth;
 
   @if lightness($bg) > 68% {
     $color: desaturate(shade($bg, 35%), 70);
@@ -46,6 +47,7 @@
 
   &:hover,
   &:focus {
-    background: shade($bg, 10%);
+    background: shade($bg, 5%);
+    box-shadow: $shadow-lvl-2-depth;
   }
 }

@@ -1041,18 +1041,20 @@ button,
   border-radius: 3px;
   position: relative;
   border: 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.17), 0 1px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset;
   color: #fff; }
-  /* line 38, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
+  /* line 39, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
   button:hover, button:focus,
   .button:hover,
   .button:focus {
     background: #326ba8;
     color: white; }
-  /* line 47, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
+  /* line 48, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
   button:hover, button:focus,
   .button:hover,
   .button:focus {
-    background: #326ba9; }
+    background: #3571b2;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.22), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset; }
 
 /* line 1, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_widgets.scss */
 aside.footer-bar {
@@ -2768,14 +2770,16 @@ footer.footer {
   border-radius: 3px;
   position: relative;
   border: 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.17), 0 1px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset;
   color: #fff; }
-  /* line 38, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
+  /* line 39, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
   .page-template-page_templatescontact-php .wpcf7-submit:hover, .page-template-page_templatescontact-php .wpcf7-submit:focus {
     background: #326ba8;
     color: white; }
-  /* line 47, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
+  /* line 48, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
   .page-template-page_templatescontact-php .wpcf7-submit:hover, .page-template-page_templatescontact-php .wpcf7-submit:focus {
-    background: #326ba9; }
+    background: #3571b2;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.22), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset; }
 /* line 77, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/layout/_contact.scss */
 .page-template-page_templatescontact-php .acf-map {
   width: 100%;
@@ -2890,7 +2894,10 @@ ul.products {
 
 /* line 32, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
 li.product {
-  padding-bottom: 60px; }
+  padding: 10px;
+  margin-bottom: 30px;
+  background: #FAFAFA;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.17), 0 1px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset; }
   @media screen and (max-width: 767px) {
     /* line 32, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
     li.product {
@@ -2933,12 +2940,6 @@ li.product {
       /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
       li.product:last-child {
         margin-right: 0; }
-      /* line 84, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
-      li.product:nth-child(2n) {
-        margin-right: 2.12766%; }
-      /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
-      li.product:nth-child(2n+1) {
-        clear: none; }
       /* line 82, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
       li.product:nth-child(3n) {
         margin-right: 0; }
@@ -2955,19 +2956,22 @@ li.product {
       /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
       li.product:last-child {
         margin-right: 0; }
-      /* line 84, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
-      li.product:nth-child(3n) {
-        margin-right: 2.12766%; }
-      /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
-      li.product:nth-child(3n+1) {
-        clear: none; }
       /* line 82, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
       li.product:nth-child(4n) {
         margin-right: 0; }
       /* line 87, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
       li.product:nth-child(4n+1) {
         clear: left; } }
-  /* line 57, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+  /* line 59, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+  li.product img {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.17), 0 1px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset;
+    -webkit-transition: all 0.2s cubic-bezier(0.2, 0, 0.7, 1);
+    -moz-transition: all 0.2s cubic-bezier(0.2, 0, 0.7, 1);
+    transition: all 0.2s cubic-bezier(0.2, 0, 0.7, 1); }
+    /* line 62, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+    li.product img:hover {
+      box-shadow: 0 20px 22px 0 rgba(0, 0, 0, 0.22), 0 10px 8px 0 rgba(0, 0, 0, 0.16), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset; }
+  /* line 67, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
   li.product span.onsale {
     position: absolute;
     background: #3877bc;
@@ -2976,24 +2980,29 @@ li.product {
     padding: 2px 7px;
     border-radius: 3px;
     margin: 10px 0 0 10px; }
-  /* line 67, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+  /* line 77, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
   li.product .meta {
     padding: 10px 0; }
-  /* line 71, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+  /* line 81, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
   li.product h3 {
     color: #363636;
     font-size: 18px; }
-  /* line 76, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+  /* line 86, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
   li.product .price {
     color: #363636; }
-  /* line 80, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+  /* line 90, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
   li.product .add_to_cart_button {
     font-style: normal;
     font-variant: normal;
-    display: block;
-    text-align: center; }
+    text-align: center;
+    float: right; }
+    @media screen and (max-width: 767px) {
+      /* line 90, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+      li.product .add_to_cart_button {
+        display: block;
+        float: none; } }
 
-/* line 88, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+/* line 102, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
 .added_to_cart {
   display: block;
   text-align: center; }
@@ -3274,14 +3283,16 @@ li.product {
         border-radius: 3px;
         position: relative;
         border: 0;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.17), 0 1px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset;
         color: #fff; }
-        /* line 38, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
+        /* line 39, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
         .single-product .woocommerce-tabs .tabs li a:hover, .single-product .woocommerce-tabs .tabs li a:focus {
           background: #a7b63a;
           color: white; }
-        /* line 47, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
+        /* line 48, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
         .single-product .woocommerce-tabs .tabs li a:hover, .single-product .woocommerce-tabs .tabs li a:focus {
-          background: #a2b03e; }
+          background: #abba41;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.22), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset; }
       /* line 99, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_product_single.scss */
       .single-product .woocommerce-tabs .tabs li.active a {
         display: inline-block;
@@ -3298,14 +3309,16 @@ li.product {
         border-radius: 3px;
         position: relative;
         border: 0;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.17), 0 1px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset;
         color: #fff; }
-        /* line 38, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
+        /* line 39, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
         .single-product .woocommerce-tabs .tabs li.active a:hover, .single-product .woocommerce-tabs .tabs li.active a:focus {
           background: #326ba8;
           color: white; }
-        /* line 47, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
+        /* line 48, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
         .single-product .woocommerce-tabs .tabs li.active a:hover, .single-product .woocommerce-tabs .tabs li.active a:focus {
-          background: #326ba9; }
+          background: #3571b2;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.22), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset; }
       /* line 103, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_product_single.scss */
       .single-product .woocommerce-tabs .tabs li:last-child {
         margin-right: 0; }
@@ -3332,19 +3345,21 @@ li.product {
   border-radius: 3px;
   position: relative;
   border: 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.17), 0 1px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset;
   color: #fff;
   padding: 12px 15px 13px; }
-  /* line 38, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
+  /* line 39, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
   .single-product button.button:hover, .single-product button.button:focus,
   .single-product #submit:hover,
   .single-product #submit:focus {
     background: #326ba8;
     color: white; }
-  /* line 47, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
+  /* line 48, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_mixins.scss */
   .single-product button.button:hover, .single-product button.button:focus,
   .single-product #submit:hover,
   .single-product #submit:focus {
-    background: #326ba9; }
+    background: #3571b2;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.22), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset; }
 /* line 124, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_product_single.scss */
 .single-product .related.products,
 .single-product .woocommerce-tabs,
