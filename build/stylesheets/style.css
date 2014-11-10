@@ -390,7 +390,7 @@ p {
 
 /* line 129, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_typography.scss */
 hr {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #fafafa;
   border-left: 0;
   border-right: 0;
   border-top: 0;
@@ -435,7 +435,7 @@ img {
 
 /* line 177, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_typography.scss */
 blockquote {
-  border-left: 2px solid #e6e6e6;
+  border-left: 2px solid #fafafa;
   color: #545454;
   margin: 1.5 0;
   padding-left: 12px; }
@@ -531,7 +531,7 @@ ul.no-style {
 /* line 1, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_forms.scss */
 fieldset {
   background: white;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #fafafa;
   margin: 0 0 0.75;
   padding: 30px; }
 
@@ -566,7 +566,7 @@ select[multiple=multiple] {
   transition: border-color;
   background-color: #fff;
   border-radius: 3px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #fafafa;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -577,7 +577,7 @@ select[multiple=multiple] {
   textarea:hover,
   input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
   select[multiple=multiple]:hover {
-    border-color: #cdcdcd; }
+    border-color: #e1e1e1; }
   /* line 49, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_forms.scss */
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
@@ -1268,7 +1268,7 @@ form.search {
           left: 8px; }
       /* line 50, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
       .desktop-navigation ul.sub-menu li:hover {
-        background: #e6e6e6; }
+        background: #fafafa; }
       /* line 54, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
       .desktop-navigation ul.sub-menu li a {
         display: block;
@@ -1463,7 +1463,7 @@ form.search {
         transition: all 0.2s ease-in-out;
         background: white;
         border-radius: 3px;
-        border: 1px solid #e6e6e6;
+        border: 1px solid #fafafa;
         color: #363636; }
         /* line 32, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_pagination.scss */
         .pagination ul li a:hover, .pagination ul li a:focus,
@@ -2116,7 +2116,7 @@ header.header {
       clear: left; } }
 
 /* line 19, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/fancybox/_fancybox.scss */
-.fancybox-wrap, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-nav, .fancybox-nav span, .fancybox-tmp {
+.fancybox-wrap, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-nav, .fancybox-nav span, .fancybox-tmp, #buddypress .activity-list li.mini .activity-avatar img.avatar, #buddypress .activity-list li.mini .activity-avatar img.FB_profile_pic {
   padding: 0;
   margin: 0;
   border: 0;
@@ -2124,7 +2124,7 @@ header.header {
   vertical-align: top; }
 
 /* line 29, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/fancybox/_fancybox.scss */
-.fancybox-image, .fancybox-iframe {
+.fancybox-image, .fancybox-iframe, #buddypress .activity-permalink .activity-list li.mini .activity-avatar img.avatar, #buddypress .activity-permalink .activity-list li.mini .activity-avatar img.FB_profile_pic {
   display: block;
   width: 100%;
   height: 100%; }
@@ -2894,10 +2894,7 @@ ul.products {
 
 /* line 32, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
 li.product {
-  padding: 10px;
-  margin-bottom: 30px;
-  background: #FAFAFA;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.17), 0 1px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset; }
+  padding-bottom: 60px; }
   @media screen and (max-width: 767px) {
     /* line 32, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
     li.product {
@@ -2940,6 +2937,12 @@ li.product {
       /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
       li.product:last-child {
         margin-right: 0; }
+      /* line 84, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+      li.product:nth-child(2n) {
+        margin-right: 2.12766%; }
+      /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+      li.product:nth-child(2n+1) {
+        clear: none; }
       /* line 82, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
       li.product:nth-child(3n) {
         margin-right: 0; }
@@ -2956,22 +2959,19 @@ li.product {
       /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
       li.product:last-child {
         margin-right: 0; }
+      /* line 84, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+      li.product:nth-child(3n) {
+        margin-right: 2.12766%; }
+      /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+      li.product:nth-child(3n+1) {
+        clear: none; }
       /* line 82, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
       li.product:nth-child(4n) {
         margin-right: 0; }
       /* line 87, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
       li.product:nth-child(4n+1) {
         clear: left; } }
-  /* line 59, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
-  li.product img {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.17), 0 1px 2px 0 rgba(0, 0, 0, 0.24), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset;
-    -webkit-transition: all 0.2s cubic-bezier(0.2, 0, 0.7, 1);
-    -moz-transition: all 0.2s cubic-bezier(0.2, 0, 0.7, 1);
-    transition: all 0.2s cubic-bezier(0.2, 0, 0.7, 1); }
-    /* line 62, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
-    li.product img:hover {
-      box-shadow: 0 20px 22px 0 rgba(0, 0, 0, 0.22), 0 10px 8px 0 rgba(0, 0, 0, 0.16), 0 1px 0 0 rgba(255, 255, 255, 0.2) inset, 0 -1px 0 0 rgba(69, 69, 69, 0.2) inset; }
-  /* line 67, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+  /* line 57, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
   li.product span.onsale {
     position: absolute;
     background: #3877bc;
@@ -2980,29 +2980,24 @@ li.product {
     padding: 2px 7px;
     border-radius: 3px;
     margin: 10px 0 0 10px; }
-  /* line 77, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+  /* line 67, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
   li.product .meta {
     padding: 10px 0; }
-  /* line 81, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+  /* line 71, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
   li.product h3 {
     color: #363636;
     font-size: 18px; }
-  /* line 86, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+  /* line 76, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
   li.product .price {
     color: #363636; }
-  /* line 90, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+  /* line 80, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
   li.product .add_to_cart_button {
     font-style: normal;
     font-variant: normal;
-    text-align: center;
-    float: right; }
-    @media screen and (max-width: 767px) {
-      /* line 90, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
-      li.product .add_to_cart_button {
-        display: block;
-        float: none; } }
+    display: block;
+    text-align: center; }
 
-/* line 102, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
+/* line 88, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/_woocommerce_page.scss */
 .added_to_cart {
   display: block;
   text-align: center; }
@@ -4433,7 +4428,7 @@ li.product {
 /* line 2, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/components/_woocommerce_price_filter_widget.scss */
 .widget_price_filter .price_slider {
   margin-bottom: 1em;
-  background: #e6e6e6;
+  background: #f3f3f3;
   border-radius: 4px; }
 /* line 7, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/woocommerce/components/_woocommerce_price_filter_widget.scss */
 .widget_price_filter .price_slider_amount {
@@ -4544,72 +4539,1662 @@ li.product {
 .woocommerce-error {
   list-style-type: none; }
 
-/* line 2, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_default.scss */
-.buddypress main {
-  max-width: 1088px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 30px;
-  padding: 90px 30px; }
-  /* line 15, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/bourbon/dist/addons/_clearfix.scss */
-  .buddypress main:after {
-    content: "";
-    display: table;
+/* line 44, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.fancybox-wrap, .fancybox-wrap iframe, .fancybox-wrap object, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image, .fancybox-nav, .fancybox-nav span, .fancybox-tmp, #buddypress .activity-list li.mini .activity-avatar img.avatar, #buddypress .activity-list li.mini .activity-avatar img.FB_profile_pic {
+  height: 20px;
+  margin-left: 30px;
+  width: 20px; }
+
+/* line 52, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.fancybox-image, .fancybox-iframe, #buddypress .activity-permalink .activity-list li.mini .activity-avatar img.avatar, #buddypress .activity-permalink .activity-list li.mini .activity-avatar img.FB_profile_pic {
+  height: auto;
+  margin-left: 0;
+  width: auto; }
+
+/* line 60, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-list li .activity-inreplyto blockquote, #buddypress .activity-list li .activity-inreplyto div.activity-inner {
+  background: none;
+  border: none;
+  display: inline;
+  margin: 0;
+  overflow: hidden;
+  padding: 0; }
+
+/* line 71, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress a.bp-secondary-action, #buddypress span.highlight {
+  font-size: 80%;
+  padding: 0;
+  margin-right: 5px;
+  text-decoration: none; }
+
+/* line 80, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-list li.new_forum_post .activity-content .activity-inner, #buddypress .activity-list li.new_forum_topic .activity-content .activity-inner {
+  border-left: 2px solid #EAEAEA;
+  margin-left: 5px;
+  padding-left: 10px; }
+
+/* line 88, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-list li.load-more, #buddypress .activity-list li.load-newest {
+  background: #eee;
+  font-size: 110%;
+  margin: 15px 0;
+  padding: 10px 15px;
+  text-align: center; }
+
+/* line 98, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress a.bp-primary-action, #buddypress #reply-title small a {
+  font-size: 80%;
+  margin-right: 5px;
+  text-decoration: none; }
+
+/* line 106, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress a.bp-primary-action span, #buddypress #reply-title small a span {
+  background: #999;
+  color: #fff;
+  font-size: 90%;
+  margin-left: 2px;
+  padding: 0 5px; }
+
+/* line 116, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#message p, #sitewide-notice p {
+  font-size: 90%;
+  display: block;
+  padding: 10px 15px;
+  font-weight: normal;
+  margin-top: 3px;
+  text-decoration: none;
+  background-color: #fff9db;
+  border: 1px solid #cb2;
+  color: #440; }
+
+/* line 130, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #pass-strength-result.error, #buddypress #pass-strength-result.bad {
+  background-color: #ffb78c;
+  border-color: #ff853c !important;
+  display: block; }
+
+/* line 138, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form textarea, #buddypress .standard-form input[type=text], #buddypress .standard-form input[type=color], #buddypress .standard-form input[type=date], #buddypress .standard-form input[type=datetime], #buddypress .standard-form input[type=datetime-local], #buddypress .standard-form input[type=email], #buddypress .standard-form input[type=month], #buddypress .standard-form input[type=number], #buddypress .standard-form input[type=range], #buddypress .standard-form input[type=search], #buddypress .standard-form input[type=tel], #buddypress .standard-form input[type=time], #buddypress .standard-form input[type=url], #buddypress .standard-form input[type=week], #buddypress .standard-form select, #buddypress .standard-form input[type=password], #buddypress .dir-search input[type=search], #buddypress .dir-search input[type=text], #buddypress .groups-members-search input[type=search], #buddypress .groups-members-search input[type=text] {
+  border: 1px solid #ccc;
+  background: #fafafa;
+  border-radius: 0;
+  color: #888;
+  font: inherit;
+  font-size: 100%;
+  padding: 6px; }
+
+/* line 151, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form label, #buddypress .standard-form span.label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 5px;
+  width: auto; }
+
+/* line 160, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form div.radio div label, #buddypress .standard-form div.checkbox label:nth-child(n+2) {
+  color: #888;
+  font-size: 100%;
+  font-weight: normal;
+  margin: 5px 0 0; }
+
+/* line 169, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.generic-button a, #buddypress ul.button-nav li a, #buddypress a.button, #buddypress button, #buddypress input[type=submit], #buddypress input[type=button], #buddypress input[type=reset], #buddypress .comment-reply-link, a.bp-title-button {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #777;
+  font-size: .8rem;
+  cursor: pointer;
+  outline: none;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none; }
+
+/* line 183, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.generic-button a:hover, #buddypress ul.button-nav li a:hover, #buddypress ul.button-nav li.current a, #buddypress a.button:hover, #buddypress a.button:focus, #buddypress button:hover, #buddypress input[type=submit]:hover, #buddypress input[type=button]:hover, #buddypress input[type=reset]:hover, #buddypress .comment-reply-link:hover {
+  background: #eee;
+  border: 1px solid #bbb;
+  color: #555;
+  outline: none;
+  text-decoration: none; }
+
+/* line 193, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.pending a, #buddypress a.disabled, #buddypress button.pending, #buddypress button.disabled, #buddypress input[type="submit"].pending, #buddypress input[type="submit"].disabled, #buddypress input[type="button"].pending, #buddypress input[type="button"].disabled, #buddypress input[type="reset"].pending, #buddypress input[type="reset"].disabled {
+  border-color: #eee;
+  color: #bbb;
+  cursor: default; }
+
+/* line 201, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress table.notifications tr td.label, #buddypress table.notifications-settings tr td.label, #buddypress table.profile-fields tr td.label, #buddypress table.wp-profile-fields tr td.label, #buddypress table.messages-notices tr td.label, #buddypress table.forum tr td.label {
+  border-right: 1px solid #eaeaea;
+  font-weight: bold;
+  width: 25%; }
+
+/* line 209, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#item-header ul img.avatar, #buddypress div#item-header ul.avatars img.avatar {
+  height: 30px;
+  margin: 2px;
+  width: 30px; }
+
+/* line 217, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress ul.item-list li div.item-title, #buddypress ul.item-list li h4 {
+  font-weight: normal;
+  font-size: 90%;
+  margin: 0;
+  width: 75%; }
+
+/* line 226, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.item-list-tabs ul li a, #buddypress div.item-list-tabs ul li span {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none; }
+
+/* line 234, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.item-list-tabs ul li.selected a, #buddypress div.item-list-tabs ul li.current a {
+  background-color: #eee;
+  color: #555;
+  opacity: .8;
+  font-weight: bold; }
+
+/* line 243, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress li span.unread-count, #buddypress tr.unread span.unread-count {
+  background: #dd0000;
+  color: #fff;
+  font-weight: bold;
+  padding: 2px 8px; }
+
+/* line 253, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.pagination {
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 90%;
+  margin: 0;
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 10px 0; }
+  /* line 264, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.pagination .pag-count {
+    float: left;
+    margin-left: 10px; }
+  /* line 268, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.pagination .pagination-links {
+    float: right;
+    margin-right: 10px; }
+    /* line 271, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div.pagination .pagination-links span {
+      font-size: 90%;
+      padding: 0 5px; }
+    /* line 275, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div.pagination .pagination-links a {
+      font-size: 90%;
+      padding: 0 5px; }
+      /* line 278, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+      #buddypress div.pagination .pagination-links a:hover {
+        font-weight: bold; }
+/* line 284, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.activity-meta {
+  margin: 18px 0 0; }
+  /* line 286, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-meta a {
+    padding: 4px 8px; }
+/* line 290, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.activity-comments {
+  margin: 0 0 0 70px;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  clear: both; }
+  /* line 296, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments ul {
+    border: none;
+    list-style: none;
+    clear: both;
+    margin: 0; }
+    /* line 301, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div.activity-comments ul li {
+      border: none;
+      list-style: none;
+      border-top: 1px solid #eee;
+      padding: 10px 0 0; }
+      /* line 306, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+      #buddypress div.activity-comments ul li:last-child {
+        margin-bottom: 0; }
+      /* line 309, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+      #buddypress div.activity-comments ul li > ul {
+        margin-left: 30px;
+        margin-top: 0;
+        padding-left: 10px; }
+  /* line 317, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments div.acomment-content {
+    font-size: 80%;
+    margin: 5px 0 0 40px; }
+  /* line 321, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments div.acomment-meta {
+    color: #888;
+    font-size: 80%; }
+  /* line 325, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments div#message {
+    margin-top: 15px;
+    margin-bottom: 0; }
+  /* line 329, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments div.acomment-avatar img {
+    border-width: 1px;
+    float: left;
+    height: 25px;
+    margin-right: 10px;
+    width: 25px; }
+  /* line 338, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments form.ac-form {
+    display: none;
+    padding: 10px; }
+  /* line 342, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments form.root {
+    margin-left: 0; }
+  /* line 345, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments form .ac-textarea {
+    background: #fff;
+    border: 1px inset #ccc;
+    margin-bottom: 10px;
+    padding: 8px; }
+  /* line 351, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments form textarea {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    color: #555;
+    font-family: inherit;
+    font-size: 100%;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    width: 100%; }
+  /* line 365, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments form input {
+    margin-top: 5px; }
+  /* line 369, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments form div.ac-reply-avatar {
+    float: left; }
+  /* line 372, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments form div.ac-reply-content {
+    color: #888;
+    margin-left: 50px;
+    padding-left: 15px; }
+    /* line 376, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div.activity-comments form div.ac-reply-content a {
+      text-decoration: none; }
+  /* line 382, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments > ul {
+    padding: 0 0 0 10px; }
+    /* line 384, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div.activity-comments > ul > li:first-child {
+      border-top: none; }
+  /* line 388, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.activity-comments li form.ac-form {
+    margin-right: 15px;
     clear: both; }
-  @media (min-width: 768px) {
-    /* line 2, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_default.scss */
-    .buddypress main {
-      width: 750px; } }
-  @media (min-width: 992px) {
-    /* line 2, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_default.scss */
-    .buddypress main {
-      width: 970px; } }
-  @media (min-width: 1200px) {
-    /* line 2, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_default.scss */
-    .buddypress main {
-      width: 1170px; } }
-  @media screen and (min-width: 1200px) {
-    /* line 5, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_default.scss */
-    .buddypress main section {
+/* line 394, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.acomment-content .time-since {
+  display: none; }
+/* line 397, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.acomment-content .activity-delete-link {
+  display: none; }
+/* line 400, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.acomment-content .comment-header {
+  display: none; }
+/* line 404, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.dir-search {
+  float: right;
+  margin: -39px 0 0; }
+  /* line 407, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.dir-search input[type=text] {
+    font-size: 90%;
+    padding: 1px 3px; }
+/* line 412, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#message {
+  margin: 0 0 15px; }
+  /* line 414, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#message.updated {
+    clear: both; }
+    /* line 416, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div#message.updated p {
+      background-color: #efc;
+      border: 1px solid #591;
+      color: #250; }
+  /* line 425, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#message.error p {
+    background-color: #fdc;
+    border: 1px solid #a00;
+    clear: left;
+    color: #800; }
+/* line 432, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.accept {
+  float: left;
+  margin-left: 10px; }
+/* line 436, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.reject {
+  float: left;
+  margin-left: 10px; }
+/* line 440, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#invite-list {
+  background: #f5f5f5;
+  height: 400px;
+  margin: 0 0 10px;
+  overflow: auto;
+  padding: 5px;
+  width: 160px; }
+/* line 448, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.topic-tags {
+  font-size: 80%; }
+/* line 451, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.admin-links {
+  color: #888;
+  font-size: 80%;
+  position: absolute;
+  top: 15px;
+  right: 25px; }
+/* line 458, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#topic-meta {
+  margin: 0;
+  padding: 5px 19px 30px;
+  position: relative; }
+  /* line 462, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#topic-meta h3 {
+    margin: 5px 0; }
+  /* line 465, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#topic-meta div.admin-links {
+    right: 19px;
+    top: -36px; }
+/* line 470, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#new-topic-post {
+  display: none;
+  margin: 20px 0 0;
+  padding: 1px 0 0; }
+/* line 475, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#item-header {
+  overflow: hidden; }
+  /* line 478, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#item-header div#item-header-content {
+    float: left;
+    margin-left: 0; }
+  /* line 482, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#item-header div#item-meta {
+    font-size: 80%;
+    color: #aaa;
+    overflow: hidden;
+    margin: 15px 0 5px;
+    padding-bottom: 10px; }
+  /* line 489, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#item-header div#item-actions {
+    float: right;
+    margin: 0 0 15px 15px;
+    text-align: right;
+    width: 20%; }
+    /* line 494, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div#item-header div#item-actions h3 {
+      margin: 0 0 5px 0; }
+  /* line 498, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#item-header div.generic-button {
+    float: left;
+    margin: 10px 10px 0 0; }
+  /* line 502, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#item-header div#message.info {
+    line-height: 80%; }
+  /* line 506, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#item-header h2 {
+    line-height: 120%;
+    margin: 0 0 15px 0;
+    margin-bottom: 5px; }
+    /* line 510, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div#item-header h2 a {
+      color: #777;
+      text-decoration: none; }
+    /* line 514, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div#item-header h2 span.highlight {
+      font-size: 60%;
+      font-weight: normal;
+      line-height: 170%;
+      vertical-align: middle;
+      display: inline-block; }
+      /* line 520, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+      #buddypress div#item-header h2 span.highlight span {
+        background: #a1dcfa;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 80%;
+        margin-bottom: 2px;
+        padding: 1px 4px;
+        position: relative;
+        right: -2px;
+        top: -2px;
+        vertical-align: middle; }
+  /* line 535, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#item-header ul {
+    margin-bottom: 15px;
+    overflow: hidden; }
+    /* line 538, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div#item-header ul h5 {
+      display: none; }
+    /* line 541, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div#item-header ul span {
+      display: none; }
+    /* line 544, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div#item-header ul hr {
+      display: none; }
+    /* line 547, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div#item-header ul li {
+      float: right;
+      list-style: none; }
+  /* line 558, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#item-header img.avatar {
+    float: left;
+    margin: 0 15px 19px 0; }
+  /* line 562, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#item-header a.button {
+    float: left;
+    margin: 10px 10px 0 0; }
+/* line 567, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.item-list-tabs {
+  background: transparent;
+  clear: left;
+  overflow: hidden; }
+  /* line 571, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.item-list-tabs ul {
+    margin: 0;
+    padding: 0; }
+    /* line 574, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div.item-list-tabs ul li {
       float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 100%;
-      margin-left: 0%; }
-      /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
-      .buddypress main section:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    /* line 5, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_default.scss */
-    .buddypress main section {
+      margin: 0;
+      list-style: none; }
+      /* line 578, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+      #buddypress div.item-list-tabs ul li.last {
+        float: right;
+        margin: 7px 0 0; }
+        /* line 581, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+        #buddypress div.item-list-tabs ul li.last select {
+          max-width: 175px; }
+      /* line 587, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+      #buddypress div.item-list-tabs ul li a span {
+        background: #eee;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        color: #999;
+        display: inline;
+        font-size: 70%;
+        margin-left: 2px;
+        padding: 3px 6px;
+        text-align: center;
+        vertical-align: middle; }
+        /* line 599, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+        #buddypress div.item-list-tabs ul li a span.unread-count {
+          padding: 1px 6px;
+          color: #fff; }
+      /* line 604, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+      #buddypress div.item-list-tabs ul li a:hover span {
+        background-color: #eee; }
+      /* line 613, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+      #buddypress div.item-list-tabs ul li.selected a span {
+        background-color: #eee;
+        background-color: #fff; }
+      /* line 620, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+      #buddypress div.item-list-tabs ul li.current a span {
+        background-color: #eee;
+        background-color: #fff; }
+  /* line 627, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.item-list-tabs#subnav {
+    background: transparent;
+    margin: 10px 0;
+    overflow: hidden; }
+    /* line 631, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div.item-list-tabs#subnav ul li {
+      margin-top: 0; }
+      /* line 633, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+      #buddypress div.item-list-tabs#subnav ul li.last {
+        margin-top: 4px; }
+  /* line 638, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.item-list-tabs#object-nav {
+    margin-top: 0; }
+/* line 642, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.messages-options-nav {
+  background: #eee;
+  font-size: 80%;
+  margin: 0;
+  padding: 5px 15px;
+  text-align: right; }
+/* line 651, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#message-thread div.message-box {
+  margin: 0;
+  padding: 15px; }
+/* line 655, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#message-thread div.alt {
+  background: #f4f4f4; }
+/* line 658, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#message-thread div.message-metadata {
+  overflow: hidden; }
+/* line 661, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#message-thread div.message-content {
+  margin-left: 45px; }
+/* line 664, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#message-thread div.message-options {
+  text-align: right; }
+/* line 668, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#message-thread strong {
+  font-size: 100%;
+  margin: 0; }
+  /* line 671, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#message-thread strong a {
+    text-decoration: none; }
+  /* line 674, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div#message-thread strong span.activity {
+    margin-top: 4px; }
+/* line 678, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#message-thread p#message-recipients {
+  margin: 10px 0 20px; }
+/* line 681, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#message-thread img.avatar {
+  float: left;
+  margin: 0 10px 0 0;
+  vertical-align: middle; }
+/* line 687, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.message-search {
+  float: right;
+  margin: 0 20px; }
+/* line 691, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.ac-reply-avatar img {
+  border: 1px solid #eee; }
+/* line 694, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#signup-avatar img {
+  margin: 0 15px 10px 0; }
+/* line 705, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.pending a:hover {
+  border-color: #eee;
+  color: #bbb; }
+/* line 710, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div#item-nav ul li.loading a {
+  background-position: 88% 50%; }
+/* line 713, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress div.profile h4 {
+  margin-bottom: auto;
+  margin-top: 15px; }
+/* line 718, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #nav-above {
+  display: none; }
+/* line 721, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .clear {
+  clear: left; }
+/* line 724, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #activity-stream {
+  margin-top: -5px; }
+  /* line 726, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress #activity-stream p {
+    margin: 5px 0; }
+/* line 732, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress form#whats-new-form #whats-new-avatar {
+  float: left; }
+/* line 735, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress form#whats-new-form #whats-new-content {
+  margin-left: 55px;
+  padding: 0 0 20px 20px; }
+/* line 739, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress form#whats-new-form textarea {
+  background: #fff;
+  color: #555;
+  font-family: inherit;
+  font-size: 90%;
+  height: 20px;
+  padding: 6px;
+  width: 98%; }
+/* line 748, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress form#whats-new-form #whats-new-submit {
+  float: right;
+  margin-top: 12px; }
+/* line 752, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress form#whats-new-form p.activity-greeting {
+  line-height: 0.5em;
+  margin-bottom: 15px;
+  margin-left: 75px; }
+/* line 757, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress form#whats-new-form #whats-new-options select {
+  max-width: 200px;
+  margin-top: 12px; }
+/* line 762, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress form#send-invite-form {
+  margin-top: 20px; }
+/* line 766, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress form.standard-form .left-menu {
+  float: left; }
+  /* line 768, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress form.standard-form .left-menu #invite-list ul {
+    margin: 1%;
+    list-style: none; }
+    /* line 771, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress form.standard-form .left-menu #invite-list ul li {
+      margin: 0 0 0 1%; }
+/* line 776, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress form.standard-form .main-column {
+  margin-left: 190px; }
+  /* line 778, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress form.standard-form .main-column ul#friend-list {
+    clear: none;
+    float: left; }
+    /* line 781, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress form.standard-form .main-column ul#friend-list h4 {
+      clear: none; }
+/* line 788, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #whats-new-options {
+  overflow: auto;
+  height: 0; }
+/* line 793, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress ul.item-list {
+  border-top: 1px solid #eaeaea;
+  width: 100%;
+  list-style: none;
+  clear: both;
+  margin: 0;
+  padding: 0; }
+  /* line 800, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress ul.item-list li {
+    border-bottom: 1px solid #eaeaea;
+    padding: 15px 0;
+    margin: 0;
+    position: relative;
+    list-style: none; }
+    /* line 809, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress ul.item-list li div.item-title span {
+      color: #999;
+      font-size: 80%; }
+    /* line 814, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress ul.item-list li div.item-desc {
+      color: #888;
+      font-size: 80%;
+      margin: 10px 0 0 60px;
+      width: 50%; }
+    /* line 820, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress ul.item-list li div.action {
+      position: absolute;
+      top: 15px;
+      right: 0;
+      text-align: right; }
+    /* line 826, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress ul.item-list li div.meta {
+      color: #888;
+      font-size: 80%;
+      margin-top: 10px; }
+    /* line 835, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress ul.item-list li img.avatar {
       float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 82.97872%;
-      margin-left: 8.51064%; }
-      /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
-      .buddypress main section:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    /* line 5, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_default.scss */
-    .buddypress main section {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 100%; }
-      /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
-      .buddypress main section:last-child {
-        margin-right: 0; } }
-  @media screen and (max-width: 767px) {
-    /* line 5, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_default.scss */
-    .buddypress main section {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 100%; }
-      /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
-      .buddypress main section:last-child {
-        margin-right: 0; } }
+      margin: 0 10px 0 0; }
+    /* line 839, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress ul.item-list li h5 span.small {
+      float: right;
+      font-size: 80%;
+      font-weight: normal; }
+  /* line 845, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress ul.item-list.activity-list li.has-comments {
+    padding-bottom: 15px; }
+/* line 849, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress ul#topic-post-list {
+  margin: 0;
+  width: auto; }
+  /* line 852, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress ul#topic-post-list li {
+    padding: 15px;
+    position: relative; }
+    /* line 855, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress ul#topic-post-list li.alt {
+      background: #f5f5f5; }
+    /* line 859, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress ul#topic-post-list li div.poster-meta {
+      color: #888;
+      margin-bottom: 10px; }
+    /* line 863, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress ul#topic-post-list li div.post-content {
+      margin-left: 54px; }
+/* line 869, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress ul.activity-list li {
+  overflow: hidden;
+  padding: 15px 0 0;
+  list-style: none; }
+/* line 874, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress ul.button-nav li {
+  float: left;
+  margin: 0 10px 10px 0;
+  list-style: none; }
+  /* line 884, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress ul.button-nav li.current a {
+    font-weight: bold; }
+/* line 889, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress ul.single-line li {
+  border: none; }
+/* line 894, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-list .activity-avatar {
+  float: left; }
+/* line 898, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-list li.mini {
+  font-size: 80%;
+  position: relative; }
+  /* line 901, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .activity-list li.mini .activity-comments {
+    clear: both;
+    font-size: 120%; }
+  /* line 913, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .activity-list li.mini .activity-content p {
+    margin: 0; }
+/* line 917, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-list li .activity-content {
+  position: relative; }
+/* line 920, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-list li .activity-inreplyto {
+  color: #888;
+  font-size: 80%; }
+  /* line 926, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .activity-list li .activity-inreplyto > p {
+    margin: 0;
+    display: inline; }
+/* line 936, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-list li.load-more a {
+  color: #4D4D4D; }
+/* line 942, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-list li.load-newest a {
+  color: #4D4D4D; }
+/* line 953, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-list .activity-content {
+  margin: 0 0 0 70px; }
+  /* line 955, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .activity-list .activity-content .activity-header {
+    color: #888;
+    line-height: 220%; }
+    /* line 958, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress .activity-list .activity-content .activity-header img.avatar {
+      float: none !important;
+      margin: 0 5px -8px 0 !important; }
+  /* line 963, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .activity-list .activity-content .comment-header {
+    color: #888;
+    line-height: 220%; }
+  /* line 967, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .activity-list .activity-content .activity-inner {
+    margin: 10px 10px 5px 0;
+    overflow: hidden; }
+  /* line 971, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .activity-list .activity-content blockquote {
+    margin: 10px 10px 5px 0;
+    overflow: hidden; }
+  /* line 975, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .activity-list .activity-content img.thumbnail {
+    border: 2px solid #eee;
+    float: left;
+    margin: 0 10px 5px 0; }
+/* line 982, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-header {
+  margin-right: 20px; }
+  /* line 984, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .activity-header a {
+    text-decoration: none; }
+/* line 992, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress a.activity-time-since {
+  color: #aaa;
+  text-decoration: none; }
+  /* line 995, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress a.activity-time-since:hover {
+    color: #888;
+    text-decoration: underline; }
+/* line 1005, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress a.bp-primary-action:hover span {
+  background: #555;
+  color: #fff; }
+/* line 1019, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress a.loading {
+  border-color: #aaa; }
+  /* line 1021, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress a.loading:hover {
+    color: #777; }
+/* line 1027, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress a.disabled:hover {
+  border-color: #eee;
+  color: #bbb; }
+/* line 1037, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress span.activity {
+  display: inline-block;
+  font-size: 80%;
+  opacity: 0.8;
+  padding: 0; }
+/* line 1043, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress span.user-nicename {
+  color: #777;
+  display: inline-block;
+  font-size: 120%;
+  font-weight: bold; }
+/* line 1050, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-read-more {
+  margin-left: 1em;
+  white-space: nowrap; }
+/* line 1054, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .acomment-options {
+  float: left;
+  margin: 5px 0 5px 40px; }
+  /* line 1057, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .acomment-options a {
+    color: #999; }
+    /* line 1059, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress .acomment-options a:hover {
+      color: inherit; }
+/* line 1065, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress li.groups-members-search input[type=text] {
+  font-size: 90%;
+  padding: 1px 3px; }
+/* line 1073, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .dir-form {
+  clear: both; }
+/* line 1076, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #pass-strength-result {
+  background-color: #eee;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px;
+  display: none;
+  margin: 5px 5px 5px 0;
+  padding: 5px;
+  text-align: center;
+  width: 150px; }
+  /* line 1092, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress #pass-strength-result.good {
+    background-color: #ffec8b;
+    border-color: #fc0 !important;
+    display: block; }
+  /* line 1097, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress #pass-strength-result.short {
+    background-color: #ffa0a0;
+    border-color: #f04040 !important;
+    display: block; }
+  /* line 1102, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress #pass-strength-result.strong {
+    background-color: #c3ff88;
+    border-color: #8dff1c !important;
+    display: block; }
+/* line 1109, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form #basic-details-section {
+  float: left;
+  width: 48%; }
+  /* line 1112, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .standard-form #basic-details-section #pass-strength-result {
+    width: 35%; }
+  /* line 1115, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .standard-form #basic-details-section input[type=password] {
+    width: 35%; }
+/* line 1121, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form#signup_form div.submit {
+  float: right; }
+/* line 1124, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form#signup_form div div.error {
+  background: #faa;
+  color: #a00;
+  margin: 0 0 10px 0;
+  padding: 6px;
+  width: 90%; }
+/* line 1132, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form#signup_form input[type=text] {
+  width: 90%; }
+/* line 1135, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form#signup_form textarea {
+  width: 90%; }
+/* line 1139, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form textarea {
+  width: 75%;
+  height: 120px; }
+  /* line 1143, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .standard-form textarea#message_content {
+    height: 200px; }
+  /* line 1146, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .standard-form textarea:focus {
+    background: #fafafa;
+    color: #555; }
+/* line 1151, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form input[type=text] {
+  width: 75%; }
+/* line 1195, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form select {
+  padding: 3px; }
+  /* line 1198, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .standard-form select:focus {
+    background: #fafafa;
+    color: #555; }
+/* line 1203, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form input[type=password] {
+  margin-bottom: 5px; }
+/* line 1212, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form div.radio ul {
+  margin: 10px 0 15px 38px;
+  list-style: disc; }
+  /* line 1215, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .standard-form div.radio ul li {
+    margin-bottom: 5px; }
+/* line 1223, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form div.submit {
+  clear: both;
+  padding: 15px 0 0; }
+  /* line 1226, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .standard-form div.submit input {
+    margin-right: 15px; }
+/* line 1235, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form#sidebar-login-form label {
+  margin-top: 5px; }
+/* line 1238, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form#sidebar-login-form input[type=text] {
+  padding: 4px;
+  width: 95%; }
+/* line 1242, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form#sidebar-login-form input[type=password] {
+  padding: 4px;
+  width: 95%; }
+/* line 1247, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form #blog-details-section {
+  float: left;
+  width: 48%;
+  clear: left; }
+  /* line 1251, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .standard-form #blog-details-section input#signup_blog_url {
+    width: 35%; }
+/* line 1256, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form p.description {
+  color: #888;
+  font-size: 80%;
+  margin: 5px 0; }
+/* line 1261, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form p.submit {
+  margin-bottom: 0;
+  padding: 15px 0 0; }
+/* line 1266, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form #profile-details-section {
+  float: left;
+  width: 48%;
+  float: right; }
+/* line 1274, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form#send-reply textarea {
+  width: 97.5%; }
+/* line 1277, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form a.clear-value {
+  display: block;
+  margin-top: 5px;
+  outline: none; }
+/* line 1282, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form input:focus {
+  background: #fafafa;
+  color: #555; }
+/* line 1286, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .standard-form .field-visibility-settings label {
+  margin: 0;
+  font-weight: normal; }
+/* line 1307, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .form-allowed-tags {
+  width: 90%; }
+/* line 1311, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #commentform input[type=text] {
+  width: 90%; }
+/* line 1314, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #commentform textarea {
+  width: 90%; }
+/* line 1325, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress button.pending:hover {
+  border-color: #eee;
+  color: #bbb; }
+/* line 1332, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress button.disabled:hover {
+  border-color: #eee;
+  color: #bbb; }
+/* line 1363, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .wp-editor-wrap button {
+  padding: 0 10px 1px; }
+/* line 1366, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .wp-editor-wrap input[type=submit] {
+  padding: 0 10px 1px; }
+/* line 1369, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .wp-editor-wrap input[type=button] {
+  padding: 0 10px 1px; }
+/* line 1372, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .wp-editor-wrap input[type=reset] {
+  padding: 0 10px 1px; }
+/* line 1375, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .wp-editor-wrap a.button {
+  padding: 0 10px 1px; }
+/* line 1387, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress input[type="submit"]:hover.pending {
+  border-color: #eee;
+  color: #bbb; }
+/* line 1391, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress input[type="submit"]:hover.disabled {
+  border-color: #eee;
+  color: #bbb; }
+/* line 1405, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress input[type="button"]:hover.pending {
+  border-color: #eee;
+  color: #bbb; }
+/* line 1409, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress input[type="button"]:hover.disabled {
+  border-color: #eee;
+  color: #bbb; }
+/* line 1423, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress input[type="reset"]:hover.pending {
+  border-color: #eee;
+  color: #bbb; }
+/* line 1427, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress input[type="reset"]:hover.disabled {
+  border-color: #eee;
+  color: #bbb; }
+/* line 1434, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress table.notifications {
+  width: 100%; }
+  /* line 1437, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notifications tr td {
+    padding: 8px;
+    vertical-align: middle; }
+  /* line 1444, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notifications tr th {
+    padding: 8px;
+    vertical-align: middle; }
+  /* line 1448, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notifications tr.alt td {
+    background: #f5f5f5; }
+  /* line 1452, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notifications thead tr {
+    background: #eaeaea; }
+  /* line 1455, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notifications th.icon {
+    display: none; }
+  /* line 1458, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notifications td:first-child {
+    display: none; }
+/* line 1462, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress table.notifications-settings {
+  width: 100%; }
+  /* line 1465, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notifications-settings tr td {
+    padding: 8px;
+    vertical-align: middle; }
+  /* line 1472, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notifications-settings tr th {
+    padding: 8px;
+    vertical-align: middle; }
+  /* line 1476, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notifications-settings tr.alt td {
+    background: #f5f5f5; }
+  /* line 1480, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notifications-settings thead tr {
+    background: #eaeaea; }
+/* line 1484, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress table.profile-settings {
+  width: 100%; }
+  /* line 1487, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.profile-settings tr td {
+    padding: 8px;
+    vertical-align: middle; }
+  /* line 1491, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.profile-settings tr.alt td {
+    background: #f5f5f5; }
+  /* line 1495, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.profile-settings thead tr {
+    background: #eaeaea; }
+  /* line 1498, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.profile-settings th.title {
+    width: 80%; }
+/* line 1502, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress table.profile-fields {
+  width: 100%;
+  margin-bottom: 20px; }
+  /* line 1505, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.profile-fields:last-child {
+    margin-bottom: 0; }
+  /* line 1508, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.profile-fields p {
+    margin: 0; }
+    /* line 1510, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress table.profile-fields p:last-child {
+      margin-top: 0; }
+  /* line 1515, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.profile-fields tr td {
+    padding: 8px;
+    vertical-align: middle; }
+  /* line 1522, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.profile-fields tr th {
+    padding: 8px;
+    vertical-align: middle; }
+  /* line 1526, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.profile-fields tr.alt td {
+    background: #f5f5f5; }
+  /* line 1530, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.profile-fields thead tr {
+    background: #eaeaea; }
+/* line 1534, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress table.wp-profile-fields {
+  width: 100%; }
+  /* line 1537, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.wp-profile-fields tr td {
+    padding: 8px;
+    vertical-align: middle; }
+  /* line 1544, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.wp-profile-fields tr th {
+    padding: 8px;
+    vertical-align: middle; }
+  /* line 1548, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.wp-profile-fields tr.alt td {
+    background: #f5f5f5; }
+  /* line 1552, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.wp-profile-fields thead tr {
+    background: #eaeaea; }
+/* line 1556, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress table.messages-notices {
+  width: 100%; }
+  /* line 1559, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.messages-notices tr td {
+    padding: 8px;
+    vertical-align: middle; }
+  /* line 1566, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.messages-notices tr th {
+    padding: 8px;
+    vertical-align: middle; }
+  /* line 1570, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.messages-notices tr.alt td {
+    background: #f5f5f5; }
+  /* line 1574, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.messages-notices thead tr {
+    background: #eaeaea; }
+/* line 1578, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress table.forum {
+  width: 100%;
+  margin: 0;
+  width: auto;
+  clear: both; }
+  /* line 1584, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum tr td {
+    padding: 8px;
+    vertical-align: middle; }
+    /* line 1590, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress table.forum tr td.td-title a.topic-title {
+      font-size: 110%; }
+  /* line 1594, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum tr th {
+    padding: 8px;
+    vertical-align: middle; }
+    /* line 1597, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress table.forum tr th#th-title {
+      text-align: left; }
+    /* line 1600, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress table.forum tr th#th-poster {
+      text-align: left; }
+    /* line 1603, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress table.forum tr th#th-group {
+      text-align: left; }
+  /* line 1609, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum tr > td:first-child {
+    padding-left: 15px; }
+  /* line 1612, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum tr > td:last-child {
+    padding-right: 15px; }
+  /* line 1617, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum tr > th:first-child {
+    padding-left: 15px; }
+  /* line 1620, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum tr > th:last-child {
+    padding-right: 15px; }
+  /* line 1625, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum tr.alt td {
+    background: #f5f5f5; }
+  /* line 1628, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum tr.sticky td {
+    font-size: 110%;
+    background: #fff9db;
+    border-top: 1px solid #ffe8c4;
+    border-bottom: 1px solid #ffe8c4; }
+  /* line 1634, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum tr.closed td.td-title {
+    padding-left: 35px; }
+  /* line 1638, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum td {
+    text-align: center; }
+    /* line 1640, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress table.forum td.td-poster {
+      text-align: left;
+      min-width: 140px; }
+    /* line 1644, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress table.forum td.td-group {
+      text-align: left;
+      min-width: 140px; }
+    /* line 1648, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress table.forum td.td-title {
+      text-align: left; }
+    /* line 1651, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress table.forum td.td-freshness {
+      white-space: nowrap; }
+      /* line 1653, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+      #buddypress table.forum td.td-freshness span.time-since {
+        font-size: 80%;
+        color: #888; }
+    /* line 1658, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress table.forum td p.topic-text {
+      color: #888;
+      font-size: 100%; }
+    /* line 1662, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress table.forum td img.avatar {
+      float: none;
+      margin: 0 5px -8px 0; }
+  /* line 1668, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum th#th-title {
+    width: 80%; }
+  /* line 1671, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum th#th-freshness {
+    width: 25%; }
+  /* line 1674, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum th#th-postcount {
+    width: 15%; }
+  /* line 1678, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum thead tr {
+    background: #eaeaea; }
+  /* line 1681, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.forum p.topic-meta {
+    font-size: 80%;
+    margin: 5px 0 0; }
+/* line 1686, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress table#message-threads {
+  clear: both;
+  margin: 0;
+  width: auto; }
+  /* line 1690, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table#message-threads tr.unread td {
+    background: #fff9db;
+    border-top: 1px solid #ffe8c4;
+    border-bottom: 1px solid #ffe8c4;
+    font-weight: bold; }
+/* line 1697, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress table.notification-settings {
+  margin-bottom: 20px;
+  text-align: left; }
+  /* line 1701, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notification-settings th.icon {
+    display: none; }
+  /* line 1704, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notification-settings th.title {
+    width: 80%; }
+  /* line 1708, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notification-settings .yes {
+    text-align: center;
+    width: 40px; }
+  /* line 1712, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notification-settings .no {
+    text-align: center;
+    width: 40px; }
+  /* line 1716, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table.notification-settings td:first-child {
+    display: none; }
+/* line 1720, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress table tr td.thread-info p {
+  margin: 0; }
+  /* line 1722, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress table tr td.thread-info p.thread-excerpt {
+    color: #888;
+    font-size: 80%;
+    margin-top: 3px; }
+/* line 1729, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #groups-notification-settings {
+  margin-bottom: 0; }
+/* line 1732, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .item-body {
+  margin: 20px 0; }
+/* line 1735, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .field-visibility-settings {
+  display: none;
+  margin-top: 10px;
+  color: #888; }
+  /* line 1739, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .field-visibility-settings a {
+    font-size: 80%; }
+  /* line 1742, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .field-visibility-settings legend {
+    font-style: italic; }
+  /* line 1745, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .field-visibility-settings .radio {
+    list-style: none;
+    margin-bottom: 0; }
+/* line 1750, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .current-visibility-level {
+  font-weight: bold;
+  font-style: normal; }
+/* line 1754, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .field-visibility-settings-toggle {
+  color: #888;
+  font-style: italic; }
+  /* line 1757, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .field-visibility-settings-toggle a {
+    font-size: 80%; }
+/* line 1761, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .field-visibility-settings-notoggle {
+  color: #888; }
+/* line 1764, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress noscript div.pagination {
+  margin-bottom: 15px; }
+/* line 1767, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .paged #nav-above {
+  display: block; }
+/* line 1770, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress img.wp-smiley {
+  border: none !important;
+  clear: none !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+/* line 1777, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #item-body form#whats-new-form {
+  margin: 0;
+  padding: 0; }
+/* line 1781, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .home-page form#whats-new-form {
+  border-bottom: none;
+  padding-bottom: 0; }
+/* line 1785, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #whats-new:focus {
+  border-color: rgba(31, 179, 221, 0.9) !important;
+  outline-color: rgba(31, 179, 221, 0.9); }
+/* line 1797, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .comment-meta a {
+  text-decoration: none; }
+/* line 1800, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .acomment-meta a {
+  text-decoration: none; }
+/* line 1804, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-inner > p {
+  word-wrap: break-word; }
+/* line 1807, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-inner > .activity-inner {
+  margin: 0; }
+/* line 1810, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .activity-inner > blockquote {
+  margin: 0; }
+/* line 1819, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #reply-title small a:hover span {
+  background: #555;
+  color: #fff; }
+/* line 1824, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #message.info {
+  margin-bottom: 0; }
+/* line 1827, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress input.loading {
+  border-color: #aaa; }
+  /* line 1829, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress input.loading:hover {
+    color: #777; }
+/* line 1833, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #admins-list li {
+  overflow: auto;
+  list-style: none; }
+/* line 1837, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #mods-list li {
+  overflow: auto;
+  list-style: none; }
+/* line 1841, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #members-list li {
+  overflow: auto;
+  list-style: none; }
+/* line 1848, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #message-threads img.avatar {
+  max-width: none; }
+/* line 1851, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress #profile-edit-form ul.button-nav {
+  margin-top: 15px; }
+/* line 1854, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#buddypress .field-visibility select {
+  margin: 0; }
+
+/* line 1860, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.no-js #buddypress #whats-new-options {
+  height: auto; }
+/* line 1863, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.no-js #buddypress .field-visibility-settings-toggle {
+  display: none; }
+/* line 1866, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.no-js #buddypress .field-visibility-settings-close {
+  display: none; }
+/* line 1869, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.no-js #buddypress .field-visibility-settings {
+  display: block; }
+/* line 1872, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.no-js #buddypress form#whats-new-form textarea {
+  height: 50px; }
+/* line 1878, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.activity-permalink #buddypress ul.item-list {
+  border: none; }
+  /* line 1880, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  body.activity-permalink #buddypress ul.item-list li.activity-item {
+    border: none; }
+/* line 1884, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.activity-permalink #buddypress ul.activity-list li.has-comments {
+  padding-bottom: 0; }
+/* line 1890, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.activity-permalink #buddypress .activity-list li .activity-content {
+  border: none;
+  font-size: 100%;
+  line-height: 150%;
+  margin-left: 170px;
+  margin-right: 0;
+  padding: 0; }
+/* line 1898, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.activity-permalink #buddypress .activity-list li .activity-header > p {
+  margin: 0;
+  padding: 5px 0 0; }
+/* line 1902, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.activity-permalink #buddypress .activity-list li.mini .activity-comments {
+  clear: none;
+  margin-top: 0; }
+/* line 1907, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.activity-permalink #buddypress .activity-list > li:first-child {
+  padding-top: 0; }
+/* line 1912, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.activity-permalink #buddypress .activity-content .activity-inner {
+  margin-left: 0;
+  margin-top: 5px; }
+/* line 1916, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.activity-permalink #buddypress .activity-content blockquote {
+  margin-left: 0;
+  margin-top: 5px; }
+/* line 1922, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.activity-permalink #buddypress div.activity-meta {
+  margin-bottom: 6px; }
+/* line 1925, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.activity-permalink #buddypress div.activity-comments {
+  background: none;
+  margin-left: 170px;
+  width: auto; }
+  /* line 1929, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  body.activity-permalink #buddypress div.activity-comments ul li {
+    border-width: 1px;
+    padding: 10px 0 0; }
+    /* line 1932, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    body.activity-permalink #buddypress div.activity-comments ul li > ul {
+      margin-top: 10px; }
+  /* line 1936, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  body.activity-permalink #buddypress div.activity-comments > ul {
+    padding: 0 10px 0 15px; }
+  /* line 1939, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  body.activity-permalink #buddypress div.activity-comments div.acomment-content {
+    font-size: 90%; }
+/* line 1944, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.activity-permalink #buddypress li.mini .activity-meta {
+  margin-top: 4px; }
+/* line 1948, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+body.register #buddypress div.page ul {
+  list-style: none; }
+
+/* line 1956, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#sitewide-notice #message {
+  left: 2%;
+  position: fixed;
+  top: 1em;
+  width: 96%;
+  z-index: 9999; }
+/* line 1963, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#sitewide-notice strong {
+  display: block;
+  margin-bottom: -1em; }
+/* line 1967, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+#sitewide-notice.admin-bar-on #message {
+  top: 3.3em; }
+
+@-webkit-keyframes loader-pulsate {
+  from {
+    border-color: #aaa;
+    box-shadow: 0 0 6px #ccc; }
+  to {
+    border-color: #ccc;
+    box-shadow: 0 0 6px #f8f8f8; } }
+@-moz-keyframes loader-pulsate {
+  from {
+    border-color: #aaa;
+    box-shadow: 0 0 6px #ccc; }
+  to {
+    border-color: #ccc;
+    box-shadow: 0 0 6px #f8f8f8; } }
+@media only screen and (max-width: 480px) {
+  /* line 1997, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.dir-search {
+    float: right;
+    margin-top: -50px;
+    text-align: right; }
+    /* line 2001, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div.dir-search input[type="text"] {
+      margin-bottom: 1em;
+      width: 50%; }
+  /* line 2007, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress form.standard-form .main-column div.action {
+    position: relative;
+    margin-bottom: 1em; }
+  /* line 2011, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress form.standard-form .main-column ul#friend-list h4 {
+    width: 100%; }
+
+  /* line 2016, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  a.bp-title-button {
+    margin-left: 10px; } }
+@media only screen and (max-width: 320px) {
+  /* line 2023, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.dir-search {
+    clear: left;
+    float: left;
+    margin-top: 0;
+    text-align: left; }
+  /* line 2029, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.pagination .pag-count {
+    margin-left: 0; }
+  /* line 2034, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress li#groups-order-select {
+    clear: left;
+    float: left; }
+  /* line 2038, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress li div.item {
+    margin-left: 70px;
+    width: auto; }
+  /* line 2044, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress ul.item-list li div.action {
+    clear: left;
+    float: left;
+    margin-top: 0;
+    margin-left: 70px;
+    position: relative;
+    top: 0;
+    right: 0;
+    text-align: left; }
+  /* line 2054, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress ul.item-list li div.item-desc {
+    clear: left;
+    float: left;
+    margin: 10px 0 0;
+    width: auto; }
+  /* line 2060, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress ul.item-list li div.meta {
+    margin-top: 0; }
+  /* line 2064, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress .item-desc p {
+    margin: 0 0 10px; } }
+@media only screen and (max-width: 240px) {
+  /* line 2072, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress li#groups-order-select {
+    float: left; }
+  /* line 2075, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress li div.item {
+    margin-left: 45px; }
+  /* line 2079, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress div.dir-search {
+    float: left;
+    margin: 0; }
+    /* line 2082, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+    #buddypress div.dir-search input[type="text"] {
+      width: 50%; }
+  /* line 2087, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress ul.item-list li img.avatar {
+    width: 30px;
+    height: auto; }
+  /* line 2091, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  #buddypress ul.item-list li div.action {
+    margin-left: 45px; }
+
+  /* line 2096, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  h1 a.bp-title-button {
+    clear: left;
+    float: left;
+    margin: 10px 0 20px; } }
+/* line 2107, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.widget.buddypress div.item-options {
+  font-size: 90%;
+  margin: 0 0 1em 0;
+  padding: 1em 0; }
+/* line 2112, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.widget.buddypress div.item {
+  margin: 0 0 1em 0; }
+/* line 2115, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.widget.buddypress div.item-meta {
+  font-size: 11px;
+  margin-left: 38px; }
+/* line 2119, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.widget.buddypress div.item-content {
+  font-size: 11px;
+  margin-left: 38px; }
+/* line 2123, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.widget.buddypress div.avatar-block {
+  overflow: hidden; }
+/* line 2126, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.widget.buddypress div.item-avatar img.avatar {
+  float: left;
+  margin: 0 10px 15px 0; }
+/* line 2132, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.widget.buddypress #bp-login-widget-form label {
+  display: block;
+  margin: 1rem 0 .5rem; }
+/* line 2136, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.widget.buddypress #bp-login-widget-form #bp-login-widget-submit {
+  margin-right: 10px; }
+/* line 2140, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.widget.buddypress .bp-login-widget-user-avatar {
+  float: left;
+  width: 60px; }
+/* line 2144, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.widget.buddypress span.activity {
+  display: inline-block;
+  font-size: 80%;
+  opacity: 0.8;
+  padding: 0; }
+/* line 2150, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.widget.buddypress ul.item-list img.avatar {
+  height: 20px;
+  margin-right: 10px;
+  width: 20px; }
+/* line 2155, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+.widget.buddypress .bp-login-widget-user-links > div {
+  padding-left: 60px;
+  margin-bottom: .5rem; }
+  /* line 2158, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/buddypress/_buddypress_all.scss */
+  .widget.buddypress .bp-login-widget-user-links > div.bp-login-widget-user-link a {
+    font-weight: bold; }
 
 /* line 2, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/bbpress/_bbpress_default.scss */
 .bbpress main {

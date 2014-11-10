@@ -22,9 +22,9 @@ require_once( 'functions/woocommerce-functions.php' ); // Woo Commerce Functions
 require_once( 'functions/custom_settings.php' ); // Woo Commerce Functions
 require_once( 'functions/admin_dashboard.php' ); // Custom Admin Dashboard settings
 require_once( 'functions/comments.php' ); // Custom Comments callback
-require_once( 'functions/options-pages.php' ); // Custom Comments callback
-require_once( 'functions/contact-form-7-fixes.php' ); // Custom Comments callback
-require_once( 'functions/gallery.php' ); // Custom Comments callback
+require_once( 'functions/options-pages.php' ); // Define options page (ACF)
+require_once( 'functions/contact-form-7-fixes.php' ); // Load CF7 styles/scripts on certain pages
+require_once( 'functions/gallery.php' ); // Make Wordpress Native gallery Secondthought compatible
 
 /*------------------------------------*\
 	Theme Support
@@ -145,5 +145,12 @@ add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove
 
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
+
+
+add_action( 'wp_print_styles', 'deregister_bbpress_styles', 15 );
+function deregister_bbpress_styles() {
+ wp_deregister_style( 'bp-legacy-css' );
+}
+
 
 ?>
