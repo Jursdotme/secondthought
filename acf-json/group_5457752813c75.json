@@ -233,6 +233,320 @@
             "maxlength": "",
             "readonly": 0,
             "disabled": 0
+        },
+        {
+            "key": "field_546f0727182fe",
+            "label": "Sideops\u00e6tning",
+            "name": "",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0
+        },
+        {
+            "key": "field_546f0752182ff",
+            "label": "Vis sideramme",
+            "name": "vis_sideramme",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_546f077c18300",
+            "label": "Baggrundsfarve",
+            "name": "baggrundsfarve",
+            "prefix": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_546f0752182ff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "default_value": "#ffffff"
+        },
+        {
+            "key": "field_546f17abf4309",
+            "label": "Sidefarve",
+            "name": "sidefarve",
+            "prefix": "",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_546f0752182ff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "default_value": "#ffffff"
+        },
+        {
+            "key": "field_5472f6f1b3d5c",
+            "label": "Sidefarve gennemsigtighed",
+            "name": "side_opacity",
+            "prefix": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": 100,
+            "placeholder": "",
+            "prepend": "",
+            "append": "%",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_546f07c918301",
+            "label": "Baggrundsbillede",
+            "name": "baggrundsbillede",
+            "prefix": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_546f0752182ff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all"
+        },
+        {
+            "key": "field_546f2c0148d57",
+            "label": "Brug billed overlay",
+            "name": "brug_billed_overlay",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_546f0752182ff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_546f2c49f8357",
+            "label": "Overlay gennemsigtighed",
+            "name": "overlay_gennemsigtighed",
+            "prefix": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_546f0752182ff",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_546f2c0148d57",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "default_value": 80,
+            "placeholder": "",
+            "prepend": "",
+            "append": "%",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_546f080618302",
+            "label": "Horisontal placering",
+            "name": "bg_placering_h",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "Hvordan skal baggrundsbilledet placeres horisontalt p\u00e5 siden?",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_546f0752182ff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "choices": {
+                "left": "Venstre",
+                "center": "Midt",
+                "right": "H\u00f8jre"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "midt",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_546f08e518303",
+            "label": "Vertical placering",
+            "name": "bg_placering_v",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "Hvordan skal baggrundsbilledet placeres vertikalt p\u00e5 siden?",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_546f0752182ff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "choices": {
+                "top": "Top",
+                "center": "Midt",
+                "bottom": "Bund"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "midt",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_546f0cfd6fec4",
+            "label": "Gentagelse",
+            "name": "gentagelse",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "Hvordan skal baggrundsbilledet gentage sig hen over siden?",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_546f0752182ff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "choices": {
+                "repeat-x": "Horisontalt",
+                "repeat-y": "Verticalt",
+                "repeat": "Begge",
+                "no-repeat": "Ingen"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "begge",
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_546f0e06bd247",
+            "label": "St\u00f8rrelse",
+            "name": "storrelse",
+            "prefix": "",
+            "type": "radio",
+            "instructions": "Hvor stort skal baggrundsbilledet v\u00e6re?\r\nD\u00e6k: Lav baggrundsbilledet s\u00e5 stort som muligt s\u00e5 baggrunden er helt d\u00e6kket. Nogle dele af billedet vil muligvis ikke v\u00e6re synlige i vinduet.\r\nFyld: Skaler baggrundsbilledet s\u00e5 det er s\u00e5 stort som mulig s\u00e5 billedets h\u00f8jde og bredte kan v\u00e6re indenfor sidens rammer.\r\nAuto: Behold billedets originale st\u00f8rrelse.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_546f0752182ff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "choices": {
+                "cover": "D\u00e6k",
+                "contain": "Fyld",
+                "auto": "Auto"
+            },
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical"
+        },
+        {
+            "key": "field_546f24cbc3ebb",
+            "label": "Rul",
+            "name": "backgroundscroll",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_546f0752182ff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "message": "Baggrunden skal scrolle med siden.",
+            "default_value": 1
+        },
+        {
+            "key": "field_546f272908042",
+            "label": "Skygge",
+            "name": "shadow",
+            "prefix": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_546f0752182ff",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "choices": {
+                "wrapper-shadow-1": "Skygge 1",
+                "wrapper-shadow-2": "Skygge 2",
+                "wrapper-shadow-3": "Skygge 3",
+                "wrapper-shadow-4": "Skygge 4",
+                "wrapper-shadow-5": "Skygge 5"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
         }
     ],
     "location": [

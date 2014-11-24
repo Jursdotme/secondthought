@@ -1,7 +1,8 @@
 @import 'base/normalize';
 @import 'base/bourbon';
-@import 'base/grid-settings';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
+@import 'base/helpers';
+@import 'base/grid-settings';
 
 @import 'base/variables';
 @import 'base/typography';
@@ -10,7 +11,7 @@
 @import 'base/image_alignment';
 @import 'base/lists';
 @import 'base/forms';
-@import 'base/helpers';
+
 @import 'base/tables';
 @import 'base/alerts';
 

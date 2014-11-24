@@ -23,10 +23,10 @@
     </script>
 
 	</head>
-	<body <?php body_class(); ?>>
-
-		<!-- wrapper -->
-		<div class="wrapper">
+	<?php
+		// Get dynamic page wrapper and body tag
+		get_template_part('partials/page_wrapper');
+	?>
 
 			<!-- header -->
 			<header class="header clear" role="banner">
