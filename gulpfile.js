@@ -60,6 +60,15 @@ gulp.task('scripts-dev', function() {
     .pipe(gulp.dest('build/scripts'));
 });
 
+gulp.task('scripts-admin', function() {
+  // Minify and copy all JavaScript (except vendor scripts)
+  // with sourcemaps all the way down
+  return gulp.src('javascripts/admin/theme-customizer.js')
+  // .pipe(uglify())
+  .pipe(gulp.dest('build/scripts'));
+});
+
+
 gulp.task('sass', function () {
     return gulp.src('sass/style.scss')
         .pipe(sass())
@@ -119,11 +128,18 @@ gulp.task('watch-dev', function() {
   gulp.watch(paths.sass, ['sass-dev']);
 });
 
-gulp.task('dev', ['watch-dev', 'scripts-dev', 'sass-dev', 'images']);
+// Rerun the task when a file changes
+gulp.task('watch-admin', function() {
+  gulp.watch(paths.scripts, ['scripts-admin']);
+  gulp.watch(paths.images, ['images']);
+  gulp.watch(paths.sass, ['sass-admin']);
+});
+
+gulp.task('dev', ['watch-dev', 'scripts-admin', 'scripts-dev', 'sass-dev', 'images']);
 
 gulp.task('default', ['watch-dev', 'scripts-dev', 'sass-dev', 'images']);
 
-gulp.task('admin', ['sass-admin']);
+gulp.task('admin', ['sass-admin', 'scripts-admin']);
 
 gulp.task('editor', ['sass-editor']);
 

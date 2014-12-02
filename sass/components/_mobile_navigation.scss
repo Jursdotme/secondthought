@@ -21,6 +21,7 @@ $mobile-menu-width             : 220px;
   top: 5px;
   z-index: 9999999;
   transform: scale(.6);
+  box-shadow: none;
 
   &:focus {
     outline: 0;
@@ -29,6 +30,7 @@ $mobile-menu-width             : 220px;
   &:focus,
   &:hover {
     background: none;
+    box-shadow: none;
   }
 
   span {

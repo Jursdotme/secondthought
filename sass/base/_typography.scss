@@ -6,13 +6,13 @@ $slab: 'Roboto Slab', sans-serif;
 
 html {
   font-size: $base-font-size; // Scale typography on mobile
-  line-height: $base-font-size*1.25;
+  line-height: 1.5;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: $base-background-color;
-  color: $base-font-color;
+  // background-color: $base-background-color;
+  // color: $base-font-color;
   font-family: $sans-serif;
   position: relative;
   z-index: 1;
@@ -106,7 +106,7 @@ h4 {
 
 p {
   font-family: $sans-serif;
-  line-height: 1.5rem;
+  // line-height: 1.5rem;
   font-size: 1rem; // same as $base-font-size
   margin-bottom: 1.5rem;
 

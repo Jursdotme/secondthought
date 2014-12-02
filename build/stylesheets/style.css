@@ -326,13 +326,11 @@ body:after {
 /* line 7, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_typography.scss */
 html {
   font-size: 16px;
-  line-height: 20px; }
+  line-height: 1.5; }
 
 /* line 12, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_typography.scss */
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: #fff;
-  color: #363636;
   font-family: "Roboto", sans-serif;
   position: relative;
   z-index: 1; }
@@ -425,7 +423,6 @@ h4 {
 /* line 107, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_typography.scss */
 p {
   font-family: "Roboto", sans-serif;
-  line-height: 1.5rem;
   font-size: 1rem;
   margin-bottom: 1.5rem; }
   /* line 113, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_typography.scss */
@@ -1069,6 +1066,22 @@ table th[class*="col-"] {
     .woocommerce-info a:hover {
       color: #eaf9f0; }
 
+/* line 1, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_wordpress_customizer.scss */
+.content_shadow_0 {
+  box-shadow: none; }
+
+/* line 5, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_wordpress_customizer.scss */
+.content_shadow_1 {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.17), 0 1px 2px 0 rgba(0, 0, 0, 0.24); }
+
+/* line 9, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_wordpress_customizer.scss */
+.content_shadow_2 {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.22); }
+
+/* line 13, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_wordpress_customizer.scss */
+.content_shadow_3 {
+  box-shadow: 0 10px 11px 0 rgba(0, 0, 0, 0.19), 0 5px 5px 0 rgba(0, 0, 0, 0.23); }
+
 /* line 4, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_buttons.scss */
 textarea,
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
@@ -1277,9 +1290,10 @@ form.search {
   padding: 0 10px; }
   /* line 9, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
   .desktop-navigation #navigation-menu > li a {
-    color: #363636; }
+    color: #363636;
+    font-size: 16px; }
 
-/* line 14, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
+/* line 15, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
 .desktop-navigation {
   float: left;
   display: block;
@@ -1290,18 +1304,18 @@ form.search {
   .desktop-navigation:last-child {
     margin-right: 0; }
   @media screen and (min-width: 768px) {
-    /* line 14, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
+    /* line 15, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
     .desktop-navigation {
       display: block; } }
-  /* line 22, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
+  /* line 23, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
   .desktop-navigation ul {
     margin: 0;
     padding: 0;
     list-style: none; }
-    /* line 27, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
+    /* line 28, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
     .desktop-navigation ul.sub-menu {
       display: none; }
-      /* line 30, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
+      /* line 31, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
       .desktop-navigation ul.sub-menu.visible {
         display: block;
         position: absolute;
@@ -1310,7 +1324,7 @@ form.search {
         padding: 10px 0;
         z-index: 10000;
         border-radius: 3px; }
-        /* line 39, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
+        /* line 40, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
         .desktop-navigation ul.sub-menu.visible:before {
           content: '';
           height: 0;
@@ -1321,15 +1335,15 @@ form.search {
           position: absolute;
           top: -6px;
           left: 8px; }
-      /* line 50, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
+      /* line 51, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
       .desktop-navigation ul.sub-menu li:hover {
         background: #fafafa; }
-      /* line 54, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
+      /* line 55, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
       .desktop-navigation ul.sub-menu li a {
         display: block;
         font-size: 14px;
         padding: 5px 15px; }
-  /* line 63, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
+  /* line 64, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_desktop_navigation.scss */
   .desktop-navigation #navigation-menu {
     float: right; }
 
@@ -1348,14 +1362,16 @@ form.search {
   right: -30px;
   top: 5px;
   z-index: 9999999;
-  transform: scale(0.6); }
-  /* line 25, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+  transform: scale(0.6);
+  box-shadow: none; }
+  /* line 26, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
   .lines-button:focus {
     outline: 0; }
-  /* line 29, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+  /* line 30, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
   .lines-button:focus, .lines-button:hover {
-    background: none; }
-  /* line 34, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+    background: none;
+    box-shadow: none; }
+  /* line 36, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
   .lines-button span {
     display: block; }
   @media screen and (min-width: 768px) {
@@ -1363,15 +1379,15 @@ form.search {
     .lines-button {
       display: none; } }
 
-/* line 43, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+/* line 45, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
 .lines-button:hover {
   opacity: 1; }
 
-/* line 47, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+/* line 49, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
 .lines-button:active {
   transition: 0; }
 
-/* line 51, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+/* line 53, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
 .lines {
   display: inline-block;
   width: 60px;
@@ -1381,7 +1397,7 @@ form.search {
   transition: 0.2s cubic-bezier(0.2, 0, 0.7, 1);
   position: relative; }
 
-/* line 61, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+/* line 63, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
 .lines:before,
 .lines:after {
   display: inline-block;
@@ -1396,26 +1412,26 @@ form.search {
   -webkit-transform-origin: .28571rem center;
   transform-origin: .28571rem center; }
 
-/* line 76, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+/* line 78, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
 .lines:before {
   top: 1rem; }
 
-/* line 80, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+/* line 82, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
 .lines:after {
   top: -1rem; }
 
-/* line 86, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+/* line 88, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
 .arrow-flip.active .lines:before,
 .arrow-flip.active .lines:after {
   width: 30px; }
-/* line 91, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+/* line 93, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
 .arrow-flip.active .lines:before {
   transform: translate(0, -13px) rotate(40deg); }
-/* line 95, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+/* line 97, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
 .arrow-flip.active .lines:after {
   transform: translate(0, 13px) rotate(-40deg); }
 
-/* line 100, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+/* line 102, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
 .sliding-menu-content {
   position: fixed;
   top: 0;
@@ -1437,18 +1453,18 @@ form.search {
   z-index: 999999;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch; }
-  /* line 112, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+  /* line 114, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
   .sliding-menu-content .sub-menu {
     overflow: hidden;
     display: none; }
-  /* line 124, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+  /* line 126, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
   .sliding-menu-content > #navigation-menu {
     margin-top: 82px; }
-  /* line 128, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+  /* line 130, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
   .sliding-menu-content ul {
     margin: 0;
     padding: 0; }
-  /* line 133, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+  /* line 135, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
   .sliding-menu-content li a {
     border-bottom: 1px solid #dfdfdf;
     color: #363636;
@@ -1456,11 +1472,11 @@ form.search {
     font-weight: bold;
     padding: 1rem;
     text-transform: uppercase; }
-    /* line 141, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+    /* line 143, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
     .sliding-menu-content li a:hover {
       background-color: #3877bc;
       color: #fff; }
-  /* line 147, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+  /* line 149, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
   .sliding-menu-content.is-visible {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.22);
     -webkit-transform: translateX(0);
@@ -1470,7 +1486,7 @@ form.search {
     transform: translateX(0);
     transition-timing-function: cubic-bezier(0.35, 0, 0.35, 1); }
 
-/* line 154, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+/* line 156, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
 .menu-screen {
   position: fixed;
   top: 0;
@@ -1484,7 +1500,7 @@ form.search {
   opacity: 0;
   visibility: hidden;
   z-index: 999998; }
-  /* line 162, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
+  /* line 164, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_mobile_navigation.scss */
   .menu-screen.is-visible {
     opacity: 0;
     visibility: visible; }
