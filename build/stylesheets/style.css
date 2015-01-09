@@ -1636,7 +1636,7 @@ header.header {
       width: 300px; } }
 
 /* line 30, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-carousel .owl-lazy {
+.owl-carousel .slide {
   height: 400px;
   background-image: url("");
   background-position: center;
