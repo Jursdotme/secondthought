@@ -31,5 +31,5 @@ function secondthoughtwp_excerpt($length_callback = '', $more_callback = '')
 function secondthought_view_article($more)
 {
     global $post;
-    return '... <a class="read-more" href="' . get_permalink($post->ID) . '">' . __('View Article', 'secondthought') . '</a>';
+    return '... <a class="read-more" href="' . get_permalink($post->ID) . '">' . __('Read more', 'secondthought') . '</a>';
 } ?>
