@@ -11,7 +11,7 @@ function shoestrap_customizer_config() {
     // Change the logo image. (URL)
     // If omitted, the default theme info will be displayed.
     // A good size for the logo is 250x50.
-    // 'logo_image'   => get_template_directory_uri() . '/build/img/inzite_logo.svg',
+    // 'logo_image'   => get_template_directory_uri() . '/img/inzite_logo.svg',
 
     // The color of active menu items, help bullets etc.
     'color_active' => '#414141',

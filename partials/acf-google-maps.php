@@ -79,7 +79,7 @@ function add_marker( $marker, map ) {
 	var marker = new google.maps.Marker({
 		position	: latlng,
 		map				: map,
-		icon			: templateUrl + '/build/img/map_marker.png',
+		icon			: templateUrl + '/img/map_marker.png',
 	});
 
 	// add to array
