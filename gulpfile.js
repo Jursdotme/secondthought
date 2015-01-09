@@ -34,15 +34,7 @@ gulp.task('clean', function(cb) {
   del(['build'], cb);
 });
 
-gulp.task('scss-lint', function() {
-  return gulp.src(paths.sass)
-    .pipe(scsslint({
-        'config': 'scss-lint.yml',
-      })
-    );
-});
-
-gulp.task('scripts', function() {
+gulp.task('scripts-release', function() {
   // Minify and copy all JavaScript (except vendor scripts)
   // with sourcemaps all the way down
   return gulp.src(paths.scripts)
@@ -51,7 +43,7 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('build/scripts'));
 });
 
-gulp.task('scripts-dev', function() {
+gulp.task('scripts', function() {
   // Minify and copy all JavaScript (except vendor scripts)
   // with sourcemaps all the way down
   return gulp.src(paths.scripts)
@@ -69,11 +61,8 @@ gulp.task('scripts-admin', function() {
 
 gulp.task('sass', function () {
     return gulp.src('sass/style.scss')
-        .pipe(sass())
+        .pipe(sass({sourcemap: false}))
         .on('error', function (err) { console.log(err.message); })
-        .pipe(prefix())
-        .pipe(cssmin())
-        .pipe(bless({ imports: true }))
         .pipe(gulp.dest('build/stylesheets'));
 });
 
@@ -97,11 +86,14 @@ gulp.task('sass-admin', function () {
         .pipe(gulp.dest('build/stylesheets'));
 });
 
-gulp.task('sass-dev', function () {
-    return gulp.src('sass/style.scss')
-        .pipe(sass({style: 'nested', lineNumbers:true, sourcemapPath: '../../sass'}))
-        .on('error', function (err) { console.log(err.message); })
-        .pipe(gulp.dest('build/stylesheets'));
+gulp.task('sass-release', function () {
+  return gulp.src('sass/*.scss')
+    .pipe(sass())
+    .on('error', function (err) { console.log(err.message); })
+    .pipe(prefix())
+    .pipe(cssmin())
+    .pipe(bless({ imports: true }))
+    .pipe(gulp.dest('build/stylesheets'));
 });
 
 // Rerun the task when a file changes
@@ -111,24 +103,16 @@ gulp.task('watch', function() {
 });
 
 // Rerun the task when a file changes
-gulp.task('watch-dev', function() {
-  gulp.watch(paths.scripts, ['scripts-dev']);
-  gulp.watch(paths.sass, ['sass-dev']);
-});
-
-// Rerun the task when a file changes
 gulp.task('watch-admin', function() {
   gulp.watch(paths.scripts, ['scripts-admin']);
   gulp.watch(paths.sass, ['sass-admin']);
 });
 
-gulp.task('dev', ['watch-dev', 'scripts-admin', 'scripts-dev', 'sass-dev']);
-
-gulp.task('default', ['watch-dev', 'scripts-dev', 'sass-dev']);
+// The default task (called when you run `gulp` from cli)
+gulp.task('default', ['scripts', 'sass', 'watch']);
 
 gulp.task('admin', ['sass-admin', 'scripts-admin']);
 
 gulp.task('editor', ['sass-editor']);
 
-// The default task (called when you run `gulp` from cli)
-gulp.task('release', ['watch', 'scripts', 'sass', 'sass-editor', 'sass-admin']);
+gulp.task('release', ['scripts-release', 'sass-release']);
