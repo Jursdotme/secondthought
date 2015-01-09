@@ -21,7 +21,7 @@
     "matchHeight": "~0.5.2",
     "bourbon": "~4.0.2",
     "neat": "~1.7.0",
-    "owl-carousel2": "*",
-    "fancybox": "~2.1.5"
+    "fancybox": "~2.1.5",
+    "owl.carousel": "*"
   }
 }

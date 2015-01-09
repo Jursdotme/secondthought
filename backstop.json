@@ -1,0 +1,37 @@
+{
+	"viewports" : [
+		{
+		 "name": "phone",
+		 "viewport": {"width": 320, "height": 480}
+		}
+		,{
+		 "name": "tablet_v",
+		 "viewport": {"width": 568, "height": 1024}
+		}
+		,{
+		 "name": "tablet_h",
+		 "viewport": {"width": 1024, "height": 768}
+		}
+		,{
+			"name": "desktop",
+			"viewport": {"width": 1920, "height": 1080}
+		}
+	]
+	,"grabConfigs" : [
+		{
+			"testName":"http://secondthought.dev"
+			,"url":"http://toro.dev"
+			,"hideSelectors": [
+			]
+			,"removeSelectors": [
+				"#carbonads-container"
+			]
+			,"selectors":[
+				"body",
+				"header.header",
+				"main",
+				"footer.footer"
+			]
+		}
+	]
+}

@@ -5,7 +5,6 @@ var sass = require('gulp-ruby-sass');
 var bless = require('gulp-bless');
 var cssmin = require('gulp-minify-css');
 var prefix = require('gulp-autoprefixer');
-var imagemin = require('gulp-imagemin');
 var scsslint = require('gulp-scss-lint');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
@@ -68,7 +67,6 @@ gulp.task('scripts-admin', function() {
   .pipe(gulp.dest('build/scripts'));
 });
 
-
 gulp.task('sass', function () {
     return gulp.src('sass/style.scss')
         .pipe(sass())
@@ -106,42 +104,31 @@ gulp.task('sass-dev', function () {
         .pipe(gulp.dest('build/stylesheets'));
 });
 
-// Copy all static images
-gulp.task('images', function() {
-  return gulp.src(paths.images)
-    // Pass in options to the task
-    .pipe(imagemin({optimizationLevel: 5}))
-    .pipe(gulp.dest('build/img'));
-});
-
 // Rerun the task when a file changes
 gulp.task('watch', function() {
   gulp.watch(paths.scripts, ['scripts']);
-  gulp.watch(paths.images, ['images']);
   gulp.watch(paths.sass, ['sass']);
 });
 
 // Rerun the task when a file changes
 gulp.task('watch-dev', function() {
   gulp.watch(paths.scripts, ['scripts-dev']);
-  gulp.watch(paths.images, ['images']);
   gulp.watch(paths.sass, ['sass-dev']);
 });
 
 // Rerun the task when a file changes
 gulp.task('watch-admin', function() {
   gulp.watch(paths.scripts, ['scripts-admin']);
-  gulp.watch(paths.images, ['images']);
   gulp.watch(paths.sass, ['sass-admin']);
 });
 
-gulp.task('dev', ['watch-dev', 'scripts-admin', 'scripts-dev', 'sass-dev', 'images']);
+gulp.task('dev', ['watch-dev', 'scripts-admin', 'scripts-dev', 'sass-dev']);
 
-gulp.task('default', ['watch-dev', 'scripts-dev', 'sass-dev', 'images']);
+gulp.task('default', ['watch-dev', 'scripts-dev', 'sass-dev']);
 
 gulp.task('admin', ['sass-admin', 'scripts-admin']);
 
 gulp.task('editor', ['sass-editor']);
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('release', ['watch', 'scripts', 'sass', 'sass-editor', 'sass-admin', 'images']);
+gulp.task('release', ['watch', 'scripts', 'sass', 'sass-editor', 'sass-admin']);

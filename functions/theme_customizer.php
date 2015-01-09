@@ -1,17 +1,6 @@
 <?php
 
-function secondthought_customizer_live_preview() {
 
-  wp_enqueue_script(
-  'secondthought-theme-customizer',
-  get_template_directory_uri() . '/build/scripts/theme-customizer.js',
-  array( 'jquery', 'customize-preview' ),
-  '1.0.0',
-  false
-);
-
-}
-add_action( 'customize_preview_init', 'secondthought_customizer_live_preview' );
 
 function secondthought_customizer_css()
 {
