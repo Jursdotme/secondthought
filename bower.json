@@ -16,12 +16,13 @@
     "tests"
   ],
   "dependencies": {
-    "modernizr": "~2.8.2",
-    "conditionizr": "~4.4.0",
+    "modernizr": "~2.8.3",
+    "conditionizr": "~4.5.0",
     "matchHeight": "~0.5.2",
-    "bourbon": "~4.0.2",
-    "neat": "~1.7.0",
+    "bourbon": "~4.1.0",
+    "neat": "~1.7.1",
     "fancybox": "~2.1.5",
-    "owl.carousel": "*"
+    "owl.carousel": "*",
+    "animate.css-scss": "~3.1.0"
   }
 }
