@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300|Roboto+Slab:400,700,300|Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100");
 /* line 1, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_normalize.scss */
 p, h1, h2, h3, h4, h5, h6, li, a {
@@ -266,7 +267,7 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-/* line 104, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+/* line 106, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
 .limit-width {
   max-width: 1088px;
   margin-left: auto;
@@ -279,34 +280,34 @@ html {
     content: "";
     display: table; }
   @media (min-width: 768px) {
-    /* line 104, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+    /* line 106, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
     .limit-width {
       width: 750px; } }
   @media (min-width: 992px) {
-    /* line 104, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+    /* line 106, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
     .limit-width {
       width: 970px; } }
   @media (min-width: 1200px) {
-    /* line 104, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+    /* line 106, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
     .limit-width {
       width: 1170px; } }
-  /* line 107, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+  /* line 109, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
   .limit-width.wrapper-shadow-1 {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.17), 0 1px 2px 0 rgba(0, 0, 0, 0.24); }
-  /* line 108, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+  /* line 110, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
   .limit-width.wrapper-shadow-2 {
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.22); }
-  /* line 109, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+  /* line 111, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
   .limit-width.wrapper-shadow-3 {
     box-shadow: 0 10px 11px 0 rgba(0, 0, 0, 0.19), 0 5px 5px 0 rgba(0, 0, 0, 0.23); }
-  /* line 110, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+  /* line 112, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
   .limit-width.wrapper-shadow-4 {
     box-shadow: 0 14px 19px 0 rgba(0, 0, 0, 0.2), 0 7px 6px 0 rgba(0, 0, 0, 0.17); }
-  /* line 111, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+  /* line 113, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
   .limit-width.wrapper-shadow-5 {
     box-shadow: 0 20px 22px 0 rgba(0, 0, 0, 0.22), 0 10px 8px 0 rgba(0, 0, 0, 0.16); }
 
-/* line 114, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+/* line 116, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
 body:after {
   content: "";
   top: 0;
@@ -1078,6 +1079,230 @@ table th[class*="col-"] {
 .content_shadow_3 {
   box-shadow: 0 10px 11px 0 rgba(0, 0, 0, 0.19), 0 5px 5px 0 rgba(0, 0, 0, 0.23); }
 
+/* line 1, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
+.frontpage-slider {
+  /* Slider */
+  /* Arrows */
+  /* Dots */ }
+  /* line 39, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+  .frontpage-slider.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent; }
+  /* line 47, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+  .frontpage-slider .slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0; }
+    /* line 54, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .frontpage-slider .slick-list:focus {
+      outline: none; }
+    /* line 58, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .slick-loading .frontpage-slider .slick-list {
+      background: #fff slick-image-url("ajax-loader.gif") center center no-repeat; }
+    /* line 62, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .frontpage-slider .slick-list.dragging {
+      cursor: pointer;
+      cursor: hand; }
+  /* line 67, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+  .frontpage-slider.slick-slider .slick-track {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  /* line 75, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+  .frontpage-slider .slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block; }
+    /* line 81, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .frontpage-slider .slick-track:before, .frontpage-slider .slick-track:after {
+      content: "";
+      display: table; }
+    /* line 87, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .frontpage-slider .slick-track:after {
+      clear: both; }
+    /* line 91, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .slick-loading .frontpage-slider .slick-track {
+      visibility: hidden; }
+  /* line 95, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+  .frontpage-slider .slick-slide {
+    float: left;
+    height: 400px;
+    min-height: 1px; }
+    /* line 99, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    [dir="rtl"] .frontpage-slider .slick-slide {
+      float: right; }
+    /* line 102, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .frontpage-slider .slick-slide img {
+      display: block; }
+    /* line 105, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .frontpage-slider .slick-slide.slick-loading img {
+      display: none; }
+    /* line 111, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .frontpage-slider .slick-slide.dragging img {
+      pointer-events: none; }
+    /* line 115, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .slick-initialized .frontpage-slider .slick-slide {
+      display: block; }
+    /* line 119, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .slick-loading .frontpage-slider .slick-slide {
+      visibility: hidden; }
+    /* line 123, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .slick-vertical .frontpage-slider .slick-slide {
+      display: block;
+      height: auto;
+      border: 1px solid transparent; }
+  /* line 132, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+  .frontpage-slider .slick-prev,
+  .frontpage-slider .slick-next {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    line-height: 0;
+    font-size: 0;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    top: 50%;
+    margin-top: -10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-shadow: none; }
+    @media screen and (max-width: 767px) {
+      /* line 132, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+      .frontpage-slider .slick-prev,
+      .frontpage-slider .slick-next {
+        display: none !important; } }
+    @media screen and (min-width: 768px) {
+      /* line 132, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+      .frontpage-slider .slick-prev,
+      .frontpage-slider .slick-next {
+        display: block; } }
+    /* line 154, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .frontpage-slider .slick-prev:hover, .frontpage-slider .slick-prev:focus,
+    .frontpage-slider .slick-next:hover,
+    .frontpage-slider .slick-next:focus {
+      outline: none;
+      background: transparent;
+      color: transparent; }
+      /* line 158, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+      .frontpage-slider .slick-prev:hover:before, .frontpage-slider .slick-prev:focus:before,
+      .frontpage-slider .slick-next:hover:before,
+      .frontpage-slider .slick-next:focus:before {
+        opacity: 1; }
+    /* line 162, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .frontpage-slider .slick-prev.slick-disabled:before,
+    .frontpage-slider .slick-next.slick-disabled:before {
+      opacity: 0.25; }
+  /* line 166, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+  .frontpage-slider .slick-prev:before, .frontpage-slider .slick-next:before {
+    font-family: "FontAwesome";
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  /* line 175, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+  .frontpage-slider .slick-prev {
+    left: -25px; }
+    /* line 177, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    [dir="rtl"] .frontpage-slider .slick-prev {
+      left: auto;
+      right: -25px; }
+    /* line 181, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .frontpage-slider .slick-prev:before {
+      content: ""; }
+      /* line 183, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+      [dir="rtl"] .frontpage-slider .slick-prev:before {
+        content: ""; }
+  /* line 188, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+  .frontpage-slider .slick-next {
+    right: -25px; }
+    /* line 190, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    [dir="rtl"] .frontpage-slider .slick-next {
+      left: -25px;
+      right: auto; }
+    /* line 194, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .frontpage-slider .slick-next:before {
+      content: ""; }
+      /* line 196, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+      [dir="rtl"] .frontpage-slider .slick-next:before {
+        content: ""; }
+  /* line 204, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+  .frontpage-slider.slick-slider {
+    margin-bottom: 30px; }
+  /* line 207, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+  .frontpage-slider .slick-dots {
+    position: absolute;
+    bottom: -45px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    width: 100%; }
+    /* line 216, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+    .frontpage-slider .slick-dots li {
+      position: relative;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer; }
+      /* line 225, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+      .frontpage-slider .slick-dots li button {
+        border: 0;
+        background: transparent;
+        display: block;
+        height: 20px;
+        width: 20px;
+        outline: none;
+        line-height: 0;
+        font-size: 0;
+        color: transparent;
+        padding: 5px;
+        cursor: pointer; }
+        /* line 237, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+        .frontpage-slider .slick-dots li button:hover, .frontpage-slider .slick-dots li button:focus {
+          outline: none; }
+          /* line 239, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+          .frontpage-slider .slick-dots li button:hover:before, .frontpage-slider .slick-dots li button:focus:before {
+            opacity: 1; }
+        /* line 244, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+        .frontpage-slider .slick-dots li button:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: "";
+          width: 20px;
+          height: 20px;
+          font-family: "FontAwesome";
+          font-size: 6px;
+          line-height: 20px;
+          text-align: center;
+          color: black;
+          opacity: 0.25;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale; }
+      /* line 263, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/vendors/_slick.scss */
+      .frontpage-slider .slick-dots li.slick-active button:before {
+        color: #3877bc;
+        opacity: 0.75; }
+  /* line 20, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
+  .frontpage-slider .slide {
+    background-size: cover;
+    background-position: center; }
+
 /* line 4, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_buttons.scss */
 textarea,
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
@@ -1634,196 +1859,6 @@ header.header {
     header.header .logo img {
       float: left;
       width: 300px; } }
-
-/* line 30, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-carousel .slide {
-  height: 400px;
-  background-image: url("");
-  background-position: center;
-  background-size: cover; }
-
-/* line 39, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-carousel {
-  display: none;
-  width: 100%;
-  -webkit-tap-highlight-color: transparent;
-  position: relative;
-  z-index: 1; }
-  /* line 47, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-carousel .owl-stage {
-    position: relative;
-    -ms-touch-action: pan-Y; }
-  /* line 52, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-carousel .owl-stage:after {
-    content: '.';
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0; }
-  /* line 61, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-carousel .owl-stage-outer {
-    position: relative;
-    overflow: hidden;
-    -webkit-transform: translate3d(0, 0, 0); }
-  /* line 68, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-carousel .owl-controls .owl-nav .owl-prev,
-  .owl-carousel .owl-controls .owl-nav .owl-next,
-  .owl-carousel .owl-controls .owl-dot {
-    cursor: pointer;
-    cursor: hand;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
-  /* line 80, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-carousel.owl-loaded {
-    display: block; }
-  /* line 84, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-carousel.owl-loading {
-    opacity: 0;
-    display: block; }
-  /* line 89, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-carousel.owl-hidden {
-    opacity: 0; }
-  /* line 93, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-carousel .owl-refresh .owl-item {
-    display: none; }
-  /* line 97, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-carousel .owl-item {
-    position: relative;
-    min-height: 1px;
-    float: left;
-    -webkit-backface-visibility: hidden;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; }
-    /* line 109, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-    .owl-carousel .owl-item img {
-      display: block;
-      width: 100%;
-      -webkit-transform-style: preserve-3d; }
-  /* line 116, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-carousel.owl-text-select-on .owl-item {
-    -webkit-user-select: auto;
-    -moz-user-select: auto;
-    -ms-user-select: auto;
-    user-select: auto; }
-  /* line 123, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-carousel .owl-grab {
-    cursor: move;
-    cursor: -webkit-grab;
-    cursor: -o-grab;
-    cursor: -ms-grab;
-    cursor: grab; }
-  /* line 131, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-carousel .owl-rtl {
-    direction: rtl; }
-    /* line 134, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-    .owl-carousel .owl-rtl .owl-item {
-      float: right; }
-
-/* line 142, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.no-js .owl-carousel {
-  display: block; }
-
-/* line 175, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-theme .owl-controls {
-  margin-top: 10px;
-  text-align: center;
-  -webkit-tap-highlight-color: transparent; }
-/* line 185, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-theme .owl-controls .owl-nav [class*='owl-'] {
-  color: #fff;
-  font-size: 14px;
-  margin: 5px;
-  padding: 4px 7px;
-  background: #d6d6d6;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px; }
-  /* line 195, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-theme .owl-controls .owl-nav [class*='owl-']:hover {
-    background: #869791;
-    color: #fff;
-    text-decoration: none; }
-/* line 202, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-theme .owl-controls .owl-nav .disabled {
-  opacity: 0.5;
-  cursor: default; }
-/* line 211, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-  zoom: 1;
-  *display: inline; }
-  /* line 216, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-theme .owl-dots .owl-dot span {
-    width: 10px;
-    height: 10px;
-    margin: 7px;
-    background: #d6d6d6;
-    display: block;
-    -webkit-backface-visibility: visible;
-    -webkit-transition: opacity 200ms ease;
-    -moz-transition: opacity 200ms ease;
-    -ms-transition: opacity 200ms ease;
-    -o-transition: opacity 200ms ease;
-    transition: opacity 200ms ease;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 30px; }
-  /* line 229, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #869791; }
-
-/* line 241, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-carousel .animated {
-  -webkit-animation-duration: 1000ms;
-  animation-duration: 1000ms;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-/* line 248, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-carousel .owl-animated-in {
-  z-index: 0; }
-/* line 252, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-carousel .owl-animated-out {
-  z-index: 1; }
-/* line 256, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-carousel .fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut; }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-/* line 283, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-height {
-  -webkit-transition: height, 500ms, ease-in-out;
-  -moz-transition: height, 500ms, ease-in-out;
-  transition: height, 500ms, ease-in-out; }
-
-/* line 291, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-carousel .owl-item .owl-lazy {
-  opacity: 0;
-  -webkit-transition: opacity, 400ms, ease;
-  -moz-transition: opacity, 400ms, ease;
-  transition: opacity, 400ms, ease; }
-/* line 296, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_frontpage_slider.scss */
-.owl-carousel .owl-item img {
-  transform-style: preserve-3d; }
 
 /* line 1, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/components/_comments.scss */
 .comment-body {
@@ -3004,10 +3039,10 @@ li.product {
       /* line 87, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
       li.product:last-child {
         margin-right: 0; }
-      /* line 84, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+      /* line 86, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
       li.product:nth-child(2n) {
         margin-right: 2.12766%; }
-      /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+      /* line 87, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
       li.product:nth-child(2n+1) {
         clear: none; }
       /* line 78, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
@@ -3026,10 +3061,10 @@ li.product {
       /* line 87, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
       li.product:last-child {
         margin-right: 0; }
-      /* line 84, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+      /* line 86, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
       li.product:nth-child(3n) {
         margin-right: 2.12766%; }
-      /* line 85, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
+      /* line 87, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/sass/base/_grid-settings.scss */
       li.product:nth-child(3n+1) {
         clear: none; }
       /* line 78, ../../../../../../../Users/Rasmus/Desktop/toro/wp-content/themes/secondthought/bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
