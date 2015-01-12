@@ -61,14 +61,14 @@ gulp.task('scripts-admin', function() {
 
 gulp.task('sass', function () {
     return gulp.src('sass/style.scss')
-        .pipe(sass({sourcemap: false}))
+        .pipe(sass({ "sourcemap=none": true }))
         .on('error', function (err) { console.log(err.message); })
         .pipe(gulp.dest('build/stylesheets'));
 });
 
 gulp.task('sass-editor', function () {
     return gulp.src('sass/editor.scss')
-        .pipe(sass())
+        .pipe(sass({ "sourcemap=none": true }))
         .on('error', function (err) { console.log(err.message); })
         .pipe(prefix())
         .pipe(cssmin())
@@ -78,7 +78,7 @@ gulp.task('sass-editor', function () {
 
 gulp.task('sass-admin', function () {
     return gulp.src('sass/admin.scss')
-        .pipe(sass())
+        .pipe(sass({ "sourcemap=none": true }))
         .on('error', function (err) { console.log(err.message); })
         .pipe(prefix())
         .pipe(cssmin())
@@ -88,7 +88,7 @@ gulp.task('sass-admin', function () {
 
 gulp.task('sass-release', function () {
   return gulp.src('sass/*.scss')
-    .pipe(sass())
+    .pipe(sass({ "sourcemap=none": true }))
     .on('error', function (err) { console.log(err.message); })
     .pipe(prefix())
     .pipe(cssmin())
