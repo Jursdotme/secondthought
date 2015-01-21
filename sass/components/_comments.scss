@@ -75,10 +75,8 @@
   }
 
   #submit {
-    @extend %button;
-    border: 0;
-    background: $brand-primary;
-    color: #fff;
-    border-radius: $base-border-radius;
+    @extend %btn;
+    @extend %btn-medium;
+    @extend %btn-brand;
   }
 }

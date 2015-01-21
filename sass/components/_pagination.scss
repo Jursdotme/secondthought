@@ -22,30 +22,19 @@
 
       a,
       span {
-        @extend %button;
-        @include transition (all .2s ease-in-out);
-        background: $pagination-background;
-        border-radius: $base-border-radius;
-        border: $pagination-border;
-        color: $pagination-color;
+        @extend %btn;
+        @extend %btn-default;
+        @extend %btn-subtle;
 
         &:hover,
         &:focus {
-          background: $pagination-hover-background;
-          color: $base-link-color;
+
         }
 
         &:active {
-          background: $pagination-background;
         }
         &.current {
-          background: $pagination-hover-background;
-          color: $base-link-color;
-          &:hover,
-          &:focus {
-            background: $pagination-hover-background;
-            color: $base-link-color;
-          }
+          @extend %btn-brand;
         }
       }
     }

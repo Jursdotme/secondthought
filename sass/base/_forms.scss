@@ -29,7 +29,6 @@ label {
 textarea,
 #{$all-text-inputs},
 select[multiple=multiple] {
-  @extend %button;
   @include box-sizing(border-box);
   @include transition(border-color);
   background-color: #fff;
