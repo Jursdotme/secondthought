@@ -1,7 +1,5 @@
 @import 'base/normalize';
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
-@import '../bower_components/neat/app/assets/stylesheets/neat';
-@import 'base/helpers';
 @import 'base/grid-settings';
 
 @import 'base/variables';
@@ -15,7 +13,9 @@
 @import 'base/tables';
 @import 'base/alerts';
 @import 'base/wordpress_customizer';
+@import 'vendors/slick';
 
+@import 'components/frontpage_slider';
 @import 'components/buttons';
 @import 'components/widgets';
 @import 'components/searchform';
@@ -23,7 +23,6 @@
 @import 'components/mobile_navigation';
 @import 'components/pagination';
 @import 'components/header';
-@import 'components/frontpage_slider';
 @import 'components/comments';
 @import 'components/google-maps';
 @import 'components/gallery';
@@ -37,8 +36,8 @@
 @import 'layout/404';
 @import 'layout/contact';
 
-@import 'woocommerce/woocommerce_base';
+// @import 'woocommerce/woocommerce_base';
 
-@import 'buddypress/buddypress_base';
+// @import 'buddypress/buddypress_base';
 
-@import 'bbpress/bbpress_base';
+// @import 'bbpress/bbpress_base';

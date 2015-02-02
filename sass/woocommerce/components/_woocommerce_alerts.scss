@@ -3,10 +3,10 @@
   @extend %flash-success;
 
   .button.wc-forward {
-    @extend %button;
-    color: #fff;
-    border-radius: $base-border-radius;
-    background: shade($success-color, 20%);
+    @extend %btn;
+    @extend %btn-default;
+    @extend %btn-brand;
+
     float: right;
     display: inline-block;
     margin-top: -5px;
