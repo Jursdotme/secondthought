@@ -13,10 +13,6 @@
 
 				<?php the_content(); ?>
 
-				<?php get_template_part('partials/gallery'); ?>
-
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
-
 			</article>
 			<!-- /article -->
 

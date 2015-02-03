@@ -2208,48 +2208,15 @@ footer.footer {
     .page-template-default:not(.home):not(.buddypress) main,
     .error404 main {
       width: 1170px; } }
-  @media screen and (min-width: 1200px) {
-    .page-template-default:not(.home):not(.buddypress) main section,
-    .error404 main section {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 65.95745%;
-      margin-left: 17.02128%; }
-      .page-template-default:not(.home):not(.buddypress) main section:last-child,
-      .error404 main section:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .page-template-default:not(.home):not(.buddypress) main section,
-    .error404 main section {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 82.97872%;
-      margin-left: 8.51064%; }
-      .page-template-default:not(.home):not(.buddypress) main section:last-child,
-      .error404 main section:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    .page-template-default:not(.home):not(.buddypress) main section,
-    .error404 main section {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 100%; }
-      .page-template-default:not(.home):not(.buddypress) main section:last-child,
-      .error404 main section:last-child {
-        margin-right: 0; } }
-  @media screen and (max-width: 767px) {
-    .page-template-default:not(.home):not(.buddypress) main section,
-    .error404 main section {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 100%; }
-      .page-template-default:not(.home):not(.buddypress) main section:last-child,
-      .error404 main section:last-child {
-        margin-right: 0; } }
+  .page-template-default:not(.home):not(.buddypress) main section,
+  .error404 main section {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 100%; }
+    .page-template-default:not(.home):not(.buddypress) main section:last-child,
+    .error404 main section:last-child {
+      margin-right: 0; }
 
 #post-404 h1,
 #post-404 h2 {
