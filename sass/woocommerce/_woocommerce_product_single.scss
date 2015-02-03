@@ -93,11 +93,15 @@
         margin-right: $gutter;
 
         a {
-          @include button($brand-secondary);
+          @extend %btn;
+          @extend %btn-default;
+          @extend %btn-brand;
         }
 
         &.active a {
-          @include button($brand-primary);
+          @extend %btn;
+          @extend %btn-default;
+          @extend %btn-subtle;
         }
 
         &:last-child {
@@ -117,8 +121,9 @@
 
   button.button,
   #submit {
-    @include button($brand-primary);
-    padding: 12px 15px 13px;
+    @extend %btn;
+    @extend %btn-default;
+    @extend %btn-brand;
   }
 
   .related.products,

@@ -24,11 +24,16 @@ $(document).ready(function() {
   });
 });
 
-$('.menu-item-has-children > a').bind('click', function(){
-  $(this).parent().find('> .sub-menu').toggleClass('visible');
- // apply the toggle to the ul
-  $(this).toggleClass('is-expanded');
-  event.preventDefault();
+$('.menu-item-has-children').mouseenter(function(){
+  var curSubmenu = $(this).find('> .sub-menu');
+  curSubmenu.addClass('visible');
+  $('a', $(this)).addClass('is-expanded');
+});
+
+$('.menu-item-has-children').mouseleave(function(){
+  var curSubmenu = $(this).find('> .sub-menu');
+  curSubmenu.removeClass('visible');
+  $('a', $(this)).removeClass('is-expanded');
 });
 
 /*-------------------  End of Top Navigation  --------------------*/

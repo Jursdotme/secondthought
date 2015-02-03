@@ -4,11 +4,15 @@
 
 %top-lvl-link {
   float: left;
-  padding: 0 10px;
+  position: relative;
 
-  a {
+  > a {
+    padding: 20px 15px;
     color: $base-font-color;
     font-size: 16px;
+    &:hover {
+      background: #fafafa;
+    }
   }
 }
 
@@ -31,19 +35,18 @@
       &.visible {
         display: block;
         position: absolute;
-        margin-top: 10px;
+        margin-top: 16px;
         background: #fff;
         padding: 10px 0;
         z-index: 10000;
-        border-radius: 3px;
 
-        &:before {
-          content: '';
-          @include triangle(12px, #fff, up);
-          position: absolute;
-          top: -6px;
-          left: 8px;
-        }
+        // &:before {
+        //   content: '';
+        //   @include triangle(12px, #fff, up);
+        //   position: absolute;
+        //   top: -6px;
+        //   left: 8px;
+        // }
       }
 
       li {
@@ -56,6 +59,8 @@
           display: block;
           font-size: 14px;
           padding: 5px 15px;
+          white-space: nowrap;
+          color: $base-font-color;
         }
       }
     }

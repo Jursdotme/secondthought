@@ -25,10 +25,6 @@ require_once( 'functions/comments.php' ); // Custom Comments callback
 require_once( 'functions/options-pages.php' ); // Define options page (ACF)
 require_once( 'functions/contact-form-7-fixes.php' ); // Load CF7 styles/scripts on certain pages
 require_once( 'functions/gallery.php' ); // Make Wordpress Native gallery Secondthought compatible
-require_once( 'functions/hex-to-rgba.php' ); // Function to convert HX color to rgba
-include_once( 'functions/kirki/kirki.php' ); // Include kirki library
-include_once( 'functions/kiri-config.php' ); // Include Kiri Config
-require_once( 'functions/theme_customizer.php' ); // Setup wordpress theme customizer settings
 
 /*------------------------------------*\
 	Theme Support
