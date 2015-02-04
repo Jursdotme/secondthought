@@ -1,10 +1,10 @@
-aside.footer-bar {
+aside.sidebar {
   @include section-wrapper(#fff, $gutter*3);
 
-  .footer-bar-content {
+  .sidebar-content {
     @include fixed-container;
 
-    > .footer-bar-widget {
+    > .sidebar-widget {
       @include media($lg) {
         @include span-columns(4 of 12);
       }

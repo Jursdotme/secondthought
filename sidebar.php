@@ -1,16 +1,8 @@
 <!-- footer-bar -->
-<aside class="footer-bar" role="complementary">
-	<div class="footer-bar-content">
-		<div class="footer-bar-widget">
-			<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
-		</div>
-
-		<div class="footer-bar-widget">
-			<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
-		</div>
-
-		<div class="footer-bar-widget">
-			<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-3')) ?>
+<aside class="sidebar" role="complementary">
+	<div class="sidebar-content">
+		<div class="sidebar-widget">
+			<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-widget-area')) ?>
 		</div>
 	</div>
 </aside>
