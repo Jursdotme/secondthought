@@ -14,6 +14,7 @@ var paths = {
   sass: 'sass/**/*.scss',
   images: 'img/**/*',
   scripts: [
+
     'bower_components/slick-carousel/slick/slick.js',
     'bower_components/matchHeight/jquery.matchHeight.js',
     'bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js',
@@ -21,7 +22,10 @@ var paths = {
     'bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js',
     'bower_components/fancybox/source/helpers/jquery.fancybox-media.js',
     'bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js',
+    'bower_components/stellar.js/jquery.stellar.min.js',
+    'bower_components/modernizr/modernizr.js',
     'javascripts/concat/*.js',
+
   ]
 };
 

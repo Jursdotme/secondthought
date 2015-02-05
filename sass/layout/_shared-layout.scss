@@ -1,0 +1,55 @@
+.wrapper {
+  overflow: hidden;
+}
+
+.fill-left {
+  position: relative;
+  @include media($sm-up) {
+    padding-left: 0 !important;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2000px;
+    right: 100%;
+    top: 0;
+    background-color: inherit;
+    @include media($xs) {
+      display: none;
+    }
+  }
+}
+
+.fill-right {
+  position: relative;
+  @include media($sm-up) {
+    padding-right: 0 !important;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2000px;
+    left: 100%;
+    top: 0;
+    background-color: inherit;
+    @include media($xs) {
+      display: none;
+    }
+  }
+}
+
+.parallax {
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  // height: 450px;
+  position: relative;
+  // background-attachment: fixed;
+}
+
+.no-touch .parallax{
+  background-attachment: fixed;
+}
+
+// center 0 no-repeat
