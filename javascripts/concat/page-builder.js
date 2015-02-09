@@ -5,11 +5,13 @@ $(document).ready(function(){
   //$('.fill-left, .fill-right').parent().parent().siblings().children().children().attr("data-mh", "matcheight");
   //$('.fill-left, .fill-right').parent().parent().attr("data-mh", "matcheight");
 
-  $('.matcheight > div > div').matchHeight();
-
   $('.parallax').attr("data-stellar-background-ratio", ".3");
 
+});
 
+$(function() {
+  var $elements = $('.matchheight .panel-grid-cell .panel');
+  $elements.children().matchHeight();
 });
 
 
