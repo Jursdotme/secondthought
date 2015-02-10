@@ -57,11 +57,16 @@ $(document).ready(function(){
 
 
 
-$('.mobile-menu .menu-item-has-children > a').bind('click', function(){
-  $(this).parent().find('> .sub-menu').slideToggle('slow');
- // apply the toggle to the ul
-  $(this).toggleClass('is-expanded');
-  event.preventDefault();
+
+$(document).ready(function(){
+  $('.mobile-menu .menu-item-has-children')
+    .prepend('<a href="#" class="open-submenu-icon"><i class="fa fa-plus-circle"></i></a>');
+    $('.mobile-menu .menu-item-has-children .open-submenu-icon').bind('click', function(){
+      $(this).parent().find('> .sub-menu').slideToggle('100');
+     // apply the toggle to the ul
+      $(this).toggleClass('is-expanded');
+      event.preventDefault();
+    });
 });
 
 /*-------------------  End of Mobile Navigation  --------------------*/

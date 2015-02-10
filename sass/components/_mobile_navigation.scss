@@ -111,6 +111,20 @@ $mobile-menu-width             : 220px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
+  .open-submenu-icon {
+    position: absolute;
+    right: 0;
+    font-size: 28px;
+    border: none;
+    background: none;
+    padding: 8px;
+    color: #B5BDCC;
+    &:hover {
+      background: none;
+      color: $brand-primary;
+    }
+  }
+
   .sub-menu {
     // height: 0;
     overflow: hidden;
@@ -120,6 +134,15 @@ $mobile-menu-width             : 220px;
     &.visible {
       // height: 100%;
       // @include transition (max-height 2s $authentic-motion);
+    }
+
+    li {
+      background: shade($sliding-menu-background, 5%);
+      .sub-menu {
+        li {
+          background: shade($sliding-menu-background, 10%);
+        }
+      }
     }
   }
 
