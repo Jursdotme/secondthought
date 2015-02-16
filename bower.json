@@ -24,6 +24,7 @@
     "matchHeight": "git://github.com/liabru/jquery-match-height.git#64b9a547f463a0813f78150bb2e81b256d05bc10",
     "parallax.js": "https://github.com/pixelcog/parallax.js.git#50c1ad822764d829d10eb9a3f8bc159003e17240",
     "stellar.js": "~0.6.2",
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "fitvids": "~1.1.0"
   }
 }
