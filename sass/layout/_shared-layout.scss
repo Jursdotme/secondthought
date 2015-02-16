@@ -74,3 +74,20 @@
     z-index: -1;
   }
 }
+
+.frontpage-header h1 {
+  margin-top: 100px;
+  color: #f3f3f3;
+  background: #005c91;
+  background: rgba(0,92,145,0.7);
+  padding: 0 10px;
+}
+
+.frontpage-header p {
+  font-size: 1.25em;
+  line-height: 25px;
+  background: #f3f3f3;
+  background: rgba(243,243,243,0.8);
+  color: black;
+  padding: 5px 10px;
+}

@@ -1,7 +1,7 @@
 .home {
   main {
     @include fixed-container;
-    @include pad($gutter $gutter/2);
+    @include pad(0 $gutter/2);
 
     section {
       @include span-columns(12);

@@ -38,9 +38,11 @@
         display: block;
         position: absolute;
         margin-top: 0;
-        background: #fff;
+        background: $brand-primary;
         padding: 10px 0;
         z-index: 10000;
+        border-radius: 0 0 5px 5px;
+        box-shadow: $shadow-lvl-1;
 
         // &:before {
         //   content: '';
@@ -54,7 +56,7 @@
       li {
 
         &:hover {
-          background: $light-gray-1-color;
+          background: shade($brand-primary, 10%);
         }
 
         a {
@@ -62,7 +64,7 @@
           font-size: 14px;
           padding: 5px 15px;
           white-space: nowrap;
-          color: $base-font-color;
+          color: #fff;
         }
         &.menu-item-has-children {
           position: relative;

@@ -22,7 +22,7 @@ h1 {
   font-family: $slab;
 
   font-weight: 700;
-  margin: 1rem 0 .6875rem;
+  margin: 0 0 .6875rem;
 
   @include media($sm-down) {
     line-height: 1.25;
@@ -44,7 +44,7 @@ h2 {
   font-family: $slab;
   font-style: italic;
   font-weight: 400;
-  margin: 1rem 0 .6875rem;
+  margin: 0 0 .6875rem;
 
   @include media($sm-down) {
     font-size: 1.625rem;
@@ -65,7 +65,7 @@ h2 {
 h3 {
   font-family: $slab;
   font-weight: 400;
-  margin: 1rem 0 .6875rem;
+  margin: 0 0 .6875rem;
 
   @include media($sm-down) {
     font-size: 1.375rem;
@@ -86,7 +86,7 @@ h3 {
 h4 {
   font-family: $slab;
   font-weight: 400;
-  margin: 1rem 0 .6875rem;
+  margin: 0 0 .6875rem;
 
   @include media($sm-down) {
     font-size: 1.125rem;

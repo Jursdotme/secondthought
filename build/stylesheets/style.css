@@ -264,7 +264,7 @@ body {
 h1 {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
-  margin: 1rem 0 .6875rem; }
+  margin: 0 0 .6875rem; }
   @media screen and (max-width: 991px) {
     h1 {
       line-height: 1.25;
@@ -282,7 +282,7 @@ h2 {
   font-family: "Roboto Slab", sans-serif;
   font-style: italic;
   font-weight: 400;
-  margin: 1rem 0 .6875rem; }
+  margin: 0 0 .6875rem; }
   @media screen and (max-width: 991px) {
     h2 {
       font-size: 1.625rem;
@@ -299,7 +299,7 @@ h2 {
 h3 {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 400;
-  margin: 1rem 0 .6875rem; }
+  margin: 0 0 .6875rem; }
   @media screen and (max-width: 991px) {
     h3 {
       font-size: 1.375rem;
@@ -316,7 +316,7 @@ h3 {
 h4 {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 400;
-  margin: 1rem 0 .6875rem; }
+  margin: 0 0 .6875rem; }
   @media screen and (max-width: 991px) {
     h4 {
       font-size: 1.125rem;
@@ -1344,17 +1344,19 @@ form.search {
         display: block;
         position: absolute;
         margin-top: 0;
-        background: #fff;
+        background: #B82025;
         padding: 10px 0;
-        z-index: 10000; }
+        z-index: 10000;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.17), 0 1px 2px 0 rgba(0, 0, 0, 0.24); }
       .desktop-navigation ul.sub-menu li:hover {
-        background: #fafafa; }
+        background: #a51c21; }
       .desktop-navigation ul.sub-menu li a {
         display: block;
         font-size: 14px;
         padding: 5px 15px;
         white-space: nowrap;
-        color: #363636; }
+        color: #fff; }
       .desktop-navigation ul.sub-menu li.menu-item-has-children {
         position: relative; }
         .desktop-navigation ul.sub-menu li.menu-item-has-children ul {
@@ -1533,7 +1535,8 @@ form.search {
 
 header.header {
   background-color: #B82025;
-  border-top: 3px solid #2F2F2F; }
+  border-top: 3px solid #2F2F2F;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 7px 0 rgba(0, 0, 0, 0.22); }
   header.header .header-inner {
     max-width: 1088px;
     margin-left: auto;
@@ -1577,7 +1580,9 @@ header.header {
           width: 57%; } }
       @media screen and (min-width: 768px) {
         header.header .header-inner .logo img {
-          float: left; } }
+          float: left;
+          width: 190px;
+          top: 9px; } }
 
 .comment-body {
   display: table;
@@ -2132,12 +2137,27 @@ footer.footer {
     left: 0;
     z-index: -1; }
 
+.frontpage-header h1 {
+  margin-top: 100px;
+  color: #f3f3f3;
+  background: #005c91;
+  background: rgba(0, 92, 145, 0.7);
+  padding: 0 10px; }
+
+.frontpage-header p {
+  font-size: 1.25em;
+  line-height: 25px;
+  background: #f3f3f3;
+  background: rgba(243, 243, 243, 0.8);
+  color: black;
+  padding: 5px 10px; }
+
 .home main {
   max-width: 1088px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 30px;
-  padding: 30px 15px; }
+  padding: 0 15px; }
   .home main::after {
     clear: both;
     content: "";
@@ -2272,6 +2292,10 @@ footer.footer {
     .page-template-default:not(.home):not(.buddypress) main section:last-child,
     .error404 main section:last-child {
       margin-right: 0; }
+
+.entry-title {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 30px; }
 
 #post-404 h1,
 #post-404 h2 {

@@ -1,6 +1,7 @@
 header.header {
   background-color: $brand-primary;
   border-top: 3px solid #2F2F2F;
+  box-shadow: $shadow-lvl-2;
   .header-inner {
     @include fixed-container;
     @include pad(0 $gutter/2);
@@ -22,6 +23,8 @@ header.header {
 
         @include media($sm-up) {
           float: left;
+          width: 190px;
+          top: 9px;
         }
       }
     }
