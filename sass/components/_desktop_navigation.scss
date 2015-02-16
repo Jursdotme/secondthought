@@ -7,17 +7,19 @@
   position: relative;
 
   > a {
-    padding: 20px 15px;
-    color: $base-font-color;
+    padding: 18px 15px 20px;
+    color: #fff;
     font-size: 16px;
+    display: block;
+    text-transform: uppercase;
     &:hover {
-      background: #fafafa;
+      background: shade($brand-primary, 10%);
     }
   }
 }
 
 .desktop-navigation {
-  @include span-columns(9);
+  @include span-columns(12);
   display: none;
 
   @include media($navigation-breakpoint) {
@@ -35,7 +37,7 @@
       &.visible {
         display: block;
         position: absolute;
-        margin-top: 16px;
+        margin-top: 0;
         background: #fff;
         padding: 10px 0;
         z-index: 10000;
@@ -61,6 +63,19 @@
           padding: 5px 15px;
           white-space: nowrap;
           color: $base-font-color;
+        }
+        &.menu-item-has-children {
+          position: relative;
+          ul {
+            position: absolute;
+            left: 100%;
+            top: -10px;
+            margin: 0;
+            white-space: nowrap;
+            &:before {
+              content: none;
+            }
+          }
         }
       }
     }

@@ -1,23 +1,30 @@
 header.header {
-  @include fixed-container;
-  @include pad(1em);
-  .logo {
-    @include media($xs) {
-      @include span-columns(12);
-    }
-    @include media($sm-up) {
-      @include span-columns(3);
-    }
+  background-color: $brand-primary;
+  border-top: 3px solid #2F2F2F;
+  .header-inner {
+    @include fixed-container;
+    @include pad(0 $gutter/2);
+    .logo {
 
-    img {
       @include media($xs) {
-        width: 57%;
+        @include span-columns(12);
+      }
+      @include media($sm-up) {
+        @include span-columns(3);
       }
 
-      @include media($sm-up) {
-        float: left;
-        width: 300px;
+      img {
+        position: absolute;
+        z-index: 1;
+        @include media($xs) {
+          width: 57%;
+        }
+
+        @include media($sm-up) {
+          float: left;
+        }
       }
     }
   }
+
 }

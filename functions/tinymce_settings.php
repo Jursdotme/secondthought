@@ -45,6 +45,11 @@
               'title'    => 'Subtle Button',
               'selector' => 'a',
               'classes'  => 'btn btn-default btn-subtle'
+          ),
+          array(
+              'title'    => 'Billedramme',
+              'selector' => 'img',
+              'classes'  => 'thumbnail'
           )
       );
       // Insert the array, JSON ENCODED, into 'style_formats'

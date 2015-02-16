@@ -52,4 +52,25 @@
   background-attachment: fixed;
 }
 
-// center 0 no-repeat
+.thumbnail {
+  border-radius: 8px;
+  box-shadow: $shadow-lvl-1;
+  border: 5px solid #f3f3f3;
+}
+
+.transparent-background {
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: inherit;
+    opacity: .75;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
