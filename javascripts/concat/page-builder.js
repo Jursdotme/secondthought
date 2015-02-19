@@ -45,3 +45,22 @@ jQuery(document).ready(function(){
         });
     }
 });
+
+// Image Functions
+jQuery(document).ready(function(){
+
+  var noPaddingImages = $('.textwidget img.no-padding');
+
+  var thePadding = noPaddingImages.parent().parent().css('padding-top');
+
+  noPaddingImages.wrap('<span>');
+
+  var noPaddingImagesWrapper = noPaddingImages.parent();
+
+  noPaddingImagesWrapper
+    .css('display', "block")
+    .css('margin-top', "-"+thePadding)
+    .css('margin-left', "-"+thePadding)
+    .css('margin-right', "-"+thePadding);
+
+});

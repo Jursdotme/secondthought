@@ -52,4 +52,36 @@
   background-attachment: fixed;
 }
 
-// center 0 no-repeat
+.shadow {
+  box-shadow: $shadow-lvl-2;
+}
+
+.shadow-1 {
+  box-shadow: $shadow-lvl-1;
+}
+
+.shadow-2 {
+  box-shadow: $shadow-lvl-2;
+}
+
+.shadow-3 {
+  box-shadow: $shadow-lvl-3;
+}
+
+.shadow-4 {
+  box-shadow: $shadow-lvl-4;
+}
+
+.shadow-5 {
+  box-shadow: $shadow-lvl-5;
+}
+
+.border-radius {
+  border-radius: $base-border-radius;
+}
+
+.no-text-margin {
+  p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+}
