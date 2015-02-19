@@ -25,21 +25,9 @@
 				<p class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></p>
 			<!-- /post details -->
 
-			<?php the_content(); // Dynamic Content ?>
+			<?php the_content(); ?>
 
-			<!-- Byline -->
-				<p class="author"><?php the_author_posts_link(); ?></p>
-			<!-- END Byline -->
-
-			<?php //the_tags( __( 'Tags: ', 'secondthought' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-
-			<p><?php // _e( 'Categorised in: ', 'secondthought' ); // the_category(', '); // Separated by commas ?></p>
-
-			<p><?php // _e( 'This post was written by ', 'secondthought' ); // the_author(); ?></p>
-
-			<?php // edit_post_link(); // Always handy to have Edit Post Links available ?>
-
-			<?php  comments_template(); ?>
+			<?php // comments_template(); ?>
 
 		</article>
 		<!-- /article -->
