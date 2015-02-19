@@ -2,7 +2,7 @@
 .error404 {
   main {
     @include fixed-container;
-    @include pad($gutter*3 $gutter);
+    @include pad(0 $gutter/2);
     section {
       @include span-columns(12);
     }
