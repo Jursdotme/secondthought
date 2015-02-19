@@ -11,6 +11,10 @@ img {
     float: right;
     margin-left: $gutter;
   }
+  &.aligncenter {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .wp-caption {

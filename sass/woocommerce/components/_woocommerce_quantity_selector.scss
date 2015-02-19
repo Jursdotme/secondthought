@@ -18,14 +18,14 @@
     padding: 0;
     height: 50%;
     text-align: center;
-    background: $brand-primary;
+    background: $brand-color-1;
     position: absolute;
     right: 0;
     border: 0;
     color: #fff;
 
     &:hover {
-      background: shade($brand-primary, 5%);
+      background: shade($brand-color-1, 5%);
     }
   }
 

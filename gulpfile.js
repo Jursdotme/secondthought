@@ -104,6 +104,11 @@ gulp.task('watch', function() {
   gulp.watch(paths.sass, ['sass']);
 });
 
+gulp.task('watch-release', function() {
+  gulp.watch(paths.scripts, ['scripts-release']);
+  gulp.watch(paths.sass, ['sass-release']);
+});
+
 // Rerun the task when a file changes
 gulp.task('watch-admin', function() {
   gulp.watch(paths.scripts, ['scripts-admin']);
@@ -117,4 +122,4 @@ gulp.task('admin', ['sass-admin', 'scripts-admin']);
 
 gulp.task('editor', ['sass-editor']);
 
-gulp.task('release', ['scripts-release', 'sass-release']);
+gulp.task('release', ['scripts-release', 'sass-release', 'watch-release']);

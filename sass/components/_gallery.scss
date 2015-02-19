@@ -1,3 +1,13 @@
+.gallery {
+  img {
+    width: 100%;
+  }
+}
+
+.gallery br {
+  display: none;
+}
+
 .gallery.gallery-columns-1 {
   .gallery-item {
     @include media($sm-up) {

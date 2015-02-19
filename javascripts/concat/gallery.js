@@ -5,9 +5,14 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $(".gallery-icon a").fancybox({
+  $(".gallery-icon a").attr('rel', 'gallery').fancybox({
     padding : 0,
     arrows: true,
     closeBtn: true,
   });
+
+  $('dl.gallery-item').matchHeight();
+
+  $('.gallery br').remove();
+
 });

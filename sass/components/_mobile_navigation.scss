@@ -2,7 +2,7 @@ $sliding-menu-border-color     : shade(#f8f8f8, 10%);
 $sliding-menu-background       : #f8f8f8;
 $sliding-menu-color            : $base-font-color;
 $sliding-menu-border           : 1px solid $sliding-menu-border-color;
-$sliding-menu-background-hover : $brand-primary;
+$sliding-menu-background-hover : $brand-color-1;
 $sliding-menu-color-hover      : #fff;
 $mobile-menu-width             : 220px;
 
@@ -121,7 +121,7 @@ $mobile-menu-width             : 220px;
     color: #B5BDCC;
     &:hover {
       background: none;
-      color: $brand-primary;
+      color: $brand-color-1;
     }
   }
 

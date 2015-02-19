@@ -9,23 +9,25 @@ $base-border-radius: 3px;
 // Colors
 
 // Brand Colors
-$brand-primary: #3877bc;
-$brand-secondary: #b5c445;
+$brand-color-1: #4684B2;
+$brand-color-2: #4684B2;
+$brand-color-3: #4684B2;
 
 // Grays
-$dark-gray-1-color: #696969;
-$dark-gray-2-color: #3f3f3f;
-$dark-gray-3-color: #141414;
+$grey-lightest : #fafafa;
+$grey-lighter  : #e4e4e4;
+$grey-light    : #cbcbcb;
+$gray          : #aaaaaa;
+$grey-dark     : #555555;
+$grey-darker   : #333333;
+$grey-darkest  : #222222;
 
-$light-gray-1-color: #fafafa;
-$light-gray-2-color: #f3f3f3;
-$light-gray-3-color: #e6e6e6;
 
 // Flash Colors
-$alert-color: #f1c40f; // A yellow/Orange color
-$error-color: #e74c3c; // A red color
-$notice-color: #9b59b6; // A Blue color
-$success-color: #2ecc71; // A green color
+$alert-color: #FFE46F; // A yellow/orange color
+$error-color: #E9513C; // A red color
+$notice-color: #91D2E1; // A Blue color
+$success-color: #C8D95B; // A green color
 
 // Light Flash Colors
 $light-alert-color: tint($alert-color, 50%);
@@ -38,7 +40,7 @@ $base-background-color: #fff;
 
 // Font Colors
 $base-font-color: #363636;
-$base-accent-color: $brand-primary;
+$base-accent-color: $brand-color-1;
 
 // Link Colors
 $base-link-color: $base-accent-color;
@@ -47,7 +49,7 @@ $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 
 // Border color
-$base-border-color: $light-gray-1-color;
+$base-border-color: $grey-light;
 
 // Nice to have colors
 $facebook-color: #3B5998;
