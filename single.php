@@ -34,16 +34,6 @@
 
 	<?php endwhile; ?>
 
-	<?php else: ?>
-
-		<!-- article -->
-		<article>
-
-			<h1><?php _e( 'Sorry, nothing to display.', 'secondthought' ); ?></h1>
-
-		</article>
-		<!-- /article -->
-
 	<?php endif; ?>
 
 	</section>
@@ -51,7 +41,5 @@
 
 
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
