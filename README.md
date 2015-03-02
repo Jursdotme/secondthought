@@ -1,4 +1,4 @@
-![Seconthought Logo](https://raw.githubusercontent.com/Jursdotme/secondthought/master/img/logo.png)
+![Seconthought Logo](https://raw.githubusercontent.com/Jursdotme/secondthought/master/img/logo@2x.png)
 
 Hi. This a starter theme called *Secondthought*. It's a theme meant for hacking so don't use it as a Parent Theme. Instead try turning it into the next, most awesome, WordPress page out there. That is it's purpose.
 
@@ -15,5 +15,23 @@ Here is a list of some of the more interresting things in the theme.
 -	Ready to use [Gulp](http://gulpjs.com/) integration
 -	Smartly organized starter SCSS folder that will help you to quickly get your design off the ground.
 -	The MIT license in license.txt. Use it to make something cool.
+
+## Install
+
+Setting up your project is easy.
+
+1. If it is not installed already, install [Bundler](http://bundler.io/) with the command:
+> $ gem install bundler
+
+2. Next we'll use Bundler to install gem dependancies:
+> $ bundle install
+
+  This will make sure you have the correct version of the required gems installed.
+
+3. Third step is to install node modules with [npm](http://nodejs.org/):
+> $ npm install
+
+4. Last step is to install project dependancies with [Bower](http://bower.io/):
+> $ bower install
 
 ![Inzite Badge](https://raw.githubusercontent.com/Jursdotme/secondthought/master/img/inzite-badge.png)
