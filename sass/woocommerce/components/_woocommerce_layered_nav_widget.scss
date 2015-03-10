@@ -3,69 +3,79 @@
     margin: 0;
     padding: 0;
     border: 0;
-    list-style:none;
+    list-style: none;
+
     li {
       padding: 0 0 1px;
-      list-style:none;
-      a, span {
+      list-style: none;
+      
+      a,
+      span {
         padding: 1px 0;
       }
     }
+
     li.chosen {
       a {
-        padding:0 6px;
-        text-decoration: none;
+        padding: 0 6px;
         border: 1px solid $brand-color-1;
+        border-radius: $base-border-radius;
         background: $brand-color-1;
         color: #fff;
-        border-radius: $base-border-radius;
+        text-decoration: none;
+
         &:before {
-          content: "\f00d";
           display: inline-block;
-          font-family: FontAwesome;
           margin-right: 6px;
+          content: '\f00d';
+          font-family: FontAwesome;
+
           @include transition (all .2s ease-in-out);
         }
-        &:hover:before {
-          transform: rotate(90deg);
-          color: $error-color;
 
+        &:hover:before {
+          color: $error-color;
+          transform: rotate(90deg);
         }
       }
     }
+
     small.count {
       float: right;
       margin-left: 6px;
-      font-size: 1em;
       color: tint($base-font-color, 70%);
+      font-size: 1em;
     }
   }
 }
 
 .widget_layered_nav_filters {
   ul {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     border: 0;
-    list-style:none outside;
-    overflow: hidden;
+    list-style: none outside;
     zoom: 1;
+
     li {
       float: left;
       padding: 0 1px 1px 0;
-      list-style:none;
+      list-style: none;
+
       a {
-        padding:0 6px;
-        text-decoration: none;
+        float: left;
+        padding: 0 6px;
         border: 1px solid $brand-color-1;
         background: $brand-color-1;
         color: #fff;
-        float: left;
+        text-decoration: none;
+
         &:before {
-          content: "\f00d";
           display: inline-block;
-          font-family: FontAwesome;
           margin-right: 6px;
+          content: '\f00d';
+          font-family: FontAwesome;
         }
       }
     }

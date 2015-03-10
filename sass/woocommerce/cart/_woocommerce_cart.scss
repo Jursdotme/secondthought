@@ -1,11 +1,11 @@
 .page-template-default.cart {
-
   main {
     @include fixed-container;
     @include pad($gutter*3 $gutter);
 
     section {
       @include span-columns(12);
+      
       @include media($sm-down) {
         @include span-columns(12);
         @include shift(0);
@@ -20,13 +20,13 @@
 
 
   .shop_table.cart {
-    border-spacing: 0;
     width: 100%;
     border: 1px solid #e6e6e6;
+    border-spacing: 0;
+    border-collapse: separate;
     border-radius: 4px;
     background-clip: padding-box;
     box-shadow: 0 1px 2px 0 #fff;
-    border-collapse: separate;
     vertical-align: middle;
   }
 
@@ -59,9 +59,9 @@
 
   table td,
   table th {
-    text-align: left;
     border-right: 1px solid #e6e6e6;
     vertical-align: middle;
+    text-align: left;
 
     @include media($sm-down) {
       padding: $gutter/3 $gutter/4;
@@ -112,49 +112,51 @@
     text-align: right;
 
     .coupon {
+      float: left;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      text-align: left;
+
       @include media($sm-down) {
         @include span-columns(12);
         @include shift(0);
       }
+
       @include media($md-up) {
         @include span-columns(6);
         @include shift(0);
       }
 
-      float: left;
-      border: 0;
-      text-align: left;
-      padding: 0;
-      margin: 0;
-
       label {
         display: none;
-        font-weight: bold;
         margin: 0 1em 0 0;
+        font-weight: bold;
       }
 
       input.input-text {
+        display: inline;
+        margin-right: 2%;
+        padding: ($gutter/3)-1 $gutter/2;
+        font-size: .8rem;
+
         @include media($sm-down) {
           @include span-columns(6);
           @include shift(0);
         }
+
         @include media($md-up) {
           @include span-columns(6);
           @include shift(0);
         }
-
-        margin-right: 2%;
-        display: inline;
-        padding: ($gutter/3)-1 $gutter/2;
-        font-size: .8rem;
       }
     }
 
     .button {
-      margin: 0;
-      float: none;
-      width: auto;
       display: inline;
+      float: none;
+      margin: 0;
+      width: auto;
     }
   }
 
@@ -163,6 +165,7 @@
       @include span-columns(6);
       @include shift(0);
     }
+
     @include media($md-up) {
       @include span-columns(6);
       @include shift(0);
@@ -170,6 +173,7 @@
 
     li.product {
       padding-bottom: $gutter*2;
+
       @include media($xs) {
         @include span-columns(12);
       }
@@ -185,6 +189,7 @@
     @include media($xs) {
       @include span-columns(6);
     }
+
     @include media($md-up) {
       @include span-columns(6);
       @include omega();
@@ -195,6 +200,7 @@
     @include media($xs) {
       @include span-columns(6);
     }
+
     @include media($md-up) {
       @include span-columns(6);
       @include shift(0);

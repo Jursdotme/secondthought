@@ -6,7 +6,6 @@ $button-colors: (
   warning: (#c23435, #fff),
   subtle: (#e9e9e9, #999)
 );
-
 $button-sizes: (
   default: (6px 12px, 1rem),
   extra-small: (1px 5px, .75rem),
@@ -19,10 +18,10 @@ $button-sizes: (
 .btn {
   display: inline-block;
   padding: .5em;
-  background: #ccc;
-  color: #666;
   border: 0;
   border-radius: 3px;
+  background: #ccc;
+  color: #666;
 
   @each $name, $sizes in $button-sizes {
     $padding: nth($sizes, 1);
@@ -46,20 +45,19 @@ $button-sizes: (
 }
 
 %btn {
-  border-radius: 3px;
-  font-weight: 400;
-  line-height: $base-line-height;
   display: inline-block;
   margin-bottom: 0; // For input.btn
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
+  border-radius: 3px;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  vertical-align: middle;
+  text-align: center;
   white-space: nowrap;
+  font-weight: 400;
+  line-height: $base-line-height;
+  cursor: pointer;
 
-
+  touch-action: manipulation;
   @include transition(background .1s ease-in-out, box-shadow .1s ease-in-out);
   // box-shadow: $shadow-lvl-1;
   &:hover {
@@ -84,6 +82,7 @@ $button-sizes: (
   %btn-#{$name} {
     background-color: $bgcolor;
     color: $fontcolor;
+    
     &:hover {
       background-color: shade($bgcolor, 10%);
       color: $fontcolor;

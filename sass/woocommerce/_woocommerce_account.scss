@@ -1,5 +1,4 @@
 .page-template-default.woocommerce-account {
-
   main {
     @include fixed-container;
     @include pad($gutter*3 $gutter);
@@ -22,29 +21,31 @@
     @include media($xs) {
       @include span-columns(6);
     }
+
     @include media($sm) {
       @include span-columns(4);
     }
+
     @include media($md-up) {
       @include span-columns(3);
     }
   }
 
   table.shop_table {
-    border-spacing: 0;
     width: 100%;
     border: 1px solid #e6e6e6;
+    border-spacing: 0;
+    border-collapse: separate;
     border-radius: 4px;
     background-clip: padding-box;
     box-shadow: 0 1px 2px 0 #fff;
-    border-collapse: separate;
 
     thead th {
       padding: $gutter;
       border-right: 1px dotted #e4e4e3;
       border-bottom: 0;
-      text-transform: uppercase;
       vertical-align: middle;
+      text-transform: uppercase;
 
       @include media($xs) {
         padding: $gutter/3 $gutter/4;
@@ -57,8 +58,8 @@
 
     th {
       padding: $gutter;
-      text-transform: uppercase;
       vertical-align: middle;
+      text-transform: uppercase;
 
       @include media($xs) {
         padding: $gutter/3 $gutter/4;
@@ -68,10 +69,11 @@
         padding: $gutter/2;
       }
     }
+
     td {
-      text-align: left;
       border-right: 1px solid #e6e6e6;
       vertical-align: middle;
+      text-align: left;
 
       @include media($xs) {
         padding: $gutter/3 $gutter/4;
@@ -86,8 +88,8 @@
       }
 
       &.order-actions a {
-        margin-right: 5px;
         display: block;
+        margin-right: 5px;
         text-align: center;
 
         &:last-child {
@@ -107,10 +109,10 @@
 
         dd {
           margin-bottom: 0;
-
-          p {
-            margin: 0;
-          }
+        }
+        
+        p {
+          margin: 0;
         }
       }
     }
@@ -129,10 +131,10 @@
 
   .order-info {
     mark {
-      background: tint($brand-color-1, 30%);
-      color: #fff;
       padding: 2px 5px;
       border-radius: $base-border-radius;
+      background: tint($brand-color-1, 30%);
+      color: #fff;
     }
   }
 
@@ -150,6 +152,7 @@
     @include media($xs) {
       @include span-columns(12);
     }
+
     @include media($sm-up) {
       @include span-columns(6);
     }
@@ -159,6 +162,7 @@
     @include media($xs) {
       @include span-columns(12);
     }
+
     @include media($sm-up) {
       @include span-columns(6);
       @include omega();

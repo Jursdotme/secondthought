@@ -1,16 +1,16 @@
-.comment-body {
-  $comment-gutter: 1.4rem;
-  $comment-image-padding: 0;
-  $comment-image-width: 4rem;
-  $comment-color: $base-font-color;
-  $comment-background: lighten($base-accent-color, 15);
-  $comment-detail-color: transparentize($comment-color, .5);
-  $comment-image-vert-alignment: top;
+$comment-gutter: 1.4rem;
+$comment-image-padding: 0;
+$comment-image-width: 4rem;
+$comment-color: $base-font-color;
+$comment-background: lighten($base-accent-color, 15);
+$comment-detail-color: transparentize($comment-color, .5);
+$comment-image-vert-alignment: top;
 
+.comment-body {
   display: table;
-  width: 100%;
   margin-bottom: $gutter;
   padding-bottom: 1rem;
+  width: 100%;
   border-bottom: 1px solid transparentize($comment-color, .9);
 
   .comment-author.vcard,
@@ -23,13 +23,13 @@
     padding-right: $comment-gutter;
 
     > img {
+      display: block;
+      padding: $comment-image-padding;
+      max-width: none;
       width: $comment-image-width;
       height: auto;
       border-radius: $base-border-radius;
-      padding: $comment-image-padding;
       background: $comment-background;
-      display: block;
-      max-width: none;
     }
 
     .comment-reverse-order & {
@@ -42,17 +42,17 @@
     width: 100%;
 
     h4 {
-      font-size: 1rem;
       margin-bottom: .5rem;
+      font-size: 1rem;
     }
 
     p {
       margin-bottom: .5rem;
 
       &.comment-detail {
+        color: $comment-detail-color;
         font-style: italic;
         font-size: .9rem;
-        color: $comment-detail-color;
       }
     }
   }
@@ -69,7 +69,6 @@
 }
 
 .comment-respond {
-
   .form-allowed-tags {
     display: none;
   }

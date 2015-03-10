@@ -1,21 +1,22 @@
 .pagination,
 .woocommerce-pagination {
+  text-align: center;
+
   $pagination-border-color: $base-border-color;
   $pagination-border: 1px solid $pagination-border-color;
   $pagination-background: lighten($pagination-border-color, 10);
   $pagination-hover-background: lighten($pagination-background, 5);
   $pagination-color: $base-font-color;
 
-  text-align: center;
-
   ul {
     display: block;
-    text-align: center;
     padding: 0;
+    text-align: center;
 
     li {
       display: inline;
       margin-right: 2px;
+
       &:last-child {
         margin-right: 0;
       }
@@ -28,11 +29,11 @@
 
         &:hover,
         &:focus {
-
         }
 
         &:active {
         }
+
         &.current {
           @extend %btn-brand;
         }
@@ -42,13 +43,13 @@
     ul li {
       display: none;
 
-      &:nth-child(1),
-      &:nth-child(2),
-      &:nth-child(3) {
+      @include media($large-screen) {
         display: inline;
       }
 
-      @include media($large-screen) {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
         display: inline;
       }
     }

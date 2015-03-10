@@ -4,10 +4,11 @@ var concat = require('gulp-concat');
 var sass = require('gulp-ruby-sass');
 var bless = require('gulp-bless');
 var cssmin = require('gulp-minify-css');
-var prefix = require('gulp-autoprefixer');
+var autoprefixer = require('gulp-autoprefixer');
 var scsslint = require('gulp-scss-lint');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
+var cache = require('gulp-cached');
 
 
 var paths = {
@@ -62,40 +63,49 @@ gulp.task('scripts-admin', function() {
 });
 
 gulp.task('sass', function () {
-    return gulp.src('sass/style.scss')
-        .pipe(sass({ "sourcemap=none": true }))
-        .on('error', function (err) { console.log(err.message); })
-        .pipe(gulp.dest('build/stylesheets'));
+  return sass('sass/style.scss', { sourcemap: true })
+    .on('error', function (err) { console.log(err.message); })
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('build/stylesheets'));
 });
 
 gulp.task('sass-editor', function () {
-    return gulp.src('sass/editor.scss')
-        .pipe(sass({ "sourcemap=none": true }))
-        .on('error', function (err) { console.log(err.message); })
-        .pipe(prefix())
-        .pipe(cssmin())
-        .pipe(bless({ imports: true }))
-        .pipe(gulp.dest('build/stylesheets'));
-});
-
-gulp.task('sass-admin', function () {
-    return gulp.src('sass/admin.scss')
-        .pipe(sass({ "sourcemap=none": true }))
-        .on('error', function (err) { console.log(err.message); })
-        .pipe(prefix())
-        .pipe(cssmin())
-        .pipe(bless({ imports: true }))
-        .pipe(gulp.dest('build/stylesheets'));
-});
-
-gulp.task('sass-release', function () {
-  return gulp.src('sass/*.scss')
-    .pipe(sass({ "sourcemap=none": true }))
+  return sass('sass/editor.scss', { sourcemap: true })
     .on('error', function (err) { console.log(err.message); })
-    .pipe(prefix())
+    .pipe(autoprefixer())
     .pipe(cssmin())
     .pipe(bless({ imports: true }))
     .pipe(gulp.dest('build/stylesheets'));
+});
+
+gulp.task('sass-admin', function () {
+  return sass('sass/admin.scss', { sourcemap: true })
+    .on('error', function (err) { console.log(err.message); })
+    .pipe(autoprefixer())
+    .pipe(cssmin())
+    .pipe(bless({ imports: true }))
+    .pipe(gulp.dest('build/stylesheets'));
+});
+
+gulp.task('sass-release', function () {
+  return sass('sass/*.scss', { sourcemap: true })
+    .on('error', function (err) { console.log(err.message); })
+    .pipe(autoprefixer())
+    .pipe(cssmin())
+    .pipe(bless({ imports: true }))
+    .pipe(gulp.dest('build/stylesheets'));
+});
+
+gulp.task('scss-lint', function() {
+  gulp.src('sass/**/*.scss')
+    .pipe(scsslint({
+      'config': 'lint.yml',
+    })
+  );
+});
+
+gulp.task('lint-watch', function() {
+  gulp.watch('sass/**/*.scss', ['scss-lint']);
 });
 
 // Rerun the task when a file changes

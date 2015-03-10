@@ -1,6 +1,6 @@
-@import 'base/helpers';
-@import '../bower_components/neat/app/assets/stylesheets/neat';
-@import '../bower_components/neat/app/assets/stylesheets/neat-helpers';
+@import 'helpers';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+@import '../../bower_components/neat/app/assets/stylesheets/neat-helpers';
 // Neat Overrides
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -17,44 +17,44 @@ $medium-screen: 970px;
 $large-screen: 1170px;
 
 // Extra small screen / phone
-$screen-xs:                  480px;
-$screen-xs-min:              $screen-xs;
+$screen-xs: 480px;
+$screen-xs-min: $screen-xs;
 
 // Small screen / tablet
-$screen-sm:                  768px;
-$screen-sm-min:              $screen-sm;
+$screen-sm: 768px;
+$screen-sm-min: $screen-sm;
 
 // Medium screen / desktop
-$screen-md:                  992px;
-$screen-md-min:              $screen-md;
+$screen-md: 992px;
+$screen-md-min: $screen-md;
 
 // Large screen / wide desktop
-$screen-lg:                  1200px;
-$screen-lg-min:              $screen-lg;
+$screen-lg: 1200px;
+$screen-lg-min: $screen-lg;
 
 // So media queries don't overlap when required, provide a maximum
-$screen-xs-max:              ($screen-sm-min - 1);
-$screen-sm-max:              ($screen-md-min - 1);
-$screen-md-max:              ($screen-lg-min - 1);
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
 
 //== Container sizes
 //
 //## Define the maximum width of `.container` for different screen sizes.
 
 // Small screen / tablet
-$container-tablet:             ((720px + $gutter));
+$container-tablet: ((720px + $gutter));
 //** For `$screen-sm-min` and up.
-$container-sm:                 $container-tablet;
+$container-sm: $container-tablet;
 
 // Medium screen / desktop
-$container-desktop:            ((940px + $gutter));
+$container-desktop: ((940px + $gutter));
 //** For `$screen-md-min` and up.
-$container-md:                 $container-desktop;
+$container-md: $container-desktop;
 
 // Large screen / wide desktop
-$container-large-desktop:      ((1140px + $gutter));
+$container-large-desktop: ((1140px + $gutter));
 //** For `$screen-lg-min` and up.
-$container-lg:                 $container-large-desktop;
+$container-lg: $container-large-desktop;
 
 // Greate breakpoints
 
@@ -66,25 +66,24 @@ $xs: new-breakpoint(max-width $screen-xs-max 12);
 $sm: new-breakpoint(min-width $screen-sm max-width $screen-sm-max 12);
 $md: new-breakpoint(min-width $screen-md max-width $screen-md-max 12);
 $lg: new-breakpoint(min-width $screen-lg 12);
-
 $sm-up: new-breakpoint(min-width $screen-sm 12);
 $md-up: new-breakpoint(min-width $screen-md 12);
-
 $sm-down: new-breakpoint(max-width $screen-sm-max 12);
 $md-down: new-breakpoint(max-width $screen-md-max 12);
-
-
-
 $fg-column: $column;
 $fg-gutter: $gutter;
-
 $navigation-breakpoint: $screen-sm;
 $type-scaling-breakpoint: $screen-xs;
 
 // OMEGA RESET (http://joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat/)
 @mixin omega-reset($nth) {
-  &:nth-child(#{$nth}) { margin-right: flex-gutter();}
-  &:nth-child(#{$nth}+1) { clear: none; }
+  &:nth-child(#{$nth}) {
+    margin-right: flex-gutter();
+  }
+  
+  &:nth-child(#{$nth}+1) {
+    clear: none;
+  }
 }
 
 // Fixed container widths
@@ -104,24 +103,40 @@ $type-scaling-breakpoint: $screen-xs;
 }
 
 .limit-width {
+  padding: 0;
+
   @include fixed-container;
-  padding:0;
-  &.wrapper-shadow-1 { box-shadow: $shadow-lvl-1;}
-  &.wrapper-shadow-2 { box-shadow: $shadow-lvl-2;}
-  &.wrapper-shadow-3 { box-shadow: $shadow-lvl-3;}
-  &.wrapper-shadow-4 { box-shadow: $shadow-lvl-4;}
-  &.wrapper-shadow-5 { box-shadow: $shadow-lvl-5;}
+
+  &.wrapper-shadow-1 {
+    box-shadow: $shadow-lvl-1;
+  }
+
+  &.wrapper-shadow-2 {
+    box-shadow: $shadow-lvl-2;
+  }
+
+  &.wrapper-shadow-3 {
+    box-shadow: $shadow-lvl-3;
+  }
+
+  &.wrapper-shadow-4 {
+    box-shadow: $shadow-lvl-4;
+  }
+
+  &.wrapper-shadow-5 {
+    box-shadow: $shadow-lvl-5;
+  }
 }
 
 body:after {
-  content: "";
+  position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  position: absolute;
   z-index: -1;
-  background-color: inherit;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  background-color: inherit;
+  content: '';
 }

@@ -7,13 +7,13 @@
     @extend %btn-default;
     @extend %btn-brand;
 
-    float: right;
     display: inline-block;
+    float: right;
     margin-top: -5px;
 
     &:after {
-      content: '\f061';
       margin-left: 5px;
+      content: '\f061';
       font: normal normal normal 14px/1 FontAwesome;
     }
   }

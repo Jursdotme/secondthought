@@ -1,8 +1,10 @@
-a.button, button.button,
+a.button,
+button.button,
 input.button,
 #review_form #submit {
-  disaplay: inline-block;
   @extend %btn;
   @extend %btn-default;
   @extend %btn-brand;
+  display: inline-block;
+
 }

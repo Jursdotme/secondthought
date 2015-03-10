@@ -5,6 +5,7 @@ header.header {
     @include media($xs) {
       @include span-columns(12);
     }
+    
     @include media($sm-up) {
       @include span-columns(3);
     }

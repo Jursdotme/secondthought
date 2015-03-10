@@ -11,25 +11,26 @@ img {
     float: right;
     margin-left: $gutter;
   }
+
   &.aligncenter {
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
   }
 }
 
 .wp-caption {
-  border: 1px solid #d3d3d3;
-  width: auto;
+  margin: 0 0 .75rem;
   padding: 3px;
   max-width: 100%;
+  width: auto;
+  border: 1px solid #d3d3d3;
   border-radius: 3px;
-  margin: 0 0 .75rem;
 
   .wp-caption-text {
-    color: #808080;
     margin: 0;
-    font-size: .9rem;
     margin-left: 5px;
+    color: #808080;
+    font-size: .9rem;
   }
 
   img {

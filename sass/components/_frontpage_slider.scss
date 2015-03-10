@@ -1,10 +1,9 @@
 .frontpage-slider {
-
   @include slick-slider(
-    $slick-font-family: "FontAwesome",
-    $slick-loader-path: "./",
-    $slick-arrow-color: white,
-    $slick-dot-color: black,
+    $slick-font-family: 'FontAwesome',
+    $slick-loader-path: './',
+    $slick-arrow-color: #fff,
+    $slick-dot-color: #000,
     $slick-dot-color-active: $brand-color-1,
     $slick-prev-character: '\f104',
     $slick-next-character: '\f105',
@@ -18,12 +17,14 @@
 
   // Additional Styling
   .slide {
-    background-size: cover;
     background-position: center;
+    background-size: cover;
   }
+
   .slick-next {
     right: 0;
   }
+  
   .slick-prev {
     left: 0;
   }

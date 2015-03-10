@@ -8,12 +8,15 @@ aside.sidebar {
       @include media($lg) {
         @include span-columns(4 of 12);
       }
+
       @include media($md) {
         @include span-columns(4 of 12);
       }
+
       @include media($sm) {
         @include span-columns(4 of 12);
       }
+
       @include media($xs) {
         @include span-columns(12);
       }

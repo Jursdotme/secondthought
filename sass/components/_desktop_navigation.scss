@@ -3,13 +3,14 @@
 }
 
 %top-lvl-link {
-  float: left;
   position: relative;
+  float: left;
 
   > a {
     padding: 20px 15px;
     color: $base-font-color;
     font-size: 16px;
+
     &:hover {
       background: #fafafa;
     }
@@ -17,9 +18,9 @@
 }
 
 .desktop-navigation {
-  @include span-columns(9);
   display: none;
 
+  @include span-columns(9);
   @include media($navigation-breakpoint) {
     display: block;
   }
@@ -33,12 +34,12 @@
       display: none;
 
       &.visible {
-        display: block;
         position: absolute;
-        margin-top: 16px;
-        background: #fff;
-        padding: 10px 0;
         z-index: 10000;
+        display: block;
+        margin-top: 16px;
+        padding: 10px 0;
+        background: #fff;
 
         // &:before {
         //   content: '';
@@ -50,17 +51,16 @@
       }
 
       li {
-
         &:hover {
           background: $grey-lightest;
         }
 
         a {
           display: block;
-          font-size: 14px;
           padding: 5px 15px;
-          white-space: nowrap;
           color: $base-font-color;
+          white-space: nowrap;
+          font-size: 14px;
         }
       }
     }

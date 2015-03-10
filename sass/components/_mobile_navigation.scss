@@ -1,27 +1,32 @@
-$sliding-menu-border-color     : shade(#f8f8f8, 10%);
-$sliding-menu-background       : #f8f8f8;
-$sliding-menu-color            : $base-font-color;
-$sliding-menu-border           : 1px solid $sliding-menu-border-color;
-$sliding-menu-background-hover : $brand-color-1;
-$sliding-menu-color-hover      : #fff;
-$mobile-menu-width             : 220px;
+$sliding-menu-border-color: shade(#f8f8f8, 10%);
+$sliding-menu-background: #f8f8f8;
+$sliding-menu-color: $base-font-color;
+$sliding-menu-border: 1px solid $sliding-menu-border-color;
+$sliding-menu-background-hover: $brand-color-1;
+$sliding-menu-color-hover: #fff;
+$mobile-menu-width: 220px;
 
 .lines-button {
+  position: absolute;
+  top: 5px;
+  right: -30px;
+  z-index: 9999999;
   display: inline-block;
   margin: 0 1em;
-  border: 0;
-  background: none;
   padding: 20px;
-  transition: .3s;
-  cursor: pointer;
-  user-select: none;
+  border: 0;
   border-radius: 3px;
-  position: absolute;
-  right: -30px;
-  top: 5px;
-  z-index: 9999999;
-  transform: scale(.6);
+  background: none;
   box-shadow: none;
+  cursor: pointer;
+  transition: .3s;
+  transform: scale(.6);
+
+  user-select: none;
+
+  @include media($navigation-breakpoint) {
+    display: none;
+  }
 
   &:focus {
     outline: 0;
@@ -36,10 +41,6 @@ $mobile-menu-width             : 220px;
   span {
     display: block;
   }
-
-  @include media($navigation-breakpoint) {
-    display: none;
-  }
 }
 
 .lines-button:hover {
@@ -51,27 +52,26 @@ $mobile-menu-width             : 220px;
 }
 
 .lines {
+  position: relative;
   display: inline-block;
   width: 60px;
   height: 6px;
-  background: #363636;
   border-radius: 6px;
+  background: #363636;
   transition: .2s cubic-bezier(.2, 0, .7, 1);
-  position: relative;
 }
 
 .lines:before,
 .lines:after {
+  position: absolute;
+  left: 0;
   display: inline-block;
   width: 60px;
   height: 6px;
-  background: #363636;
   border-radius: 3px;
-  transition: .2s cubic-bezier(.2, 0, .7, 1);
-  position: absolute;
-  left: 0;
+  background: #363636;
   content: '';
-  -webkit-transform-origin: .28571rem center;
+  transition: .2s cubic-bezier(.2, 0, .7, 1);
   transform-origin: .28571rem center;
 }
 
@@ -84,7 +84,6 @@ $mobile-menu-width             : 220px;
 }
 
 .arrow-flip.active {
-
   .lines:before,
   .lines:after {
     width: 30px;
@@ -100,25 +99,26 @@ $mobile-menu-width             : 220px;
 }
 
 .sliding-menu-content {
+  z-index: 999999;
+  overflow-y: auto;
+  background: $sliding-menu-background;
+  box-shadow: 0;
+
   @include position(fixed, 0 auto 0 0);
   @include size($mobile-menu-width 100%);
   @include transform(translateX(-$mobile-menu-width));
   @include transition(all .5s $authentic-motion-out);
-
-  background: $sliding-menu-background;
-  box-shadow: 0;
-  z-index: 999999;
-  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
   .open-submenu-icon {
     position: absolute;
     right: 0;
-    font-size: 28px;
-    border: none;
-    background: none;
     padding: 8px;
-    color: #B5BDCC;
+    border: 0;
+    background: none;
+    color: #b5bdcc;
+    font-size: 28px;
+
     &:hover {
       background: none;
       color: $brand-color-1;
@@ -126,9 +126,9 @@ $mobile-menu-width             : 220px;
   }
 
   .sub-menu {
+    display: none;
     // height: 0;
     overflow: hidden;
-    display: none;
     // @include transition (max-height 2s $authentic-motion);
 
     &.visible {
@@ -138,6 +138,7 @@ $mobile-menu-width             : 220px;
 
     li {
       background: shade($sliding-menu-background, 5%);
+
       .sub-menu {
         li {
           background: shade($sliding-menu-background, 10%);
@@ -156,12 +157,12 @@ $mobile-menu-width             : 220px;
   }
 
   li a {
+    display: block;
+    padding: 1rem;
     border-bottom: $sliding-menu-border;
     color: $sliding-menu-color;
-    display: block;
-    font-weight: bold;
-    padding: 1rem;
     text-transform: uppercase;
+    font-weight: bold;
 
     &:hover {
       background-color: $sliding-menu-background-hover;
@@ -171,21 +172,23 @@ $mobile-menu-width             : 220px;
 
   &.is-visible {
     box-shadow: $shadow-lvl-2;
-    @include transform(translateX(0));
     transition-timing-function: $authentic-motion-in;
+
+    @include transform(translateX(0));
   }
 }
 
 .menu-screen {
-  @include position(fixed, 0 0 0 0);
-  @include transition;
+  z-index: 999998;
+  visibility: hidden;
   background: $sliding-menu-border-color;
   opacity: 0;
-  visibility: hidden;
-  z-index: 999998;
+
+  @include position(fixed, 0 0 0 0);
+  @include transition;
 
   &.is-visible {
-    opacity: 0;
     visibility: visible;
+    opacity: 0;
   }
 }

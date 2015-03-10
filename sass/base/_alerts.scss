@@ -1,6 +1,7 @@
 @mixin flash($bg-color) {
   background: $bg-color;
   color: tint($bg-color, 70%);
+
   a {
     color: tint($bg-color, 85%);
     text-decoration: underline;
@@ -12,10 +13,10 @@
 }
 
 %flash-base {
-  font-weight: bold;
   margin-bottom: $gutter / 2;
   padding: $gutter / 2;
   border-radius: $base-border-radius;
+  font-weight: bold;
 }
 
 %flash-alert {

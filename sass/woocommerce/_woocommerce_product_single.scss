@@ -1,5 +1,4 @@
 .single-product {
-
   #container {
     @include fixed-container;
     @include pad(0 $gutter);
@@ -13,12 +12,15 @@
     @include media($xs) {
       @include span-columns(12);
     }
+    
     @include media($sm) {
       @include span-columns(4);
     }
+    
     @include media($md) {
       @include span-columns(4);
     }
+    
     @include media($lg) {
       @include span-columns(4);
     }
@@ -28,14 +30,17 @@
         @include span-columns(6);
         @include omega(2n);
       }
+
       @include media($sm) {
         @include span-columns(4);
         @include omega(3n);
       }
+
       @include media($md) {
         @include span-columns(4);
         @include omega(3n);
       }
+
       @include media($lg) {
         @include span-columns(3);
         @include omega(4n);
@@ -48,14 +53,17 @@
       @include span-columns(12);
       @include omega();
     }
+    
     @include media($sm) {
       @include span-columns(8);
       @include omega();
     }
+    
     @include media($md) {
       @include span-columns(8);
       @include omega();
     }
+    
     @include media($lg) {
       @include span-columns(8);
       @include omega();
@@ -83,14 +91,15 @@
     margin-top: 50px;
 
     .tabs {
-      padding: 0;
       margin: 0;
+      padding: 0;
+
       @include clearfix();
 
       li {
-        list-style: none;
         float: left;
         margin-right: $gutter;
+        list-style: none;
 
         a {
           @extend %btn;
@@ -135,23 +144,22 @@
   // Reviews
 
   #reviews {
-
     h2 {
       margin-bottom: .75rem;
     }
 
     .commentlist {
-      list-style: none;
       margin-bottom: 20px;
+      list-style: none;
 
       li {
-        background: none !important;
         padding-bottom: 1.618rem;
+        background: none !important;
 
         &:after {
-          content: '';
           display: table;
           clear: both;
+          content: '';
         }
       }
     }
@@ -160,8 +168,8 @@
       border-bottom: 1px solid rgba(0, 0, 0, .1) !important;
 
       &.bypostauthor {
-        background: none;
         border: 0;
+        background: none;
       }
 
       &.thread-even {
@@ -175,12 +183,12 @@
     }
 
     img.avatar {
-      @include span-columns(1);
-
+      float: left;
+      height: auto;
       background: #fff;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
-      height: auto;
-      float: left;
+
+      @include span-columns(1);
     }
 
     .comment-text {

@@ -1,41 +1,41 @@
 // Star rating
 .star-rating {
-  overflow: hidden;
   position: relative;
-  height: 1rem;
-  line-height: 1rem;
-  font-size: 1rem;
+  overflow: hidden;
   width: em(76);
+  height: 1rem;
+  font-size: 1rem;
   font-family: FontAwesome;
+  line-height: 1rem;
 
   &:before {
-    content: '\f005\f005\f005\f005\f005';
-    color: $grey-light;
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
+    color: $grey-light;
+    content: '\f005\f005\f005\f005\f005';
   }
 
   span {
-    overflow: hidden;
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
+    overflow: hidden;
     padding-top: 1.5rem;
   }
 
   span:before {
-    content: '\f005\f005\f005\f005\f005';
-    top: 0;
     position: absolute;
+    top: 0;
     left: 0;
     color: $alert-color;
+    content: '\f005\f005\f005\f005\f005';
   }
 }
 
 .woocommerce-product-rating {
-  line-height: 2rem;
   display: block;
+  line-height: 2rem;
 
   .star-rating {
     margin: .5em 4px 0 0;
@@ -45,13 +45,12 @@
 .products {
   .star-rating {
     display: block;
-    margin: 0 0 .5rem;
     float: none;
+    margin: 0 0 .5rem;
   }
 }
 
 .hreview-aggregate {
-
   .star-rating {
     margin: 10px 0 0;
   }
