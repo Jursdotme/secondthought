@@ -64,3 +64,61 @@ jQuery(document).ready(function(){
     .css('margin-right', "-"+thePadding);
 
 });
+
+// Column backgroud opacity
+$(document).ready(function(){
+  var transparentElement = $('[class*=overlay-]');
+
+  transparentElement.each(function(){
+
+    var bgColor = $(this).css('background-color');
+
+    var transparentclass = $(this).attr('class');
+
+    var classPosition = parseInt(transparentclass.search("overlay"), 10);
+    var transparentAmount = transparentclass.substr(classPosition ,10).slice(-2);
+
+    var result = bgColor.replace(')', ', '+(transparentAmount/100)+')').replace('rgb', 'rgba');
+
+    $(this).css('background-color', result);
+
+  });
+});
+
+// Row backgroud opacity
+$(document).ready(function(){
+  var transparentElement = $('[class*=background-]');
+
+  transparentElement.each(function(){
+
+    var bgColor = $(this).css('background-color');
+
+    var transparentclass = $(this).attr('class');
+
+    var classPosition = parseInt(transparentclass.search(" background-"), 10);
+
+    var transparentAmount = transparentclass.substr(classPosition ,14).slice(-2);
+
+    var result = bgColor.replace(')', ', '+(transparentAmount/100)+')').replace('rgb', 'rgba');
+
+    $(this).css('background-color', result);
+
+  });
+});
+
+// Column border radius
+$(document).ready(function(){
+  var transparentElement = $('[class*=radius-]');
+
+  transparentElement.each(function(){
+
+    var borderradiusclass = $(this).attr('class');
+
+    var classPosition = parseInt(borderradiusclass.search(" radius-"), 10);
+
+    var radius = borderradiusclass.substr(classPosition ,10).slice(-2);
+    console.log(radius)
+    $(this).css('border-radius', radius+'px');
+
+  });
+});
