@@ -8,44 +8,44 @@
     li {
       padding: 0 0 1px;
       list-style: none;
-      
+
       a,
       span {
         padding: 1px 0;
       }
     }
+  }
 
-    li.chosen {
-      a {
-        padding: 0 6px;
-        border: 1px solid $brand-color-1;
-        border-radius: $base-border-radius;
-        background: $brand-color-1;
-        color: #fff;
-        text-decoration: none;
+  .chosen {
+    a {
+      padding: 0 6px;
+      border: 1px solid $brand-color-1;
+      border-radius: $base-border-radius;
+      background: $brand-color-1;
+      color: #fff;
+      text-decoration: none;
 
-        &:before {
-          display: inline-block;
-          margin-right: 6px;
-          content: '\f00d';
-          font-family: FontAwesome;
+      &:before {
+        display: inline-block;
+        margin-right: 6px;
+        content: '\f00d';
+        font-family: FontAwesome;
 
-          @include transition (all .2s ease-in-out);
-        }
+        @include transition (all .2s ease-in-out);
+      }
 
-        &:hover:before {
-          color: $error-color;
-          transform: rotate(90deg);
-        }
+      &:hover:before {
+        color: $error-color;
+        transform: rotate(90deg);
       }
     }
+  }
 
-    small.count {
-      float: right;
-      margin-left: 6px;
-      color: tint($base-font-color, 70%);
-      font-size: 1em;
-    }
+  .count {
+    float: right;
+    margin-left: 6px;
+    color: tint($base-font-color, 70%);
+    font-size: 1em;
   }
 }
 

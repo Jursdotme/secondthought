@@ -9,6 +9,7 @@ var scsslint = require('gulp-scss-lint');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
 var cache = require('gulp-cached');
+var stylestats = require('gulp-stylestats');
 
 
 var paths = {
@@ -35,6 +36,16 @@ var paths = {
 gulp.task('clean', function(cb) {
   // You can use multiple globbing patterns as you would with `gulp.src`
   del(['build'], cb);
+});
+
+gulp.task('clean-styles', function(cb) {
+  // You can use multiple globbing patterns as you would with `gulp.src`
+  del(['build/stylesheets'], cb);
+});
+
+gulp.task('clean-scripts', function(cb) {
+  // You can use multiple globbing patterns as you would with `gulp.src`
+  del(['build/scripts'], cb);
 });
 
 gulp.task('scripts-release', function() {
@@ -88,7 +99,7 @@ gulp.task('sass-admin', function () {
 });
 
 gulp.task('sass-release', function () {
-  return sass('sass/*.scss', { sourcemap: true })
+  return sass('sass/style.scss', { sourcemap: true })
     .on('error', function (err) { console.log(err.message); })
     .pipe(autoprefixer())
     .pipe(cssmin())
@@ -97,7 +108,7 @@ gulp.task('sass-release', function () {
 });
 
 gulp.task('scss-lint', function() {
-  gulp.src('sass/**/*.scss')
+  return gulp.src('sass/**/*.scss')
     .pipe(scsslint({
       'config': 'lint.yml',
     })
@@ -125,6 +136,11 @@ gulp.task('watch-admin', function() {
   gulp.watch(paths.sass, ['sass-admin']);
 });
 
+gulp.task('stylestats', function () {
+  return gulp.src('build/stylesheets/style.css')
+    .pipe(stylestats());
+});
+
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['scripts', 'sass', 'watch']);
 
@@ -133,3 +149,5 @@ gulp.task('admin', ['sass-admin', 'scripts-admin']);
 gulp.task('editor', ['sass-editor']);
 
 gulp.task('release', ['scripts-release', 'sass-release', 'watch-release']);
+
+gulp.task('stats', ['sass-release', 'stylestats']);

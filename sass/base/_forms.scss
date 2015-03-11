@@ -9,7 +9,7 @@ input,
 label,
 select {
   display: block;
-  font-family: $sans-serif;
+  font-family: $body-font;
   font-size: 1rem;
 }
 
@@ -35,7 +35,7 @@ select[multiple=multiple] {
   border-radius: $form-border-radius;
   border: 1px solid $form-border-color;
   box-shadow: $form-box-shadow;
-  font-family: $sans-serif;
+  font-family: $body-font;
   font-size: 1rem;
   margin-bottom: $base-line-height/2;
   width: 100%;

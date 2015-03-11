@@ -1,11 +1,11 @@
-header.header {
+.header {
   @include fixed-container;
   @include pad(1em);
   .logo {
     @include media($xs) {
       @include span-columns(12);
     }
-    
+
     @include media($sm-up) {
       @include span-columns(3);
     }

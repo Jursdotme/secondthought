@@ -15,7 +15,7 @@
   $slick-opacity-not-active: .25,
   $slick-slide-height: 100%
 ) {
-  /* Slider */
+  // Slider
 
   &.slick-slider {
     position: relative;
@@ -44,11 +44,12 @@
     .slick-loading & {
       background: #fff slick-image-url('ajax-loader.gif') center center no-repeat;
     }
-
+    // scss-lint:disable DuplicateProperty
     &.dragging {
       cursor: pointer;
       cursor: hand;
     }
+    // scss-lint:enable DuplicateProperty
   }
 
   &.slick-slider .slick-track {
@@ -118,7 +119,7 @@
     }
   }
 
-  /* Arrows */
+  // Arrows
 
   .slick-prev,
   .slick-next {
@@ -138,7 +139,7 @@
     cursor: pointer;
 
     @include media($xs) {
-      display: none !important;
+      display: none;
     }
 
     @include media($sm-up) {
@@ -204,7 +205,7 @@
     }
   }
 
-  /* Dots */
+  // Dots
 
   &.slick-slider {
     margin-bottom: 0;

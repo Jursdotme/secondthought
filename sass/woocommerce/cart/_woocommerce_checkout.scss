@@ -94,7 +94,7 @@
     display: inline-block;
   }
 
-  table.shop_table {
+  .shop_table {
     width: 100%;
     border: 1px solid #e6e6e6;
     border-spacing: 0;
@@ -146,7 +146,7 @@
         padding: $gutter/2;
       }
 
-      dl.variation {
+      .variation {
         margin: 0;
         font-style: italic;
       }
@@ -187,15 +187,15 @@
     }
 
     .payment_methods {
-      margin: 0 !important;
-      padding: 0 !important;
+      margin: 0;
+      padding: 0;
       border-bottom: 1px solid $color-mercury-approx;
 
       li {
         margin-left: 0;
-        padding: $gutter !important;
+        padding: $gutter;
         border-bottom: 1px solid $color-mercury-approx;
-        list-style: none !important;
+        list-style: none;
 
         img {
           float: right;
@@ -211,7 +211,7 @@
         label {
           display: inline-block;
           margin-left: .618rem;
-          padding-top: 0 !important;
+          padding-top: 0;
           width: 92%;
           font-weight: bold;
         }
@@ -246,7 +246,7 @@
       }
 
       #cvv {
-        width: 22% !important;
+        width: 22%;
       }
 
       .help {

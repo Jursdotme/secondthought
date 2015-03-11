@@ -23,7 +23,7 @@
   margin-bottom: $gutter/2;
 }
 
-ul.products {
+.products {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -31,25 +31,25 @@ ul.products {
   @include span-columns(12);
 }
 
-li.product {
+.product {
   padding-bottom: $gutter*2;
 
   @include media($xs) {
     @include span-columns(6);
     @include omega(2n);
   }
-  
+
   @include media($sm) {
     @include span-columns(6);
     @include omega(2n);
   }
-  
+
   @include media($md) {
     @include span-columns(4);
     @include omega-reset(2n);
     @include omega(3n);
   }
-  
+
   @include media($lg) {
     @include span-columns(3);
     @include omega-reset(3n);
@@ -57,7 +57,7 @@ li.product {
   }
 
 
-  span.onsale {
+  .onsale {
     position: absolute;
     margin: 10px 0 0 10px;
     padding: 2px 7px;

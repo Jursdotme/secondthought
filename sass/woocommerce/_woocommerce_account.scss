@@ -31,7 +31,7 @@
     }
   }
 
-  table.shop_table {
+  .shop_table {
     width: 100%;
     border: 1px solid #e6e6e6;
     border-spacing: 0;
@@ -97,7 +97,7 @@
         }
       }
 
-      dl.variation {
+      .variation {
         margin: 0;
         font-style: italic;
 
@@ -110,7 +110,7 @@
         dd {
           margin-bottom: 0;
         }
-        
+
         p {
           margin: 0;
         }

@@ -12,15 +12,15 @@
     @include media($xs) {
       @include span-columns(12);
     }
-    
+
     @include media($sm) {
       @include span-columns(4);
     }
-    
+
     @include media($md) {
       @include span-columns(4);
     }
-    
+
     @include media($lg) {
       @include span-columns(4);
     }
@@ -53,17 +53,17 @@
       @include span-columns(12);
       @include omega();
     }
-    
+
     @include media($sm) {
       @include span-columns(8);
       @include omega();
     }
-    
+
     @include media($md) {
       @include span-columns(8);
       @include omega();
     }
-    
+
     @include media($lg) {
       @include span-columns(8);
       @include omega();
@@ -128,7 +128,7 @@
     margin-bottom: $gutter/2;
   }
 
-  button.button,
+  .button,
   #submit {
     @extend %btn;
     @extend %btn-default;
@@ -154,7 +154,7 @@
 
       li {
         padding-bottom: 1.618rem;
-        background: none !important;
+        background: none;
 
         &:after {
           display: table;
@@ -165,7 +165,7 @@
     }
 
     .comment {
-      border-bottom: 1px solid rgba(0, 0, 0, .1) !important;
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
 
       &.bypostauthor {
         border: 0;
@@ -182,7 +182,7 @@
       padding: 20px 0;
     }
 
-    img.avatar {
+    .avatar {
       float: left;
       height: auto;
       background: #fff;
@@ -216,7 +216,7 @@
     font-size: 28px;
   }
 
-  h3.comment-reply-title {
+  .comment-reply-title {
     font-size: 28px;
   }
 }

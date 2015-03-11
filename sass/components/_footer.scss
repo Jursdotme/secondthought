@@ -2,7 +2,7 @@
   background-color: $brand-color-1;
 }
 
-footer.footer {
+.footer {
   @include fixed-container;
   @include pad($gutter $gutter/2);
 
@@ -60,16 +60,6 @@ footer.footer {
     .firmanavn {
       font-weight: 700;
     }
-
-    .adresse {
-    }
-
-    .postnr-by {
-    }
-
-    .tlf {
-    }
-
 
     hr {
       @include media($lg) {

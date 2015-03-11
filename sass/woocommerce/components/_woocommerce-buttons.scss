@@ -1,10 +1,7 @@
-a.button,
-button.button,
-input.button,
+.button,
 #review_form #submit {
   @extend %btn;
   @extend %btn-default;
   @extend %btn-brand;
   display: inline-block;
-
 }

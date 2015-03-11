@@ -24,7 +24,7 @@ $mobile-menu-width: 220px;
 
   user-select: none;
 
-  @include media($navigation-breakpoint) {
+  @include media($navigation-breakpoint-up) {
     display: none;
   }
 
@@ -116,7 +116,7 @@ $mobile-menu-width: 220px;
     padding: 8px;
     border: 0;
     background: none;
-    color: #b5bdcc;
+    color: $brand-color-1;
     font-size: 28px;
 
     &:hover {

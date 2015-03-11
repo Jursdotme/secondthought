@@ -27,13 +27,6 @@
         @extend %btn-default;
         @extend %btn-subtle;
 
-        &:hover,
-        &:focus {
-        }
-
-        &:active {
-        }
-
         &.current {
           @extend %btn-brand;
         }

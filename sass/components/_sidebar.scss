@@ -1,4 +1,4 @@
-aside.sidebar {
+.sidebar {
   @include section-wrapper(#fff, $gutter*3);
 
   .sidebar-content {

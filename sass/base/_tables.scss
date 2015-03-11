@@ -1,3 +1,5 @@
+// scss-lint:disable MergeableSelector
+
 //== Tables
 //
 //## Customizes the `.table` component with basic values, each used across all table variations.
@@ -48,7 +50,7 @@ $table-border-color: #ddd !default;
 table {
   background-color: $table-bg;
 
-  col[class*='col-'] {
+  [class*='col-'] {
     position: static; // Prevent border hiding in Firefox and IE9/10 (see https://github.com/twbs/bootstrap/issues/11623)
     display: table-column;
     float: none;

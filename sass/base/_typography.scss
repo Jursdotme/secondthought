@@ -1,5 +1,7 @@
-@import url('//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,700,300|Roboto+Slab:400,700,300|Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100');
-$sans-serif: 'Roboto', sans-serif;
+@import url('//fonts.googleapis.com/css?family=Roboto:400,900,700italic,900italic,700,500italic,500,400italic,300italic,300,100,100italic|Montserrat:400,700');
+
+$header-font: 'Montserrat', sans-serif;
+$body-font: 'Roboto', sans-serif;
 
 html {
   font-size: $base-font-size; // Scale typography on mobile
@@ -11,7 +13,7 @@ body {
   z-index: 1;
   // background-color: $base-background-color;
   // color: $base-font-color;
-  font-family: $sans-serif;
+  font-family: $body-font;
 
   -webkit-font-smoothing: antialiased;
 }
@@ -19,7 +21,7 @@ body {
 h1 {
   margin: 1rem 0 .6875rem;
   font-weight: 700;
-  font-family: $sans-serif;
+  font-family: $header-font;
 
   @include media($sm-down) {
     font-size: 2rem;
@@ -40,7 +42,7 @@ h1 {
 h2 {
   margin: 1rem 0 .6875rem;
   font-weight: 400;
-  font-family: $sans-serif;
+  font-family: $header-font;
 
   @include media($sm-down) {
     font-size: 1.625rem;
@@ -62,7 +64,7 @@ h2 {
 h3 {
   margin: 1rem 0 .6875rem;
   font-weight: 400;
-  font-family: $sans-serif;
+  font-family: $header-font;
 
   @include media($sm-down) {
     font-size: 1.375rem;
@@ -84,7 +86,7 @@ h3 {
 h4 {
   margin: 1rem 0 .6875rem;
   font-weight: 400;
-  font-family: $sans-serif;
+  font-family: $header-font;
 
   @include media($sm-down) {
     font-size: 1.125rem;
@@ -107,18 +109,18 @@ p {
   margin-bottom: 1.5rem;
   // line-height: 1.5rem;
   font-size: 1rem; // same as $base-font-size
-  font-family: $sans-serif;
+  font-family: $body-font;
 
   &.date {
     margin-bottom: .3rem;
     color: transparentize($base-font-color, .6);
     font-style: italic;
     font-size: .9rem;
-    font-family: $sans-serif;
+    font-family: $body-font;
   }
 
   &.author {
-    font-family: $sans-serif;
+    font-family: $body-font;
   }
 
   &.lead {
@@ -151,14 +153,14 @@ a {
     color: $hover-link-color;
   }
 
-  a.read-more {
+  .read-more {
     position: relative;
     display: inline-block;
     margin-left: .2rem;
     text-transform: uppercase;
     font-weight: 700;
     font-size: .8rem;
-    font-family: $sans-serif;
+    font-family: $body-font;
 
     span {
       position: absolute;
@@ -166,7 +168,7 @@ a {
       right: -12px;
       font-style: normal;
       font-size: 1.5rem;
-      font-family: $sans-serif;
+      font-family: $body-font;
     }
   }
 }

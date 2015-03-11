@@ -1,8 +1,8 @@
-form br {
-  display: none;
-}
-
 form {
+  br {
+    display: none;
+  }
+
   .full {
     @include media($xs) {
       @include span-columns(12);
@@ -53,7 +53,7 @@ form {
   display: block;
 }
 
-span[role='alert'] {
+[role='alert'] {
   @extend %flash-error;
   display: block;
   padding: 1px 7px;

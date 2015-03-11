@@ -18,11 +18,12 @@
 }
 
 .desktop-navigation {
-  display: none;
-
   @include span-columns(9);
-  @include media($navigation-breakpoint) {
+  @include media($navigation-breakpoint-up) {
     display: block;
+  }
+  @include media($navigation-breakpoint-down) {
+    display: none;
   }
 
   ul {
