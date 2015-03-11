@@ -26,6 +26,7 @@ var paths = {
     'bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js',
     'bower_components/stellar.js/jquery.stellar.min.js',
     'bower_components/modernizr/modernizr.js',
+    'bower_components/fillerup/jquery.fillerup.js',
     'javascripts/concat/*.js',
 
   ]

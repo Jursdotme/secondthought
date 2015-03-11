@@ -122,3 +122,27 @@ $(document).ready(function(){
 
   });
 });
+
+
+
+
+$(document).ready(function(){
+  var fullHeighElement = $('[class*=full-height-minus-]');
+
+  fullHeighElement.each(function(){
+
+    var borderradiusclass = $(this).attr('class');
+
+    var classPosition = parseInt(borderradiusclass.search("full-height-minus-"), 10);
+
+    var radius = borderradiusclass.substr(classPosition ,20).slice(-2);
+    console.log(radius)
+
+    $(this).Fillerup({
+      subtract: radius,
+      minHeight: 500,
+      maxHeight: 0
+    });
+
+  });
+});
