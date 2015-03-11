@@ -114,9 +114,9 @@ $(document).ready(function(){
 
     var borderradiusclass = $(this).attr('class');
 
-    var classPosition = parseInt(borderradiusclass.search(" radius-"), 10);
+    var classPosition = parseInt(borderradiusclass.search("radius-"), 10);
 
-    var radius = borderradiusclass.substr(classPosition ,10).slice(-2);
+    var radius = borderradiusclass.substr(classPosition ,9).slice(-2);
     console.log(radius)
     $(this).css('border-radius', radius+'px');
 
