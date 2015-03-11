@@ -1,4 +1,7 @@
 .header {
+  background: $brand-color-2;
+}
+.header-inner {
   @include fixed-container;
   @include pad(1em);
   .logo {

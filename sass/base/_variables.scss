@@ -39,8 +39,9 @@ $light-success-color: tint($success-color, 50%);
 $base-background-color: #fff;
 
 // Font Colors
-$base-font-color: #363636;
+$base-font-color: $grey-darker;
 $base-accent-color: $brand-color-1;
+$base-header-color: tint($grey-darker, 10%);
 
 // Link Colors
 $base-link-color: $base-accent-color;
