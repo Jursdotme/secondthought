@@ -1,7 +1,7 @@
 $sliding-menu-border-color: shade(#f8f8f8, 10%);
-$sliding-menu-background: #f8f8f8;
-$sliding-menu-color: $base-font-color;
-$sliding-menu-border: 1px solid $sliding-menu-border-color;
+$sliding-menu-background: $brand-color-2;
+$sliding-menu-color: #fff;
+$sliding-menu-border: 1px solid shade($brand-color-2, 20%);
 $sliding-menu-background-hover: $brand-color-1;
 $sliding-menu-color-hover: #fff;
 $mobile-menu-width: 220px;
@@ -57,7 +57,7 @@ $mobile-menu-width: 220px;
   width: 60px;
   height: 6px;
   border-radius: 6px;
-  background: #363636;
+  background: #fff;
   transition: .2s cubic-bezier(.2, 0, .7, 1);
 }
 
@@ -69,7 +69,7 @@ $mobile-menu-width: 220px;
   width: 60px;
   height: 6px;
   border-radius: 3px;
-  background: #363636;
+  background: #fff;
   content: '';
   transition: .2s cubic-bezier(.2, 0, .7, 1);
   transform-origin: .28571rem center;
@@ -137,11 +137,11 @@ $mobile-menu-width: 220px;
     }
 
     li {
-      background: shade($sliding-menu-background, 5%);
+      background: shade($sliding-menu-background, 20%);
 
       .sub-menu {
         li {
-          background: shade($sliding-menu-background, 10%);
+          background: shade($sliding-menu-background, 40%);
         }
       }
     }

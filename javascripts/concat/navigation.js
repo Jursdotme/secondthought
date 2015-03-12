@@ -60,7 +60,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('.mobile-menu .menu-item-has-children')
-    .prepend('<a href="#" class="open-submenu-icon"><i class="fa fa-plus-circle"></i></a>');
+    .prepend('<a href="#" class="open-submenu-icon"><i class="fa fa-plus"></i></a>');
     $('.mobile-menu .menu-item-has-children .open-submenu-icon').bind('click', function(){
       $(this).parent().find('> .sub-menu').slideToggle('100');
      // apply the toggle to the ul
