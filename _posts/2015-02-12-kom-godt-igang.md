@@ -1,6 +1,6 @@
 ---
 layout: page
-title: " Kom godt igang"
+title: "Kom godt igang"
 category: tut
 date: 2015-05-12 15:16:06
 ---
