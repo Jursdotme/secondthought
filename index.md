@@ -2,68 +2,26 @@
 layout: default
 title: "Seconthought Dokumantation"
 ---
-# Kom godt igang
+# Secondthought
 
-Page Builder er en WordPress plugin, der gør det nemt at opbygge og redigere grid baserede sider. Vi gjorde grænsefladen så intuitivt som muligt, så det vil ikke tage dig lang tid at sidde fast i.
+Page Builder af SiteOrigin gør det nemt at bygge lydhør grid-baserede side indhold, der tilpasser sig mobile enheder med pixel perfekt nøjagtighed. Det er en helt ny dimension til oprettelse af indhold, der vil hjælpe dig med at oprette dit hjem, kontakt, om os eller andre side, hvor en lineær layout ikke vil formidle dit budskab. Det er en kraftig forbedring af det WordPress indhold redigering erfaring, men det føles helt fortrolig.
 
-## Page Builder Interfacet
+### Features:
 
-Først, lad os tage et kig på grænsefladen. Page Builder tilføjer et ekstra faneblad til den standard WordPress editor.
+#### Live redigering
 
-![Widget Attributes]({{ site.baseurl }}/assets/PB101.png)
+Live editor giver dig en nøjagtig forhåndsvisning af dit indhold, som du kan redigere direkte. Du kan bruge dette til at finde de sektioner og widgets du ønsker at redigere, og lav ændringerne uden at forlade siden.
 
-Hvis du klikker på denne fane bringer op Page Builder interface.
+*Opret indhold i en brøkdel af tiden.*
 
-![Widget Attributes]({{ site.baseurl }}/assets/PB102.png)
+#### Historie
 
-![Widget Attributes]({{ site.baseurl }}/assets/PB104.png)
+Redigerings frihed er at have frihed til at eksperimentere uden at frygte fejl. Med History browser kan du rulle frem og tilbage gennem dine ændringer. Se tidligere ændringer, rul derefter tilbage til denne version uden at få sved på panden.
 
-### Toolbar
+*Dit personlige sikkerhedsnet.*
 
-<Span style = "line-height: 13px;"> Du kan bruge værktøjslinjen til at tilføje en widget, skal du tilføje en ny række af kolonner eller indlæse forudindstillede layout </ span>.
+#### Indholds styling
 
-![Widget Attributes]({{ site.baseurl }}/assets/PB103.png)
+Giv dine layouts et personlig præg med rækker og widgets. Skift farver, afstande og funktioner med simple indtastningsfelter. Hvis du har brug for noget avanceret, er der brugerdefinerede CSS og class felter.
 
-### Row Handlinger
-
-Brug disse knapper til at slette og flytte en række. Op / ned ikon fungerer som et håndtag til at samle op og træk den række op eller ned.
-
-![Widget Attributes]({{ site.baseurl }}/assets/PB105.png)
-
-## Oprettelse af en ny side Brug Side Builder
-
-Åbn en ny side ved at navigere til Pages & gt; Tilføj ny
-
-![Widget Attributes]({{ site.baseurl }}/assets/PB106.png)
-
-Klik på fanen Page Builder til at begynde at oprette dit indhold. Denne fane er forbundet til din visuelle editor.
-
-![Widget Attributes]({{ site.baseurl }}/assets/PB107.png)
-
-Nu er vi klar til at begynde at oprette en side med Page Builder.
-
-![Widget Attributes]({{ site.baseurl }}/assets/PB108.png)
-
-## Rediger en eksisterende side Brug Side Builder
-
-Åbn den side, du ønsker at redigere ved hjælp af Page Builder ved at navigere til Pages & gt; Alle sider og klikke den side, du ønsker at redigere.
-
-![Widget Attributes]({{ site.baseurl }}/assets/PB109.png)
-
-Hvis du ikke har brugt Page Builder på denne side før, vil det åbne i standard visuelle editor. Klik på fanen Page Builder.
-
-![Widget Attributes]({{ site.baseurl }}/assets/PB110.png)
-
-
-Bekræft, at du gerne vil kopiere eksisterende indhold fra den visuelle editor i Page Builder. Ethvert indhold, du opretter med Page Builder vil overskrive den eksisterende indhold til denne side, så vi anbefaler, at du kopiere dit indhold via.
-
-![Widget Attributes]({{ site.baseurl }}/assets/PB111.png)
-
-
-Page Builder kopierer alle af dit indhold til en Visual Editor widget i en enkelt kolonne række. Denne opsætning giver dig en nøjagtig gengivelse af, hvordan dit indhold så ud før. Åbn Visual Editor widget, hvis du har brug for at få adgang til dette indhold.
-
-![Widget Attributes]({{ site.baseurl }}/assets/PB112.png)
-
-## Brug Page Builder på andre post Typer
-
-Page Builder arbejder med alle indlæg typer, ikke kun normalsider. Først navigere til Indstillinger & gt; SiteOrigin Page Builder. Så sørg for stillingen, du vil bruge det til er valgt under post Typer.
+*Der er ingen grænser for, hvad du kan ændre.*

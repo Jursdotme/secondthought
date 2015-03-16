@@ -6,7 +6,7 @@ date: 2015-03-12 15:05:36
 ---
 
 
-Jeg antager du allerede har læst ["Kom godt igang"]({{ site.baseurl }}/assets/PB21a.jpg) guiden og er begyndt at bygge sider med Page Builder. Denne guide vil hjælpe dig med de mere avancerede begreber styling a Page Builder.
+Jeg antager du allerede har læst ["Kom godt igang"]({% post_url 2015-02-12-kom-godt-igang %}) guiden og er begyndt at bygge sider med Page Builder. Denne guide vil hjælpe dig med de mere avancerede begreber styling a Page Builder.
 
 ## Styling en række
 
