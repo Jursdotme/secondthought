@@ -4,7 +4,7 @@ title: "Style en Side"
 category: guide
 date: 2015-03-12 15:05:36
 ---
-
+# {{ page.title }}
 
 Jeg antager du allerede har læst ["Kom godt igang"](#) guiden og er begyndt at bygge sider med Page Builder. Denne guide vil hjælpe dig med de mere avancerede begreber styling a Page Builder.
 

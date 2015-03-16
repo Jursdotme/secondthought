@@ -5,6 +5,8 @@ category: guide
 date: 2015-03-12 15:05:36
 ---
 
+# {{ page.title }}
+
 Præsamlede layouts kan du problemfrit lave side eller post layouts ved at vælge fra alle forudindstillede layouts inkluderet i din tema eller ved kloning eksisterende side eller post layouts. Klik på "Præsamlede" ikonet for at få adgang til forudindstillede layouts interface.
 
 ![Widget Attributes]({{ site.baseurl }}/assets/Prebuilt-Layout-Button.png)
@@ -15,7 +17,7 @@ Hvis dit tema har sine egne præ-byggede layouts, vil disse blive medtaget under
 
 ![Widget Attributes]({{ site.baseurl }}/assets/Prebuilt-layouts-Dialogue.png)
 
-Ved at klikke på præsamlede layout, du ønsker at bruge, vil opdrage en vigtig dialog bekræftelse, der angiver, at enhver eksisterende indhold vil blive overskrevet af den præsamlede layout, du har valgt. Klik på OK for at fortsætte. Hvis du er utilfreds med din nye layout kan du altid fortryde disse ændringer i <a href="https://siteorigin.com/page-builder/documentation/history/"> Page Builders Historie Browser </a>
+Ved at klikke på præsamlede layout, du ønsker at bruge, vil opdrage en vigtig dialog bekræftelse, der angiver, at enhver eksisterende indhold vil blive overskrevet af den præsamlede layout, du har valgt. Klik på OK for at fortsætte. Hvis du er utilfreds med din nye layout kan du altid fortryde disse ændringer i [Page Builders Historie Browser](#)
 
 ![Widget Attributes]({{ site.baseurl }}/assets/Layout-Confirmation.png)
 

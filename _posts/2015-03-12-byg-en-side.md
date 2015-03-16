@@ -5,6 +5,7 @@ category: guide
 date: 2015-03-12 15:16:08
 ---
 
+# {{ page.title }}
 Jeg går ud fra du allerede har læst ["Kom godt igang"](#). Denne guide vil hjælpe dig med de mere avancerede koncepter for at opbygge en side ved hjælp af Page Builder.
 
 ## Tilføj en række

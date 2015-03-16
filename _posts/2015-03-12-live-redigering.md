@@ -4,6 +4,7 @@ title: "Live redigering"
 category: guide
 date: 2015-03-12 15:05:36
 ---
+# {{ page.title }}
 
 Live Editor er en ny funktion, vi har tilføjet i Page Builder 2. Det giver dig en live forhåndsvisning af din side, som du kan redigere i realtid. Klik på Live Editor i hovedsiden Builder værktøjslinjen for at starte værktøjet.
 
