@@ -2,7 +2,7 @@
 layout: page
 title: " Kom godt igang"
 category: tut
-date: 2015-03-12 15:16:06
+date: 2015-05-12 15:16:06
 ---
 
 Page Builder er en WordPress plugin, der gør det nemt at opbygge og redigere grid baserede sider. Vi gjorde grænsefladen så intuitivt som muligt, så det vil ikke tage dig lang tid at sidde fast i.
