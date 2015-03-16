@@ -1,96 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width">
 
-        <title>{{ site.title }}{% if page.title %} : {{ page.title }}{% endif %}</title>
-        <meta name="description" content="{{ site.subtitle }}">
+  {% include head.html %}
 
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-    </head>
-    <body>
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
+  <body>
 
-          <div class="navbar-header navbar-collapse collapse">
-            {% include header.html %}
-          </div>
+    {% include header.html %}
 
-        </div>
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header>
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
       </div>
-      <div class="container-fluid">
+    </div>
 
-          <div class=row>
-            {% assign post_count = site.posts|size %}
-            <div id="navigation" class="col-sm-3 col-md-2 sidebar">
-              {% include navigation.html %}
-            </div>
+    {% include footer.html %}
 
-            <div id=content class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-              {{ content }}
-            </div>
-          </div>
+    <script>
+            function orderNav() {
+                var list,
+                    section,
+                    header,
+                    sections = [],
+                    lists = {},
+                    headers = {};
 
-          <div class="row">
-            <div id=footer class="col-sm-12">
-              {% include footer.html %}
-            </div>
-          </div>
-      </div>
-      <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-      <script>
-          function orderNav() {
-              var list,
-                  section,
-                  header,
-                  sections = [],
-                  lists = {},
-                  headers = {};
+                var navUl = document.querySelectorAll('#navigation ul')[0],
+                    navLis = document.querySelectorAll('#navigation ul li');
 
-              var navUl = document.querySelectorAll('#navigation ul')[0],
-                  navLis = document.querySelectorAll('#navigation ul li');
+                if (!navUl) return;
 
-              if (!navUl) return;
+                for (var i = 0; i < navLis.length; i++) {
+                    var order, li = navLis[i];
 
-              for (var i = 0; i < navLis.length; i++) {
-                  var order, li = navLis[i];
+                    if (li.classList.contains('nav-header')) {
+                        section = li.textContent || li.innerText;
+                        sections.push(section);
+                        headers[section] = li;
+                        continue;
+                    }
 
-                  if (li.classList.contains('nav-header')) {
-                      section = li.textContent || li.innerText;
-                      sections.push(section);
-                      headers[section] = li;
-                      continue;
-                  }
+                    if (!lists[section]) {
+                        lists[section] = [];
+                    }
 
-                  if (!lists[section]) {
-                      lists[section] = [];
-                  }
+                    order = parseFloat(li.getAttribute('data-order'))
+                    lists[section].push([order, li]);
+                }
 
-                  order = parseFloat(li.getAttribute('data-order'))
-                  lists[section].push([order, li]);
-              }
+                for (var i = 0; i < sections.length; i++) {
+                    section = sections[i];
+                    list = lists[section].sort(function(a, b) {
+                        return a[0] - b[0];
+                    });
 
-              for (var i = 0; i < sections.length; i++) {
-                  section = sections[i];
-                  list = lists[section].sort(function(a, b) {
-                      return a[0] - b[0];
-                  });
+                    if (header = headers[section]) {
+                        navUl.appendChild(header);
+                    }
+                    for (var j = 0; j < list.length; j++) {
+                        navUl.appendChild(list[j][1]);
+                    }
+                }
+            }
 
-                  if (header = headers[section]) {
-                      navUl.appendChild(header);
-                  }
-                  for (var j = 0; j < list.length; j++) {
-                      navUl.appendChild(list[j][1]);
-                  }
-              }
-          }
+            if (document.querySelectorAll) orderNav();
+        </script>
 
-          if (document.querySelectorAll) orderNav();
-      </script>
-    </body>
+  </body>
+
 </html>

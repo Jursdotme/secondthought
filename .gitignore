@@ -1,3 +1,6 @@
 *.sw?
 _site
 _pages
+.sass-cache
+
+*.scssc

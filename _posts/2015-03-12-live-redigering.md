@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: default
 title: "Live redigering"
-category: tut
+category: guide
 date: 2015-03-12 15:05:36
 ---
 

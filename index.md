@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Seconthought Dokumantation"
+title: "Seconthought Dokumentation"
 ---
 
 # Secondthought

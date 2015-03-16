@@ -1,11 +1,11 @@
 ---
-layout: page
+layout: default
 title: "Byg en side"
-category: tut
+category: guide
 date: 2015-03-12 15:16:08
 ---
 
-Jeg går ud fra du allerede har læst ["Kom godt igang"]({% post_url 2015-02-12-kom-godt-igang %}). Denne guide vil hjælpe dig med de mere avancerede koncepter for at opbygge en side ved hjælp af Page Builder.
+Jeg går ud fra du allerede har læst ["Kom godt igang"](#). Denne guide vil hjælpe dig med de mere avancerede koncepter for at opbygge en side ved hjælp af Page Builder.
 
 ## Tilføj en række
 

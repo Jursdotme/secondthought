@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Række funktioner"
 category: ref
 date: 2015-03-12 15:05:36
