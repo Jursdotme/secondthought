@@ -2,6 +2,7 @@
 layout: default
 title: "Seconthought Dokumantation"
 ---
+
 # Secondthought
 
 Page Builder af SiteOrigin gør det nemt at bygge lydhør grid-baserede side indhold, der tilpasser sig mobile enheder med pixel perfekt nøjagtighed. Det er en helt ny dimension til oprettelse af indhold, der vil hjælpe dig med at oprette dit hjem, kontakt, om os eller andre side, hvor en lineær layout ikke vil formidle dit budskab. Det er en kraftig forbedring af det WordPress indhold redigering erfaring, men det føles helt fortrolig.
