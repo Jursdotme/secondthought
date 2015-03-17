@@ -132,6 +132,8 @@ $(document).ready(function(){
 $(document).ready(function(){
   var fullHeighElement = $('[class*=full-height-]');
 
+  // console.log(fullHeighElement);
+
   fullHeighElement.each(function(){
 
     var theClass = $(this).attr('class');
@@ -153,7 +155,6 @@ $(document).ready(function(){
     var fullHeightSettings = classArray[ wantedPosition[1]];
 
     // Split the full-height.. variable into an array containing the wanted settings
-
     var fullHeightSettings = fullHeightSettings.split('-');
 
     // console.log(fullHeightSettings);
@@ -166,14 +167,15 @@ $(document).ready(function(){
   });
 });
 
-$('.scroll-button').append( "<a href='#' class='scroll-arrow'><i class='fa fa-chevron-down'></i></a>" );
+$('.scroll-button').append( "<a href='#' class='scroll-arrow'><i class='fa fa-angle-down'></i></a>" );
 
 $('.scroll-arrow').on('click', function() {
 
-  var y = $(window).scrollTop();
+  blockOffset = $(this).parent().offset().top;
+  blockHeight = $(this).parent().outerHeight();
 
   $("html, body").animate({
-    scrollTop: $(window).height()
+    scrollTop: blockOffset+blockHeight
   }, 600);
 
 });
