@@ -128,26 +128,52 @@ $(document).ready(function(){
   });
 });
 
-
-
-
+// .full-height-100-500-900
 $(document).ready(function(){
-  var fullHeighElement = $('[class*=full-height-minus-]');
+  var fullHeighElement = $('[class*=full-height-]');
 
   fullHeighElement.each(function(){
 
-    var borderradiusclass = $(this).attr('class');
+    var theClass = $(this).attr('class');
 
-    var classPosition = parseInt(borderradiusclass.search("full-height-minus-"), 10);
+    var classArray = theClass.split(' ');
 
-    var radius = borderradiusclass.substr(classPosition ,20).slice(-2);
-    console.log(radius)
+    Array.prototype.find = function(match) {
+      var matches = [];
+      $.each(this, function(index, str) {
+          if(str.indexOf(match) !== -1) {
+              matches.push(index);
+          }
+      });
+      return matches;
+    }
 
+    // Find the full-height... class and isolate it in a variable
+    var wantedPosition = classArray.find('full-height-');
+    var fullHeightSettings = classArray[ wantedPosition[1]];
+
+    // Split the full-height.. variable into an array containing the wanted settings
+
+    var fullHeightSettings = fullHeightSettings.split('-');
+
+    // console.log(fullHeightSettings);
     $(this).Fillerup({
-      subtract: radius,
-      minHeight: 500,
-      maxHeight: 0
+      subtract: fullHeightSettings[2],
+      minHeight: fullHeightSettings[3],
+      maxHeight: fullHeightSettings[4]
     });
 
   });
+});
+
+$('.scroll-button').append( "<a href='#' class='scroll-arrow'><i class='fa fa-chevron-down'></i></a>" );
+
+$('.scroll-arrow').on('click', function() {
+
+  var y = $(window).scrollTop();
+
+  $("html, body").animate({
+    scrollTop: $(window).height()
+  }, 600);
+
 });

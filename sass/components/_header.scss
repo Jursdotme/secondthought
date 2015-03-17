@@ -3,8 +3,9 @@
 }
 .header-inner {
   @include fixed-container;
-  @include pad(1em);
+  @include pad(0 $gutter/2);
   .logo {
+    padding-top: 18px;
     @include media($xs) {
       @include span-columns(12);
     }
@@ -13,14 +14,19 @@
       @include span-columns(3);
     }
 
+
+    a {
+      display: block;
+
+    }
     img {
+
       @include media($xs) {
-        width: 57%;
+
       }
 
       @include media($sm-up) {
-        float: left;
-        width: 300px;
+
       }
     }
   }
