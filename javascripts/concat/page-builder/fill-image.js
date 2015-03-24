@@ -20,6 +20,11 @@ var calculateImageHeight = function(imageDiv){
         .css('height', parentHeight+"px")
         .css('width', calculatedWidth+"px")
     }
+    if ($(window).width() < 767) {
+      imageDiv.css('width',
+      (imageDiv.parent().outerWidth())+30
+    );
+    }
 
 
 }

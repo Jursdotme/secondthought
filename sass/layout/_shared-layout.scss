@@ -140,3 +140,15 @@
     color: #fff;
   }
 }
+
+.fill-image {
+  background-position: center;
+  @include media($xs) {
+    height: 500px !important;
+    margin: 0 -15px;
+  }
+}
+
+.panel-last-child p:last-child {
+  margin-bottom: 0;
+}
