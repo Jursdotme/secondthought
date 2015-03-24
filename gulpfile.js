@@ -27,7 +27,8 @@ var paths = {
     'bower_components/stellar.js/jquery.stellar.min.js',
     'bower_components/modernizr/modernizr.js',
     'bower_components/fillerup/jquery.fillerup.js',
-    'javascripts/concat/*.js',
+    'bower_components/throttle/src/js/throttle.js',
+    'javascripts/concat/**/*.js',
 
   ]
 };

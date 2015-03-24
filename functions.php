@@ -156,4 +156,10 @@ function deregister_bbpress_styles() {
 }
 
 
+
+function add_smiley($content) {
+  $regex_string = "#<p>(\s|&nbsp;|</?\s?br\s?/?>)*</?p>#";
+  return preg_replace($regex_string, '', $content);
+}
+add_filter('widget_text', 'add_smiley');
 ?>
