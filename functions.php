@@ -28,6 +28,7 @@ require_once( 'functions/gallery.php' ); // Make Wordpress Native gallery Second
 require_once( 'functions/tinymce_settings.php' ); // Make Wordpress Native gallery Secondthought compatible
 require_once( 'functions/page-builder-custom-layouts.php' ); // Make Wordpress Native gallery Secondthought compatible
 require_once( 'functions/required_plugins.php' ); // Install required and recommended plugins
+require_once( 'functions/widgets/widget_overrides_import.php' ); // Install required and recommended plugins
 
 /*------------------------------------*\
 	Theme Support
