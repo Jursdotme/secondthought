@@ -9,6 +9,9 @@ $gutter: 30px;
 $grid-columns: 12;
 $max-width: 1088px;
 
+
+$fixed-widths: false;
+
 // Neat Breakpoints
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -88,25 +91,31 @@ $type-scaling-breakpoint: $screen-xs;
 }
 
 // Fixed container widths
-@mixin fixed-container {
+@mixin seconthought-container {
   @include outer-container;
   @include pad(0 $gutter);
 
-  @media (min-width: $screen-sm-min) {
-    width: $container-sm;
+  @if $fixed-widths {
+    @media (min-width: $screen-sm-min) {
+      width: $container-sm;
+    }
+    @media (min-width: $screen-md-min) {
+      width: $container-md;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: $container-lg;
+    }
   }
-  @media (min-width: $screen-md-min) {
-    width: $container-md;
-  }
-  @media (min-width: $screen-lg-min) {
-    width: $container-lg;
+
+  @else {
+
   }
 }
 
 .limit-width {
   padding: 0;
 
-  @include fixed-container;
+  @include seconthought-container;
 
   &.wrapper-shadow-1 {
     box-shadow: $shadow-lvl-1;

@@ -2,7 +2,7 @@
 .single-post,
 .search {
   main {
-    @include fixed-container;
+    @include seconthought-container;
     @include pad(0 $gutter/2);
     section {
       @include span-columns(12);

@@ -2,7 +2,7 @@
   @include section-wrapper(#fff, $gutter*3);
 
   .sidebar-content {
-    @include fixed-container;
+    @include seconthought-container;
 
     > .sidebar-widget {
       @include media($lg) {

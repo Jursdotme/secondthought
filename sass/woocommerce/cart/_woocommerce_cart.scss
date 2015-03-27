@@ -1,6 +1,6 @@
 .page-template-default.cart {
   main {
-    @include fixed-container;
+    @include seconthought-container;
     @include pad($gutter*3 $gutter);
 
     section {

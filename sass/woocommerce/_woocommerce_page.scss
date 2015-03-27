@@ -1,6 +1,6 @@
 .woocommerce-page.archive {
   #container {
-    @include fixed-container;
+    @include seconthought-container;
     @include pad(0 $gutter);
 
     #content {
