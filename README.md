@@ -1,4 +1,4 @@
-![Seconthought Logo](https://raw.githubusercontent.com/Jursdotme/secondthought/master/img/logo@2x.png)
+![secondthought Logo](https://raw.githubusercontent.com/Jursdotme/secondthought/master/img/logo@2x.png)
 
 Hi. This a starter theme called *Secondthought*. It's a theme meant for hacking so don't use it as a Parent Theme. Instead try turning it into the next, most awesome, WordPress page out there. That is it's purpose.
 

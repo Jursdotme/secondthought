@@ -3,7 +3,7 @@
 }
 
 .footer {
-  @include seconthought-container;
+  @include secondthought-container;
   @include pad($gutter $gutter/2);
 
   img {

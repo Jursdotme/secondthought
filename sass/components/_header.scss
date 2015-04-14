@@ -2,7 +2,7 @@
   background: $brand-color-2;
 }
 .header-inner {
-  @include seconthought-container;
+  @include secondthought-container;
   @include pad(0 $gutter/2);
   .logo {
     padding-top: 18px;

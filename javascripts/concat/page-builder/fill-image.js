@@ -3,7 +3,7 @@ var calculateImageHeight = function(imageDiv){
 
     imageDiv.css('height', 0)
     parentHeight = imageDiv.closest('.panel-row-style').outerHeight();
-    parentWidth = imageDiv.closest('.panel').outerWidth();
+    parentWidth = imageDiv.closest('.so-panel').outerWidth();
 
     addedMargin = imageDiv.closest('.panel-row-style').css("margin-right");
     addedMargin = parseInt(addedMargin)*-1;

@@ -90,7 +90,7 @@ $type-scaling-breakpoint: $screen-xs;
 }
 
 // Fixed container widths
-@mixin seconthought-container {
+@mixin secondthought-container {
   @include outer-container;
   @include pad(0 $gutter);
 

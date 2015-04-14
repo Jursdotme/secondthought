@@ -28,7 +28,7 @@ var paths = {
     'bower_components/modernizr/modernizr.js',
     'bower_components/fillerup/jquery.fillerup.js',
     'bower_components/throttle/src/js/throttle.js',
-    'javascripts/concat/**/*.js',
+    'javascripts/concat/*.js',
 
   ]
 };
