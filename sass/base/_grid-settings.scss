@@ -114,7 +114,7 @@ $type-scaling-breakpoint: $screen-xs;
 .limit-width {
   padding: 0;
 
-  @include seconthought-container;
+  @include secondthought-container;
 
   &.wrapper-shadow-1 {
     box-shadow: $shadow-lvl-1;
