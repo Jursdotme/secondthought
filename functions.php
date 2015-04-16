@@ -28,8 +28,7 @@ require_once( 'functions/gallery.php' ); // Make Wordpress Native gallery Second
 require_once( 'functions/tinymce_settings.php' ); // Make Wordpress Native gallery Secondthought compatible
 require_once( 'functions/page-builder-custom-layouts.php' ); // Make Wordpress Native gallery Secondthought compatible
 require_once( 'functions/required_plugins.php' ); // Install required and recommended plugins
-require_once( 'functions/widgets/widget_overrides_import.php' ); // Install required and recommended plugins
-require_once( 'functions/widgets/inzite_slider_widget.php' ); // Install required and recommended plugins
+require_once( 'functions/image_sizes.php' );
 
 /*------------------------------------*\
 	Theme Support
@@ -38,25 +37,6 @@ require_once( 'functions/widgets/inzite_slider_widget.php' ); // Install require
 if (!isset($content_width))
 {
     $content_width = 900;
-}
-
-if (function_exists('add_theme_support'))
-{
-    // Add Menu Support
-    add_theme_support('menus');
-
-    // Add Thumbnail Theme Support
-    add_theme_support('post-thumbnails');
-    // add_image_size('large', 700, '', true); // Large Thumbnail
-    // add_image_size('medium', 250, '', true); // Medium Thumbnail
-    // add_image_size('small', 120, '', true); // Small Thumbnail
-    // add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
-
-    // Enables post and comment RSS feed links to head
-    add_theme_support('automatic-feed-links');
-
-    // Localisation Support
-    load_theme_textdomain('secondthought', get_template_directory() . '/languages');
 }
 
 /*------------------------------------*\

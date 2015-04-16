@@ -84,7 +84,7 @@ function my_theme_register_required_plugins() {
         ),
         // This is an example of how to include a plugin from a private repo in your theme.
         array(
-            'name'               => 'Seconthought PageBuilder Addons Bundle', // The plugin name.
+            'name'               => 'Secondthought Widget Pack', // The plugin name.
             'slug'               => 'secondthought-pagebuilder-bundle', // The plugin slug (typically the folder name).
             'source'             => 'https://github.com/Jursdotme/secondthought-pagebuilder-bundle/archive/1.0.0.zip', // The plugin source.
             'required'           => true, // If false, the plugin is only 'recommended' instead of required.
