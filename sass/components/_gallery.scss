@@ -1,6 +1,11 @@
 .gallery {
   img {
     width: 100%;
+    display: block;
+  }
+
+  a {
+    display: block;
   }
 
   br {
