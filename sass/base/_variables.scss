@@ -9,18 +9,19 @@ $base-border-radius: 3px;
 // Colors
 
 // Brand Colors
-$brand-color-1: #e84c3d;
-$brand-color-2: #34485e;
-$brand-color-3: #ececec;
+$brand-color-1: #E34A3D;
+$brand-color-2: #2A3A4C;
+$brand-color-3: #2A3A4C;
 
 // Grays
-$grey-lightest : #fafafa;
-$grey-lighter  : #e4e4e4;
-$grey-light    : #cbcbcb;
-$gray          : #aaa;
-$grey-dark     : #555;
-$grey-darker   : #333;
-$grey-darkest  : #222;
+$gray          : lighten(desaturate($brand-color-1, 65%), 30%);
+$grey-lightest : tint($gray, 92%);
+$grey-lighter  : tint($gray, 75%);
+$grey-light    : tint($gray, 50%);
+
+$grey-dark     : shade($gray, 50%);
+$grey-darker   : shade($gray, 75%);
+$grey-darkest  : shade($gray, 92%);
 
 
 // Flash Colors

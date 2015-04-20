@@ -19,16 +19,10 @@ $(document).ready(function() {
     element2 = $this.find('.gallery-item:eq(1)');
     element1Width = element1.outerWidth();
 
-
-
-
     margin = element2.position().left-(element1.position().left + element1Width);
-
-    console.log(margin);
 
     $this.find('.gallery-item').css('margin-bottom', margin);
   });
-
 
   $('dl.gallery-item').matchHeight();
 
