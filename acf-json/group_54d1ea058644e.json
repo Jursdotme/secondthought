@@ -32,7 +32,8 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Disse oplysninger bliver brugt i bl.a. sidefoden hvor adresse og kontaktinfo bliver vist."
+            "message": "Disse oplysninger bliver brugt i bl.a. sidefoden hvor adresse og kontaktinfo bliver vist.",
+            "esc_html": 0
         },
         {
             "key": "field_54d1ea0e7a855",
@@ -246,7 +247,8 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Her kan du definere hjemmeside addresser og sociale mediekontoer."
+            "message": "Her kan du definere hjemmeside addresser og sociale mediekontoer.",
+            "esc_html": 0
         },
         {
             "key": "field_54d1eaf87a85f",
@@ -357,6 +359,106 @@
             "maxlength": "",
             "readonly": 0,
             "disabled": 0
+        },
+        {
+            "key": "field_55375040ebc8e",
+            "label": "Cookie Advarsel",
+            "name": "",
+            "prefix": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top"
+        },
+        {
+            "key": "field_5537507991076",
+            "label": "Aktiver Cookie Advarsel",
+            "name": "aktiver_cookie_advarsel",
+            "prefix": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0
+        },
+        {
+            "key": "field_553750ab91077",
+            "label": "Besked",
+            "name": "besked",
+            "prefix": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5537507991076",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Vi bruger cookies for at give dig den bedste oplevelse p\u00e5 vores hjemmeside.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_553751dfc5144",
+            "label": "Placering",
+            "name": "placering",
+            "prefix": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5537507991076",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "top": "Top",
+                "bund": "Bund"
+            },
+            "default_value": {
+                "top": "top"
+            },
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "disabled": 0,
+            "readonly": 0
         }
     ],
     "location": [
@@ -370,9 +472,9 @@
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1424945104
+    "modified": 1429690043
 }

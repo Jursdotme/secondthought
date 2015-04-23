@@ -1,0 +1,111 @@
+.page-template-page_templatesprodukter-php {
+  main {
+    @include fixed-container;
+    @include pad($gutter*2 $gutter);
+
+    @extend %content_wrapper; // Edit in base/helpers
+
+    section {
+      @include media($lg) {
+        @include span-columns(10);
+        @include shift(1);
+      }
+      @include media($md) {
+        @include span-columns(10);
+        @include shift(1);
+      }
+      @include media($sm) {
+        @include span-columns(12);
+      }
+      @include media($xs-down) {
+        @include span-columns(12);
+      }
+    }
+
+    .page-header {
+      @include media($lg) {
+        @include span-columns(10);
+        @include shift(1);
+      }
+      @include media($md) {
+        @include span-columns(10);
+        @include shift(1);
+      }
+      @include media($sm) {
+        @include span-columns(12);
+      }
+      @include media($xs-down) {
+        @include span-columns(12);
+      }
+      border-bottom: 1px solid #B8BCBF;
+      margin-bottom: $gutter;
+    }
+    
+    h2 { display:none;clear:both; }
+    
+    .product {
+      @include media($lg) {
+        @include span-columns(3);
+        @include omega(4n);
+      }
+      @include media($md) {
+        @include span-columns(3);
+        @include omega(3n);
+      }
+      @include media($sm) {
+        @include span-columns(4);
+        @include omega(3n);
+      }
+      @include media($xs) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+      @include media($xxs) {
+        @include span-columns(12);
+        @include omega(1n);
+      }
+      margin-bottom:20px;
+
+      a.img {
+        position:relative;
+        margin:0;
+        display: block;
+        img {
+          width: 100%;
+          margin:0;
+          vertical-align: top;
+        }
+        .zoom {
+          display: block;
+          position:absolute;
+          right:0;
+          bottom:0;
+          width: 25px;
+          height: 25px;
+          cursor: pointer;
+          background-image: url('../img/search-small.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+      .text {
+        background:#EDECEC;
+        padding:10px;
+        h3 {
+          font-size: 1.0rem!important;
+          line-height: 1!important;
+          margin:0!important;
+
+        }
+        .description {
+          min-height: 45px;
+          line-height: 18px;
+        }
+        .price {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+

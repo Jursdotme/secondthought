@@ -1,0 +1,17 @@
+.page-template-fuld-bredte {
+  main {
+    @include fixed-container;
+    @include pad($gutter*2 $gutter);
+
+    @extend %content_wrapper; // Edit in base/helpers
+
+    section {
+      @include span-columns(12);
+    }
+    .page-header {
+      @include span-columns(12);
+      border-bottom: 1px solid #B8BCBF;
+      margin-bottom: $gutter;
+    }
+  }
+}

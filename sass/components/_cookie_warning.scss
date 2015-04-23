@@ -1,0 +1,37 @@
+#cookie-bar {
+  background: $brand-color-2;
+  height: 50px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  padding: 3px 0;
+  z-index: 999999999999;
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    &.bottom {
+      bottom: 0;
+      top: auto;
+    }
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    @extend %btn;
+    @extend %btn-medium;
+    margin-left: 10px;
+  }
+  .cb-enable {
+    @extend %btn-warning;
+  }
+  .cb-disable {
+    @extend %btn-warning;
+  }
+  .cb-policy {
+    @extend %btn-success;
+  }
+}

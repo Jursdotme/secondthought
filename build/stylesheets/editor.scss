@@ -1,5 +1,5 @@
 @import 'base/normalize';
-@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/bourbon/dist/bourbon';
 @import 'base/grid-settings';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
@@ -9,4 +9,5 @@
 
 #tinymce {
   margin: 9px 10px;
+  background: #fff;
 }
