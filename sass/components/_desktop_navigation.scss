@@ -21,7 +21,8 @@
 }
 
 .desktop-navigation {
-  @include span-columns(9);
+  // @include span-columns(9);
+  float: left;
   @include media($navigation-breakpoint-up) {
     display: block;
   }
@@ -76,5 +77,18 @@
     > li {
       @extend %top-lvl-link;
     }
+  }
+}
+
+.nav_bottom {
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+  background: green;
+  .desktop-navigation {
+    @include secondthought-container;
+    padding: 0 $gutter/2;
+    float: none;
   }
 }
