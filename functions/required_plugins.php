@@ -93,14 +93,14 @@ function my_theme_register_required_plugins() {
 
         array(
       			'name'      => 'Secondthought Widget Pack',
-      			'slug'      => 'secondthought-pagebuilder-bundle-master',
+      			'slug'      => 'secondthought-pagebuilder-bundle',
       			'source'    => 'https://github.com/Jursdotme/secondthought-pagebuilder-bundle/archive/master.zip',
       			'required'  => true,
     		),
 
         array(
       			'name'      => 'Github Updater',
-      			'slug'      => 'github-updater-master',
+      			'slug'      => 'github-updater',
       			'source'    => 'https://github.com/afragen/github-updater/archive/master.zip',
       			'required'  => true,
     		),
