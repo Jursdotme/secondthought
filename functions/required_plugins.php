@@ -93,7 +93,7 @@ function my_theme_register_required_plugins() {
 
         array(
       			'name'      => 'Secondthought Widget Pack',
-      			'slug'      => 'secondthought-pagebuilder-bundle',
+      			'slug'      => 'secondthought-pagebuilder-bundle-master',
       			'source'    => 'https://github.com/Jursdotme/secondthought-pagebuilder-bundle/archive/master.zip',
       			'required'  => true,
     		),
