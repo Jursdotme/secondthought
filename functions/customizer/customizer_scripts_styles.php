@@ -17,8 +17,6 @@ function secondthought_customizer_css() {
   ?>
   <style type="text/css">
 
-
-
     <?php
     $arr = array(h1, h2, h3, h4, h5, p);
 
