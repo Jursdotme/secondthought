@@ -85,10 +85,10 @@ $(document).ready(function(){
   logoWidth = logoWidthRaw - gutterWidth*2;
   navWidth = 100 - logoWidthRaw - gutterWidth*2;
 
-  $('.header-inner .nav-left .logo').css('width', logoWidth + '%');
+  $('.header-inner.nav-left .logo').css('width', logoWidth + '%');
   $('.nav-left .desktop-navigation').css('width', navWidth + '%').css('margin-right', gutterWidth*2 + "%");
 
-  $('.header-inner .nav-right .logo').css('width', logoWidth + '%').css('margin-right', gutterWidth*2 + "%");
+  $('.header-inner.nav-right .logo').css('width', logoWidth + '%').css('margin-right', gutterWidth*2 + "%");
   $('.nav-right .desktop-navigation').css('width', navWidth + '%');
 
 
