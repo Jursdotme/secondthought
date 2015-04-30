@@ -98,6 +98,15 @@ function my_theme_register_required_plugins() {
       			'required'  => true,
     		),
 
+        array(
+      			'name'      => 'Github Updater',
+      			'slug'      => 'github-updater-master',
+      			'source'    => 'https://github.com/afragen/github-updater/archive/master.zip',
+      			'required'  => true,
+    		),
+
+
+
     );
 
     /**
