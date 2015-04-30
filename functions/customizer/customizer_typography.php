@@ -10,15 +10,15 @@ $wp_customize->add_panel( 'typography_panel', array(
 ));
 
   // Font Section
-  $wp_customize->add_section( 'font_section' , array(
-    'title'      => __( 'Font Settings', 'secondthought' ),
-    'priority'   => 3,
-    'panel'  => 'typography_panel',
-  ));
+    $wp_customize->add_section( 'font_section' , array(
+      'title'      => __( 'Font Settings', 'secondthought' ),
+      'priority'   => 3,
+      'panel'  => 'typography_panel',
+    ));
 
   // Google font string
     $wp_customize->add_setting( 'google_font_string' , array(
-      'default'     => '@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,300,600,800);',
+      'default'     => "<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300italic,400italic,600italic,700italic,400,300,700,600' rel='stylesheet' type='text/css'>",
       'transport'   => 'refresh',
     ));
 

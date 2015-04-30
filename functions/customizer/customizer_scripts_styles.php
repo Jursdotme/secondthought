@@ -11,6 +11,9 @@ function secondthought_customize_live_preview() {
 add_action( 'customize_preview_init', 'secondthought_customize_live_preview');
 
 function secondthought_customizer_css() {
+
+  echo get_theme_mod('google_font_string');
+
   ?>
   <style type="text/css">
 
