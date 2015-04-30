@@ -69,6 +69,14 @@ function my_theme_register_required_plugins() {
             'required'  => true,
         ),
 
+        array(
+            'name'      => 'Duplicate Post',
+            'slug'      => 'duplicate-post',
+            'required'  => false,
+        ),
+
+
+
         // Install Force regenerate thumbnails.
         array(
             'name'      => 'Force Regenerate Thumbnails',
