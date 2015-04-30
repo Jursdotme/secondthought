@@ -99,6 +99,13 @@ function my_theme_register_required_plugins() {
             'external_url'       => 'https://github.com/Jursdotme/secondthought-pagebuilder-bundle/archive/1.0.0.zip', // If set, overrides default API URL and points to an external URL.
         ),
 
+        array(
+      			'name'      => 'Secondthought Widget Pack',
+      			'slug'      => 'secondthought-pagebuilder-bundle',
+      			'source'    => 'https://github.com/Jursdotme/secondthought-pagebuilder-bundle/archive/master.zip',
+      			'required'  => true,
+    		),
+
     );
 
     /**
