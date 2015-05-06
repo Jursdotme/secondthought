@@ -146,4 +146,3 @@ function add_smiley($content) {
   return preg_replace($regex_string, '', $content);
 }
 add_filter('widget_text', 'add_smiley');
-?>
