@@ -85,10 +85,10 @@
   height: auto;
   display: block;
   float: left;
-  background: green;
+  // background: green;
   .desktop-navigation {
     @include secondthought-container;
-    padding: 0 $gutter/2;
+    padding: 0;
     float: none;
   }
 }

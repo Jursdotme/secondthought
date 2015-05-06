@@ -33,7 +33,7 @@ function secondthought_customizer_css() {
     body {
       color: <?php echo get_theme_mod('p_text_color'); ?>;
       font-size: <?php echo get_theme_mod('p_font_size'); ?>px;
-      font-family: <?php echo get_theme_mod('header_font_stack'); ?>;
+      font-family: <?php echo get_theme_mod('body_font_stack'); ?>;
     }
 
     h1,h2,h3,h4,h5,h6 {
@@ -65,13 +65,13 @@ function secondthought_customizer_css() {
     }
 
     .header-inner .logo {
-      padding-bottom: <?php echo get_theme_mod('logo_margin_top'); ?>px;
-      padding-bottom: <?php echo get_theme_mod('logo_margin_bottom'); ?>px;
+      padding-top: <?php echo get_theme_mod('logo_margin_top'); ?>px!important;
+      padding-bottom: <?php echo get_theme_mod('logo_margin_bottom'); ?>px!important;
     }
 
     .desktop-navigation {
-      padding-top: <?php echo get_theme_mod('menu_margin_top'); ?>px;
-      padding-bottom: <?php echo get_theme_mod('menu_margin_bottom'); ?>px;
+      padding-top: <?php echo get_theme_mod('menu_margin_top'); ?>px!important;
+      padding-bottom: <?php echo get_theme_mod('menu_margin_bottom'); ?>px!important;
     }
 
     .desktop-navigation #navigation-menu > li {
