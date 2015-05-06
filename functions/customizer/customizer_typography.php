@@ -59,13 +59,13 @@ $wp_customize->add_panel( 'typography_panel', array(
 
 
     //  = array(slug, title, size, lineheight, weight, bottommargin, color);
-    $h1 = array(h1, 'Header 1', 48, 1.05, 700, 10, "#000");
-    $h2 = array(h2, 'Header 2', 36, 1.25, 400, 10, "#000");
-    $h3 = array(h3, 'Header 3', 28, 1.25, 400, 10, "#000");
-    $h4 = array(h4, 'Header 4', 18, 1.5, 700, 10, "#000");
-    $h5 = array(h5, 'Header 5', 16, 1.5, 700, 10, "#000");
-    $h6 = array(h6, 'Header 6', 14, 1.5, 700, 10, "#000");
-    $p  = array(p, 'Paragraph', 16, 1.5, 400, 10, "#000");
+    $h1 = array('h1', 'Header 1', 48, 1.05, 700, 10, "#000");
+    $h2 = array('h2', 'Header 2', 36, 1.25, 400, 10, "#000");
+    $h3 = array('h3', 'Header 3', 28, 1.25, 400, 10, "#000");
+    $h4 = array('h4', 'Header 4', 18, 1.5, 700, 10, "#000");
+    $h5 = array('h5', 'Header 5', 16, 1.5, 700, 10, "#000");
+    $h6 = array('h6', 'Header 6', 14, 1.5, 700, 10, "#000");
+    $p  = array('p', 'Paragraph', 16, 1.5, 400, 10, "#000");
 
     $arr = array($h1, $h2, $h3, $h4, $h5, $h6, $p);
 
