@@ -121,6 +121,7 @@ you like.
 // Custom Stylesheet
 function secondthought_custom_wp_admin_style() {
   wp_enqueue_style( 'custom_wp_admin_css', get_template_directory_uri() . '/build/stylesheets/admin.css', false );
+	wp_enqueue_style( 'secondthought_kirki' );
 }
 add_action( 'admin_enqueue_scripts', 'secondthought_custom_wp_admin_style' );
 

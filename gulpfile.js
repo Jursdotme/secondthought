@@ -10,13 +10,16 @@ var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
 var cache = require('gulp-cached');
 var stylestats = require('gulp-stylestats');
+var jshint = require('gulp-jshint');
+var stylish = require('jshint-stylish');
 
 
 var paths = {
   sass: 'sass/**/*.scss',
   images: 'img/**/*',
-  scripts: [
+  vendorscripts: [
 
+    'bower_components/modernizr/modernizr.js',
     'bower_components/slick-carousel/slick/slick.js',
     'bower_components/matchHeight/jquery.matchHeight.js',
     'bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js',
@@ -25,14 +28,16 @@ var paths = {
     'bower_components/fancybox/source/helpers/jquery.fancybox-media.js',
     'bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js',
     'bower_components/stellar.js/jquery.stellar.min.js',
-    'bower_components/modernizr/modernizr.js',
     'bower_components/fillerup/jquery.fillerup.js',
     'bower_components/throttle/src/js/throttle.js',
     'javascripts/lib/jquery.cookiecuttr.js',
+  ],
+  customscripts: [
     'javascripts/concat/*.js',
-
   ]
 };
+
+scripts = paths.vendorscripts.concat(paths.customscripts);
 
 // Not all tasks need to use streams
 // A gulpfile is just another node program and you can use all packages available on npm
@@ -63,9 +68,18 @@ gulp.task('scripts-release', function() {
 gulp.task('scripts', function() {
   // Minify and copy all JavaScript (except vendor scripts)
   // with sourcemaps all the way down
-  return gulp.src(paths.scripts)
+  return gulp.src(scripts)
     .pipe(concat('all.min.js'))
     .pipe(gulp.dest('build/scripts'));
+});
+
+gulp.task('hintscripts', function() {
+  // Minify and copy all JavaScript (except vendor scripts)
+  // with sourcemaps all the way down
+  return gulp.src(paths.customscripts)
+    .pipe(jshint())
+    .pipe(jshint.reporter(stylish));
+
 });
 
 gulp.task('scripts-admin', function() {
@@ -145,7 +159,7 @@ gulp.task('stylestats', function () {
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['scripts', 'sass', 'watch']);
+gulp.task('default', ['scripts', 'sass', 'watch', 'hintscripts']);
 
 gulp.task('admin', ['sass-admin', 'scripts-admin']);
 

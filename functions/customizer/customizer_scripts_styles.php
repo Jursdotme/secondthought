@@ -40,56 +40,76 @@ function secondthought_customizer_css() {
       font-family: <?php echo get_theme_mod('header_font_stack'); ?>;
     }
 
-    .header {
-      background-color: <?php echo get_theme_mod('header_bg_color'); ?>;
+    <?php if (get_theme_mod('fixed_header')) { ?>
+      .header_wrapper {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+      }
+    <?php } ?>
+
+    header.header {
+      background-color: <?php echo get_theme_mod('header_color'); ?>;
     }
 
-    .desktop-navigation #navigation-menu > li > a {
-      color: <?php echo get_theme_mod('nav_item_text_color'); ?>;
-      background-color: <?php echo get_theme_mod('nav_item_bg_color'); ?>;
-    }
-    .desktop-navigation #navigation-menu > li > a:hover {
-      background-color: <?php echo get_theme_mod('nav_item_bg_color_hover'); ?>;
+    .header-inner .logo {
+      padding-top: <?php echo get_theme_mod('logo_vertical_position'); ?>px;
     }
 
-    .desktop-navigation ul.sub-menu.visible {
-      background-color: <?php echo get_theme_mod('dropdown_nav_item_bg_color'); ?>;
+    .desktop-navigation {
+      padding-top: <?php echo get_theme_mod('navigation_vertical_position'); ?>px;
     }
 
-    .desktop-navigation ul.sub-menu li a {
-      color: <?php echo get_theme_mod('dropdown_nav_item_text_color'); ?>;
-
+    header.header {
+      min-height: <?php echo get_theme_mod('header_height'); ?>px;
     }
+
+    .nav_bottom {
+      min-height: <?php echo get_theme_mod('navigation_height'); ?>px;
+      background-color: <?php echo get_theme_mod('navigation_color'); ?>;
+    }
+
+    .desktop-navigation #navigation-menu > li {
+      margin-right: <?php echo get_theme_mod('navigation_item_margin'); ?>px;
+    }
+
     .desktop-navigation ul.sub-menu li:hover {
       background-color: <?php echo get_theme_mod('dropdown_nav_item_bg_color_hover'); ?>;
     }
 
-    .header-inner .logo {
-      padding-top: <?php echo get_theme_mod('logo_margin_top'); ?>px!important;
-      padding-bottom: <?php echo get_theme_mod('logo_margin_bottom'); ?>px!important;
-    }
-
-    .desktop-navigation {
-      padding-top: <?php echo get_theme_mod('menu_margin_top'); ?>px!important;
-      padding-bottom: <?php echo get_theme_mod('menu_margin_bottom'); ?>px!important;
-    }
-
-    .desktop-navigation #navigation-menu > li {
-      margin-right: <?php echo get_theme_mod('menu_item_margin'); ?>px;
-    }
     .desktop-navigation #navigation-menu > li:last-child {
       margin-right: 0;
     }
 
     .desktop-navigation #navigation-menu > li > a {
-      padding: <?php echo get_theme_mod('menu_padding_height'); ?>px <?php echo get_theme_mod('menu_padding_width'); ?>px;;
+      color: <?php echo get_theme_mod('navigation_item_color'); ?>;
+      background-color: <?php echo get_theme_mod('navigation_item_bg_color'); ?>;
+      padding: <?php echo get_theme_mod('navigation_item_padding_top_bottom'); ?>px <?php echo get_theme_mod('navigation_item_padding_left_right'); ?>px;;
+    }
+
+    .desktop-navigation #navigation-menu > li > a:hover {
+      color: <?php echo get_theme_mod('navigation_item_hover_color'); ?>;
+      background-color: <?php echo get_theme_mod('navigation_item_bg_hover_color'); ?>;
     }
 
     .desktop-navigation #navigation-menu {
-      float: <?php echo get_theme_mod('nav_float'); ?>;
+      float: <?php echo get_theme_mod('navigation_alignment'); ?>;
     }
-    .nav_bottom {
-      background-color: <?php echo get_theme_mod('nav_bg_color'); ?>;
+
+    .desktop-navigation ul.sub-menu.visible {
+      background-color: <?php echo get_theme_mod('navigation_dropdown_bg_color'); ?>;
+    }
+
+    .desktop-navigation ul.sub-menu li:hover {
+      background-color: <?php echo get_theme_mod('navigation_dropdown_item_bg_hover_color'); ?>;
+    }
+
+    .desktop-navigation ul.sub-menu li a {
+      color: <?php echo get_theme_mod('navigation_dropdown_item_color'); ?>;
+    }
+
+    .desktop-navigation ul.sub-menu li:hover a {
+      color: <?php echo get_theme_mod('navigation_dropdown_item_hover_color'); ?>;
     }
 
     .footer .footer-address {

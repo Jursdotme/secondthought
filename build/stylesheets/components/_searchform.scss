@@ -24,7 +24,8 @@ form.search {
 
   .search-submit {
     background: none;
-    position: absolute;
+    position: relative;
+    left: 7px;
     top: 0;
     right: 0;
     border: 0;
@@ -42,15 +43,25 @@ form.search {
     width: 30px;
     padding: 6px 10px;
     font-size: $base-font-size;
+
+    .fa {
+      position: absolute;
+      top: 8px;
+      left: 11px;
+      color: #fff;
+    }
+
     @include media($xs) {
       right: $gutter;
     }
 
     &:before {
+      color: #fff;
       font-family: FontAwesome;
       color: rgba(0, 0, 0, .5);
       line-height: 1.5;
       font-size: $base-font-size*1.4;
+
     }
   }
 }

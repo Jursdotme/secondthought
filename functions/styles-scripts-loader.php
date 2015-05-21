@@ -10,6 +10,8 @@ function secondthought_header_scripts()
 
       wp_deregister_script( 'jquery' ); // Deregister WordPress jQuery
 
+      wp_register_script('modernizr', "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js", 'jquery', '2.8.3', false); // jQuery
+      wp_enqueue_script('modernizr'); // Enqueue it!
 
         wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js", array(), '1.11.0', true); // jQuery
         wp_enqueue_script('jquery'); // Enqueue it!

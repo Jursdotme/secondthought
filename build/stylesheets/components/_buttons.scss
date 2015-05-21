@@ -5,7 +5,6 @@ $button-horizontal-padding: 10px;
   padding: $button-vertical-padding $button-horizontal-padding;
 }
 
-button,
 .button {
   @include button($brand-primary);
 }
