@@ -6,18 +6,15 @@
 
 # Declare project language.
 # @link http://about.travis-ci.org/docs/user/languages/php/
-language: php
-
-# Declare versions of PHP to use. Use one decimal max.
-php:
-  # aliased to a recent 5.5.x version
-  - "5.5"
-  # aliased to a recent 5.4.x version
-  - "5.4"
-  # aliased to a recent 5.3.x version
-  - "5.3"
-  # Current $required_php_version for WordPress: 5.2.4
-  - "5.2"
+language: node_js
+node_js:
+  - "0.12"
+  - "0.11"
+  - "0.10"
+  - "0.8"
+  - "0.6"
+  - "iojs"
+  - "iojs-v1.0.4" 
 
 
 # Receive notifications for build results.
