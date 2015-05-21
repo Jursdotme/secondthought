@@ -58,7 +58,7 @@ gulp.task('clean-scripts', function(cb) {
 gulp.task('scripts-release', function() {
   // Minify and copy all JavaScript (except vendor scripts)
   // with sourcemaps all the way down
-  return gulp.src(paths.scripts)
+  return gulp.src(scripts)
     .pipe(concat('all.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('build/scripts'));
