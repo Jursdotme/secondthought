@@ -9,8 +9,8 @@
   "author": "Rasmus Jürs",
   "license": "ISC",
   "repository": "https://github.com/Jursdotme/secondthought",
-  "dependencies": {
-    "del": "^1.1.1",
+  "devDependencies": {
+    "del": "1.1.1",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-bless": "~3.0.1",

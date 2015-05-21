@@ -11,7 +11,7 @@ var gulp = require('gulp'),
     cache = require('gulp-cached'),
     stylestats = require('gulp-stylestats'),
     jshint = require('gulp-jshint'),
-    stylish = require('jshint-stylish'),
+    stylish = require('jshint-stylish');
 
 var paths = {
   sass: 'sass/**/*.scss',
