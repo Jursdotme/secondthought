@@ -168,4 +168,4 @@ gulp.task('release', ['scripts-release', 'sass-release', 'watch-release']);
 
 gulp.task('stats', ['sass-release', 'stylestats']);
 
-gulp.task('test', ['jshint', 'scss-lint']);
+gulp.task('test', ['jshint', 'scss-lint', 'sass-release', 'sass-editor', 'sass-admin', 'scripts-release']);
