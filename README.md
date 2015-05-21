@@ -1,5 +1,7 @@
 ![secondthought Logo](https://raw.githubusercontent.com/Jursdotme/secondthought/master/img/logo@2x.png)
 
+[![Build Status](https://travis-ci.org/mgmeyers/sumo.svg?branch=master)](https://travis-ci.org/Jursdotme/secondthought)
+
 Hi. This a starter theme called *Secondthought*. It's a theme meant for hacking so don't use it as a Parent Theme. Instead try turning it into the next, most awesome, WordPress page out there. That is it's purpose.
 
 The theme has beautifull default styling so you don't have to style every little thing if the default is good enough.

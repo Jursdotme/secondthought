@@ -80,6 +80,11 @@
   }
 }
 
+.logo_top .logo {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 .nav_bottom {
   width: 100%;
   height: auto;
@@ -87,8 +92,18 @@
   float: left;
   // background: green;
   .desktop-navigation {
+    width: 100%!important;
     @include secondthought-container;
     padding: 0;
     float: none;
+    font-size:0;
+  }
+  &.centered {
+    text-align: center;
+    nav > ul {
+      float: none !important;
+      display: inline-block;
+
+    }
   }
 }

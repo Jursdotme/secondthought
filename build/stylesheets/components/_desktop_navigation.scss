@@ -9,6 +9,8 @@
 %top-lvl-link {
   font-size: $base-font-size;
   float: left;
+  white-space: nowrap;
+  position: relative;
 
   @include transition(all 0s $curve);
 
@@ -82,9 +84,13 @@
     }
   }
 
+  .sub-menu .sub-menu {
+    left: 100%;
+    margin-top: -41px !important;
+  }
+
   #navigation-menu {
     float: left;
-
     > li {
       @extend %top-lvl-link;
     }

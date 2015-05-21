@@ -91,5 +91,6 @@ $(document).ready(function(){
   $('.header-inner.nav-right .logo').css('width', logoWidth + '%').css('margin-right', gutterWidth*2 + "%");
   $('.nav-right .desktop-navigation').css('width', navWidth + '%');
 
+  $('.header-inner.logo_top .logo').css('width', logoWidth + '%');
 
 });

@@ -1,22 +1,24 @@
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var sass = require('gulp-ruby-sass');
-var bless = require('gulp-bless');
-var cssmin = require('gulp-minify-css');
-var autoprefixer = require('gulp-autoprefixer');
-var scsslint = require('gulp-scss-lint');
-var sourcemaps = require('gulp-sourcemaps');
-var del = require('del');
-var cache = require('gulp-cached');
-var stylestats = require('gulp-stylestats');
-
+var gulp = require('gulp'),
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat'),
+    sass = require('gulp-ruby-sass'),
+    bless = require('gulp-bless'),
+    cssmin = require('gulp-minify-css'),
+    autoprefixer = require('gulp-autoprefixer'),
+    scsslint = require('gulp-scss-lint'),
+    sourcemaps = require('gulp-sourcemaps'),
+    del = require('del'),
+    cache = require('gulp-cached'),
+    stylestats = require('gulp-stylestats'),
+    jshint = require('gulp-jshint'),
+    stylish = require('jshint-stylish');
 
 var paths = {
   sass: 'sass/**/*.scss',
   images: 'img/**/*',
-  scripts: [
+  vendorscripts: [
 
+    'bower_components/modernizr/modernizr.js',
     'bower_components/slick-carousel/slick/slick.js',
     'bower_components/matchHeight/jquery.matchHeight.js',
     'bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js',
@@ -25,14 +27,16 @@ var paths = {
     'bower_components/fancybox/source/helpers/jquery.fancybox-media.js',
     'bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js',
     'bower_components/stellar.js/jquery.stellar.min.js',
-    'bower_components/modernizr/modernizr.js',
     'bower_components/fillerup/jquery.fillerup.js',
     'bower_components/throttle/src/js/throttle.js',
     'javascripts/lib/jquery.cookiecuttr.js',
+  ],
+  customscripts: [
     'javascripts/concat/*.js',
-
   ]
 };
+
+scripts = paths.vendorscripts.concat(paths.customscripts);
 
 // Not all tasks need to use streams
 // A gulpfile is just another node program and you can use all packages available on npm
@@ -54,7 +58,7 @@ gulp.task('clean-scripts', function(cb) {
 gulp.task('scripts-release', function() {
   // Minify and copy all JavaScript (except vendor scripts)
   // with sourcemaps all the way down
-  return gulp.src(paths.scripts)
+  return gulp.src(scripts)
     .pipe(concat('all.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('build/scripts'));
@@ -63,9 +67,18 @@ gulp.task('scripts-release', function() {
 gulp.task('scripts', function() {
   // Minify and copy all JavaScript (except vendor scripts)
   // with sourcemaps all the way down
-  return gulp.src(paths.scripts)
+  return gulp.src(scripts)
     .pipe(concat('all.min.js'))
     .pipe(gulp.dest('build/scripts'));
+});
+
+gulp.task('jshint', function() {
+  // Minify and copy all JavaScript (except vendor scripts)
+  // with sourcemaps all the way down
+  return gulp.src(paths.customscripts)
+    .pipe(jshint())
+    .pipe(jshint.reporter(stylish))
+    .pipe(jshint.reporter('fail'));
 });
 
 gulp.task('scripts-admin', function() {
@@ -145,7 +158,7 @@ gulp.task('stylestats', function () {
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['scripts', 'sass', 'watch']);
+gulp.task('default', ['scripts', 'sass', 'watch', 'jshint']);
 
 gulp.task('admin', ['sass-admin', 'scripts-admin']);
 
@@ -154,3 +167,5 @@ gulp.task('editor', ['sass-editor']);
 gulp.task('release', ['scripts-release', 'sass-release', 'watch-release']);
 
 gulp.task('stats', ['sass-release', 'stylestats']);
+
+gulp.task('test', ['jshint', 'scss-lint', 'sass-release', 'sass-editor', 'sass-admin', 'scripts-release']);

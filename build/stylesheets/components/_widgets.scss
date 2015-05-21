@@ -28,6 +28,33 @@ aside.sidebar {
   margin-bottom: $gutter+36;
 }
 
+.widget_nav_menu {
+
+  .menu {
+    padding-left: 16px;
+    list-style-type: none;
+    li {
+      position: relative;
+      &:before {
+        content: "\f101";
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        left: -12px;
+        top: 3px;
+        position: absolute;
+      }
+
+      &.current-menu-item {
+        font-weight: 700;
+      }
+    }
+  }
+
+}
+
 .sidebar-section,
 .sibling-nav {
   margin-bottom: $gutter;
@@ -83,5 +110,22 @@ aside.sidebar {
   @include media($xs) {
     width: 50%;
     padding-bottom: 90%;
+  }
+}
+
+.widget_siteorigin-panels-postloop {
+  .panel-widget-style {
+    position: relative;
+  }
+  .archive-link {
+    position: absolute;
+    right: 0;
+    background: #0079bf;
+    color: #fff;
+    padding: 0 12px;
+    font-size: 10px;
+    top: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 }

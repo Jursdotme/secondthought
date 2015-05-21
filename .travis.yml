@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "0.12"
+
+before_script:
+  - npm install bower
+  - bower install
+  - gem install scss-lint
+
+# Receive notifications for build results.
+# @link http://docs.travis-ci.com/user/notifications/#Email-notifications
+notifications:
+  email: false
