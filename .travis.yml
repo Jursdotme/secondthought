@@ -1,11 +1,3 @@
-# Travis CI (MIT License) configuration file for the Underscores WordPress theme.
-# @link https://travis-ci.org/
-
-# For use with the Underscores WordPress theme.
-# @link https://github.com/Automattic/_s
-
-# Declare project language.
-# @link http://about.travis-ci.org/docs/user/languages/php/
 language: node_js
 node_js:
   - "0.12"

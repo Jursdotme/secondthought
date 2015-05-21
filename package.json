@@ -1,6 +1,6 @@
 {
   "name": "secondthought",
-  "version": "0.8.6",
+  "version": "0.8.9",
   "description": "Theme framework for Wordpress",
   "main": "index.js",
   "scripts": {
