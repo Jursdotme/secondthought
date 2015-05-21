@@ -1,18 +1,17 @@
-var gulp = require('gulp');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var sass = require('gulp-ruby-sass');
-var bless = require('gulp-bless');
-var cssmin = require('gulp-minify-css');
-var autoprefixer = require('gulp-autoprefixer');
-var scsslint = require('gulp-scss-lint');
-var sourcemaps = require('gulp-sourcemaps');
-var del = require('del');
-var cache = require('gulp-cached');
-var stylestats = require('gulp-stylestats');
-var jshint = require('gulp-jshint');
-var stylish = require('jshint-stylish');
-
+var gulp = require('gulp'),
+    uglify = require('gulp-uglify'),
+    concat = require('gulp-concat'),
+    sass = require('gulp-ruby-sass'),
+    bless = require('gulp-bless'),
+    cssmin = require('gulp-minify-css'),
+    autoprefixer = require('gulp-autoprefixer'),
+    scsslint = require('gulp-scss-lint'),
+    sourcemaps = require('gulp-sourcemaps'),
+    del = require('del'),
+    cache = require('gulp-cached'),
+    stylestats = require('gulp-stylestats'),
+    jshint = require('gulp-jshint'),
+    stylish = require('jshint-stylish'),
 
 var paths = {
   sass: 'sass/**/*.scss',
@@ -73,13 +72,13 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('build/scripts'));
 });
 
-gulp.task('hintscripts', function() {
+gulp.task('jshint', function() {
   // Minify and copy all JavaScript (except vendor scripts)
   // with sourcemaps all the way down
   return gulp.src(paths.customscripts)
     .pipe(jshint())
-    .pipe(jshint.reporter(stylish));
-
+    .pipe(jshint.reporter(stylish))
+    .pipe(jshint.reporter('fail'));
 });
 
 gulp.task('scripts-admin', function() {
@@ -159,7 +158,7 @@ gulp.task('stylestats', function () {
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', ['scripts', 'sass', 'watch', 'hintscripts']);
+gulp.task('default', ['scripts', 'sass', 'watch', 'jshint']);
 
 gulp.task('admin', ['sass-admin', 'scripts-admin']);
 
@@ -168,3 +167,5 @@ gulp.task('editor', ['sass-editor']);
 gulp.task('release', ['scripts-release', 'sass-release', 'watch-release']);
 
 gulp.task('stats', ['sass-release', 'stylestats']);
+
+gulp.task('test', ['jshint', 'scss-lint']);
