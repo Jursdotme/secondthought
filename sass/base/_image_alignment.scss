@@ -52,3 +52,25 @@ img {
     margin-left: $gutter;
   }
 }
+
+// Center content
+
+%center-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center-content > div {
+
+  @include media($sm-up) {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @include media($xs) {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

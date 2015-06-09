@@ -31,18 +31,3 @@ $shadow-lvl-3-depth: 0 10px 11px 0 rgba(0, 0, 0, .19), 0 5px 5px 0 rgba(0, 0, 0,
 $shadow-lvl-4-depth: 0 14px 19px 0 rgba(0, 0, 0, .20), 0 7px 6px 0 rgba(0, 0, 0, .17), $depth;
 $shadow-lvl-5-depth: 0 20px 22px 0 rgba(0, 0, 0, .22), 0 10px 8px 0 rgba(0, 0, 0, .16), $depth;
 ///////////////////////////////////////////////
-
-
-// Center content
-
-%center-content {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.center-content > div {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
