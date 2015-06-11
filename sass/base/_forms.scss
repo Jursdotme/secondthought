@@ -1,21 +1,21 @@
 fieldset {
-  background: $grey-lightest;
-  border: 1px solid $base-border-color;
   margin: 0 0 ($base-line-height/2);
   padding: $gutter;
+  border: 1px solid $base-border-color;
+  background: $grey-lightest;
 }
 
 input,
 label,
 select {
   display: block;
-  font-family: $body-font;
   font-size: 1rem;
+  font-family: $body-font;
 }
 
 label {
-  font-weight: bold;
   margin-bottom: $base-line-height/4;
+  font-weight: bold;
 
   &.required:after {
     content: '*';
@@ -29,26 +29,27 @@ label {
 textarea,
 #{$all-text-inputs},
 select[multiple=multiple] {
+  margin-bottom: $base-line-height/2;
+  padding: $gutter/3 $gutter/2;
+  width: 100%;
+  border: 1px solid $form-border-color;
+  border-radius: $form-border-radius;
+  background-color: #fff;
+  box-shadow: $form-box-shadow;
+  font-size: 1rem;
+  font-family: $body-font;
+
   @include box-sizing(border-box);
   @include transition(border-color);
-  background-color: #fff;
-  border-radius: $form-border-radius;
-  border: 1px solid $form-border-color;
-  box-shadow: $form-box-shadow;
-  font-family: $body-font;
-  font-size: 1rem;
-  margin-bottom: $base-line-height/2;
-  width: 100%;
-  padding: $gutter/3 $gutter/2;
 
   &:hover {
     border-color: $form-border-color-hover;
   }
 
   &:focus {
+    outline: none;
     border-color: $form-border-color-focus;
     box-shadow: $form-box-shadow-focus;
-    outline: none;
   }
 }
 
@@ -56,26 +57,26 @@ textarea {
   resize: vertical;
 }
 
-input[type='search'] {
+[type='search'] {
   @include appearance(none);
 }
 
-input[type='checkbox'],
-input[type='radio'] {
+[type='checkbox'],
+[type='radio'] {
   display: inline;
   margin-right: $base-line-height/4;
 }
 
-input[type='file'] {
+[type='file'] {
   margin-bottom: $base-line-height/2;
   padding-bottom: ($base-line-height/3);
   width: 100%;
 }
 
 select {
-  width: auto;
-  max-width: 100%;
   margin-bottom: $base-line-height;
+  max-width: 100%;
+  width: auto;
 }
 
 .half-row {

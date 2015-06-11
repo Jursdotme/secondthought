@@ -1,0 +1,24 @@
+// scss-lint:disable ImportantRule
+.nav_bottom {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  // background: green;
+  .desktop-navigation {
+    float: none;
+    padding: 0;
+    width: 100% !important;
+    font-size: 0;
+
+    @include secondthought-container;
+  }
+  &.centered {
+    text-align: center;
+    nav > ul {
+      display: inline-block;
+      float: none !important;
+
+    }
+  }
+}

@@ -7,7 +7,7 @@
   border: 1px solid #dfdfdf;
   border-top: 0;
   background: #fff;
-  
+
   .transparency {
     padding: 0;
     width: 100%;
@@ -43,7 +43,7 @@
   }
 }
 
-.wp-picker-container a.wp-picker-open ~ div.pluto-alpha-container {
+.wp-picker-container .wp-picker-open ~ .pluto-alpha-container {
   display: block;
 }
 

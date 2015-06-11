@@ -15,20 +15,16 @@
 @import 'base/wordpress_customizer';
 @import 'vendors/slick';
 
-@import 'components/frontpage_slider';
-@import 'components/featured_block';
 @import 'components/buttons';
 @import 'components/sidebar';
 @import 'components/searchform';
+@import 'components/customizer_navigation';
 @import 'components/desktop_navigation';
 @import 'components/mobile_navigation';
-@import 'components/pagination';
 @import 'components/header';
 @import 'components/comments';
-@import 'components/google-maps';
 @import 'components/gallery';
 @import 'components/footer';
-@import 'components/cookie_warning';
 
 @import 'vendors/vendors';
 

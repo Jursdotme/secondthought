@@ -7,12 +7,12 @@
   float: left;
 
   > a {
+    display: block;
     padding: 20px 15px;
     color: #fff;
-    font-size: .8rem;
     text-transform: uppercase;
     font-weight: 700;
-    display: block;
+    font-size: .8rem;
 
     &:hover {
       background: shade($brand-color-2, 10%);
@@ -23,6 +23,7 @@
 .desktop-navigation {
   // @include span-columns(9);
   float: left;
+
   @include media($navigation-breakpoint-up) {
     display: block;
   }
@@ -83,27 +84,4 @@
 .logo_top .logo {
   margin-left: 50%;
   transform: translateX(-50%);
-}
-
-.nav_bottom {
-  width: 100%;
-  height: auto;
-  display: block;
-  float: left;
-  // background: green;
-  .desktop-navigation {
-    width: 100%!important;
-    @include secondthought-container;
-    padding: 0;
-    float: none;
-    font-size:0;
-  }
-  &.centered {
-    text-align: center;
-    nav > ul {
-      float: none !important;
-      display: inline-block;
-
-    }
-  }
 }
