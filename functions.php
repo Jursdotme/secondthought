@@ -47,6 +47,9 @@ if (!isset($content_width))
 	Functions
 \*------------------------------------*/
 
+// Set default image link type to "none"
+update_option('image_default_link_type','none');
+
 // Force Yoast SEO metabox to be at the bottom
 add_filter( 'wpseo_metabox_prio', function() { return 'low';});
 
