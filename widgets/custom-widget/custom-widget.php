@@ -23,7 +23,7 @@ class Custom_Widget extends SiteOrigin_Widget {
 					'default' => 'Hello world!'
 				),
 			),
-			get_template_directory_uri().'/widgets/blank_widgets_bundle/custom-widget/'
+			get_template_directory_uri().'/widgets/custom-widget/'
 		);
 	}
 	function get_template_name($instance) {
