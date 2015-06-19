@@ -1,5 +1,13 @@
 			<!-- footer -->
 			<div class="footer-container">
+
+				<?php if ( is_active_sidebar( 'footer-widget-area' ) ) { ?>
+						<?php dynamic_sidebar( 'footer-widget-area' ); ?>
+				<?php } ?>
+
+				<?php if (!get_field('skjul_footer_addresselinie','option')) { ?>
+
+
 				<footer class="footer" role="contentinfo">
 
 					<?php
@@ -26,9 +34,12 @@
 						<?php if($postnummer) { echo '<span class="postnr-by">' . $postnummer;} ?>
 						<?php if($by) { echo $by . '</span><hr>';} ?>
 						<?php if($telefonnummer) { echo '<span class="tlf">Tlf.: ' . $telefonnummer . '</span><hr>'; } ?>
-							<?php echo '<span class="">' . $insertFax; ?> <a href="mailto:<?php echo $email_addresse; ?>"><?php echo $email_addresse; ?></a>
+						<a href="mailto:<?php echo $email_addresse; ?>"><?php echo $email_addresse; ?></a>
 					</div>
 				</footer>
+
+				<?php } ?>
+
 			</div>
 			<!-- /footer -->
 

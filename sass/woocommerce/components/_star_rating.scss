@@ -55,3 +55,69 @@
     margin: 10px 0 0;
   }
 }
+
+.comment-form-rating {
+  a {
+    margin-right: 10px;
+    width: 120px;
+    position: relative;
+    text-align: left;
+    font-weight: 700;
+    color: $brand-color-1;
+    &:last-child {
+      margin-right: 0;
+    }
+    @extend %btn;
+    @extend %btn-default;
+    // @extend %btn-white;
+    border: 3px solid #e5e5e5;
+    &:hover {
+      border: 3px solid #f1f1f1;
+    }
+    &:hover:after {
+      color: $alert-color;
+    }
+    &:after {
+      color: #e5e5e5;
+      display: inline-block;
+      right: 8px;
+      top: 11px;
+      position: absolute;
+      font: normal normal normal 14px/1 FontAwesome;
+      @include transition(all .2s ease-in-out);
+    }
+    @include transition(all .2s ease-in-out);
+    &.active {
+      border: 3px solid $brand-color-1;
+      &:after {
+
+        color: $alert-color;
+      }
+    }
+  }
+  .star-1 {
+    &:after {
+      content: "\f005";
+    }
+  }
+  .star-2 {
+    &:after {
+      content: "\f005\f005";
+    }
+  }
+  .star-3 {
+    &:after {
+      content: "\f005\f005\f005";
+    }
+  }
+  .star-4 {
+    &:after {
+      content: "\f005\f005\f005\f005";
+    }
+  }
+  .star-5 {
+    &:after {
+      content: "\f005\f005\f005\f005\f005";
+    }
+  }
+}

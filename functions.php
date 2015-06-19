@@ -29,6 +29,7 @@ require_once( 'functions/tinymce_settings.php' ); // Make Wordpress Native galle
 require_once( 'functions/page-builder-custom-layouts.php' ); // Make Wordpress Native gallery Secondthought compatible
 require_once( 'functions/required_plugins.php' ); // Install required and recommended plugins
 require_once( 'functions/image_sizes.php' );
+require_once( 'widgets/blank_widget_bundle.php' );
 require_once( 'functions/customizer/panels_sections.php' );
 require_once( 'functions/customizer/customizer_scripts_styles.php' );
 require_once( 'functions/customizer/customizer_controls.php' );
@@ -46,6 +47,9 @@ if (!isset($content_width))
 /*------------------------------------*\
 	Functions
 \*------------------------------------*/
+
+// Set default image link type to "none"
+update_option('image_default_link_type','none');
 
 // Force Yoast SEO metabox to be at the bottom
 add_filter( 'wpseo_metabox_prio', function() { return 'low';});

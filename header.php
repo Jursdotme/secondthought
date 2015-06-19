@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html <?php language_attributes(); ?> class="no-js" data-logo-width="<?php echo get_theme_mod('logo_width'); ?>";>
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
