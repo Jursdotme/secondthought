@@ -1,8 +1,13 @@
 fieldset {
-  margin: 0 0 ($base-line-height/2);
+  margin: 0 0 1.5rem;
   padding: $gutter;
   border: 1px solid $base-border-color;
   background: $grey-lightest;
+  @include span-columns(12);
+}
+
+legend {
+    font-weight: 700;
 }
 
 input,
@@ -30,11 +35,11 @@ textarea,
 #{$all-text-inputs},
 select[multiple=multiple] {
   margin-bottom: $base-line-height/2;
-  padding: $gutter/3 $gutter/2;
+  padding: $gutter/6 $gutter/4;
   width: 100%;
   border: 1px solid $form-border-color;
   border-radius: $form-border-radius;
-  background-color: #fff;
+  background-color: $grey-lightest;
   box-shadow: $form-box-shadow;
   font-size: 1rem;
   font-family: $body-font;
@@ -79,40 +84,77 @@ select {
   width: auto;
 }
 
-.half-row {
-  @include span-columns(12);
-  @include media($md-up) {
-    @include span-columns(6);
-  }
+.wpcf7-form p {
+    @include span-columns(12);
+    span.wpcf7-not-valid-tip {
+        color: $error-color;
+        font-size: 11px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &.half {
+      @include span-columns(12);
+      @include media($md-up) {
+        @include span-columns(6);
+      }
+    }
+
+    &.quarter {
+      @include span-columns(12);
+      @include media($md-up) {
+        @include span-columns(3);
+      }
+    }
+
+    &.threequarter {
+      @include span-columns(12);
+      @include media($md-up) {
+        @include span-columns(9);
+      }
+    }
+
+    &.third {
+      @include span-columns(12);
+      @include media($md-up) {
+        @include span-columns(4);
+      }
+    }
+
+    &.twothird {
+      @include span-columns(12);
+      @include media($md-up) {
+        @include span-columns(8);
+      }
+    }
+
+    &.full {
+      @include span-columns(12);
+    }
+
+    &.last {
+      @include media($md-up) {
+        @include omega();
+      }
+    }
 }
 
-.quarter-row {
-  @include span-columns(12);
-  @include media($md-up) {
-    @include span-columns(3);
-  }
+.wpcf7-submit {
+    @extend %btn;
+    @extend %btn-default;
+    @extend %btn-brand;
 }
 
-.three-quarter-row {
-  @include span-columns(12);
-  @include media($md-up) {
-    @include span-columns(9);
-  }
-}
-
-.one-third-row {
-  @include span-columns(12);
-  @include media($md-up) {
-    @include span-columns(4);
-  }
-}
-
-.full-row {
-  @include span-columns(12);
-}
-
-.last {
-  @include media($md-up) {
-    @include omega();
-  }
+.wpcf7-response-output {
+    &.wpcf7-validation-errors {
+        border: 0;
+        @extend %flash-alert;
+        margin: 0;
+        @include span-columns(12);
+    }
+    &.wpcf7-mail-sent-ok {
+        border: 0;
+        @extend %flash-success;
+        margin: 0;
+        @include span-columns(12);
+    }
 }
