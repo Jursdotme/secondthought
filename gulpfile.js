@@ -136,18 +136,18 @@ gulp.task('lint-watch', function() {
 
 // Rerun the task when a file changes
 gulp.task('watch', function() {
-  gulp.watch(paths.scripts, ['scripts']);
+  gulp.watch(paths.customscripts, ['scripts']);
   gulp.watch(paths.sass, ['sass']);
 });
 
 gulp.task('watch-release', function() {
-  gulp.watch(paths.scripts, ['scripts-release']);
+  gulp.watch(paths.customscripts, ['scripts-release']);
   gulp.watch(paths.sass, ['sass-release']);
 });
 
 // Rerun the task when a file changes
 gulp.task('watch-admin', function() {
-  gulp.watch(paths.scripts, ['scripts-admin']);
+  gulp.watch(paths.customscripts, ['scripts-admin']);
   gulp.watch(paths.sass, ['sass-admin']);
 });
 
