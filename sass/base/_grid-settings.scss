@@ -109,32 +109,6 @@ $type-scaling-breakpoint: $screen-xs;
   }
 }
 
-.limit-width {
-  padding: 0;
-
-  @include secondthought-container;
-
-  &.wrapper-shadow-1 {
-    box-shadow: $shadow-lvl-1;
-  }
-
-  &.wrapper-shadow-2 {
-    box-shadow: $shadow-lvl-2;
-  }
-
-  &.wrapper-shadow-3 {
-    box-shadow: $shadow-lvl-3;
-  }
-
-  &.wrapper-shadow-4 {
-    box-shadow: $shadow-lvl-4;
-  }
-
-  &.wrapper-shadow-5 {
-    box-shadow: $shadow-lvl-5;
-  }
-}
-
 body:after {
   position: absolute;
   top: 0;
