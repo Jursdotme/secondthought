@@ -203,7 +203,7 @@ $menu-trigger-color: $brand-color-1;
   }
 
   &.is-visible {
-    box-shadow: $shadow-lvl-2;
+    @include shadow-4dp();
     transition-timing-function: $authentic-motion-in;
 
     @include transform(translateX(0));

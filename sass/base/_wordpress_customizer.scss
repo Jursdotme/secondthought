@@ -3,13 +3,13 @@
 }
 
 .content_shadow_1 {
-  box-shadow: $shadow-lvl-1;
+  @include shadow-2dp();
 }
 
 .content_shadow_2 {
-  box-shadow: $shadow-lvl-2;
+  @include shadow-4dp();
 }
 
 .content_shadow_3 {
-  box-shadow: $shadow-lvl-3;
+  @include shadow-6dp();
 }

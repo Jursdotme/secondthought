@@ -61,9 +61,9 @@ $button-sizes: (
 
   touch-action: manipulation;
   @include transition(background .1s ease-in-out, box-shadow .1s ease-in-out);
-  // box-shadow: $shadow-lvl-1;
+  @include shadow-2dp();
   &:hover {
-    // box-shadow: $shadow-lvl-3;
+    @include shadow-4dp();
   }
 }
 

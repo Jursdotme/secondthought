@@ -17,17 +17,105 @@ $curve: $authentic-motion;
 
 // Shadows consist of two layers: a top shadow for depth and a bottom shadow for definition.
 
-$shadow-lvl-1: 0 1px 3px 0 rgba(0, 0, 0, .17), 0 1px 2px 0 rgba(0, 0, 0, .24);
-$shadow-lvl-2: 0 1px 3px 0 rgba(0, 0, 0, .20), 0 3px 7px 0 rgba(0, 0, 0, .22);
-$shadow-lvl-3: 0 10px 11px 0 rgba(0, 0, 0, .19), 0 5px 5px 0 rgba(0, 0, 0, .23);
-$shadow-lvl-4: 0 14px 19px 0 rgba(0, 0, 0, .20), 0 7px 6px 0 rgba(0, 0, 0, .17);
-$shadow-lvl-5: 0 20px 22px 0 rgba(0, 0, 0, .22), 0 10px 8px 0 rgba(0, 0, 0, .16);
 
-$depth: 0 1px 0 0 rgba(#fff, .2) inset, 0 -1px 0 0 rgba(#454545, .2) inset;
 
-$shadow-lvl-1-depth: 0 1px 3px 0 rgba(0, 0, 0, .17), 0 1px 2px 0 rgba(0, 0, 0, .24), $depth;
-$shadow-lvl-2-depth: 0 1px 3px 0 rgba(0, 0, 0, .20), 0 3px 7px 0 rgba(0, 0, 0, .22), $depth;
-$shadow-lvl-3-depth: 0 10px 11px 0 rgba(0, 0, 0, .19), 0 5px 5px 0 rgba(0, 0, 0, .23), $depth;
-$shadow-lvl-4-depth: 0 14px 19px 0 rgba(0, 0, 0, .20), 0 7px 6px 0 rgba(0, 0, 0, .17), $depth;
-$shadow-lvl-5-depth: 0 20px 22px 0 rgba(0, 0, 0, .22), 0 10px 8px 0 rgba(0, 0, 0, .16), $depth;
 ///////////////////////////////////////////////
+
+
+// Focus shadow mixin.
+$shadow-key-umbra-opacity: 0.2;
+$shadow-key-penumbra-opacity: 0.14;
+$shadow-ambient-shadow-opacity: 0.12;
+
+@mixin focus-shadow() {
+  box-shadow: 0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);
+}
+
+@mixin shadow-2dp() {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+              0 3px 1px -2px rgba(0, 0, 0, $shadow-key-umbra-opacity),
+              0 1px 5px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
+}
+@mixin shadow-3dp() {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+              0 3px 3px -2px rgba(0, 0, 0, $shadow-key-umbra-opacity),
+              0 1px 8px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity);
+}
+@mixin shadow-4dp() {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+              0 1px 10px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+              0 2px 4px -1px rgba(0, 0, 0, $shadow-key-umbra-opacity);
+}
+@mixin shadow-6dp() {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+              0 1px 18px 0 rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+              0 3px 5px -1px rgba(0, 0, 0, $shadow-key-umbra-opacity);
+}
+@mixin shadow-8dp() {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+              0 3px 14px 2px rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+              0 5px 5px -3px rgba(0, 0, 0, $shadow-key-umbra-opacity);
+}
+
+@mixin shadow-16dp() {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, $shadow-key-penumbra-opacity),
+              0  6px 30px 5px rgba(0, 0, 0, $shadow-ambient-shadow-opacity),
+              0  8px 10px -5px rgba(0, 0, 0, $shadow-key-umbra-opacity);
+}
+
+.mdl-shadow--2dp {
+  @include shadow-2dp();
+}
+
+.mdl-shadow--3dp {
+  @include shadow-3dp();
+}
+
+.mdl-shadow--4dp {
+  @include shadow-4dp();
+}
+
+.mdl-shadow--6dp {
+  @include shadow-6dp();
+}
+
+.mdl-shadow--8dp {
+  @include shadow-8dp();
+}
+
+.mdl-shadow--16dp {
+  @include shadow-16dp();
+}
+
+// alternatives
+.shadow-1 {
+  @include shadow-2dp();
+}
+
+.shadow-2 {
+  @include shadow-3dp();
+}
+
+.shadow-3 {
+  @include shadow-4dp();
+}
+
+.shadow-4 {
+  @include shadow-6dp();
+}
+
+.shadow-5 {
+  @include shadow-8dp();
+}
+
+.shadow-6 {
+  @include shadow-16dp();
+}
+
+.gallery img {
+  @include shadow-2dp();
+  @include transition(box-shadow .2s ease-in-out);
+  &:hover {
+    @include shadow-8dp();
+  }
+}
