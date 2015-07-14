@@ -23,6 +23,13 @@ function change_removeitem_button ($content)
     return $content;
 }
 
+// Set number or products per row
+add_filter('loop_shop_columns', 'loop_columns');
+if (!function_exists('loop_columns')) {
+	function loop_columns() {
+		return 3; // 3 products per row
+	}
+}
 
 // Add meta wrapper to product content withing loops
 
