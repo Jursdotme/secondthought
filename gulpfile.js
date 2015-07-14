@@ -11,7 +11,10 @@ var gulp = require('gulp'),
     cache = require('gulp-cached'),
     stylestats = require('gulp-stylestats'),
     jshint = require('gulp-jshint'),
-    stylish = require('jshint-stylish');
+    stylish = require('jshint-stylish'),
+    header  = require('gulp-header'),
+    rename = require('gulp-rename'),
+    package = require('./package.json');
 
 var paths = {
   sass: 'sass/**/*.scss',
@@ -35,7 +38,28 @@ var paths = {
   ]
 };
 
-scripts = paths.vendorscripts.concat(paths.customscripts);
+var banner = [
+  '/*\n' +
+  ' Theme Name: <%= package.name %>\n' +
+	' Theme URI: <%= package.url %>\n' +
+	' Description: <%= package.title %>\n' +
+	' Version: <%= package.version %>\n' +
+	' Author: <%= package.author %>\n' +
+	' Author URI: <%= package.repository %>\n' +
+	' Tags: Blank, HTML5, CSS3\n' +
+	' License: <%= package.license %>\n' +
+  ' */',
+  '\n'
+].join('');
+
+var scripts = paths.vendorscripts.concat(paths.customscripts);
+
+gulp.task('header', function () {
+    return gulp.src('style.css')
+    .pipe(cssmin())
+    .pipe(header(banner, { package : package }))
+    .pipe(gulp.dest('./'));
+});
 
 // Not all tasks need to use streams
 // A gulpfile is just another node program and you can use all packages available on npm
@@ -106,15 +130,6 @@ gulp.task('sass-editor', function () {
 
 gulp.task('sass-admin', function () {
   return sass('sass/admin.scss', { sourcemap: true })
-    .on('error', function (err) { console.log(err.message); })
-    .pipe(autoprefixer())
-    .pipe(cssmin())
-    .pipe(bless({ imports: true }))
-    .pipe(gulp.dest('build/stylesheets'));
-});
-
-gulp.task('sass-release', function () {
-  return sass('sass/style.scss', { sourcemap: true })
     .on('error', function (err) { console.log(err.message); })
     .pipe(autoprefixer())
     .pipe(cssmin())

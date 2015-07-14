@@ -1,13 +1,14 @@
 {
-  "name": "secondthought",
-  "version": "0.8.9",
+  "name": "Secondthought",
+  "version": "0.10.3",
   "description": "Theme framework for Wordpress",
   "main": "index.js",
+  "url": "http://inzite.dk",
   "scripts": {
     "test": "gulp test"
   },
   "author": "Rasmus Jürs",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "https://github.com/Jursdotme/secondthought",
   "devDependencies": {
     "del": "1.1.1",
@@ -24,5 +25,9 @@
     "gulp-stylestats": "^0.6.1",
     "gulp-uglify": "^1.1.0",
     "jshint-stylish": "^1.0.2"
+  },
+  "dependencies": {
+    "gulp-header": "^1.2.2",
+    "gulp-rename": "^1.2.2"
   }
 }
