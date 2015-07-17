@@ -34,27 +34,16 @@
     padding-bottom: $gutter*2;
 
     @include media($xs) {
-      @include span-columns(6);
-      @include omega(2n);
+      @include span-columns(12);
     }
 
-    @include media($sm) {
-      @include span-columns(6);
-      @include omega(2n);
-    }
-
-    @include media($md) {
+    @include media($sm-up) {
       @include span-columns(4);
-      @include omega-reset(2n);
-      @include omega(3n);
     }
 
-    @include media($lg) {
-      @include span-columns(3);
-      @include omega-reset(3n);
-      @include omega(4n);
+    &.last {
+      @include omega;
     }
-
 
     .onsale {
       position: absolute;
