@@ -25,6 +25,47 @@
 
           ),
           array(
+              'title'   => 'Display 1',
+              'block'   => 'h1',
+              'classes' => 'display-1',
+              'wrapper' => false,
+
+          ),
+          array(
+              'title'   => 'Display 2',
+              'block'   => 'h2',
+              'classes' => 'display-2',
+              'wrapper' => false,
+
+          ),
+          array(
+              'title'   => 'Display 3',
+              'block'   => 'h3',
+              'classes' => 'display-3',
+              'wrapper' => false,
+
+          ),
+          array(
+              'title'   => 'Display 4',
+              'block'   => 'h4',
+              'classes' => 'display-4',
+              'wrapper' => false,
+
+          ),
+          array(
+              'title'   => 'Color contrast',
+              'inline'  => 'span',
+              'classes' => 'colorcontrast',
+              'wrapper' => false,
+          ),
+          array(
+              'title'   => 'PullQuote',
+              'block'   => 'div',
+              'classes' => 'simplePullQuote',
+              'wrapper' => true,
+
+          ),
+          array(
               'title'   => 'Small',
               'inline'  => 'small',
               'classes' => '',
