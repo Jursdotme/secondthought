@@ -1,5 +1,9 @@
 .header {
-  background: $brand-color-2;
+  background: #fff;
+  border-bottom: 1px solid #fafafa;
+  @include shadow-2dp();
+  position: relative;
+  z-index: 1000;
 }
 .header-inner {
   @include secondthought-container;

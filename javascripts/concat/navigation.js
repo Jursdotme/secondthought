@@ -27,14 +27,12 @@ $(document).ready(function() {
 
 $('.menu-item-has-children').mouseenter(function(){
   var curSubmenu = $(this).find('> .sub-menu');
-  curSubmenu.addClass('visible');
-  $('a', $(this)).addClass('is-expanded');
+  curSubmenu.addClass('is-visible');
 });
 
 $('.menu-item-has-children').mouseleave(function(){
   var curSubmenu = $(this).find('> .sub-menu');
-  curSubmenu.removeClass('visible');
-  $('a', $(this)).removeClass('is-expanded');
+  curSubmenu.removeClass('is-visible');
 });
 
 /*-------------------  End of Top Navigation  --------------------*/
@@ -73,24 +71,24 @@ $(document).ready(function(){
 /*-------------------  End of Mobile Navigation  --------------------*/
 
 
-$(document).ready(function(){
-  // Create logo and Navigation Width
-  columns = 90;
-  gutter = 30;
-  containerWidth = 12 * columns + 11 - gutter;
-  gutterWidth = containerWidth / $('.header-inner').outerWidth();
-
-  logoWidthRaw = $('html').data('logo-width');
-
-  logoWidth = logoWidthRaw - gutterWidth*2;
-  navWidth = 100 - logoWidthRaw - gutterWidth*2;
-
-  $('.header-inner.nav-left .logo').css('width', logoWidth + '%');
-  $('.nav-left .desktop-navigation').css('width', navWidth + '%').css('margin-right', gutterWidth*2 + "%");
-
-  $('.header-inner.nav-right .logo').css('width', logoWidth + '%').css('margin-right', gutterWidth*2 + "%");
-  $('.nav-right .desktop-navigation').css('width', navWidth + '%');
-
-  $('.header-inner.logo_top .logo').css('width', logoWidth + '%');
-
-});
+// $(document).ready(function(){
+//   // Create logo and Navigation Width
+//   columns = 90;
+//   gutter = 30;
+//   containerWidth = 12 * columns + 11 - gutter;
+//   gutterWidth = containerWidth / $('.header-inner').outerWidth();
+//
+//   logoWidthRaw = $('html').data('logo-width');
+//
+//   logoWidth = logoWidthRaw - gutterWidth*2;
+//   navWidth = 100 - logoWidthRaw - gutterWidth*2;
+//
+//   $('.header-inner.nav-left .logo').css('width', logoWidth + '%');
+//   $('.nav-left .desktop-navigation').css('width', navWidth + '%').css('margin-right', gutterWidth*2 + "%");
+//
+//   $('.header-inner.nav-right .logo').css('width', logoWidth + '%').css('margin-right', gutterWidth*2 + "%");
+//   $('.nav-right .desktop-navigation').css('width', navWidth + '%');
+//
+//   $('.header-inner.logo_top .logo').css('width', logoWidth + '%');
+//
+// });

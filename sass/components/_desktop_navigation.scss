@@ -5,25 +5,28 @@
 %top-lvl-link {
   position: relative;
   float: left;
+  margin-right: 8px;
+  &:last-child {
+    margin-right: 0;
+  }
 
   > a {
-    display: block;
-    padding: 20px 15px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: .8rem;
-
-    &:hover {
-      background: shade($brand-color-2, 10%);
-    }
+    @include  btn($base-font-color, $brand-color-1, false)
+    //display: block;
+    //padding: 20px 15px;
+    //color: $base-font-color;
+    //text-transform: uppercase;
+    //font-weight: 500;
+    //font-size: 14px;
+    //
+    //&:hover {
+    //  color: $brand-color-1;
+    //}
   }
 }
 
 .desktop-navigation {
-  // @include span-columns(9);
-  float: left;
-
+  @include span-columns(9);
   @include media($navigation-breakpoint-up) {
     display: block;
   }
@@ -31,42 +34,57 @@
     display: none;
   }
 
+  > ul > li {
+    padding: 8px 0;
+  }
+
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
 
-    &.sub-menu {
-      display: none;
-
-      &.visible {
+    .menu-item-has-children > {
+      ul {
+        //display: none;
         position: absolute;
-        z-index: 10000;
-        display: block;
-        margin-top: 0;
+        border-radius: 0 0 2px 2px;
+        @include shadow-2dp();
+        z-index: -1;
+        top: 46px;
         padding: 10px 0;
         background: #fff;
+        opacity: 0;
+        overflow: hidden;
+        transform-origin: 0 0;
+        transform: scale(0);
 
-        // &:before {
-        //   content: '';
-        //   @include triangle(12px, #fff, up);
-        //   position: absolute;
-        //   top: -6px;
-        //   left: 8px;
-        // }
-      }
-
-      li {
-        &:hover {
-          background: $grey-lightest;
-        }
-
-        a {
+        will-change: transform;
+        transition: transform 0.3s $animation-curve-fast-out-slow-in,
+                    opacity 0.2s $animation-curve-fast-out-slow-in;
+        z-index: -1;
+        &.is-visible {
           display: block;
-          padding: 5px 15px;
+          opacity: 1;
+          transform: scale(1);
+          z-index: 999;
+        }
+      }
+    }
+
+    &.sub-menu {
+      li {
+        a {
           color: $base-font-color;
-          white-space: nowrap;
           font-size: 14px;
+          padding: 0 16px;
+          height: 48px;
+          line-height: 48px;
+          white-space: nowrap;
+          display: block;
+          border: none;
+          &:hover {
+            background: $grey-lighter;
+          }
         }
       }
     }
