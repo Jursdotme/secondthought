@@ -74,8 +74,6 @@ $comment-image-vert-alignment: top;
   }
 
   #submit {
-    @extend %btn;
-    @extend %btn-medium;
-    @extend %btn-brand;
+    @include btn($brand-color-1, #fff, true);
   }
 }

@@ -60,9 +60,7 @@ form {
 }
 
 .wpcf7-submit {
-  @extend %btn;
-  @extend %btn-brand;
-  @extend %btn-default;
+  @include btn($brand-color-1, #fff, true);
 }
 
 .acf-map {

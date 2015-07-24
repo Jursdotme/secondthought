@@ -1,93 +1,32 @@
 // buttons.scss
+
+// EXAMPLE:
+// name: ($button-primary-color, $button-secondary-color, $button-hover-color, $button-active-color, $button-focus-color, $colorContrast),
 $button-colors: (
-  brand: ($brand-color-1, #fff),
-  error: (#d82d2d, #fff),
-  success: (#52bf4a, #fff),
-  warning: (#c23435, #fff),
-  subtle: (#e9e9e9, #999),
-  white: (#fafafa, $base-font-color),
-  black: (#000, #fff)
-);
-$button-sizes: (
-  default: (6px 12px, 1rem),
-  extra-small: (1px 5px, .75rem),
-  small: (5px 10px, .75rem),
-  medium: (6px 12px, 1rem),
-  large: (10px 16px, 1.125rem),
-  huge: (15px 20px, 1.5rem)
+  brand: ($brand-color-1, #fff, true),
+  error: ($error-color, #fff, true),
+  alert: ($alert-color, #fff, true),
+  success: ($success-color, #fff, true),
 );
 
-.btn {
-  display: inline-block;
-  padding: .5em;
-  border: 0;
-  border-radius: 3px;
-  background: #ccc;
-  color: #666;
+@each $name, $colors in $button-colors {
+  $button-primary-color: nth($colors, 1);
+  $button-secondary-color: nth($colors, 2);
+  $raised: nth($colors, 2);
 
-  @each $name, $sizes in $button-sizes {
-    $padding: nth($sizes, 1);
-    $font-size: nth($sizes, 2);
-
-    &-#{$name} {
-      padding: $padding;
-      font-size: $font-size;
-    }
-  }
-
-  @each $name, $colors in $button-colors {
-    $bgcolor: nth($colors, 1);
-    $fontcolor: nth($colors, 2);
-
-    &-#{$name} {
-      background-color: $bgcolor;
-      color: $fontcolor;
-    }
+  .btn-#{$name} {
+    @include btn($button-primary-color, $button-secondary-color, $raised);
   }
 }
 
 %btn {
-  display: inline-block;
-  margin-bottom: 0; // For input.btn
-  border: 1px solid transparent;
-  border-radius: 3px;
-  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  vertical-align: middle;
-  text-align: center;
-  white-space: nowrap;
-  font-weight: 400;
-  line-height: $base-line-height;
-  cursor: pointer;
-
-  touch-action: manipulation;
-  @include transition(background .1s ease-in-out, box-shadow .1s ease-in-out);
-  @include shadow-2dp();
-  &:hover {
-    @include shadow-4dp();
-  }
+  @include btn($brand-color-1, #fff, true);
 }
 
-@each $name, $sizes in $button-sizes {
-  $padding: nth($sizes, 1);
-  $font-size: nth($sizes, 2);
-
-  %btn-#{$name} {
-    padding: $padding;
-    font-size: $font-size;
-  }
+%btn-brand {
+  @include btn($brand-color-1, #fff, true);
 }
 
-@each $name, $colors in $button-colors {
-  $bgcolor: nth($colors, 1);
-  $fontcolor: nth($colors, 2);
-
-  %btn-#{$name} {
-    background-color: $bgcolor;
-    color: $fontcolor;
-
-    &:hover {
-      background-color: shade($bgcolor, 10%);
-      color: $fontcolor;
-    }
-  }
+%btn-subtle {
+  @include btn($brand-color-1, #fff, true);
 }

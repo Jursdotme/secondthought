@@ -25,10 +25,10 @@ $grey-darkest  : shade($gray, 92%);
 
 
 // Flash Colors
-$alert-color: #ffe46f; // A yellow/orange color
+$alert-color: #ffd000; // A yellow/orange color
 $error-color: #e9513c; // A red color
 $notice-color: #91d2e1; // A Blue color
-$success-color: #c8d95b; // A green color
+$success-color: #b6c844; // A green color
 
 // Light Flash Colors
 $light-alert-color: tint($alert-color, 50%);
@@ -64,3 +64,30 @@ $form-border-color-focus: $base-accent-color;
 $form-border-radius: $base-border-radius;
 $form-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), .7);
+
+/* BUTTON */
+/**
+ *
+ * Dimensions
+ *
+ */
+$button-min-width: 64px;
+$button-height: 36px;
+$button-padding: 8px;
+$button-margin: 4px;
+$button-border-radius: 2px;
+
+$button-fab-size: 56px;
+$button-fab-size-mini: 40px;
+$button-fab-font-size: 24px;
+
+$button-icon-size: 32px;
+$button-icon-size-mini: 24px;
+
+
+/* ANIMATION */
+$animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1);
+$animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1);
+$animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1);
+
+$animation-curve-default: $animation-curve-fast-out-slow-in;

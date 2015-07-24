@@ -3,13 +3,11 @@
   @extend %flash-success;
 
   .button.wc-forward {
-    @extend %btn;
-    @extend %btn-default;
-    @extend %btn-brand;
+    @include btn($brand-color-1, #fff, true);
 
     display: inline-block;
     float: right;
-    margin-top: -5px;
+    margin-top: -6px;
 
     &:after {
       margin-left: 5px;

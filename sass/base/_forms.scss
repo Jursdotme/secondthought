@@ -139,9 +139,7 @@ select {
 }
 
 .wpcf7-submit {
-    @extend %btn;
-    @extend %btn-default;
-    @extend %btn-brand;
+    @include btn($brand-color-1, #fff, true);
 }
 
 .wpcf7-response-output {

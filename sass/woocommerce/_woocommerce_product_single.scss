@@ -102,15 +102,11 @@
         list-style: none;
 
         a {
-          @extend %btn;
-          @extend %btn-default;
-          @extend %btn-brand;
+          @include btn($brand-color-1, #fff, true);
         }
 
         &.active a {
-          @extend %btn;
-          @extend %btn-default;
-          @extend %btn-subtle;
+          @include btn($brand-color-1, #fff, true);
         }
 
         &:last-child {
@@ -130,9 +126,7 @@
 
   .button,
   #submit {
-    @extend %btn;
-    @extend %btn-default;
-    @extend %btn-brand;
+    @include btn($brand-color-1, #fff, true);
   }
 
   .related.products,
