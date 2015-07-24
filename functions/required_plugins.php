@@ -78,7 +78,7 @@ function my_theme_register_required_plugins() {
         array(
           'name'        => 'Kirki',
           'slug'        => 'kirki',
-          'required'    => 'true'
+          'required'    => 'false'
         ),
 
 
