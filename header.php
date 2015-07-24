@@ -17,5 +17,5 @@
 
 	<body <?php body_class( ! is_front_page() ? "not-home" : "" ); ?>>
 		<div class="wrapper">
-			<?php // get_template_part('partials/page_header'); ?>
-			<?php get_template_part('partials/customizer_page_header'); ?>
+			<?php get_template_part('partials/page_header'); ?>
+			<?php // get_template_part('partials/customizer_page_header'); ?>
