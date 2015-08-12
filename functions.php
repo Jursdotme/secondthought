@@ -145,8 +145,6 @@ function deregister_bbpress_styles() {
  wp_deregister_style( 'bp-legacy-css' );
 }
 
-
-
 function add_smiley($content) {
   $regex_string = "#<p>(\s|&nbsp;|</?\s?br\s?/?>)*</?p>#";
   return preg_replace($regex_string, '', $content);

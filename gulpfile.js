@@ -119,6 +119,15 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('build/stylesheets'));
 });
 
+gulp.task('sass-release', function () {
+  return sass('sass/style.scss', { sourcemap: true })
+    .on('error', function (err) { console.log(err.message); })
+    .pipe(autoprefixer())
+    .pipe(cssmin())
+    .pipe(bless({ imports: true }))
+    .pipe(gulp.dest('build/stylesheets'));
+});
+
 gulp.task('sass-editor', function () {
   return sass('sass/editor.scss', { sourcemap: true })
     .on('error', function (err) { console.log(err.message); })
