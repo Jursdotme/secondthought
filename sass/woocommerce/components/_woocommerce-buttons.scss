@@ -1,5 +1,6 @@
 .button,
 #review_form #submit {
-  @include btn($brand-color-1, #fff, true);
+  @extend %button-base;
+@extend %button-raised;
   display: inline-block;
 }

@@ -3,7 +3,7 @@ fieldset {
   padding: $gutter;
   border: 1px solid $base-border-color;
   background: $grey-lightest;
-  @include span-columns(12);
+  @extend %span-12;
 }
 
 legend {
@@ -85,74 +85,75 @@ select {
 }
 
 .wpcf7-form p {
-    @include span-columns(12);
-    span.wpcf7-not-valid-tip {
-        color: $error-color;
-        font-size: 11px;
-        text-transform: uppercase;
-        font-weight: 700;
+  @extend %span-12;
+  span.wpcf7-not-valid-tip {
+      color: $error-color;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 700;
+  }
+  &.half {
+    @extend %span-12;
+    @include media($md-up) {
+      @extend %span-6;
     }
-    &.half {
-      @include span-columns(12);
-      @include media($md-up) {
-        @include span-columns(6);
-      }
-    }
+  }
 
-    &.quarter {
-      @include span-columns(12);
-      @include media($md-up) {
-        @include span-columns(3);
-      }
+  &.quarter {
+    @extend %span-12;
+    @include media($md-up) {
+      @extend %span-3;
     }
+  }
 
-    &.threequarter {
-      @include span-columns(12);
-      @include media($md-up) {
-        @include span-columns(9);
-      }
+  &.threequarter {
+    @extend %span-12;
+    @include media($md-up) {
+      @extend %span-9;
     }
+  }
 
-    &.third {
-      @include span-columns(12);
-      @include media($md-up) {
-        @include span-columns(4);
-      }
+  &.third {
+    @extend %span-12;
+    @include media($md-up) {
+      @extend %span-4;
     }
+  }
 
-    &.twothird {
-      @include span-columns(12);
-      @include media($md-up) {
-        @include span-columns(8);
-      }
+  &.twothird {
+    @extend %span-12;
+    @include media($md-up) {
+      @extend %span-8;
     }
+  }
 
-    &.full {
-      @include span-columns(12);
-    }
+  &.full {
+    @extend %span-12;
+  }
 
-    &.last {
-      @include media($md-up) {
-        @include omega();
-      }
+  &.last {
+    @include media($md-up) {
+      @extend %omega;
     }
+  }
 }
 
 .wpcf7-submit {
-    @include btn($brand-color-1, #fff, true);
+  @extend %button-base;
+  @extend %button-raised;
 }
 
 .wpcf7-response-output {
-    &.wpcf7-validation-errors {
-        border: 0;
-        @extend %flash-alert;
-        margin: 0;
-        @include span-columns(12);
-    }
-    &.wpcf7-mail-sent-ok {
-        border: 0;
-        @extend %flash-success;
-        margin: 0;
-        @include span-columns(12);
-    }
+  &.wpcf7-validation-errors {
+    border: 0;
+    @extend %flash-alert;
+    margin: 0;
+    @extend %span-12;
+  }
+  &.wpcf7-mail-sent-ok {
+    border: 0;
+    @extend %flash-success;
+    margin: 0;
+    @extend %span-12;
+  }
 }

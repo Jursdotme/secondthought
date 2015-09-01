@@ -3,30 +3,23 @@
 // EXAMPLE:
 // name: ($button-primary-color, $button-secondary-color, $button-hover-color, $button-active-color, $button-focus-color, $colorContrast),
 $button-colors: (
-  brand: ($brand-color-1, #fff, true),
-  error: ($error-color, #fff, true),
-  alert: ($alert-color, #fff, true),
-  success: ($success-color, #fff, true),
+  brand: ($brand-color-1, #fff),
+  error: ($error-color, #fff),
+  alert: ($alert-color, #fff),
+  success: ($success-color, #fff),
 );
 
 @each $name, $colors in $button-colors {
   $button-primary-color: nth($colors, 1);
   $button-secondary-color: nth($colors, 2);
-  $raised: nth($colors, 2);
 
   .btn-#{$name} {
-    @include btn($button-primary-color, $button-secondary-color, $raised);
+    @extend %button-base;
+    @extend %button-raised;
+    background-color: $button-primary-color;
+    color: $button-secondary-color;
+    &:hover {
+      background-color: shade($button-primary-color, 20%);
+    }
   }
-}
-
-%btn {
-  @include btn($brand-color-1, #fff, true);
-}
-
-%btn-brand {
-  @include btn($brand-color-1, #fff, true);
-}
-
-%btn-subtle {
-  @include btn($brand-color-1, #fff, true);
 }

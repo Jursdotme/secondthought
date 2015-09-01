@@ -3,7 +3,8 @@
   @extend %flash-success;
 
   .button.wc-forward {
-    @include btn($brand-color-1, #fff, true);
+    @extend %button-base;
+@extend %button-raised;
 
     display: inline-block;
     float: right;

@@ -121,3 +121,11 @@ body:after {
   background: inherit;
   content: '';
 }
+
+@for $i from 1 through 12 {
+  %span-#{$i} { @include span-columns($i); }
+}
+
+%omega {
+  @include omega();
+}

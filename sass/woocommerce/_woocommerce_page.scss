@@ -4,7 +4,7 @@
     @include pad(0 $gutter);
 
     #content {
-      @include span-columns(12);
+      @extend %span-12;
     }
   }
 }
@@ -28,17 +28,17 @@
   padding: 0;
   list-style: none;
 
-  @include span-columns(12);
+  @extend %span-12;
 
   .product {
     padding-bottom: $gutter*2;
 
     @include media($xs) {
-      @include span-columns(12);
+      @extend %span-12;
     }
 
     @include media($sm-up) {
-      @include span-columns(4);
+      @extend %span-4;
     }
 
     &.last {
@@ -61,7 +61,7 @@
 
     h3 {
       color: $base-font-color;
-      font-size: 18px;
+      font-size: 1.125rem;
     }
 
     .price {

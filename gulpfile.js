@@ -14,6 +14,7 @@ var gulp = require('gulp'),
     stylish = require('jshint-stylish'),
     header  = require('gulp-header'),
     rename = require('gulp-rename'),
+    csscss = require('gulp-csscss'),
     package = require('./package.json');
 
 var paths = {
@@ -178,6 +179,11 @@ gulp.task('watch-admin', function() {
 gulp.task('stylestats', function () {
   return gulp.src('build/stylesheets/style.css')
     .pipe(stylestats());
+});
+
+gulp.task('csscss', function() {
+  gulp.src('build/stylesheets/style.css')
+    .pipe(csscss());
 });
 
 // The default task (called when you run `gulp` from cli)

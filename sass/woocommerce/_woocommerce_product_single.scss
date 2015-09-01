@@ -4,45 +4,45 @@
     @include pad(0 $gutter);
 
     #content {
-      @include span-columns(12);
+      @extend %span-12;
     }
   }
 
   .images {
     @include media($xs) {
-      @include span-columns(12);
+      @extend %span-12;
     }
 
     @include media($sm) {
-      @include span-columns(4);
+      @extend %span-4;
     }
 
     @include media($md) {
-      @include span-columns(4);
+      @extend %span-4;
     }
 
     @include media($lg) {
-      @include span-columns(4);
+      @extend %span-4;
     }
 
     .thumbnails a {
       @include media($xs) {
-        @include span-columns(6);
+        @extend %span-6;
         @include omega(2n);
       }
 
       @include media($sm) {
-        @include span-columns(4);
+        @extend %span-4;
         @include omega(3n);
       }
 
       @include media($md) {
-        @include span-columns(4);
+        @extend %span-4;
         @include omega(3n);
       }
 
       @include media($lg) {
-        @include span-columns(3);
+        @extend %span-3;
         @include omega(4n);
       }
     }
@@ -50,23 +50,23 @@
 
   .entry-summary {
     @include media($xs) {
-      @include span-columns(12);
-      @include omega();
+      @extend %span-12;
+      @extend %omega;
     }
 
     @include media($sm) {
-      @include span-columns(8);
-      @include omega();
+      @extend %span-8;
+      @extend %omega;
     }
 
     @include media($md) {
-      @include span-columns(8);
-      @include omega();
+      @extend %span-8;
+      @extend %omega;
     }
 
     @include media($lg) {
-      @include span-columns(8);
-      @include omega();
+      @extend %span-8;
+      @extend %omega;
     }
 
     .woocommerce-review-link {
@@ -75,7 +75,7 @@
     }
 
     .price {
-      font-size: 1.7rem;
+      font-size: 1.75rem;
 
       del {
         color: tint($base-font-color, 50%);
@@ -102,11 +102,13 @@
         list-style: none;
 
         a {
-          @include btn($brand-color-1, #fff, true);
+          @extend %button-base;
+@extend %button-raised;
         }
 
         &.active a {
-          @include btn($brand-color-1, #fff, true);
+          @extend %button-base;
+@extend %button-raised;
         }
 
         &:last-child {
@@ -126,13 +128,14 @@
 
   .button,
   #submit {
-    @include btn($brand-color-1, #fff, true);
+    @extend %button-base;
+@extend %button-raised;
   }
 
   .related.products,
   .woocommerce-tabs,
   .upsells.products {
-    @include span-columns(12);
+    @extend %span-12;
   }
 
   // Reviews
@@ -182,11 +185,11 @@
       background: #fff;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
 
-      @include span-columns(1);
+      @extend %span-1;
     }
 
     .comment-text {
-      @include span-columns(11);
+      @extend %span-11;
 
       p:last-child {
         margin-bottom: 0;
@@ -207,10 +210,10 @@
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   .comment-reply-title {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 }
