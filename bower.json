@@ -16,8 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "bourbon": "~4.2.3",
-    "neat": "~1.7.2",
+    "bourbon": "01acda3",
+    "neat": "1.7.2",
     "fancybox": "~2.1.5",
     "animate.css-scss": "~3.1.0",
     "slick-carousel": "~1.5.5",

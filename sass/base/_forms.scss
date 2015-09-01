@@ -44,8 +44,8 @@ select[multiple=multiple] {
   font-size: 1rem;
   font-family: $body-font;
 
-  @include box-sizing(border-box);
-  @include transition(border-color);
+  box-sizing: border-box;
+  transition: border-color;
 
   &:hover {
     border-color: $form-border-color-hover;
@@ -63,7 +63,7 @@ textarea {
 }
 
 [type='search'] {
-  @include appearance(none);
+  appearance: none;
 }
 
 [type='checkbox'],

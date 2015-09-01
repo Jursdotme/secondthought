@@ -114,7 +114,7 @@ $shadow-ambient-shadow-opacity: 0.12;
 
 .gallery img {
   @include shadow-2dp();
-  @include transition(box-shadow .2s ease-in-out);
+  transition: box-shadow .2s ease-in-out;
   &:hover {
     @include shadow-8dp();
   }
