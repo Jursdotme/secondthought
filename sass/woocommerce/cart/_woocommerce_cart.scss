@@ -4,15 +4,15 @@
     @include pad($gutter*3 $gutter);
 
     section {
-      @include span-columns(12);
+      @extend %span-12;
 
       @include media($sm-down) {
-        @include span-columns(12);
+        @extend %span-12;
         @include shift(0);
       }
 
       @include media($md-up) {
-        @include span-columns(12);
+        @extend %span-12;
         @include shift(0);
       }
     }
@@ -119,12 +119,12 @@
       text-align: left;
 
       @include media($sm-down) {
-        @include span-columns(12);
+        @extend %span-12;
         @include shift(0);
       }
 
       @include media($md-up) {
-        @include span-columns(6);
+        @extend %span-6;
         @include shift(0);
       }
 
@@ -141,12 +141,12 @@
         font-size: .8rem;
 
         @include media($sm-down) {
-          @include span-columns(6);
+          @extend %span-6;
           @include shift(0);
         }
 
         @include media($md-up) {
-          @include span-columns(6);
+          @extend %span-6;
           @include shift(0);
         }
       }
@@ -162,12 +162,12 @@
 
   .cross-sells {
     @include media($sm-down) {
-      @include span-columns(6);
+      @extend %span-6;
       @include shift(0);
     }
 
     @include media($md-up) {
-      @include span-columns(6);
+      @extend %span-6;
       @include shift(0);
     }
 
@@ -175,11 +175,11 @@
       padding-bottom: $gutter*2;
 
       @include media($xs) {
-        @include span-columns(12);
+        @extend %span-12;
       }
 
       @include media($sm-up) {
-        @include span-columns(6);
+        @extend %span-6;
         @include omega(2n);
       }
     }
@@ -187,22 +187,22 @@
 
   .cart_totals {
     @include media($xs) {
-      @include span-columns(6);
+      @extend %span-6;
     }
 
     @include media($md-up) {
-      @include span-columns(6);
-      @include omega();
+      @extend %span-6;
+      @extend %omega;
     }
   }
 
   .shipping_calculator {
     @include media($xs) {
-      @include span-columns(6);
+      @extend %span-6;
     }
 
     @include media($md-up) {
-      @include span-columns(6);
+      @extend %span-6;
       @include shift(0);
     }
   }

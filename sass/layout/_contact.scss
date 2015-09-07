@@ -5,46 +5,46 @@ form {
 
   .full {
     @include media($xs) {
-      @include span-columns(12);
+      @extend %span-12;
     }
 
     @include media($sm-up) {
-      @include span-columns(12);
+      @extend %span-12;
     }
   }
 
   .half {
     @include media($xs) {
-      @include span-columns(12);
+      @extend %span-12;
     }
 
     @include media($sm-up) {
-      @include span-columns(6);
+      @extend %span-6;
     }
   }
 
   .one-third {
     @include media($xs) {
-      @include span-columns(12);
+      @extend %span-12;
     }
 
     @include media($sm-up) {
-      @include span-columns(4);
+      @extend %span-4;
     }
   }
 
   .two-thirds {
     @include media($xs) {
-      @include span-columns(12);
+      @extend %span-12;
     }
 
     @include media($sm-up) {
-      @include span-columns(8);
+      @extend %span-8;
     }
   }
 
   .last {
-    @include omega();
+    @extend %omega;
   }
 }
 
@@ -60,7 +60,8 @@ form {
 }
 
 .wpcf7-submit {
-  @include btn($brand-color-1, #fff, true);
+  @extend %button-base;
+@extend %button-raised;
 }
 
 .acf-map {
@@ -70,12 +71,12 @@ form {
   border: 0;
 
   @include media($xs) {
-    @include span-columns(12);
+    @extend %span-12;
   }
 
   @include media($sm-up) {
-    @include span-columns(12);
-    @include omega();
+    @extend %span-12;
+    @extend %omega;
   }
 }
 

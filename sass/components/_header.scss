@@ -11,11 +11,12 @@
   .logo {
     padding-top: 18px;
     @include media($xs) {
-      @include span-columns(12);
+      // @extend %span-12;
+      @extend %span-12;
     }
 
     @include media($sm-up) {
-      @include span-columns(3);
+      @extend %span-3;
     }
 
 

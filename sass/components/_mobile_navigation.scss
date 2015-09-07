@@ -23,10 +23,10 @@ $menu-trigger-color: $brand-color-1;
   background: none;
   cursor: pointer;
 
-  @include transform(rotate(0deg) scale(0.7));
-  @include transition-property(transform);
-  @include transition-duration(.5s);
-  @include transition-timing-function(ease-in-out);
+  transform: rotate(0deg) scale(0.7);
+  transition-property: transform;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
   span {
     position: absolute;
     left: 0;
@@ -37,72 +37,72 @@ $menu-trigger-color: $brand-color-1;
     background: $menu-trigger-color;
     opacity: 1;
 
-    @include transform(rotate(0deg));
-    @include transition-property(transform);
-    @include transition-duration(.25s);
-    @include transition-timing-function(ease-in-out);
+    transform: rotate(0deg);
+    transition-property: transform;
+    transition-duration: .25s;
+    transition-timing-function: ease-in-out;
 
 
     &:nth-child(even) {
       left: 50%;
       border-radius: 0 9px 9px 0;
 
-      @include transition(all .25s ease-in-out);
+      transition: all .25s ease-in-out;
     }
 
     &:nth-child(odd) {
       left:0px;
       border-radius: 9px 0 0 9px;
 
-      @include transition(all .25s ease-in-out);
+      transition: all .25s ease-in-out;
     }
 
     &:nth-child(1), &:nth-child(2) {
       top: 0px;
 
-      @include transition(all .25s ease-in-out);
+      transition: all .25s ease-in-out ;
     }
 
     &:nth-child(3), &:nth-child(4) {
       top: 18px;
 
-      @include transition(all .25s ease-in-out);
+      transition: all .25s ease-in-out ;
     }
 
     &:nth-child(5), &:nth-child(6) {
       top: 36px;
 
-      @include transition(all .25s ease-in-out);
+      transition: all .25s ease-in-out ;
     }
   }
 
 
   &.active span:nth-child(1),&.active span:nth-child(6) {
-    @include transform(rotate(45deg));
-    @include transition-property(transform);
-    @include transition-duration(.25s);
-    @include transition-timing-function(ease-in-out);
+    transform: rotate(45deg);
+    transition-property: transform;
+    transition-duration: .25s;
+    transition-timing-function: ease-in-out;
   }
 
   &.active span:nth-child(2),&.active span:nth-child(5) {
-    @include transform(rotate(-45deg));
-    @include transition-property(transform);
-    @include transition-duration(.25s);
-    @include transition-timing-function(ease-in-out);
+    transform: rotate(-45deg);
+    transition-property: transform;
+    transition-duration: .25s;
+    transition-timing-function: ease-in-out;
   }
 
   &.active span:nth-child(1) {
     top: 7px;
     left: 5px;
 
-    @include transition(all .25s ease-in-out);
+    transition: all .25s ease-in-out ;
   }
 
   &.active span:nth-child(2) {
     top: 7px;
     left: calc(50% - 5px);
 
-    @include transition(all .25s ease-in-out);
+    transition: all .25s ease-in-out;
   }
 
   &.active span:nth-child(3) {
@@ -119,14 +119,14 @@ $menu-trigger-color: $brand-color-1;
     top: 29px;
     left: 5px;
 
-    @include transition(all .25s ease-in-out);
+    transition: all .25s ease-in-out;
   }
 
   &.active span:nth-child(6) {
     top: 29px;
     left: calc(50% - 5px);
 
-    @include transition(all .25s ease-in-out);
+    transition: all .25s ease-in-out;
   }
 }
 
@@ -138,9 +138,9 @@ $menu-trigger-color: $brand-color-1;
   box-shadow: 0;
 
   @include position(fixed, 0 auto 0 0);
-  @include size($mobile-menu-width 100%);
-  @include transform(translateX(-$mobile-menu-width));
-  @include transition(all .5s $authentic-motion-out);
+  @include size($mobile-menu-width ,100%);
+  transform: translateX(-$mobile-menu-width);
+  transition: all .5s $authentic-motion-out;
 
   .open-submenu-icon {
     position: absolute;
@@ -149,7 +149,7 @@ $menu-trigger-color: $brand-color-1;
     border: 0;
     background: none;
     color: $brand-color-1;
-    font-size: 28px;
+    font-size: 1.75rem;
 
     &:hover {
       background: none;
@@ -206,7 +206,7 @@ $menu-trigger-color: $brand-color-1;
     @include shadow-4dp();
     transition-timing-function: $authentic-motion-in;
 
-    @include transform(translateX(0));
+    transform: translateX(0);
   }
 }
 
@@ -217,7 +217,6 @@ $menu-trigger-color: $brand-color-1;
   opacity: 0;
 
   @include position(fixed, 0 0 0 0);
-  @include transition;
 
   &.is-visible {
     visibility: visible;

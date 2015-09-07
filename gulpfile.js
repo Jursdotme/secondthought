@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     bless = require('gulp-bless'),
     cssmin = require('gulp-minify-css'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -14,6 +14,7 @@ var gulp = require('gulp'),
     stylish = require('jshint-stylish'),
     header  = require('gulp-header'),
     rename = require('gulp-rename'),
+    csscss = require('gulp-csscss'),
     package = require('./package.json');
 
 var paths = {
@@ -113,15 +114,15 @@ gulp.task('scripts-admin', function() {
 });
 
 gulp.task('sass', function () {
-  return sass('sass/style.scss', { sourcemap: true })
-    .on('error', function (err) { console.log(err.message); })
+  gulp.src('sass/style.scss')
+    .pipe(sass().on('error', function (err) { console.log(err.message); }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/stylesheets'));
 });
 
 gulp.task('sass-release', function () {
-  return sass('sass/style.scss', { sourcemap: true })
-    .on('error', function (err) { console.log(err.message); })
+  gulp.src('sass/style.scss')
+    .pipe(sass().on('error', function (err) { console.log(err.message); }))
     .pipe(autoprefixer())
     .pipe(cssmin())
     .pipe(bless({ imports: true }))
@@ -129,8 +130,8 @@ gulp.task('sass-release', function () {
 });
 
 gulp.task('sass-editor', function () {
-  return sass('sass/editor.scss', { sourcemap: true })
-    .on('error', function (err) { console.log(err.message); })
+  gulp.src('sass/editor.scss')
+    .pipe(sass().on('error', function (err) { console.log(err.message); }))
     .pipe(autoprefixer())
     .pipe(cssmin())
     .pipe(bless({ imports: true }))
@@ -138,8 +139,8 @@ gulp.task('sass-editor', function () {
 });
 
 gulp.task('sass-admin', function () {
-  return sass('sass/admin.scss', { sourcemap: true })
-    .on('error', function (err) { console.log(err.message); })
+  gulp.src('sass/admin.scss')
+    .pipe(sass().on('error', function (err) { console.log(err.message); }))
     .pipe(autoprefixer())
     .pipe(cssmin())
     .pipe(bless({ imports: true }))
@@ -166,7 +167,7 @@ gulp.task('watch', function() {
 
 gulp.task('watch-release', function() {
   gulp.watch(paths.customscripts, ['scripts-release']);
-  gulp.watch(paths.sass, ['sass-release']);
+  gulp.watch(paths.sass, ['sass-release', 'sass-editor', 'sass-admin']);
 });
 
 // Rerun the task when a file changes
@@ -180,6 +181,11 @@ gulp.task('stylestats', function () {
     .pipe(stylestats());
 });
 
+gulp.task('csscss', function() {
+  gulp.src('build/stylesheets/style.css')
+    .pipe(csscss());
+});
+
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['scripts', 'sass', 'watch', 'jshint']);
 
@@ -187,7 +193,7 @@ gulp.task('admin', ['sass-admin', 'scripts-admin']);
 
 gulp.task('editor', ['sass-editor']);
 
-gulp.task('release', ['scripts-release', 'sass-release', 'watch-release']);
+gulp.task('release', ['scripts-release', 'sass-editor','sass-admin', 'sass-release', 'watch-release']);
 
 gulp.task('stats', ['sass-release', 'stylestats']);
 

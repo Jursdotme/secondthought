@@ -15,12 +15,12 @@
   &.gallery-columns-1 {
     .gallery-item {
       @include media($sm-up) {
-        @include span-columns(12);
-        @include omega();
+        @extend %span-12;
+        @extend %omega;
       }
       @include media($xs) {
-        @include span-columns(12);
-        @include omega();
+        @extend %span-12;
+        @extend %omega;
       }
     }
   }
@@ -32,8 +32,8 @@
         @include omega(2n);
       }
       @include media($xs) {
-        @include span-columns(12);
-        @include omega();
+        @extend %span-12;
+        @extend %omega;
       }
     }
   }

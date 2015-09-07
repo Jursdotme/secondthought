@@ -67,7 +67,8 @@
     &:last-child {
       margin-right: 0;
     }
-    @include btn($brand-color-1, #fff, true);
+    @extend %button-base;
+@extend %button-raised;
     border: 3px solid #e5e5e5;
     &:hover {
       border: 3px solid #f1f1f1;
@@ -82,9 +83,9 @@
       top: 11px;
       position: absolute;
       font: normal normal normal 14px/1 FontAwesome;
-      @include transition(all .2s ease-in-out);
+      transition: all .2s ease-in-out;
     }
-    @include transition(all .2s ease-in-out);
+    transition: all .2s ease-in-out;
     &.active {
       border: 3px solid $brand-color-1;
       &:after {

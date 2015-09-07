@@ -6,7 +6,7 @@
   border-color: #efefef;
   border-radius: 3px;
 
-  @include span-columns(12);
+  @extend %span-12;
 
   .search-input {
     margin: 0;
@@ -18,7 +18,7 @@
     color: #777;
     font-size: 1rem;
 
-    @include span-columns(8);
+    @extend %span-8;
     @include pad(8);
   }
 
