@@ -150,3 +150,15 @@ function add_smiley($content) {
   return preg_replace($regex_string, '', $content);
 }
 add_filter('widget_text', 'add_smiley');
+
+// Check if SEO is set to noindex and the site is not on a dev server
+function my_admin_error_notice() {
+	$class = "error";
+	$message = "Søgemaskine indeksering er slået fra!";
+
+  if ( get_option( 'blog_public' ) == 0 && !strpos(get_option( 'siteurl' ),'.dev') && !strpos(get_option( 'siteurl' ),'curanetserver.dk') ) {
+    echo"<div class=\"$class\"> <p><b>$message</b></p></div>";
+  }
+
+}
+add_action( 'admin_notices', 'my_admin_error_notice' );
