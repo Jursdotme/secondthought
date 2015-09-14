@@ -3,7 +3,7 @@ fieldset {
   padding: $gutter;
   border: 1px solid $base-border-color;
   background: $grey-lightest;
-  @extend %span-12;
+  @include span-columns(12);
 }
 
 legend {
@@ -85,7 +85,7 @@ select {
 }
 
 .wpcf7-form p {
-  @extend %span-12;
+  @include span-columns(12);
   span.wpcf7-not-valid-tip {
       color: $error-color;
       font-size: 11px;
@@ -93,47 +93,47 @@ select {
       font-weight: 700;
   }
   &.half {
-    @extend %span-12;
+    @include span-columns(12);
     @include media($md-up) {
-      @extend %span-6;
+      @include span-columns(6);
     }
   }
 
   &.quarter {
-    @extend %span-12;
+    @include span-columns(12);
     @include media($md-up) {
-      @extend %span-3;
+      @include span-columns(3);
     }
   }
 
   &.threequarter {
-    @extend %span-12;
+    @include span-columns(12);
     @include media($md-up) {
-      @extend %span-9;
+      @include span-columns(9);
     }
   }
 
   &.third {
-    @extend %span-12;
+    @include span-columns(12);
     @include media($md-up) {
-      @extend %span-4;
+      @include span-columns(4);
     }
   }
 
   &.twothird {
-    @extend %span-12;
+    @include span-columns(12);
     @include media($md-up) {
-      @extend %span-8;
+      @include span-columns(8);
     }
   }
 
   &.full {
-    @extend %span-12;
+    @include span-columns(12);
   }
 
   &.last {
     @include media($md-up) {
-      @extend %omega;
+      @include omega;
     }
   }
 }
@@ -148,12 +148,12 @@ select {
     border: 0;
     @extend %flash-alert;
     margin: 0;
-    @extend %span-12;
+    @include span-columns(12);
   }
   &.wpcf7-mail-sent-ok {
     border: 0;
     @extend %flash-success;
     margin: 0;
-    @extend %span-12;
+    @include span-columns(12);
   }
 }

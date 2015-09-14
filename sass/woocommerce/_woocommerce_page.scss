@@ -4,7 +4,7 @@
     @include pad(0 $gutter);
 
     #content {
-      @extend %span-12;
+      @include span-columns(12);
     }
   }
 }
@@ -28,17 +28,17 @@
   padding: 0;
   list-style: none;
 
-  @extend %span-12;
+  @include span-columns(12);
 
   .product {
     padding-bottom: $gutter*2;
 
     @include media($xs) {
-      @extend %span-12;
+      @include span-columns(12);
     }
 
     @include media($sm-up) {
-      @extend %span-4;
+      @include span-columns(4);
     }
 
     &.last {

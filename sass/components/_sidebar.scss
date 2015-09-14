@@ -18,7 +18,7 @@
       }
 
       @include media($xs) {
-        @extend %span-12;
+        @include span-columns(12);
       }
     }
   }

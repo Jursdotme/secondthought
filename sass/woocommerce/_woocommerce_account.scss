@@ -5,12 +5,12 @@
 
     section {
       @include media($sm-down) {
-        @extend %span-12;
+        @include span-columns(12);
         @include shift(0);
       }
 
       @include media($md-up) {
-        @extend %span-12;
+        @include span-columns(12);
         @include shift(0);
       }
     }
@@ -19,15 +19,15 @@
   .col-1,
   .col-2 {
     @include media($xs) {
-      @extend %span-6;
+      @include span-columns(6);
     }
 
     @include media($sm) {
-      @extend %span-4;
+      @include span-columns(4);
     }
 
     @include media($md-up) {
-      @extend %span-3;
+      @include span-columns(3);
     }
   }
 
@@ -139,36 +139,36 @@
   }
 
   .form-row {
-    @extend %span-12;
+    @include span-columns(12);
   }
 
   // 1 row fields
   .form-row-wide {
-    @extend %span-12;
+    @include span-columns(12);
   }
 
   // 2 row fields
   .form-row-first {
     @include media($xs) {
-      @extend %span-12;
+      @include span-columns(12);
     }
 
     @include media($sm-up) {
-      @extend %span-6;
+      @include span-columns(6);
     }
   }
 
   .form-row-last {
     @include media($xs) {
-      @extend %span-12;
+      @include span-columns(12);
     }
 
     @include media($sm-up) {
-      @extend %span-6;
-      @extend %omega;
+      @include span-columns(6);
+      @include omega;
     }
 
-    @extend %omega;
+    @include omega;
   }
 
   fieldset {
@@ -183,7 +183,7 @@
   #shipping_last_name_field,
   #shipping_city_field,
   #shipping_phone_field {
-    @extend %omega;
+    @include omega;
   }
 
   .login {

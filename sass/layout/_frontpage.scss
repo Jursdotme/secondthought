@@ -3,7 +3,7 @@
     @include secondthought-container;
     @include pad(0 $gutter/2);
     section {
-      @extend %span-12;
+      @include span-columns(12);
     }
   }
 }

@@ -9,7 +9,7 @@
     @include pad($gutter*3 $gutter);
 
     section {
-      @extend %span-12;
+      @include span-columns(12);
       @include shift(0);
     }
   }
@@ -21,11 +21,11 @@
   .login .form-row,
   .login .checkout_coupon {
     @include media($sm-down) {
-      @extend %span-12;
+      @include span-columns(12);
     }
 
     @include media($md-up) {
-      @extend %span-6;
+      @include span-columns(6);
     }
 
     .button,
@@ -36,24 +36,24 @@
 
   .form-row.form-row-last,
   .lost_password {
-    @extend %omega;
+    @include omega;
   }
 
   .col-1,
   .col-2 {
     @include media($xs) {
-      @extend %span-12;
+      @include span-columns(12);
     }
 
     @include media($sm-up) {
-      @extend %span-6;
+      @include span-columns(6);
     }
   }
 
   // 1 row fields
   #order_review,
   #order_review_heading {
-    @extend %span-12;
+    @include span-columns(12);
   }
 
   // 2 row fields
@@ -70,11 +70,11 @@
   #shipping_email_field,
   #shipping_phone_field {
     @include media($xs) {
-      @extend %span-12;
+      @include span-columns(12);
     }
 
     @include media($sm-up) {
-      @extend %span-6;
+      @include span-columns(6);
     }
   }
 
@@ -86,7 +86,7 @@
   #shipping_last_name_field,
   #shipping_city_field,
   #shipping_phone_field {
-    @extend %omega;
+    @include omega;
   }
 
   .create-account label,

@@ -4,45 +4,45 @@
     @include pad(0 $gutter);
 
     #content {
-      @extend %span-12;
+      @include span-columns(12);
     }
   }
 
   .images {
     @include media($xs) {
-      @extend %span-12;
+      @include span-columns(12);
     }
 
     @include media($sm) {
-      @extend %span-4;
+      @include span-columns(4);
     }
 
     @include media($md) {
-      @extend %span-4;
+      @include span-columns(4);
     }
 
     @include media($lg) {
-      @extend %span-4;
+      @include span-columns(4);
     }
 
     .thumbnails a {
       @include media($xs) {
-        @extend %span-6;
+        @include span-columns(6);
         @include omega(2n);
       }
 
       @include media($sm) {
-        @extend %span-4;
+        @include span-columns(4);
         @include omega(3n);
       }
 
       @include media($md) {
-        @extend %span-4;
+        @include span-columns(4);
         @include omega(3n);
       }
 
       @include media($lg) {
-        @extend %span-3;
+        @include span-columns(3);
         @include omega(4n);
       }
     }
@@ -50,23 +50,23 @@
 
   .entry-summary {
     @include media($xs) {
-      @extend %span-12;
-      @extend %omega;
+      @include span-columns(12);
+      @include omega;
     }
 
     @include media($sm) {
-      @extend %span-8;
-      @extend %omega;
+      @include span-columns(8);
+      @include omega;
     }
 
     @include media($md) {
-      @extend %span-8;
-      @extend %omega;
+      @include span-columns(8);
+      @include omega;
     }
 
     @include media($lg) {
-      @extend %span-8;
-      @extend %omega;
+      @include span-columns(8);
+      @include omega;
     }
 
     .woocommerce-review-link {
@@ -135,7 +135,7 @@
   .related.products,
   .woocommerce-tabs,
   .upsells.products {
-    @extend %span-12;
+    @include span-columns(12);
   }
 
   // Reviews
@@ -185,11 +185,11 @@
       background: #fff;
       box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
 
-      @extend %span-1;
+      @include span-columns(1);
     }
 
     .comment-text {
-      @extend %span-11;
+      @include span-columns(11);
 
       p:last-child {
         margin-bottom: 0;

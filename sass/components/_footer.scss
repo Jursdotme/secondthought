@@ -9,19 +9,19 @@
 
   img {
     @include media($lg) {
-      @extend %span-2;
+      @include span-columns(2);
     }
 
     @include media($md) {
-      @extend %span-4;
+      @include span-columns(4);
     }
 
     @include media($sm) {
-      @extend %span-4;
+      @include span-columns(4);
     }
 
     @include media($xs) {
-      @extend %span-6;
+      @include span-columns(6);
       @include shift(3);
     }
   }
@@ -32,26 +32,26 @@
     @include media($lg) {
       text-align: center;
 
-      @extend %span-12;
+      @include span-columns(12);
     }
 
     @include media($md) {
       text-align: center;
 
-      @extend %span-12;
+      @include span-columns(12);
     }
 
     @include media($sm) {
       text-align: center;
 
-      @extend %span-12;
+      @include span-columns(12);
     }
 
     @include media($xs) {
       margin-top: $gutter;
       text-align: center;
 
-      @extend %span-12;
+      @include span-columns(12);
     }
 
     a {
