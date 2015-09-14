@@ -20,7 +20,7 @@ Definer højden på en række så den altid har samme højde som browser vinduet
 
 * **Tredje variabel** definerer maximum højden på rækken.
 
-*Skal defineres på række.*
+*Skal defineres på rækken.*
 
 
 ## Center content
@@ -31,7 +31,7 @@ center-content
 
 Centrer en rækkes indhold. Brug i forbindelse med `full-height-*-*-*`.
 
-*Skal defineres på række.*
+*Skal defineres på rækken.*
 
 ## Parallax
 
@@ -41,7 +41,7 @@ parallax
 
 Anvend en parallax effekt som simulerer 3 dimmensionalitet på baggrundsbillede. Denne effekt skal bruges i sammenhæng med et baggrundsbillede.
 
-*Skal defineres på række.*
+*Skal defineres på rækken.*
 
 ## Transparent baggrund (række)
 
@@ -51,7 +51,7 @@ background-*
 
 Anvend baggrundsfarve og baggrundsbillede samtidig. Variabelen bestemmer baggrundsfarvens transperens fra 0 til 100%.
 
-*Skal defineres på række.*
+*Skal defineres på rækken.*
 
 ## Match højde
 
