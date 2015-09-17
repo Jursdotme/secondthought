@@ -34,6 +34,10 @@ $screen-md-min: $screen-md;
 $screen-lg: 1200px;
 $screen-lg-min: $screen-lg;
 
+// Nav breakpoint
+$nav-breakpoint: 958px;
+$nav-breakpoint-max: ($nav-breakpoint - 1);
+
 // So media queries don't overlap when required, provide a maximum
 $screen-xs-max: ($screen-sm-min - 1);
 $screen-sm-max: ($screen-md-min - 1);
@@ -74,8 +78,8 @@ $sm-down: new-breakpoint(max-width $screen-sm-max 12);
 $md-down: new-breakpoint(max-width $screen-md-max 12);
 $fg-column: $column;
 $fg-gutter: $gutter;
-$navigation-breakpoint-up: $sm-up;
-$navigation-breakpoint-down: $xs;
+$navigation-breakpoint-up: new-breakpoint(min-width $nav-breakpoint 12);
+$navigation-breakpoint-down: new-breakpoint(max-width $nav-breakpoint-max 12);
 $type-scaling-breakpoint: $screen-xs;
 
 // OMEGA RESET (http://joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat/)
