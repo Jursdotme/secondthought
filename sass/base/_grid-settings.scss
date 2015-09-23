@@ -63,7 +63,7 @@ $type-scaling-breakpoint: $screen-xs;
 
 // visual grid margins
 body:before {
-  max-width: $max-width - ($gutter * 2);
+  max-width: $max-width - $visual-grid-gutter;
 }
 
 // OMEGA RESET (http://joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat/)

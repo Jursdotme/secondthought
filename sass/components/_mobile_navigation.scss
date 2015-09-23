@@ -132,7 +132,7 @@ $menu-trigger-color: $brand-color-1;
 }
 
 .sliding-menu-content {
-  z-index: 999999;
+  z-index: 1000;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   background: $sliding-menu-background;
@@ -212,7 +212,7 @@ $menu-trigger-color: $brand-color-1;
 }
 
 .menu-screen {
-  z-index: 999998;
+  z-index: 1000;
   visibility: hidden;
   background: $sliding-menu-border-color;
   opacity: 0;
