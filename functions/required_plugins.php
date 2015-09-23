@@ -75,14 +75,6 @@ function my_theme_register_required_plugins() {
             'required'  => false,
         ),
 
-        array(
-          'name'        => 'Kirki',
-          'slug'        => 'kirki',
-          'required'    => 'false'
-        ),
-
-
-
         // Install Force regenerate thumbnails.
         array(
             'name'      => 'Force Regenerate Thumbnails',
