@@ -6,7 +6,7 @@ function secondthought_nav()
     'theme_location'  => 'header-menu',
     'menu'            => '',
     'container'       => 'nav',
-    'container_class' => 'desktop-navigation',
+    'container_class' => 'menu desktop',
     'container_id'    => '',
     'menu_class'      => 'menu',
     'menu_id'         => '',
@@ -16,7 +16,7 @@ function secondthought_nav()
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul id="navigation-menu">%3$s</ul>',
+    'items_wrap'      => '<ul>%3$s</ul>',
     'depth'           => 0,
     )
   );
@@ -29,7 +29,7 @@ function mobile_nav()
     'theme_location'  => 'mobile_nav',
     'menu'            => '',
     'container'       => 'nav',
-    'container_class' => 'mobile-navigation',
+    'container_class' => 'menu mobile',
     'container_id'    => '',
     'menu_class'      => '',
     'menu_id'         => '',
@@ -39,7 +39,7 @@ function mobile_nav()
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul id="navigation-menu">%3$s</ul>',
+    'items_wrap'      => '<ul>%3$s</ul>',
     'depth'           => 0,
     )
   );

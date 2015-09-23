@@ -25,7 +25,7 @@
   }
 }
 
-.desktop-navigation {
+header .menu {
   @include span-columns(9);
   @include media($navigation-breakpoint-up) {
     display: block;
@@ -43,6 +43,7 @@
     padding: 0;
     list-style: none;
 
+    .page_item_has_children,
     .menu-item-has-children > {
       ul {
         //display: none;
@@ -71,6 +72,7 @@
       }
     }
 
+    &.children,
     &.sub-menu {
       li {
         a {
@@ -90,7 +92,7 @@
     }
   }
 
-  #navigation-menu {
+  > ul {
     float: right;
 
     > li {

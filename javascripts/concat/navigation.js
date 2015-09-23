@@ -1,7 +1,7 @@
 /*=======================  Top Navigation  =======================*/
 
 $(document).ready(function() {
-  var menu = $('#navigation-menu');
+  var menu = $('header .menu');
   var menuToggle = $('#js-mobile-menu');
   var signUp = $('.sign-up');
 
@@ -25,13 +25,13 @@ $(document).ready(function() {
 
 });
 
-$('.menu-item-has-children').mouseenter(function(){
-  var curSubmenu = $(this).find('> .sub-menu');
+$('.page_item_has_children, .menu-item-has-children').mouseenter(function(){
+  var curSubmenu = $(this).find('> .children, > .sub-menu');
   curSubmenu.addClass('is-visible');
 });
 
-$('.menu-item-has-children').mouseleave(function(){
-  var curSubmenu = $(this).find('> .sub-menu');
+$('.page_item_has_children, .menu-item-has-children').mouseleave(function(){
+  var curSubmenu = $(this).find('> .children, > .sub-menu');
   curSubmenu.removeClass('is-visible');
 });
 
@@ -58,9 +58,9 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-  $('.mobile-menu .menu-item-has-children')
+  $('.mobile-menu .page_item_has_children')
     .prepend('<a href="#" class="open-submenu-icon"><i class="fa fa-plus"></i></a>');
-    $('.mobile-menu .menu-item-has-children .open-submenu-icon').bind('click', function(){
+    $('.mobile-menu .page_item_has_children .open-submenu-icon').bind('click', function(){
       $(this).parent().find('> .sub-menu').slideToggle('100');
      // apply the toggle to the ul
       $(this).toggleClass('is-expanded');
