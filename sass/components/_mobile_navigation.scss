@@ -13,6 +13,7 @@ $menu-trigger-color: $brand-color-1;
   @include media($navigation-breakpoint-up) {
     display: none;
   }
+  z-index: 1000;
   position: absolute;
   top: 12px;
   right: 15px;
