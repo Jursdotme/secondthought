@@ -2103,7 +2103,7 @@ header .menu {
   margin-left: auto;
   margin-right: auto;
   padding: 0 30px;
-  padding: 0 30px; }
+  padding: 0 15px; }
   .woocommerce-page.archive #container::after {
     clear: both;
     content: "";
@@ -2266,7 +2266,7 @@ header .menu {
   margin-left: auto;
   margin-right: auto;
   padding: 0 30px;
-  padding: 0 30px; }
+  padding: 0 15px; }
   .single-product #container::after {
     clear: both;
     content: "";
@@ -2518,7 +2518,7 @@ header .menu {
   margin-left: auto;
   margin-right: auto;
   padding: 0 30px;
-  padding: 90px 30px; }
+  padding: 90px 15px; }
   .page-template-default.cart main::after {
     clear: both;
     content: "";
@@ -2767,7 +2767,7 @@ header .menu {
   margin-left: auto;
   margin-right: auto;
   padding: 0 30px;
-  padding: 90px 30px; }
+  padding: 90px 15px; }
   .page-template-default.woocommerce-checkout main::after {
     clear: both;
     content: "";

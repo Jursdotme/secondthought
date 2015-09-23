@@ -1,7 +1,7 @@
 .single-product {
   #container {
     @include secondthought-container;
-    @include pad(0 $gutter);
+    @include pad(0 $gutter/2);
 
     #content {
       @include span-columns(12);

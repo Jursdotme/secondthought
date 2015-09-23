@@ -6,7 +6,7 @@
 
   main {
     @include secondthought-container;
-    @include pad($gutter*3 $gutter);
+    @include pad($gutter*3 $gutter/2);
 
     section {
       @include span-columns(12);
