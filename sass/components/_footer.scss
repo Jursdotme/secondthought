@@ -1,9 +1,18 @@
 .footer-container {
-  background-color: $brand-color-1;
+
   margin-top: $gutter;
 }
 
-.footer {
+.footer-widgets {
+  @include secondthought-container;
+  @include pad(0 $gutter/2);
+}
+
+.footer-address-bar-wrapper {
+  background-color: $brand-color-1;
+}
+
+.footer-address-bar {
   @include secondthought-container;
   @include pad($gutter $gutter/2);
 
