@@ -5,7 +5,7 @@ $body-font: 'Roboto', sans-serif;
 
 html {
   font-size: $base-font-size; // Scale typography on mobile
-  line-height: 1.5;
+  line-height: $base-line-height;
 }
 
 body {
