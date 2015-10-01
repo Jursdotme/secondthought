@@ -51,9 +51,19 @@
 
 		<?php wp_footer(); ?>
 
-		<?php if ( is_page_template( 'page_templates/contact.php' ) ) {
-			get_template_part('partials/acf-google-maps');
-		} ?>
+		<script>
+		   WebFontConfig = {
+				 google: {
+					 families: ['Montserrat', 'Roboto']
+				 }
+		   };
+
+		   (function(d) {
+		      var wf = d.createElement('script'), s = d.scripts[0];
+		      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+		      s.parentNode.insertBefore(wf, s);
+		   })(document);
+		</script>
 
 	</body>
 </html>
