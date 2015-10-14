@@ -1223,7 +1223,8 @@ table th[class*='col-'] {
 header .menu > ul > li {
   position: relative;
   float: left;
-  margin-right: 8px; }
+  margin-right: 8px;
+  padding: 8px 0; }
   header .menu > ul > li:last-child {
     margin-right: 0; }
 
@@ -1240,8 +1241,6 @@ header .menu {
   @media screen and (max-width: 957px) {
     header .menu {
       display: none; } }
-  header .menu > ul > li {
-    padding: 8px 0; }
   header .menu ul {
     margin: 0;
     padding: 0;
@@ -1249,35 +1248,35 @@ header .menu {
     header .menu ul .page_item_has_children ul,
     header .menu ul .menu-item-has-children > ul {
       position: absolute;
-      border-radius: 0 0 2px 2px;
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      z-index: -1;
       z-index: -1;
       top: 46px;
-      padding: 10px 0;
-      background: #fff;
-      opacity: 0;
       overflow: hidden;
-      transform-origin: 0 0;
-      transform: scale(0);
-      will-change: transform;
+      padding: 10px 0;
       transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-      z-index: -1; }
+      transform: scale(0);
+      transform-origin: 0 0;
+      opacity: 0;
+      border-radius: 0 0 2px 2px;
+      background: #fff;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      will-change: transform; }
       header .menu ul .page_item_has_children ul.is-visible,
       header .menu ul .menu-item-has-children > ul.is-visible {
+        z-index: 999;
         display: block;
-        opacity: 1;
         transform: scale(1);
-        z-index: 999; }
+        opacity: 1; }
     header .menu ul.children li a,
     header .menu ul.sub-menu li a {
-      color: #262626;
-      font-size: 0.875rem;
-      padding: 0 16px;
-      height: 48px;
-      line-height: 48px;
-      white-space: nowrap;
       display: block;
-      border: none; }
+      height: 48px;
+      padding: 0 16px;
+      white-space: nowrap;
+      color: #262626;
+      border: none;
+      font-size: 0.875rem;
+      line-height: 48px; }
       header .menu ul.children li a:hover,
       header .menu ul.sub-menu li a:hover {
         background: #e5e5e5; }

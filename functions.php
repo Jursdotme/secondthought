@@ -121,7 +121,7 @@ function add_theme_caps(){
     $role->add_cap( 'edit_theme_options' );
   }
 }
-add_action( 'load-themes.php', 'add_theme_caps' );
+// add_action( 'load-themes.php', 'add_theme_caps' );
 
 /*------------------------------------*\
 	Actions + Filters + ShortCodes

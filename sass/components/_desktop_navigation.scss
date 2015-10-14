@@ -6,6 +6,7 @@
   position: relative;
   float: left;
   margin-right: 8px;
+  padding: 8px 0;
   &:last-child {
     margin-right: 0;
   }
@@ -34,13 +35,10 @@ header .menu {
     display: none;
   }
 
-  > ul > li {
-    padding: 8px 0;
-  }
-
   ul {
     margin: 0;
     padding: 0;
+
     list-style: none;
 
     .page_item_has_children,
@@ -48,26 +46,33 @@ header .menu {
       ul {
         //display: none;
         position: absolute;
-        border-radius: 0 0 2px 2px;
-        @include shadow-2dp();
+        z-index: -1;
         z-index: -1;
         top: 46px;
-        padding: 10px 0;
-        background: #fff;
-        opacity: 0;
-        overflow: hidden;
-        transform-origin: 0 0;
-        transform: scale(0);
 
-        will-change: transform;
+        overflow: hidden;
+
+        padding: 10px 0;
+
         transition: transform 0.3s $animation-curve-fast-out-slow-in,
                     opacity 0.2s $animation-curve-fast-out-slow-in;
-        z-index: -1;
+        transform: scale(0);
+        transform-origin: 0 0;
+
+        opacity: 0;
+        border-radius: 0 0 2px 2px;
+        background: #fff;
+
+        @include shadow-2dp();
+        will-change: transform;
         &.is-visible {
-          display: block;
-          opacity: 1;
-          transform: scale(1);
           z-index: 999;
+
+          display: block;
+
+          transform: scale(1);
+
+          opacity: 1;
         }
       }
     }
@@ -76,14 +81,18 @@ header .menu {
     &.sub-menu {
       li {
         a {
-          color: $base-font-color;
-          font-size: 0.875rem;
-          padding: 0 16px;
-          height: 48px;
-          line-height: 48px;
-          white-space: nowrap;
           display: block;
+
+          height: 48px;
+          padding: 0 16px;
+
+          white-space: nowrap;
+
+          color: $base-font-color;
           border: none;
+
+          font-size: 0.875rem;
+          line-height: 48px;
           &:hover {
             background: $grey-lighter;
           }
@@ -103,5 +112,6 @@ header .menu {
 
 .logo_top .logo {
   margin-left: 50%;
+
   transform: translateX(-50%);
 }
