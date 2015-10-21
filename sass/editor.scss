@@ -1,9 +1,11 @@
 @import 'base/normalize';
 @import '../bower_components/bourbon/core/bourbon';
-@import 'base/grid-settings';
-@import '../bower_components/neat/app/assets/stylesheets/neat';
-
+@import 'base/helpers';
 @import 'base/variables';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+@import '../bower_components/neat/app/assets/stylesheets/neat-helpers';
+@import 'base/grid-settings';
+
 @import 'base/typography';
 @import 'base/tables';
 @import 'base/mixins';

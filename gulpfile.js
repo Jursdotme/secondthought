@@ -15,6 +15,7 @@ var gulp = require('gulp'),
     header  = require('gulp-header'),
     rename = require('gulp-rename'),
     csscss = require('gulp-csscss'),
+    combineMq = require('gulp-combine-mq')
     package = require('./package.json');
 
 var paths = {
@@ -123,6 +124,9 @@ gulp.task('sass', function () {
 gulp.task('sass-release', function () {
   gulp.src('sass/style.scss')
     .pipe(sass().on('error', function (err) { console.log(err.message); }))
+    .pipe(combineMq({
+        beautify: true
+    }))
     .pipe(autoprefixer())
     .pipe(cssmin())
     .pipe(bless({ imports: true }))
