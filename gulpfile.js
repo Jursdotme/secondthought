@@ -15,7 +15,7 @@ var gulp = require('gulp'),
     header  = require('gulp-header'),
     rename = require('gulp-rename'),
     csscss = require('gulp-csscss'),
-    combineMq = require('gulp-combine-mq')
+    combineMq = require('gulp-combine-mq'),
     package = require('./package.json');
 
 var paths = {
