@@ -78,9 +78,14 @@
               'classes'  => 'btn btn-default btn-brand'
           ),
           array(
-              'title'    => 'Success Button',
+              'title'    => 'Error Button',
               'selector' => 'a',
-              'classes'  => 'btn btn-default btn-success'
+              'classes'  => 'btn btn-default btn-error'
+          ),
+          array(
+              'title'    => 'Alert Button',
+              'selector' => 'a',
+              'classes'  => 'btn btn-default btn-alert'
           ),
           array(
               'title'    => 'Subtle Button',

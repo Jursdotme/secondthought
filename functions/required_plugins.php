@@ -34,6 +34,7 @@ add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
  * This function is hooked into tgmpa_init, which is fired within the
  * TGM_Plugin_Activation class constructor.
  */
+
 function my_theme_register_required_plugins() {
 
     /**
@@ -147,3 +148,5 @@ function my_theme_register_required_plugins() {
     tgmpa( $plugins, $config );
 
 }
+
+define( 'GITHUB_UPDATER_EXTENDED_NAMING', true );
