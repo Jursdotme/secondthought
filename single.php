@@ -1,43 +1,33 @@
 <?php get_header(); ?>
 
 	<main role="main">
-	<!-- section -->
-	<section>
+		<section>
 
-	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<!-- post thumbnail -->
-			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-			<?php endif; ?>
-			<!-- /post thumbnail -->
+				<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+						<?php the_post_thumbnail(); // Fullsize image for the single post ?>
+				<?php endif; ?>
 
-			<!-- post title -->
-			<h1>
-				<?php the_title(); ?>
-			</h1>
-			<!-- /post title -->
+				<h1>
+					<?php the_title(); ?>
+				</h1>
 
-			<!-- post details -->
 				<p class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></p>
-			<!-- /post details -->
 
-			<?php the_content(); ?>
+				<?php the_content(); ?>
 
-			<?php // comments_template(); ?>
+				<?php // comments_template(); ?>
 
-		</article>
-		<!-- /article -->
+			</article>
 
-	<?php endwhile; ?>
+		<?php endwhile; ?>
 
-	<?php endif; ?>
+		<?php endif; ?>
 
-	</section>
-	<!-- /section -->
+		</section>
 
 
 	</main>

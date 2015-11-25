@@ -254,91 +254,85 @@ body {
   color: #262626;
   font-family: "Roboto", sans-serif; }
 
-h1 {
-  margin: 0 0 0.6875rem;
-  color: #3c3c3c;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif; }
-  @media screen and (max-width: 991px) {
-    h1 {
-      font-size: 2rem;
-      line-height: 1.25; } }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    h1 {
-      font-size: 2.5rem;
-      line-height: 1.125; } }
-  @media screen and (min-width: 1200px) {
-    h1 {
-      font-size: 3rem;
-      line-height: 1.05; } }
+@media screen and (max-width: 991px) {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.5em; } }
 
-h2 {
-  margin: 0 0 0.6875rem;
+@media screen and (min-width: 992px) {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 2em; } }
+
+h1 {
+  margin-bottom: .3em;
   color: #3c3c3c;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  line-height: 1.05; }
+
+h2 {
+  margin-bottom: .3em;
+  color: #3c3c3c;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.25em;
+  line-height: 1.2; }
   @media screen and (max-width: 991px) {
     h2 {
-      font-size: 1.625rem;
-      line-height: 1.15384615; } }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
+      margin-top: 1.5em; } }
+  @media screen and (min-width: 992px) {
     h2 {
-      font-size: 2rem;
-      line-height: 1.125; } }
-  @media screen and (min-width: 1200px) {
-    h2 {
-      font-size: 2.25rem;
-      line-height: 1.25; } }
+      margin-top: 2em; } }
 
 h3 {
-  margin: 0 0 0.6875rem;
+  margin-bottom: .3em;
   color: #3c3c3c;
   font-weight: 400;
   font-family: "Montserrat", sans-serif; }
   @media screen and (max-width: 991px) {
     h3 {
-      font-size: 1.375rem;
+      font-size: 1.375em;
       line-height: 1.13636364; } }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.5em;
       line-height: 1.25; } }
   @media screen and (min-width: 1200px) {
     h3 {
-      font-size: 1.75rem;
+      font-size: 1.75em;
       line-height: 1.25; } }
 
 h4 {
-  margin: 0 0 0.6875rem;
+  margin-bottom: .3em;
   color: #3c3c3c;
   font-weight: 400;
   font-family: "Montserrat", sans-serif; }
   @media screen and (max-width: 991px) {
     h4 {
-      font-size: 1.125rem;
+      font-size: 1.125em;
       line-height: 1.11111111; } }
   @media screen and (min-width: 992px) and (max-width: 1199px) {
     h4 {
-      font-size: 1.125rem;
+      font-size: 1.125em;
       line-height: 1.22222222; } }
   @media screen and (min-width: 1200px) {
     h4 {
-      font-size: 1.125rem;
+      font-size: 1.125em;
       line-height: 1.22222222; } }
 
 p {
-  margin: 0 auto 15px;
-  font-size: 1rem; }
+  margin: 0 0 2em;
+  font-size: 1em; }
   p.date {
-    margin-bottom: .3rem;
+    margin-bottom: .3em;
     color: rgba(38, 38, 38, 0.4);
     font-style: italic;
-    font-size: .9rem; }
+    font-size: .9em; }
   p.lead {
     color: #939393;
     font-weight: 300;
-    font-size: 1.4rem;
-    line-height: 1.5rem; }
+    font-size: 1.4em;
+    line-height: 1.5em; }
 
 hr {
   margin: 1.5 0;
@@ -360,16 +354,16 @@ a {
   a .read-more {
     position: relative;
     display: inline-block;
-    margin-left: .2rem;
+    margin-left: .2em;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: .8rem; }
+    font-size: .8em; }
     a .read-more span {
       position: absolute;
       top: -1px;
       right: -12px;
       font-style: normal;
-      font-size: 1.5rem; }
+      font-size: 1.5em; }
 
 img {
   margin: 0;
@@ -402,24 +396,24 @@ dd {
   margin-left: 0; }
 
 .display-1 {
-  font-size: 5.625rem;
+  font-size: 5.625em;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.04em; }
 
 .display-2 {
-  font-size: 3.5rem;
+  font-size: 3.5em;
   font-weight: 400;
   line-height: 1.35;
   letter-spacing: -0.02em; }
 
 .display-3 {
-  font-size: 2.8rem;
+  font-size: 2.8em;
   font-weight: 400;
   line-height: 48px; }
 
 .display-4 {
-  font-size: 2.152rem;
+  font-size: 2.152em;
   font-weight: 400;
   line-height: 40px; }
 
@@ -440,12 +434,20 @@ dd {
   max-width: 300px;
   padding: 15px 0; }
   .simplePullQuote p {
-    font-size: 1.3rem; }
+    font-size: 1.3em; }
+
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child, a:last-child {
+  margin-bottom: 0; }
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child, a:first-child {
+  margin-top: 0; }
 
 .colorcontrast {
   opacity: 0.54; }
 
-.wpcf7-submit, .btn-brand, .btn-error, .btn-alert, .btn-success, header .menu > ul > li > a, .comment-respond #submit, .comment-form-rating a, .single-product .woocommerce-tabs .tabs li a, .single-product .woocommerce-tabs .tabs li.active a, .single-product .button,
+.wpcf7-submit, .btn-brand, .btn-error, .btn-alert, .btn-success, header .menu > ul > li > a, .comment-respond #submit, .news .read-more,
+.single-post .read-more,
+.search .read-more, .comment-form-rating a, .single-product .woocommerce-tabs .tabs li a, .single-product .woocommerce-tabs .tabs li.active a, .single-product .button,
 .single-product #submit, .button,
 #review_form #submit, .woocommerce-message .button.wc-forward,
 .woocommerce-info .button.wc-forward {
@@ -459,7 +461,7 @@ dd {
   min-width: 64px;
   padding: 0 8px;
   display: inline-block;
-  font-size: 0.875rem;
+  font-size: 0.875em;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
@@ -473,20 +475,28 @@ dd {
   text-align: center;
   line-height: 36px;
   vertical-align: middle; }
-  .wpcf7-submit::-moz-focus-inner, .btn-brand::-moz-focus-inner, .btn-error::-moz-focus-inner, .btn-alert::-moz-focus-inner, .btn-success::-moz-focus-inner, header .menu > ul > li > a::-moz-focus-inner, .comment-respond #submit::-moz-focus-inner, .comment-form-rating a::-moz-focus-inner, .single-product .woocommerce-tabs .tabs li a::-moz-focus-inner, .single-product .woocommerce-tabs .tabs li.active a::-moz-focus-inner, .single-product .button::-moz-focus-inner,
+  .wpcf7-submit::-moz-focus-inner, .btn-brand::-moz-focus-inner, .btn-error::-moz-focus-inner, .btn-alert::-moz-focus-inner, .btn-success::-moz-focus-inner, header .menu > ul > li > a::-moz-focus-inner, .comment-respond #submit::-moz-focus-inner, .news .read-more::-moz-focus-inner,
+  .single-post .read-more::-moz-focus-inner,
+  .search .read-more::-moz-focus-inner, .comment-form-rating a::-moz-focus-inner, .single-product .woocommerce-tabs .tabs li a::-moz-focus-inner, .single-product .woocommerce-tabs .tabs li.active a::-moz-focus-inner, .single-product .button::-moz-focus-inner,
   .single-product #submit::-moz-focus-inner, .button::-moz-focus-inner,
   #review_form #submit::-moz-focus-inner, .woocommerce-message .button.wc-forward::-moz-focus-inner,
   .woocommerce-info .button.wc-forward::-moz-focus-inner {
     border: 0; }
-  .wpcf7-submit:hover, .btn-brand:hover, .btn-error:hover, .btn-alert:hover, .btn-success:hover, header .menu > ul > li > a:hover, .comment-respond #submit:hover, .comment-form-rating a:hover, .single-product .woocommerce-tabs .tabs li a:hover, .single-product #submit:hover, .button:hover,
+  .wpcf7-submit:hover, .btn-brand:hover, .btn-error:hover, .btn-alert:hover, .btn-success:hover, header .menu > ul > li > a:hover, .comment-respond #submit:hover, .news .read-more:hover,
+  .single-post .read-more:hover,
+  .search .read-more:hover, .comment-form-rating a:hover, .single-product .woocommerce-tabs .tabs li a:hover, .single-product #submit:hover, .button:hover,
   #review_form #submit:hover, .woocommerce-message .button.wc-forward:hover,
   .woocommerce-info .button.wc-forward:hover {
     background-color: #cccccc;
     color: #563761; }
-  .wpcf7-submit:focus:not(:active), .btn-brand:focus:not(:active), .btn-error:focus:not(:active), .btn-alert:focus:not(:active), .btn-success:focus:not(:active), header .menu > ul > li > a:focus:not(:active), .comment-respond #submit:focus:not(:active), .comment-form-rating a:focus:not(:active), .single-product .woocommerce-tabs .tabs li a:focus:not(:active), .single-product #submit:focus:not(:active), .button:focus:not(:active),
+  .wpcf7-submit:focus:not(:active), .btn-brand:focus:not(:active), .btn-error:focus:not(:active), .btn-alert:focus:not(:active), .btn-success:focus:not(:active), header .menu > ul > li > a:focus:not(:active), .comment-respond #submit:focus:not(:active), .news .read-more:focus:not(:active),
+  .single-post .read-more:focus:not(:active),
+  .search .read-more:focus:not(:active), .comment-form-rating a:focus:not(:active), .single-product .woocommerce-tabs .tabs li a:focus:not(:active), .single-product #submit:focus:not(:active), .button:focus:not(:active),
   #review_form #submit:focus:not(:active) {
     background-color: #cccccc; }
-  .wpcf7-submit:active, .btn-brand:active, .btn-error:active, .btn-alert:active, .btn-success:active, header .menu > ul > li > a:active, .comment-respond #submit:active, .comment-form-rating a:active, .single-product .woocommerce-tabs .tabs li a:active, .single-product #submit:active, .button:active,
+  .wpcf7-submit:active, .btn-brand:active, .btn-error:active, .btn-alert:active, .btn-success:active, header .menu > ul > li > a:active, .comment-respond #submit:active, .news .read-more:active,
+  .single-post .read-more:active,
+  .search .read-more:active, .comment-form-rating a:active, .single-product .woocommerce-tabs .tabs li a:active, .single-product #submit:active, .button:active,
   #review_form #submit:active, .woocommerce-message .button.wc-forward:active,
   .woocommerce-info .button.wc-forward:active {
     background-color: #cccccc; }
@@ -519,16 +529,26 @@ img {
   height: auto; }
   img.alignleft {
     float: left;
-    margin-right: 30px; }
+    margin: 0 30px 1em 0; }
+    @media screen and (max-width: 767px) {
+      img.alignleft {
+        float: none;
+        margin: 0 auto 1em auto;
+        display: block; } }
   img.alignright {
     float: right;
-    margin-left: 30px; }
+    margin: 0 0 1em 30px; }
+    @media screen and (max-width: 767px) {
+      img.alignright {
+        float: none;
+        margin: 0 auto 1em auto;
+        display: block; } }
   img.aligncenter {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto 1em auto; }
 
 .wp-caption {
-  margin: 0 0 0.75rem;
+  margin: 0 0 1em;
   padding: 3px;
   max-width: 100%;
   width: auto;
@@ -543,13 +563,23 @@ img {
     max-width: 100%;
     height: auto; }
   .wp-caption.aligncenter {
-    margin: 0 auto; }
+    margin: 0 auto 1em auto; }
   .wp-caption.alignleft {
     float: left;
-    margin-right: 30px; }
+    margin: 0 30px 1em 0; }
+    @media screen and (max-width: 767px) {
+      .wp-caption.alignleft {
+        float: none;
+        margin: 0 auto 1em auto;
+        display: block; } }
   .wp-caption.alignright {
     float: right;
-    margin-left: 30px; }
+    margin: 0 0 1em 30px; }
+    @media screen and (max-width: 767px) {
+      .wp-caption.alignright {
+        float: none;
+        margin: 0 auto 1em auto;
+        display: block; } }
 
 @media screen and (min-width: 768px) {
   .center-content > div {
@@ -1756,6 +1786,15 @@ header .menu {
     .gallery.gallery-columns-9 .gallery-item:nth-child(2n+1) {
       clear: left; } }
 
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto;
+  width: 100%; }
+
 .footer-container {
   margin-top: 30px; }
 
@@ -2105,6 +2144,60 @@ header .menu {
     .page main section:last-child,
     .error404 main section:last-child {
       margin-right: 0; }
+
+.news main,
+.single-post main,
+.search main {
+  max-width: 1088px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px;
+  padding: 2em 15px; }
+  .news main::after,
+  .single-post main::after,
+  .search main::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.news section,
+.single-post section,
+.search section {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 100%; }
+  .news section:last-child,
+  .single-post section:last-child,
+  .search section:last-child {
+    margin-right: 0; }
+
+.news article {
+  margin: 60px 0;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 8px;
+  display: flex; }
+  @media screen and (max-width: 991px) {
+    .news article {
+      flex-direction: column; } }
+  @media screen and (min-width: 992px) {
+    .news article {
+      flex-direction: row; } }
+  .news article .thumbnail {
+    flex: 1 1 25%;
+    margin-right: 30px; }
+    @media screen and (max-width: 991px) {
+      .news article .thumbnail {
+        margin-bottom: 1em; } }
+    .news article .thumbnail a, .news article .thumbnail img {
+      display: block; }
+  .news article .content {
+    flex: 1 1 75%; }
+
+.news .sticky {
+  background-color: #fafafa;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  padding: 15px; }
 
 .woocommerce-page.archive #container {
   max-width: 1088px;

@@ -1,5 +1,30 @@
 <?php
 
+// Give shop managers access to theme options
+function add_theme_caps(){
+  global $pagenow;
+
+  if ( 'themes.php' == $pagenow && isset( $_GET['activated'] ) ){ // Test if theme is activated
+    // Theme is activated
+    // gets the author role
+    $role = get_role( 'shop_manager' );
+
+    // This only works, because it accesses the class instance.
+    // would allow the author to edit others' posts for current theme only
+    $role->add_cap( 'edit_theme_options' );
+  }
+  else {
+    // Theme is deactivated
+    // Remove the capacity when theme is deactivated
+
+    // gets the author role
+    $role = get_role( 'shop_manager' );
+
+    $role->add_cap( 'edit_theme_options' );
+  }
+}
+// add_action( 'load-themes.php', 'add_theme_caps' );
+
 // Declare WooCommerce support
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {

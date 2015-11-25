@@ -4,22 +4,32 @@ img {
 
   &.alignleft {
     float: left;
-    margin-right: $gutter;
+    margin: 0 $gutter 1em 0;
+    @include media($xs) {
+      float: none;
+      margin: 0 auto 1em auto;
+      display: block;
+    }
   }
 
   &.alignright {
     float: right;
-    margin-left: $gutter;
+    margin: 0 0 1em $gutter;
+    @include media($xs) {
+      float: none;
+      margin: 0 auto 1em auto;
+      display: block;
+    }
   }
 
   &.aligncenter {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
   }
 }
 
 .wp-caption {
-  margin: 0 0 .75rem;
+  margin: 0 0 1em;
   padding: 3px;
   max-width: 100%;
   width: auto;
@@ -39,17 +49,27 @@ img {
   }
 
   &.aligncenter {
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
   }
 
   &.alignleft {
     float: left;
-    margin-right: $gutter;
+    margin: 0 $gutter 1em 0;
+    @include media($xs) {
+      float: none;
+      margin: 0 auto 1em auto;
+      display: block;
+    }
   }
 
   &.alignright {
     float: right;
-    margin-left: $gutter;
+    margin: 0 0 1em $gutter;
+    @include media($xs) {
+      float: none;
+      margin: 0 auto 1em auto;
+      display: block;
+    }
   }
 }
 

@@ -3,9 +3,49 @@
 .search {
   main {
     @include secondthought-container;
-    @include pad(0 $gutter/2);
-    section {
-      @include span-columns(12);
+    @include pad(2em $gutter/2);
+  }
+
+  section {
+    @include span-columns(12);
+  }
+  .read-more {
+    @extend %button-base;
+  }
+}
+
+.news {
+  article {
+    margin: $gutter*2 0;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 8px;
+    display: flex;
+    // flex-wrap: wrap;
+    @include media($sm-down) {
+      flex-direction: column;
     }
+    @include media($md-up) {
+      flex-direction: row;
+    }
+
+    .thumbnail {
+      flex: 1 1 25%;
+      margin-right: $gutter;
+      @include media($sm-down) {
+        margin-bottom: 1em;
+      }
+      a, img {
+        display: block;
+      }
+    }
+    .content {
+      flex: 1 1 75%;
+    }
+  }
+
+  .sticky {
+    background-color: #fafafa;
+    @include shadow-2dp;
+    padding: $gutter/2;
   }
 }
