@@ -13,104 +13,99 @@ body {
   background-color: $base-background-color;
   color: $base-font-color;
   font-family: $body-font;
+}
 
-  //-webkit-font-smoothing: antialiased;
+h1, h2, h3, h4, h5, h6 {
+  @include media($sm-down) {
+    margin-top: 1.5em;
+  }
+  @include media($md-up) {
+    margin-top: 2em;
+  }
 }
 
 h1 {
-  margin: 0 0 .6875rem;
-  color: $base-header-color;
-  font-weight: 700;
-  font-family: $header-font;
-
-  @include media($sm-down) {
-    font-size: 2rem;
-    line-height: 1.25;
-  }
-  @include media($md) {
-    font-size: 2.5rem;
-    line-height: 1.125;
-  }
-  @include media($lg) {
-    font-size: 3rem;
-    line-height: 1.05;
-  }
-}
-
-h2 {
-  margin: 0 0 .6875rem;
+  margin-bottom: .3em;
   color: $base-header-color;
   font-weight: 400;
   font-family: $header-font;
+  font-size: 3em;
+  line-height: 1.05;
+}
 
+h2 {
+  margin-bottom: .3em;
+  color: $base-header-color;
+  font-weight: 400;
+  font-family: $header-font;
+  font-size: 2.25em;
+  line-height: 1.2;
   @include media($sm-down) {
-    font-size: 1.625rem;
-    line-height: 1.15384615;
+    margin-top: 1.5em;
   }
-  @include media($md) {
-    font-size: 2rem;
-    line-height: 1.125;
-  }
-  @include media($lg) {
-    font-size: 2.25rem;
-    line-height: 1.25;
+  @include media($md-up) {
+    margin-top: 2em;
   }
 
 }
 
 h3 {
-  margin: 0 0 .6875rem;
+  margin-bottom: .3em;
   color: $base-header-color;
   font-weight: 400;
   font-family: $header-font;
 
   @include media($sm-down) {
-    font-size: 1.375rem;
+    font-size: 1.375em;
     line-height: 1.13636364;
   }
   @include media($md) {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     line-height: 1.25;
   }
   @include media($lg) {
-    font-size: 1.75rem;
+    font-size: 1.75em;
     line-height: 1.25;
   }
 
 }
 
 h4 {
-  margin: 0 0 .6875rem;
+  margin-bottom: .3em;
   color: $base-header-color;
   font-weight: 400;
   font-family: $header-font;
 
   @include media($sm-down) {
-    font-size: 1.125rem;
+    font-size: 1.125em;
     line-height: 1.11111111;
   }
   @include media($md) {
-    font-size: 1.125rem;
+    font-size: 1.125em;
     line-height: 1.22222222;
   }
   @include media($lg) {
-    font-size: 1.125rem;
+    font-size: 1.125em;
     line-height: 1.22222222;
   }
 
 }
 
+h5 {
+
+}
+
 p {
-  margin: 0 auto $gutter/2;
-  // line-height: 1.5rem;
-  font-size: 1rem; // same as $base-font-size
+  margin: 0 0 2em;
+  // line-height: 1.5em;
+  font-size: 1em; // same as $base-font-size
   // font-family: $body-font;
 
   &.date {
-    margin-bottom: .3rem;
+    margin-bottom: .3em;
     color: transparentize($base-font-color, .6);
     font-style: italic;
-    font-size: .9rem;
+    font-size: .9em;
     // font-family: $body-font;
   }
 
@@ -121,8 +116,8 @@ p {
   &.lead {
     color: tint($base-font-color, 50%);
     font-weight: 300;
-    font-size: 1.4rem;
-    line-height: 1.5rem;
+    font-size: 1.4em;
+    line-height: 1.5em;
   }
 }
 
@@ -153,10 +148,10 @@ a {
   .read-more {
     position: relative;
     display: inline-block;
-    margin-left: .2rem;
+    margin-left: .2em;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: .8rem;
+    font-size: .8em;
     // font-family: $body-font;
 
     span {
@@ -164,7 +159,7 @@ a {
       top: -1px;
       right: -12px;
       font-style: normal;
-      font-size: 1.5rem;
+      font-size: 1.5em;
       // font-family: $body-font;
     }
   }
@@ -193,7 +188,7 @@ cite {
 
 // Description Lists
 dl {
-  margin-top: 0; // Remove browser default
+  margin-top: 0; // emove browser default
   margin-bottom: floor($computed-line-height * .75);
 }
 
@@ -211,27 +206,27 @@ dd {
 }
 
 .display-1 {
-  font-size: 5.625rem;
+  font-size: 5.625em;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.04em;
 }
 
 .display-2 {
-  font-size: 3.5rem;
+  font-size: 3.5em;
   font-weight: 400;
   line-height: 1.35;
   letter-spacing: -0.02em;
 }
 
 .display-3 {
-  font-size: 2.8rem;
+  font-size: 2.8em;
   font-weight: 400;
   line-height: 48px;
 }
 
 .display-4 {
-  font-size: 2.152rem;
+  font-size: 2.152em;
   font-weight: 400;
   line-height: 40px;
 }
@@ -253,7 +248,16 @@ dd {
   max-width: 300px;
   padding: $gutter/2 0;
   p {
-    font-size: 1.3rem;
+    font-size: 1.3em;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:first-child {
+    margin-top: 0;
   }
 }
 
