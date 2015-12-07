@@ -83,6 +83,12 @@ function my_theme_register_required_plugins() {
             'required'  => false,
         ),
 
+        array(
+            'name'      => 'WP Mail SMTP',
+            'slug'      => 'wp-mail-smtp',
+            'required'  => false,
+        ),
+
         // Install Contact Form 7.
         array(
             'name'      => 'Contact Form 7',
