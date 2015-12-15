@@ -20,6 +20,16 @@ $table-bg-active: $table-bg-hover !default;
 //** Border color for table and cell borders.
 $table-border-color: #ddd !default;
 
+// Tablepress float right classes
+//@for $i from 1 to 12 {
+//  .table-right-#{$i} {
+//    td:nth-child(#{$i}),
+//    th:nth-child(#{$i}){
+//      text-align: right;
+//    }
+//  }
+//}
+
 @mixin table-row-variant($state, $background) {
   // Exact selectors below required to override `.table-striped` and prevent
   // inheritance to nested tables.
