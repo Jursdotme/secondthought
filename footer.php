@@ -35,7 +35,7 @@
 							<?php if($adresse) { echo '<span class="adresse">' . $adresse . '</span><hr>';} ?>
 							<?php if($postnummer) { echo '<span class="postnr-by">' . $postnummer;} ?>
 							<?php if($by) { echo $by . '</span><hr>';} ?>
-							<?php if($telefonnummer) { echo '<span class="tlf">Tlf.: ' . $telefonnummer . '</span><hr>'; } ?>
+							<?php if($telefonnummer) { echo '<span class="tlf"><a href="tel:'.$telefonnummer.'">Tlf.: ' . $telefonnummer . '</a></span><hr>'; } ?>
 							<a href="mailto:<?php echo $email_addresse; ?>"><?php echo $email_addresse; ?></a>
 						</div>
 					</div>
