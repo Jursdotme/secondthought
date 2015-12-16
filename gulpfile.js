@@ -116,7 +116,8 @@ gulp.task('scripts-admin', function() {
 
 gulp.task('sass', function () {
   gulp.src('sass/style.scss')
-    .pipe(sass().on('error', function (err) { console.log(err.message); }))
+    .pipe(sourcemaps.init())
+    .pipe(sass({outputStyle: 'nested'}).on('error', function (err) { console.log(err.message); }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('build/stylesheets'));
 });
