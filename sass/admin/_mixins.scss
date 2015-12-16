@@ -1,52 +1,53 @@
 // scss-lint:disable all
-/*
- * Dashicons mixin
- * use: @include dashicons('\f140');
- */
-@mixin dashicons($icon) {
-  position: relative;
-  display: block;
-  padding: 0;
-  content: $icon;
-  text-align: center;
-  text-decoration: none !important;
-  text-indent: 0;
-  font: normal 20px/1 'dashicons';
-  speak: none;
-
-}
 
 /*
  * Button mixin- creates 3d-ish button effect with correct
  * highlights/shadows, based on a base color.
  */
-@mixin button($button-color, $text-color: #fff) {
-  border-color: darken($button-color, 10%);
-  background: $button-color;
-  box-shadow: inset 0 1px 0 lighten($button-color, 15%), 0 1px 0 rgba(0, 0, 0, .15);
-  color: $text-color;
+@mixin button( $button-color, $text-color: white ) {
+	background: $button-color;
+	border-color: darken( $button-color, 10% ) darken( $button-color, 15% ) darken( $button-color, 15% );
+	color: $text-color;
+	box-shadow: 0 1px 0 darken( $button-color, 15% );
+	text-shadow: 0 -1px 1px darken( $button-color, 15% ),
+		1px 0 1px darken( $button-color, 15% ),
+		0 1px 1px darken( $button-color, 15% ),
+		-1px 0 1px darken( $button-color, 15% );
 
-  &:hover,
-  &:focus {
-    border-color: darken($button-color, 15%);
-    background: darken($button-color, 8%);
-    box-shadow: inset 0 1px 0 lighten($button-color, 10%), 0 1px 0 rgba(0, 0, 0, .15);
-    color: $text-color;
-  }
+	&:hover,
+	&:focus {
+		background: lighten( $button-color, 3% );
+		border-color: darken( $button-color, 15% );
+		color: $text-color;
+		box-shadow: 0 1px 0 darken( $button-color, 15% );
+	}
 
-  &:active {
-    border-color: darken($button-color, 15%);
-    background: darken($button-color, 8%);
-    box-shadow: inset 0 2px 5px -3px rgba(0, 0, 0, .5);
-    color: $text-color;
-  }
+	&:focus {
+		box-shadow: inset 0 1px 0 darken( $button-color, 10% ),
+					0 0 2px 1px $highlight-color;
+	}
 
-  &[disabled],
-  &:disabled,
-  &.button-primary-disabled {
-    border-color: darken($button-color, 15%) !important;
-    background: darken($button-color, 8%) !important;
-    color: hsl(hue($button-color), 10%, 80%) !important;
-    text-shadow: none !important;
-  }
+	&:active {
+		background: darken( $button-color, 10% );
+		border-color: darken( $button-color, 15% );
+	 	box-shadow: inset 0 2px 0 darken( $button-color, 15% );
+	}
+
+	&[disabled],
+	&:disabled,
+	&.button-primary-disabled,
+	&.disabled {
+		color: hsl( hue( $button-color ), 10%, 80% ) !important;
+		background: darken( $button-color, 8% ) !important;
+		border-color: darken( $button-color, 15% ) !important;
+		text-shadow: none !important;
+	}
+
+	&.button-hero {
+		box-shadow: 0 2px 0 darken( $button-color, 15% ) !important;
+		&:active {
+		 	box-shadow: inset 0 3px 0 darken( $button-color, 15% ) !important;
+		}
+	}
+
 }

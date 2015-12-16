@@ -1,8 +1,4 @@
 // scss-lint:disable all
-@import 'variables';
-@import 'mixins';
-
-
 html {
   background: $body-background;
 }
@@ -91,6 +87,25 @@ input[type=radio]:checked:before {
   .wp-ui-text-icon {
     color: $menu-icon;
   }
+}
+
+.wrap .add-new-h2:hover,
+.wrap .page-title-action:hover {
+  background: $highlight-color;
+  color: $text-color;
+}
+
+#wpadminbar:not(.mobile)>#wp-toolbar a:focus span.ab-label,
+#wpadminbar:not(.mobile)>#wp-toolbar li:hover span.ab-label,
+#wpadminbar>#wp-toolbar li.hover span.ab-label {
+  color: $highlight-color;
+}
+
+#wpadminbar .ab-top-menu>li.hover>.ab-item,
+#wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus,
+#wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item,
+#wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus {
+  color: $highlight-color;
 }
 
 

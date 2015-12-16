@@ -1,52 +1,56 @@
+@import '../bower_components/bourbon/core/bourbon';
+@import 'base/variables';
+@import 'admin/variables';
+@import 'admin/mixins';
 @import 'admin/admin';
 
-.pluto-alpha-container {
-  display: none;
-  box-sizing: padding-box;
-  padding: 0 11px 6px;
-  border: 1px solid #dfdfdf;
-  border-top: 0;
-  background: #fff;
-
-  .transparency {
-    padding: 0;
-    width: 100%;
-    height: 24px;
-    border-radius: 3px;
-    background-color: #fff;
-    background-image: url('../../images/transparency-grid.png');
-    box-shadow: 0 0 5px rgba(0, 0, 0, .4) inset;
-  }
-
-  .ui-slider-handle {
-    position: absolute;
-    z-index: 2;
-    margin-top: -2px;
-    padding: 3px;
-    height: 20px;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
-    color: #777;
-    text-decoration: none;
-    text-shadow: 0 1px 0 #fff;
-    font-size: 12px;
-    opacity: .9;
-    cursor: ew-resize;
-  }
-
-  .ui-slider {
-    position: relative;
-    width: 88%;
-    text-align: center;
-  }
-}
-
-.wp-picker-container .wp-picker-open ~ .pluto-alpha-container {
-  display: block;
-}
-
-.customize-control-alphacolor .wp-picker-container .iris-picker {
-  border-bottom: 0;
-}
+//.pluto-alpha-container {
+//  display: none;
+//  box-sizing: padding-box;
+//  padding: 0 11px 6px;
+//  border: 1px solid #dfdfdf;
+//  border-top: 0;
+//  background: #fff;
+//
+//  .transparency {
+//    padding: 0;
+//    width: 100%;
+//    height: 24px;
+//    border-radius: 3px;
+//    background-color: #fff;
+//    background-image: url('../../images/transparency-grid.png');
+//    box-shadow: 0 0 5px rgba(0, 0, 0, .4) inset;
+//  }
+//
+//  .ui-slider-handle {
+//    position: absolute;
+//    z-index: 2;
+//    margin-top: -2px;
+//    padding: 3px;
+//    height: 20px;
+//    border: 1px solid #aaa;
+//    border-radius: 4px;
+//    background-color: #fff;
+//    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+//    color: #777;
+//    text-decoration: none;
+//    text-shadow: 0 1px 0 #fff;
+//    font-size: 12px;
+//    opacity: .9;
+//    cursor: ew-resize;
+//  }
+//
+//  .ui-slider {
+//    position: relative;
+//    width: 88%;
+//    text-align: center;
+//  }
+//}
+//
+//.wp-picker-container .wp-picker-open ~ .pluto-alpha-container {
+//  display: block;
+//}
+//
+//.customize-control-alphacolor .wp-picker-container .iris-picker {
+//  border-bottom: 0;
+//}

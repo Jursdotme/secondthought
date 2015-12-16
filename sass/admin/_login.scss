@@ -1,0 +1,19 @@
+html {
+  background: $body-background;
+}
+
+body.login {
+  background: $base-color;
+}
+
+.login h1 a {
+  width: 320px;
+  height: 102px;
+  background-image: url('../../img/inzite_logo.svg');
+  background-size: 320px;
+}
+
+
+html {
+	background: $body-background;
+}
