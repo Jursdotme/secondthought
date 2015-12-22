@@ -6,28 +6,30 @@
   position: relative;
   float: left;
   margin-right: 8px;
-  padding: 8px 0;
+  padding: 0;
+  height: 61px;
   &:last-child {
     margin-right: 0;
   }
 
   > a {
-    @extend %button-base;
+    // @extend %button-base;
     //display: block;
-    //padding: 20px 15px;
-    //color: $base-font-color;
-    //text-transform: uppercase;
+    padding: 20px 10px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
     //font-weight: 500;
-    //font-size: 0.875rem;
+    font-size: 0.875rem;
     //
-    //&:hover {
-    //  color: $brand-color-1;
-    //}
+    &:hover {
+      background-color: rgba(#000, .15);
+    }
   }
 }
 
 header .menu {
-  @include span-columns(9);
+  @include span-columns(10);
   @include media($navigation-breakpoint-up) {
     display: block;
   }
@@ -41,6 +43,11 @@ header .menu {
 
     list-style: none;
 
+    .page_item_has_children:last-child > ul,
+    .menu-item-has-children:last-child > ul {
+      right: 0;
+    }
+
     .page_item_has_children,
     .menu-item-has-children > {
       ul {
@@ -48,7 +55,7 @@ header .menu {
         position: absolute;
         z-index: -1;
         z-index: -1;
-        top: 46px;
+        top: 61px;
 
         overflow: hidden;
 

@@ -1,6 +1,6 @@
 .header {
-  background: #fff;
-  border-bottom: 1px solid #fafafa;
+  background: $brand-color-2;
+  // border-bottom: 1px solid #fafafa;
   @include shadow-2dp();
   position: relative;
   z-index: 1000;
@@ -9,14 +9,14 @@
   @include secondthought-container;
   @include pad(0 $gutter/2);
   .logo {
-    padding-top: 18px;
+    padding: $gutter/4 0;
     @include media($xs) {
       // @include span-columns(12);
       @include span-columns(12);
     }
 
     @include media($sm-up) {
-      @include span-columns(3);
+      @include span-columns(2);
     }
 
 
