@@ -128,7 +128,10 @@ gulp.task('sass-release', function () {
     .pipe(combineMq({
         beautify: true
     }))
-    .pipe(autoprefixer())
+    .pipe(autoprefixer({
+			browsers: ['> 1%', 'last 10 ie versions'],
+			cascade: false
+		}))
     .pipe(cssmin())
     .pipe(bless({ imports: true }))
     .pipe(gulp.dest('build/stylesheets'));
