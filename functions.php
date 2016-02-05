@@ -142,6 +142,14 @@ function remove_empty_paragraphs($content) {
   return preg_replace($regex_string, '', $content);
 }
 
+// add editor the privilege to edit theme
+
+  // get the the role object
+  $role_object = get_role( 'editor' );
+
+  // add $cap capability to this role object
+  $role_object->add_cap( 'edit_theme_options' );
+
 
 // Check if SEO is set to noindex and the site is not on a dev server
 function my_admin_error_notice() {
