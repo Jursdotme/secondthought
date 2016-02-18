@@ -10,12 +10,13 @@
   @include pad(0 $gutter/2);
   .logo {
     padding: $gutter/4 0;
-    @include media($xs) {
+    @include media($navigation-breakpoint-down) {
       // @include span-columns(12);
       @include span-columns(12);
+      max-width: 196px;
     }
 
-    @include media($sm-up) {
+    @include media($navigation-breakpoint-up) {
       @include span-columns(2);
     }
 
