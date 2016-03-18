@@ -74,23 +74,18 @@ img {
 }
 
 // Center content
-
-%center-content {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.center-content > div {
-
+.center-content {
+  display: flex;
+  align-items: center;
   @include media($sm-up) {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    flex-direction: row;
   }
   @include media($xs) {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    flex-direction: column;
+    justify-content: center;
+  }
+  > div {
+    display: block;
+    width: 100%;
   }
 }
