@@ -34,6 +34,7 @@ var paths = {
     'bower_components/stellar.js/jquery.stellar.min.js',
     'bower_components/fillerup/jquery.fillerup.js',
     'bower_components/throttle/src/js/throttle.js',
+    'bower_components/jquery.fitvids/jquery.fitvids.js',
   ],
   customscripts: [
     'javascripts/concat/*.js',
