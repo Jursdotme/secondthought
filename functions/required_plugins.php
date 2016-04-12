@@ -64,11 +64,6 @@ function my_theme_register_required_plugins() {
             'slug'      => 'so-widgets-bundle',
             'required'  => true,
         ),
-        array(
-            'name'      => 'Black Studio TinyMCE Widget',
-            'slug'      => 'black-studio-tinymce-widget',
-            'required'  => true,
-        ),
 
         array(
             'name'      => 'Duplicate Post',
@@ -98,7 +93,7 @@ function my_theme_register_required_plugins() {
 
         array(
       			'name'      => 'Secondthought Widget Pack',
-      			'slug'      => 'secondthought-pagebuilder-bundle',
+      			'slug'      => 'github-Jursdotme-secondthought-pagebuilder-bundle',
       			'source'    => 'https://github.com/Jursdotme/secondthought-pagebuilder-bundle/archive/master.zip',
       			'required'  => true,
     		),
