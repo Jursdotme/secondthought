@@ -294,3 +294,19 @@ table {
     }
   }
 }
+
+.ccf-form-wrapper {
+  margin: 0;
+  br {
+    display: none;
+  }
+  .ccf-submit-button  {
+    @extend %button-base;
+    @extend %button-raised;
+    background-color: $brand-color-1;
+    color: #fff;
+    &:hover {
+      background-color: shade($brand-color-1, 20%);
+    }
+  }
+}
