@@ -143,6 +143,10 @@ $menu-trigger-color: $brand-color-1;
   transform: translateX(-$mobile-menu-width);
   transition: all .5s $authentic-motion-out;
 
+  @include media($navigation-breakpoint-up) {
+    display: none;
+  }
+
   .open-submenu-icon {
     position: absolute;
     right: 0;
