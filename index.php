@@ -8,7 +8,8 @@
 
 			<?php get_template_part('partials/loop'); ?>
 
-			<?php get_template_part('partials/pagination'); ?>
+			<?php secondthought_pagination(); ?>
+
 
 		</section>
 		<!-- /section -->
