@@ -157,3 +157,46 @@ select {
     @include span-columns(12);
   }
 }
+
+.ccf-form {
+  //display: flex;
+  //flex-wrap: wrap;
+  margin: 0 (20px * -0.5);
+  .field {
+    clear: none;
+    float: left;
+    //flex: 0 1 100%;
+    //margin-right: $gutter;
+    width: calc((100%) - 20px);
+    margin: 0 (20px * 0.5) 20px;
+    &.third {
+      width: calc((100%/3) - 20px);
+    }
+    &.twothird {
+      width: calc(((100%/3)*2) - 20px);
+    }
+    &.half {
+      width: calc((50%) - 20px);
+    }
+    &.quarter {
+      width: calc((25%) - 20px);
+    }
+    &.threequarter {
+      width: calc((75%) - 20px);
+    }
+    //.left {
+    //  padding-right: $gutter/2;
+    //}
+    //.right {
+    //  padding-left: $gutter/2;
+    //}
+  }
+  .form-submit {
+    float: left;
+    width: 100%;
+    margin-left: 10px;
+  }
+  .am-pm {
+    display: none !important;
+  }
+}
