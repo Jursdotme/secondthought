@@ -56,6 +56,7 @@ remove_action('wp_head', 'rel_canonical');
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 
 // Add Filters
+add_filter( 'wp_calculate_image_srcset_meta', '__return_null' ); // Remove image src set function from WP 4.4+
 add_filter('avatar_defaults', 'secondthoughtgravatar'); // Custom Gravatar in Settings > Discussion
 add_filter('body_class', 'add_slug_to_body_class'); // Add slug to body class (Starkers build)
 add_filter('widget_text', 'do_shortcode'); // Allow shortcodes in Dynamic Sidebar
