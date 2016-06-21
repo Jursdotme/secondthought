@@ -48,7 +48,7 @@
       @extend %button-raised;
       min-width: 37px;
       background-color: $brand-color-1;
-      color: $button-secondary-color;
+      color: #fff;
       &:hover {
         background-color: shade($brand-color-1, 20%);
       }
