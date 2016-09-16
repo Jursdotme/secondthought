@@ -18,6 +18,28 @@ var gulp = require('gulp'),
     combineMq = require('gulp-combine-mq'),
     package = require('./package.json');
 
+    FtpDeploy = require('ftp-deploy'),
+    ftpDeploy = new FtpDeploy();
+
+var deploySettings = {
+  username       : '',
+  password       : '',
+  host           : 'linux19.123hotel.dk',
+  port           : 21,
+  localRoot      : __dirname,
+  remoteRoot     : "/www/wp-content/themes/THEMENAME/",
+  exclude        : ['.git', '.idea', 'tmp/*', 'bower_components/*', 'node_modules/*', 'bower_components', 'node_modules']
+}
+var deploySettingsLite = {
+  username       : '',
+  password       : '',
+  host           : 'linux19.123hotel.dk',
+  port           : 21,
+  localRoot      : __dirname + "/build",
+  remoteRoot     : "/www/wp-content/themes/THEMENAME/build",
+  exclude        : ['.git', '.idea', 'tmp/*', 'bower_components/*', 'node_modules/*', 'bower_components', 'node_modules']
+}
+
 var paths = {
   sass: 'sass/**/*.scss',
   images: 'img/**/*',
