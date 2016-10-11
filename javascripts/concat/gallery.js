@@ -11,6 +11,6 @@ $(document).ready(function() {
     closeBtn: true,
   });
 
-  $('.gallery br').remove();
+  $('.gallery p:empty').remove();
 
 });
