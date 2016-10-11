@@ -9,6 +9,10 @@
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+				<?php if (!siteorigin_panels_render( $post_id = $page_data->ID)){ ?>
+					<h1 class="entry-title"><?php the_title(); ?></h1>
+				<?php } ?>
+
 				<?php the_content(); ?>
 
 			</article>
