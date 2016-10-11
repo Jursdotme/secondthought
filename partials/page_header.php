@@ -14,8 +14,7 @@
 
     </div>
   </header>
+  <?php get_template_part('partials/mobile_navigation'); ?>
 </div>
 
 <!-- /header -->
-
-<?php get_template_part('partials/mobile_navigation'); ?>

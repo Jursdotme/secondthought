@@ -43,13 +43,13 @@ $(document).ready(function(){
   $('.mobile-menu-trigger').on('click touchstart', function(e){
     $(this).toggleClass("active");
     $('.mobile-menu').toggleClass('is-visible');
-    $('.mobile-menu-screen').toggleClass('is-visible');
+    $('.js-menu-screen.menu-screen').toggleClass('is-visible');
     e.preventDefault();
   });
 
-  $('.mobile-menu-screen').on('click touchstart', function(e){
+  $('.js-menu-screen.menu-screen').on('click touchstart', function(e){
     $('.mobile-menu').toggleClass('is-visible');
-    $('.mobile-menu-screen').toggleClass('is-visible');
+    $('.js-menu-screen.menu-screen').toggleClass('is-visible');
     e.preventDefault();
   });
 });
@@ -59,7 +59,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('.mobile-menu .menu-item-has-children')
-    .prepend('<a href="#" class="open-submenu-icon"><i class="fa fa-plus"></i></a>');
+    .prepend('<a href="#" class="open-submenu-icon"><i class="fa fa-chevron-down"></i></a>');
     $('.mobile-menu .menu-item-has-children .open-submenu-icon').bind('click', function(){
       $(this).parent().find('> .sub-menu').slideToggle('100');
      // apply the toggle to the ul
@@ -69,26 +69,3 @@ $(document).ready(function(){
 });
 
 /*-------------------  End of Mobile Navigation  --------------------*/
-
-
-// $(document).ready(function(){
-//   // Create logo and Navigation Width
-//   columns = 90;
-//   gutter = 30;
-//   containerWidth = 12 * columns + 11 - gutter;
-//   gutterWidth = containerWidth / $('.header-inner').outerWidth();
-//
-//   logoWidthRaw = $('html').data('logo-width');
-//
-//   logoWidth = logoWidthRaw - gutterWidth*2;
-//   navWidth = 100 - logoWidthRaw - gutterWidth*2;
-//
-//   $('.header-inner.nav-left .logo').css('width', logoWidth + '%');
-//   $('.nav-left .desktop-navigation').css('width', navWidth + '%').css('margin-right', gutterWidth*2 + "%");
-//
-//   $('.header-inner.nav-right .logo').css('width', logoWidth + '%').css('margin-right', gutterWidth*2 + "%");
-//   $('.nav-right .desktop-navigation').css('width', navWidth + '%');
-//
-//   $('.header-inner.logo_top .logo').css('width', logoWidth + '%');
-//
-// });
