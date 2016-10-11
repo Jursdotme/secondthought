@@ -225,88 +225,41 @@ table {
 
 
 // Responsive tables
-//
-// Wrap your tables in `.table-responsive` and we'll make them mobile friendly
-// by enabling horizontal scrolling. Only applies <768px. Everything above that
-// will display normally.
-
 .table-responsive {
-  @media screen and (max-width: $screen-xs-max) {
-    overflow-x: auto;
-    overflow-y: hidden;
-    margin-bottom: floor($computed-line-height * .75);
-    width: 100%;
-    border: 1px solid $table-border-color;
-
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    -webkit-overflow-scrolling: touch;
-
-    // Tighten up spacing
-    > .table {
-      margin-bottom: 0;
-
-      // Ensure the content doesn't wrap
-      > thead,
-      > tbody,
-      > tfoot {
-        > tr {
-          > th,
-          > td {
-            white-space: nowrap;
-          }
-        }
-      }
-    }
-
-    // Special overrides for the bordered tables
-    > .table-bordered {
-      border: 0;
-
-      // Nuke the appropriate borders so that the parent can handle them
-      > thead,
-      > tbody,
-      > tfoot {
-        > tr {
-          > th:first-child,
-          > td:first-child {
-            border-left: 0;
-          }
-
-          > th:last-child,
-          > td:last-child {
-            border-right: 0;
-          }
-        }
-      }
-
-      // Only nuke the last row's bottom-border in `tbody` and `tfoot` since
-      // chances are there will be only one `tr` in a `thead` and that would
-      // remove the border altogether.
-      > tbody,
-      > tfoot {
-        > tr:last-child {
-          > th,
-          > td {
-            border-bottom: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-.ccf-form-wrapper {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
   margin: 0;
-  br {
-    display: none;
-  }
-  .ccf-submit-button  {
-    @extend %button-base;
-    @extend %button-raised;
-    background-color: $brand-color-1;
-    color: #fff;
-    &:hover {
-      background-color: shade($brand-color-1, 20%);
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  @media screen and (max-width: 600px) {
+    border: 0;
+    thead {
+      display: none;
+    }
+    tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right !important;
+      width: 100%;
+    }
+    td:before {
+      content: attr(aria-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    td:last-child {
+      border-bottom: 0;
+    }
+    .hidden {
+      display: none;
     }
   }
 }
