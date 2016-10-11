@@ -1,53 +1,53 @@
-			<!-- footer -->
-			<footer class="footer-container">
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /wrapper -->
 
-				<?php if ( is_active_sidebar( 'footer-widget-area' ) ) { ?>
-						<div class="footer-widgets">
-							<?php dynamic_sidebar( 'footer-widget-area' ); ?>
-						</div>
-				<?php } ?>
+		<!-- footer -->
+		<footer id="footer">
 
-				<?php if (!get_field('skjul_footer_addresselinie','option')) { ?>
+			<?php if ( is_active_sidebar( 'footer-widget-area' ) ) { ?>
+					<div class="footer-widgets">
+						<?php dynamic_sidebar( 'footer-widget-area' ); ?>
+					</div>
+			<?php }
 
-				<div class="footer-address-bar-wrapper">
-					<div class="footer-address-bar" role="contentinfo">
+			if (class_exists('acf') && !get_field('skjul_footer_addresselinie','option')) { ?>
+
+				<div class="footer-address-wrapper">
+					<div class="footer-address" role="contentinfo">
 
 						<?php
-
 							$firmanavn      = get_field('firmanavn', 'option');
 							$adresse        = get_field('adresse', 'option');
 							$postnummer     = get_field('postnummer', 'option');
 							$by             = get_field('by', 'option');
 							$telefonnummer  = get_field('telefonnummer', 'option');
-							$fax            = get_field('fax', 'option');
-							$faxEnabled     = get_field('vi_har_fax', 'option');
 							$email_addresse = get_field('email_addresse', 'option');
-
-							if($faxEnabled) {
-								$insertFax = "Fax: " . $fax . "<hr>";
-							} else {
-								$insertFax = "";
-							};
 						?>
 
-						<div class="footer-address">
-							<?php if($firmanavn) { echo '<span class="firmanavn">' . $firmanavn . '</span><hr>';} ?>
-							<?php if($adresse) { echo '<span class="adresse">' . $adresse . '</span><hr>';} ?>
-							<?php if($postnummer) { echo '<span class="postnr-by">' . $postnummer;} ?>
-							<?php if($by) { echo $by . '</span><hr>';} ?>
-							<?php if($telefonnummer) { echo '<span class="tlf"><a href="tel:'.$telefonnummer.'">Tlf.: ' . $telefonnummer . '</a></span><hr>'; } ?>
-							<a href="mailto:<?php echo $email_addresse; ?>"><?php echo $email_addresse; ?></a>
-						</div>
+
+							<?php echo ( $firmanavn ? '<span class="firmanavn">' . $firmanavn . '</span>' : '' ) ?>
+
+							<?php echo ( $adresse ? '<span class="adresse">' . $adresse . '</span>' : '') ?>
+
+							<?php echo ( $postnummer ? '<span class="postnr-by">' . $postnummer : '' ) ?>
+
+							<?php echo ( $by ? $by . '</span>' : '' ) ?>
+
+							<?php echo ( $telefonnummer ? '<span class="tlf"><a href="tel:'.$telefonnummer.'">Tlf.: ' . $telefonnummer . '</a></span>' : '' ) ?>
+
+							<?php echo ( $email_addresse ? '<span class="email"><a href="mailto:'.$email_addresse.'">' . $email_addresse . '</a></span>' : '' ) ?>
+
 					</div>
 				</div>
 
 				<?php } ?>
 
-			</footer>
-			<!-- /footer -->
+		</footer>
+		<!-- /footer -->
 
-		</div>
-		<!-- /wrapper -->
+
 
 		<?php wp_footer(); ?>
 
