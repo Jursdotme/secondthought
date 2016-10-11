@@ -54,7 +54,7 @@
 		<script>
 		   WebFontConfig = {
 				 google: {
-					 families: ['Montserrat', 'Roboto']
+					 families: ['Raleway:100,100i,200,200i,300,300i,400,400i,700','Roboto:400,400i,700']
 				 }
 		   };
 
