@@ -149,6 +149,7 @@ $menu-trigger-color: $brand-color-1;
   transform: scale(.5);
   opacity: 0;
   transition: all .5s $authentic-motion-out;
+  pointer-events: none;
 
   @include media($navigation-breakpoint-up) {
     display: none;
@@ -238,6 +239,7 @@ $menu-trigger-color: $brand-color-1;
 
     transform: scale(1);
     opacity: 1;
+    pointer-events: auto;
   }
 }
 
