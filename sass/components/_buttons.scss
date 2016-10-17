@@ -23,3 +23,28 @@ $button-colors: (
     }
   }
 }
+
+.mini-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: -0.5em;
+  flex-wrap: wrap;
+  .btn {
+    margin: .5em;
+  }
+  &.justify-left {
+    justify-content: flex-start;
+  }
+  &.justify-right {
+    justify-content: flex-end;
+  }
+  &.justify-stretch {
+    justify-content: space-between;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.justify-even {
+    justify-content: space-around;
+  }
+}
