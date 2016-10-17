@@ -116,6 +116,27 @@ gulp.task('watch-release', function() {
   gulp.watch(paths.sass, ['sass', 'sass-editor', 'sass-admin']);
 });
 
+gulp.task( 'deploy', function () {
+
+  ftpDeploy.deploy(deploySettings, function(err) {
+    if (err) console.log(err)
+    else console.log("\n-==UPLOAD COMPLETED!==-");
+  });
+
+  ftpDeploy.on('uploading', function(data) {
+    data.totalFileCount;       // total file count being transferred
+    data.transferredFileCount; // number of files transferred
+    data.percentComplete;      // percent as a number 1 - 100
+    data.filename;             // partial path with filename being uploaded
+  });
+
+  ftpDeploy.on('uploaded', function(data) {
+    //console.log(data.percentComplete);         // same data as uploading event
+    process.stdout.write(data.transferredFileCount + " out of " + data.totalFileCount + " files uploaded (" + data.percentComplete + "%)\r");
+  });
+
+} );
+
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['scripts', 'sass-editor','sass-admin', 'sass', 'watch-release']);
 gulp.task('release', ['scripts', 'sass-editor','sass-admin', 'sass', 'watch-release']);
