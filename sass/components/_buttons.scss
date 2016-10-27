@@ -48,3 +48,109 @@ $button-colors: (
     justify-content: space-around;
   }
 }
+
+$buttonicons: fileicon !default; // types = fileicon, cloud, disc, none
+
+@if $buttonicons == fileicon {
+  $button-icons: (
+    pdf: ("\f1c1"),
+    zip: ("\f1c6"),
+    wav: ("\f1c7"),
+    mp3: ("\f1c7"),
+    mov: ("\f1c8"),
+    avi: ("\f1c8"),
+    mpg: ("\f1c8"),
+    ogg: ("\f1c8"),
+    mp4: ("\f1c8"),
+    doc: ("\f1c2"),
+    docx: ("\f1c2"),
+    csv: ("\f1c3"),
+    xls: ("\f1c3"),
+    xlsx: ("\f1c3"),
+    jpg: ("\f1c5"),
+    jpeg: ("\f1c5"),
+    png: ("\f1c5"),
+    gif: ("\f1c5"),
+    svg: ("\f1c5"),
+    ppt: ("\f1c4"),
+    pptx: ("\f1c4"),
+  );
+
+  @each $extenssion, $unicode in $button-icons {
+    .btn[href$="#{$extenssion}"] {
+      &:before {
+        content: "#{$unicode}";
+        font: normal normal normal 14px/1 FontAwesome;
+        margin-right: .5em;
+      }
+    }
+  }
+} @else if $buttonicons == cloud {
+  $button-icons: (
+    pdf: ("\f0ed"),
+    zip: ("\f0ed"),
+    wav: ("\f0ed"),
+    mp3: ("\f0ed"),
+    mov: ("\f0ed"),
+    avi: ("\f0ed"),
+    mpg: ("\f0ed"),
+    ogg: ("\f0ed"),
+    mp4: ("\f0ed"),
+    doc: ("\f0ed"),
+    docx: ("\f0ed"),
+    csv: ("\f0ed"),
+    xls: ("\f0ed"),
+    xlsx: ("\f0ed"),
+    jpg: ("\f0ed"),
+    jpeg: ("\f0ed"),
+    png: ("\f0ed"),
+    gif: ("\f0ed"),
+    svg: ("\f0ed"),
+    ppt: ("\f0ed"),
+    pptx: ("\f0ed"),
+  );
+
+  @each $extenssion, $unicode in $button-icons {
+    .btn[href$="#{$extenssion}"] {
+      &:before {
+        content: "#{$unicode}";
+        font: normal normal normal 14px/1 FontAwesome;
+        margin-right: .5em;
+      }
+    }
+  }
+} @else if $buttonicons == disc {
+  $button-icons: (
+    pdf: ("\f019"),
+    zip: ("\f019"),
+    wav: ("\f019"),
+    mp3: ("\f019"),
+    mov: ("\f019"),
+    avi: ("\f019"),
+    mpg: ("\f019"),
+    ogg: ("\f019"),
+    mp4: ("\f019"),
+    doc: ("\f019"),
+    docx: ("\f019"),
+    csv: ("\f019"),
+    xls: ("\f019"),
+    xlsx: ("\f019"),
+    jpg: ("\f019"),
+    jpeg: ("\f019"),
+    png: ("\f019"),
+    gif: ("\f019"),
+    svg: ("\f019"),
+    ppt: ("\f019"),
+    pptx: ("\f019"),
+  );
+
+  @each $extenssion, $unicode in $button-icons {
+    .btn[href$="#{$extenssion}"] {
+      &:before {
+        content: "#{$unicode}";
+        font: normal normal normal 14px/1 FontAwesome;
+        margin-right: .5em;
+      }
+    }
+  }
+}
