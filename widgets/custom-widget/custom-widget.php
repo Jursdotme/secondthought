@@ -2,7 +2,7 @@
 /*
 Widget Name: Custom Widget
 Description: An example widget which displays 'Hello world!'.
-Author: Inzite
+Author: Inzite Media
 Author URI: http://inzite.dk
 */
 
