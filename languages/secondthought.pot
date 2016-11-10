@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-10 12:01+0000\n"
+"POT-Creation-Date: 2016-11-10 13:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Tag Archive: "
 msgstr ""
 
-#: functions/admin_dashboard.php:67
+#: functions/admin_dashboard.php:64
 msgid "F jS Y \\a\\t g:i a"
 msgstr ""
 
-#: functions/admin_dashboard.php:79
+#: functions/admin_dashboard.php:76
 msgid "Latest News from Inzite Media"
 msgstr ""
 
-#: functions/admin_dashboard.php:130
+#: functions/admin_dashboard.php:127
 msgid "Made by Inzite Media"
 msgstr ""
 
-#: functions/admin_dashboard.php:157
+#: functions/admin_dashboard.php:154
 msgid "Welcome"
 msgstr ""
 
@@ -153,6 +153,14 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
+#: functions/options-pages.php:4 functions/options-pages.php:5
+msgid "Page Options"
+msgstr ""
+
+#: functions/options-pages.php:14 functions/options-pages.php:15
+msgid "Admin Options"
+msgstr ""
+
 #: functions/widget-areas.php:6
 msgid "Footer Widget Area"
 msgstr ""
@@ -169,20 +177,12 @@ msgstr ""
 msgid "Mobile Menu"
 msgstr ""
 
-#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:13
-msgid "Pagebuilder Widget Area 1"
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:22
+msgid "Shared content"
 msgstr ""
 
-#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:23
-msgid "Pagebuilder Widget Area 2"
-msgstr ""
-
-#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:34
-msgid "Pagebuilder Widget Area 3"
-msgstr ""
-
-#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:45
-msgid "Pagebuilder Widget Area 4"
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:24
+msgid "Add shared content with widget areas."
 msgstr ""
 
 #. Name of the theme

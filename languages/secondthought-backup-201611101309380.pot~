@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-10 11:54+0000\n"
+"POT-Creation-Date: 2016-11-10 12:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -75,19 +75,19 @@ msgstr ""
 msgid "Tag Archive: "
 msgstr ""
 
-#: functions/admin_dashboard.php:67
+#: functions/admin_dashboard.php:64
 msgid "F jS Y \\a\\t g:i a"
 msgstr ""
 
-#: functions/admin_dashboard.php:79
+#: functions/admin_dashboard.php:76
 msgid "Latest News from Inzite Media"
 msgstr ""
 
-#: functions/admin_dashboard.php:130
+#: functions/admin_dashboard.php:127
 msgid "Made by Inzite Media"
 msgstr ""
 
-#: functions/admin_dashboard.php:157
+#: functions/admin_dashboard.php:154
 msgid "Welcome"
 msgstr ""
 
@@ -153,108 +153,20 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
+#: functions/options-pages.php:4 functions/options-pages.php:5
+msgid "Page Options"
+msgstr ""
+
+#: functions/options-pages.php:14 functions/options-pages.php:15
+msgid "Admin Options"
+msgstr ""
+
 #: functions/widget-areas.php:6
 msgid "Footer Widget Area"
 msgstr ""
 
 #: functions/widget-areas.php:7
 msgid "Widgets in the footer"
-msgstr ""
-
-#: functions/customizer/customizer_footer.php:14
-msgid "Footer Settings Settings"
-msgstr ""
-
-#: functions/customizer/customizer_footer.php:26
-msgid "Text color"
-msgstr ""
-
-#: functions/customizer/customizer_footer.php:39
-msgid "Link color"
-msgstr ""
-
-#: functions/customizer/customizer_footer.php:52
-msgid "Background color"
-msgstr ""
-
-#: functions/customizer/customizer_header.php:14
-msgid "Navigation Settings"
-msgstr ""
-
-#: functions/customizer/customizer_header.php:26
-msgid "Navigation text-color"
-msgstr ""
-
-#: functions/customizer/customizer_header.php:39
-msgid "Navigation Item Background color"
-msgstr ""
-
-#: functions/customizer/customizer_header.php:52
-msgid "Navigation Item Hover color"
-msgstr ""
-
-#: functions/customizer/customizer_header.php:66
-msgid "Dropdown Navigation text-color"
-msgstr ""
-
-#: functions/customizer/customizer_header.php:79
-msgid "Dropdown Navigation Item Background color"
-msgstr ""
-
-#: functions/customizer/customizer_header.php:92
-msgid "Dropdown Navigation Item Hover color"
-msgstr ""
-
-#: functions/customizer/customizer_header.php:206
-msgid "Header Settings"
-msgstr ""
-
-#: functions/customizer/customizer_header.php:253
-msgid "Header Color"
-msgstr ""
-
-#: functions/customizer/customizer_header.php:266
-msgid "Nav Background Color"
-msgstr ""
-
-#: functions/customizer/customizer_header.php:275
-msgid "Logo Settings"
-msgstr ""
-
-#: functions/customizer/customizer_typography.php:14
-msgid "Font Settings"
-msgstr ""
-
-#: functions/customizer/customizer_typography.php:26
-msgid "Google Font string"
-msgstr ""
-
-#: functions/customizer/customizer_typography.php:40
-msgid "Header font stack"
-msgstr ""
-
-#: functions/customizer/customizer_typography.php:53
-msgid "Body font stack"
-msgstr ""
-
-#: functions/customizer/customizer_typography.php:87
-msgid "Text Size"
-msgstr ""
-
-#: functions/customizer/customizer_typography.php:101
-msgid "Color"
-msgstr ""
-
-#: functions/customizer/customizer_typography.php:114
-msgid "Line height"
-msgstr ""
-
-#: functions/customizer/customizer_typography.php:128
-msgid "Font weight"
-msgstr ""
-
-#: functions/customizer/customizer_typography.php:142
-msgid "Bottom margin"
 msgstr ""
 
 #: functions/navigation/nav_menus.php:52

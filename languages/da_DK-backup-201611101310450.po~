@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Secondthought\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-10 13:09+0000\n"
-"PO-Revision-Date: 2016-11-10 13:10+0000\n"
+"POT-Creation-Date: 2016-11-10 12:27+0000\n"
+"PO-Revision-Date: 2016-11-10 12:27+0000\n"
 "Last-Translator: ikom-admin <rasmus@inzite.dk>\n"
 "Language-Team: Danish\n"
 "Language: da-DK\n"
@@ -13,15 +13,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:22
-msgid "Shared content"
-msgstr "Delt indhold"
+#: functions/options-pages.php:4 functions/options-pages.php:5
+msgid "Page Options"
+msgstr "Sideinstillinger"
 
-#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:24
-msgid "Add shared content with widget areas."
+#: functions/options-pages.php:14 functions/options-pages.php:15
+msgid "Admin Options"
+msgstr "Admin instillinger"
+
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:13
+msgid "Pagebuilder Widget Area 1"
 msgstr ""
-"Tilføj delt indhold til en side via widget områder som er administreret "
-"under \"Widgets\"."
+
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:23
+msgid "Pagebuilder Widget Area 2"
+msgstr ""
+
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:34
+msgid "Pagebuilder Widget Area 3"
+msgstr ""
+
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:45
+msgid "Pagebuilder Widget Area 4"
+msgstr ""
 
 #: archive.php:7
 msgid "Archives"
@@ -161,14 +175,6 @@ msgstr "Alle nyheder"
 #: functions/excerpts.php:34
 msgid "Read more"
 msgstr "Læs mere"
-
-#: functions/options-pages.php:4 functions/options-pages.php:5
-msgid "Page Options"
-msgstr "Sideinstillinger"
-
-#: functions/options-pages.php:14 functions/options-pages.php:15
-msgid "Admin Options"
-msgstr "Admin instillinger"
 
 #: functions/widget-areas.php:6
 msgid "Footer Widget Area"
