@@ -1,0 +1,201 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Secondthought\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-10 12:01+0000\n"
+"PO-Revision-Date: 2016-11-10 12:02+0000\n"
+"Last-Translator: ikom-admin <rasmus@inzite.dk>\n"
+"Language-Team: Danish\n"
+"Language: da-DK\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: functions/navigation/nav_menus.php:52
+msgid "Header Menu"
+msgstr "Sidehoved menu"
+
+#: functions/navigation/nav_menus.php:53
+msgid "Mobile Menu"
+msgstr "Mobil menu"
+
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:13
+msgid "Pagebuilder Widget Area 1"
+msgstr ""
+
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:23
+msgid "Pagebuilder Widget Area 2"
+msgstr ""
+
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:34
+msgid "Pagebuilder Widget Area 3"
+msgstr ""
+
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:45
+msgid "Pagebuilder Widget Area 4"
+msgstr ""
+
+#. Name of the theme
+msgid "Secondthought"
+msgstr "Secondthought"
+
+#. URI of the theme
+msgid "http://inzite.dk"
+msgstr "http://inzite.dk"
+
+#. Author of the theme
+msgid "Rasmus Jürs"
+msgstr "Rasmus Jürs"
+
+#. Author URI of the theme
+msgid "https://github.com/Jursdotme/secondthought"
+msgstr "https://github.com/Jursdotme/secondthought"
+
+#: archive.php:7
+msgid "Archives"
+msgstr "Arkiver"
+
+#: author.php:9
+msgid "Author Archives for "
+msgstr "Skribent arkiv for "
+
+#: author.php:15
+msgid "About "
+msgstr "Om "
+
+#: author.php:42
+msgid "Published by"
+msgstr "Skrevet af"
+
+#: author.php:43
+msgid "Leave your thoughts"
+msgstr "Skriv din kommentar"
+
+#: author.php:43
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+#: author.php:43
+msgid "% Comments"
+msgstr "% Kommentarer"
+
+#: author.php:58 partials/loop.php:30
+msgid "Sorry, nothing to display."
+msgstr "Beklager, der er ikke noget at vise."
+
+#: category.php:7
+msgid "Categories for "
+msgstr "Kategorier for "
+
+#: comments.php:3
+msgid "Post is password protected. Enter the password to view any comments."
+msgstr "Indlæget er kodeordsbeskyttet. Skriv koden for at se kommentarer."
+
+#: comments.php:18
+msgid "Comments are closed here."
+msgstr "Kommentarer er lukket."
+
+#: index.php:7
+msgid "Latest News"
+msgstr "Seneste nyt"
+
+#: search.php:8
+#, php-format
+msgid "%s Search Results for "
+msgstr "%s Søgeresultater for "
+
+#: searchform.php:3
+msgid "To search, type and hit enter."
+msgstr "For at søge, indtast søgeterm og tryk enter."
+
+#: tag.php:7
+msgid "Tag Archive: "
+msgstr "Tag arkiv: "
+
+#: functions/admin_dashboard.php:67
+msgid "F jS Y \\a\\t g:i a"
+msgstr "j. F, Y \\k\\l. G:i"
+
+#: functions/admin_dashboard.php:79
+msgid "Latest News from Inzite Media"
+msgstr "Seneste nyt fra Inzite Media"
+
+#: functions/admin_dashboard.php:130
+msgid "Made by Inzite Media"
+msgstr "Lavet af Inzite Media"
+
+#: functions/admin_dashboard.php:157
+msgid "Welcome"
+msgstr "Velkommen"
+
+#: functions/comments.php:3
+msgid "Reply"
+msgstr "Svar"
+
+#: functions/comments.php:67
+msgid "Your comment is awaiting moderation."
+msgstr "Din kommentar afventer godkendelse"
+
+#: functions/comments.php:71
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">skriver:</span>"
+
+#: functions/comments.php:75
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s til %2$s"
+
+#: functions/custom_settings.php:6 functions/custom_settings.php:7
+#: functions/custom_settings.php:15 functions/custom_settings.php:16
+#: functions/custom_settings.php:20 functions/custom_settings.php:26
+#: functions/custom_settings.php:27
+msgid "News"
+msgstr "Nyheder"
+
+#: functions/custom_settings.php:8 functions/custom_settings.php:17
+#: functions/custom_settings.php:18
+msgid "Add News"
+msgstr "Tilføj nyhed"
+
+#: functions/custom_settings.php:9
+msgid "News Tags"
+msgstr "Nyhedstags"
+
+#: functions/custom_settings.php:19
+msgid "Edit News"
+msgstr "Rediger nyhed"
+
+#: functions/custom_settings.php:21
+msgid "View News"
+msgstr "Se nyhed"
+
+#: functions/custom_settings.php:22
+msgid "Search News"
+msgstr "Søg efter nyhed"
+
+#: functions/custom_settings.php:23
+msgid "No News found"
+msgstr "Ingen nyheder fundet"
+
+#: functions/custom_settings.php:24
+msgid "No News found in Trash"
+msgstr "Ingen nyheder fundet i papirkurven"
+
+#: functions/custom_settings.php:25
+msgid "All News"
+msgstr "Alle nyheder"
+
+#: functions/excerpts.php:34
+msgid "Read more"
+msgstr "Læs mere"
+
+#: functions/widget-areas.php:6
+msgid "Footer Widget Area"
+msgstr "Widget område i sidefoden"
+
+#: functions/widget-areas.php:7
+msgid "Widgets in the footer"
+msgstr "Widgets som bliver vist i sidefoden"

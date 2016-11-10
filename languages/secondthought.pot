@@ -1,0 +1,202 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-10 12:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: archive.php:7
+msgid "Archives"
+msgstr ""
+
+#: author.php:9
+msgid "Author Archives for "
+msgstr ""
+
+#: author.php:15
+msgid "About "
+msgstr ""
+
+#: author.php:42
+msgid "Published by"
+msgstr ""
+
+#: author.php:43
+msgid "Leave your thoughts"
+msgstr ""
+
+#: author.php:43
+msgid "1 Comment"
+msgstr ""
+
+#: author.php:43
+msgid "% Comments"
+msgstr ""
+
+#: author.php:58 partials/loop.php:30
+msgid "Sorry, nothing to display."
+msgstr ""
+
+#: category.php:7
+msgid "Categories for "
+msgstr ""
+
+#: comments.php:3
+msgid "Post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:18
+msgid "Comments are closed here."
+msgstr ""
+
+#: index.php:7
+msgid "Latest News"
+msgstr ""
+
+#: search.php:8
+#, php-format
+msgid "%s Search Results for "
+msgstr ""
+
+#: searchform.php:3
+msgid "To search, type and hit enter."
+msgstr ""
+
+#: tag.php:7
+msgid "Tag Archive: "
+msgstr ""
+
+#: functions/admin_dashboard.php:67
+msgid "F jS Y \\a\\t g:i a"
+msgstr ""
+
+#: functions/admin_dashboard.php:79
+msgid "Latest News from Inzite Media"
+msgstr ""
+
+#: functions/admin_dashboard.php:130
+msgid "Made by Inzite Media"
+msgstr ""
+
+#: functions/admin_dashboard.php:157
+msgid "Welcome"
+msgstr ""
+
+#: functions/comments.php:3
+msgid "Reply"
+msgstr ""
+
+#: functions/comments.php:67
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions/comments.php:71
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: functions/comments.php:75
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions/custom_settings.php:6 functions/custom_settings.php:7
+#: functions/custom_settings.php:15 functions/custom_settings.php:16
+#: functions/custom_settings.php:20 functions/custom_settings.php:26
+#: functions/custom_settings.php:27
+msgid "News"
+msgstr ""
+
+#: functions/custom_settings.php:8 functions/custom_settings.php:17
+#: functions/custom_settings.php:18
+msgid "Add News"
+msgstr ""
+
+#: functions/custom_settings.php:9
+msgid "News Tags"
+msgstr ""
+
+#: functions/custom_settings.php:19
+msgid "Edit News"
+msgstr ""
+
+#: functions/custom_settings.php:21
+msgid "View News"
+msgstr ""
+
+#: functions/custom_settings.php:22
+msgid "Search News"
+msgstr ""
+
+#: functions/custom_settings.php:23
+msgid "No News found"
+msgstr ""
+
+#: functions/custom_settings.php:24
+msgid "No News found in Trash"
+msgstr ""
+
+#: functions/custom_settings.php:25
+msgid "All News"
+msgstr ""
+
+#: functions/excerpts.php:34
+msgid "Read more"
+msgstr ""
+
+#: functions/widget-areas.php:6
+msgid "Footer Widget Area"
+msgstr ""
+
+#: functions/widget-areas.php:7
+msgid "Widgets in the footer"
+msgstr ""
+
+#: functions/navigation/nav_menus.php:52
+msgid "Header Menu"
+msgstr ""
+
+#: functions/navigation/nav_menus.php:53
+msgid "Mobile Menu"
+msgstr ""
+
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:13
+msgid "Pagebuilder Widget Area 1"
+msgstr ""
+
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:23
+msgid "Pagebuilder Widget Area 2"
+msgstr ""
+
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:34
+msgid "Pagebuilder Widget Area 3"
+msgstr ""
+
+#: widgets/pagebuilder-widget-area/pagebuilder-widget-area.php:45
+msgid "Pagebuilder Widget Area 4"
+msgstr ""
+
+#. Name of the theme
+msgid "Secondthought"
+msgstr ""
+
+#. URI of the theme
+msgid "http://inzite.dk"
+msgstr ""
+
+#. Author of the theme
+msgid "Rasmus Jürs"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://github.com/Jursdotme/secondthought"
+msgstr ""

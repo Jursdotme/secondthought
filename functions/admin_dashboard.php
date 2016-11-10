@@ -29,9 +29,6 @@ function disable_default_dashboard_widgets() {
 	remove_meta_box( 'dashboard_primary', 'dashboard', 'core' );         //
 	remove_meta_box( 'dashboard_secondary', 'dashboard', 'core' );       //
 
-	// removing plugin dashboard boxes
-	remove_meta_box( 'yoast_db_widget', 'dashboard', 'normal' );         // Yoast's SEO Plugin Widget
-
 	/*
 	have more plugin widgets you'd like to remove?
 	share them with us so we can get a list of
@@ -64,7 +61,7 @@ function secondthought_rss_dashboard_widget() {
 	else foreach ($items as $item) { ?>
 
 	<h4 style="margin-bottom: 0;">
-		<a href="<?php echo $item->get_permalink(); ?>" title="<?php echo mysql2date( __( 'j F Y @ g:i a', 'secondthought' ), $item->get_date( 'Y-m-d H:i:s' ) ); ?>" target="_blank">
+		<a href="<?php echo $item->get_permalink(); ?>" title="<?php echo mysql2date( __( 'F jS Y \a\t g:i a', 'secondthought' ), $item->get_date( 'Y-m-d H:i:s' ) ); ?>" target="_blank">
 			<?php echo $item->get_title(); ?>
 		</a>
 	</h4>
@@ -76,7 +73,7 @@ function secondthought_rss_dashboard_widget() {
 
 // calling all custom dashboard widgets
 function secondthought_custom_dashboard_widgets() {
-	wp_add_dashboard_widget( 'secondthought_rss_dashboard_widget', __( 'Latest News from INZITE', 'secondthought' ), 'secondthought_rss_dashboard_widget' );
+	wp_add_dashboard_widget( 'secondthought_rss_dashboard_widget', __( 'Latest News from Inzite Media', 'secondthought' ), 'secondthought_rss_dashboard_widget' );
 	/*
 	Be sure to drop any other created Dashboard Widgets
 	in this function and they will all load.
@@ -102,7 +99,7 @@ function secondthought_login_css() {
 function secondthought_login_url() {  return 'http://www.inzite.dk/'; }
 
 // changing the alt text on the logo to show your site name
-function secondthought_login_title() { return get_option( 'INZITE Media & Marketing' ); }
+function secondthought_login_title() { return get_option( 'INZITE Media' ); }
 
 // calling it only on the login page
 add_action( 'login_enqueue_scripts', 'secondthought_login_css', 10 );
@@ -127,7 +124,7 @@ add_action( 'admin_enqueue_scripts', 'secondthought_custom_wp_admin_style' );
 
 // Custom Backend Footer
 function secondthought_custom_admin_footer() {
-	_e( 'Made by Inzite', 'secondthought' );
+	_e( 'Made by Inzite Media', 'secondthought' );
 }
 
 // adding it to the admin area
