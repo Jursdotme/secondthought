@@ -65,12 +65,6 @@ function my_theme_register_required_plugins() {
             'required'  => true,
         ),
 
-        array(
-            'name'      => 'Duplicate Post',
-            'slug'      => 'duplicate-post',
-            'required'  => false,
-        ),
-
         // Install Force regenerate thumbnails.
         array(
             'name'      => 'Force Regenerate Thumbnails',
@@ -100,7 +94,7 @@ function my_theme_register_required_plugins() {
 
         array(
       			'name'      => 'Github Updater',
-      			'slug'      => 'github-updater',
+      			'slug'      => 'github-afragen-github-updater',
       			'source'    => 'https://github.com/afragen/github-updater/archive/master.zip',
       			'required'  => true,
     		),
