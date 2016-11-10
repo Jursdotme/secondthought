@@ -4,8 +4,8 @@
     "fields": [
         {
             "key": "field_54d1ea4a7a859",
-            "label": "Kontaktoplysninger",
-            "name": "kontaktoplysninger",
+            "label": "Oplysninger",
+            "name": "",
             "type": "tab",
             "instructions": "",
             "required": 0,
@@ -15,28 +15,13 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "top"
-        },
-        {
-            "key": "field_557ed08b84582",
-            "label": "Adresselinie",
-            "name": "skjul_footer_addresselinie",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "Skjul adresselinie i footeren",
-            "default_value": 0
+            "placement": "top",
+            "endpoint": 0
         },
         {
             "key": "field_54d1ea6f7a85a",
             "label": "Hvad er dette?",
-            "name": "hvad_er_dette",
+            "name": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -47,7 +32,8 @@
                 "id": ""
             },
             "message": "Disse oplysninger bliver brugt i bl.a. sidefoden hvor adresse og kontaktinfo bliver vist.",
-            "esc_html": 0
+            "esc_html": 0,
+            "new_lines": "wpautop"
         },
         {
             "key": "field_54d1ea0e7a855",
@@ -155,6 +141,22 @@
             "disabled": 0
         },
         {
+            "key": "field_582466d34beb8",
+            "label": "Kontakt",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_54d1eab27a85d",
             "label": "Email addresse",
             "name": "email_addresse",
@@ -194,9 +196,25 @@
             "disabled": 0
         },
         {
+            "key": "field_582466ec4beb9",
+            "label": "Social media",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_54d1eb7dc1c4f",
             "label": "Online og Sociale medier",
-            "name": "online_og_sociale_medier",
+            "name": "",
             "type": "message",
             "instructions": "",
             "required": 0,
@@ -207,7 +225,8 @@
                 "id": ""
             },
             "message": "Her kan du definere hjemmeside addresser og sociale mediekontoer.",
-            "esc_html": 0
+            "esc_html": 0,
+            "new_lines": "wpautop"
         },
         {
             "key": "field_54d1eaf87a85f",
@@ -313,6 +332,43 @@
             "maxlength": "",
             "readonly": 0,
             "disabled": 0
+        },
+        {
+            "key": "field_58246bee01b9d",
+            "label": "Delte omr\u00e5der",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_58246bfc01b9e",
+            "label": "Delte omr\u00e5der",
+            "name": "delte_omrader",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_58246b7811d58"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
         }
     ],
     "location": [
@@ -330,5 +386,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "modified": 1434374927
+    "active": 1,
+    "description": "",
+    "modified": 1478782681
 }
