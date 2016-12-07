@@ -1,284 +1,224 @@
 .page-template-default.woocommerce-checkout {
-  // Payment
-  $color-mercury-approx: #e6e6e6;
-  $color-wild-sand-approx: #f5f5f4;
-  $color-seashell-approx: #f1f1f0;
+    // Payment
+    $color-mercury-approx: #e6e6e6;
+    $color-wild-sand-approx: #f5f5f4;
+    $color-seashell-approx: #f1f1f0;
 
-  main {
-    @include secondthought-container;
-    @include pad($gutter*3 $gutter/2);
-
-    section {
-      @include span-columns(12);
-      @include shift(0);
-    }
-  }
-
-  .login {
-    @include pad(0 0 $gutter 0);
-  }
-
-  .login .form-row,
-  .login .checkout_coupon {
-    @include media($sm-down) {
-      @include span-columns(12);
+    .col-1,
+    .col-2 {
+        @include span-columns(6);
+        overflow: auto;
     }
 
-    @include media($md-up) {
-      @include span-columns(6);
+    .form-row-first,
+    .form-row-last {
+        @include span-columns(6);
     }
 
-    .button,
-    .inline {
-      display: inline-block;
-    }
-  }
-
-  .form-row.form-row-last,
-  .lost_password {
-    @include omega;
-  }
-
-  .col-1,
-  .col-2 {
-    @include media($xs) {
-      @include span-columns(12);
+    .form-row-last {
+        @include omega();
     }
 
-    @include media($sm-up) {
-      @include span-columns(6);
-    }
-  }
-
-  // 1 row fields
-  #order_review,
-  #order_review_heading {
-    @include span-columns(12);
-  }
-
-  // 2 row fields
-  #billing_first_name_field,
-  #billing_last_name_field,
-  #billing_city_field,
-  #billing_postcode_field,
-  #billing_email_field,
-  #billing_phone_field,
-  #shipping_first_name_field,
-  #shipping_last_name_field,
-  #shipping_city_field,
-  #shipping_postcode_field,
-  #shipping_email_field,
-  #shipping_phone_field {
-    @include media($xs) {
-      @include span-columns(12);
+    .form-row-wide {
+        @include span-columns(12);
+        @include omega();
     }
 
-    @include media($sm-up) {
-      @include span-columns(6);
-    }
-  }
-
-  // Right fields,
-  .col-2,
-  #billing_last_name_field,
-  #billing_city_field,
-  #billing_phone_field,
-  #shipping_last_name_field,
-  #shipping_city_field,
-  #shipping_phone_field {
-    @include omega;
-  }
-
-  .create-account label,
-  .woocommerce-shipping-fields label {
-    display: inline-block;
-  }
-
-  .shop_table {
-    width: 100%;
-    border: 1px solid #e6e6e6;
-    border-spacing: 0;
-    border-collapse: separate;
-    border-radius: 4px;
-    background-clip: padding-box;
-    box-shadow: 0 1px 2px 0 #fff;
-
-    thead th {
-      padding: $gutter;
-      border-right: 1px dotted #e4e4e3;
-      border-bottom: 0;
-      vertical-align: middle;
-      text-transform: uppercase;
-
-      @include media($xs) {
-        padding: $gutter/3 $gutter/4;
-      }
-
-      @include media($sm-up) {
-        padding: $gutter/2;
-      }
-    }
-
-    th {
-      padding: $gutter;
-      vertical-align: middle;
-      text-transform: uppercase;
-
-      @include media($xs) {
-        padding: $gutter/3 $gutter/4;
-      }
-
-      @include media($sm-up) {
-        padding: $gutter/2;
-      }
-    }
-
-    td {
-      border-right: 1px solid #e6e6e6;
-      vertical-align: middle;
-      text-align: left;
-
-      @include media($xs) {
-        padding: $gutter/3 $gutter/4;
-      }
-
-      @include media($sm-up) {
-        padding: $gutter/2;
-      }
-
-      .variation {
-        margin: 0;
-        font-style: italic;
-      }
-
-      dt {
-        float: left;
-        clear: left;
-        margin-right: .236rem;
-      }
-
-      dd {
-        margin-bottom: 0;
-
-        p {
-          margin: 0;
-        }
-      }
-    }
-  }
-
-  #payment {
-    border: 1px solid $color-mercury-approx;
-    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
-    border-radius: $base-border-radius;
-    //Instead of the line below you could use @include background-clip($clip)
-    background-clip: padding-box;
-
-    &:after {
-      display: block;
-      clear: both;
-      overflow: hidden;
-      height: 0;
-      content: '\0020';
-    }
-
-    .create-account {
-      clear: both;
-    }
-
-    .payment_methods {
-      margin: 0;
-      padding: 0;
-      border-bottom: 1px solid $color-mercury-approx;
-
-      li {
-        margin-left: 0;
-        padding: $gutter;
-        border-bottom: 1px solid $color-mercury-approx;
-        list-style: none;
-
-        img {
-          float: right;
-          padding: 0;
-          border: 0;
+    #ship-to-different-address {
+        label.checkbox {
+            display: inline-block;
         }
 
-        &:last-child {
-          padding-bottom: 0;
-          border-bottom: 0;
+        .input-checkbox {
+            display: inline-block;
+            float: left;
+            margin-right: 0.5em;
+            margin-top: 0.35em;
         }
-
-        label {
-          display: inline-block;
-          margin-left: .618rem;
-          padding-top: 0;
-          width: 92%;
-          font-weight: bold;
-        }
-
-        p {
-          margin-bottom: 0;
-        }
-      }
     }
 
-    .payment_box {
-      margin: $gutter -1*$gutter -1*$gutter;
-      padding: $gutter;
-      border-top: 1px solid $color-mercury-approx;
-      background-color: $color-wild-sand-approx;
-      background-image: linear-gradient(to bottom, $color-wild-sand-approx, $color-seashell-approx);
-
-      fieldset {
-        margin: 0;
-        padding: $gutter 0 0;
-        border: 0;
-        font-size: .857rem;
-
-        label {
-          margin-left: 0;
-          width: auto;
-        }
-      }
-
-      .form-row {
-        margin-bottom: $gutter;
-      }
-
-      #cvv {
-        width: 22%;
-      }
-
-      .help {
-        float: right;
-        width: 75%;
-      }
-
-      .form-row-first select {
-        width: 48%;
-
-        &:nth-child(2n) {
-          float: right;
-        }
-      }
+    #order_review_heading {
+        clear: both;
     }
 
-    .place-order {
-      float: none;
-      //Instead of the line below you could use @include box-sizing($bs)
-      box-sizing: border-box;
-      margin-bottom: 0;
-      padding: $gutter;
-      width: 100%;
-
-      .button {
+    .shop_table {
         width: 100%;
-        font-size: 1.375rem;
-      }
+        border: 1px solid #e6e6e6;
+        border-spacing: 0;
+        border-collapse: separate;
+        border-radius: 4px;
+        background-clip: padding-box;
+        box-shadow: 0 1px 2px 0 #fff;
+
+        thead th {
+            padding: $gutter;
+            border-right: 1px dotted #e4e4e3;
+            border-bottom: 0;
+            vertical-align: middle;
+            text-transform: uppercase;
+            @include media($xs) {
+                padding: $gutter/3 $gutter/4;
+            }
+            @include media($sm-up) {
+                padding: $gutter/2;
+            }
+        }
+
+        th {
+            padding: $gutter;
+            vertical-align: middle;
+            text-transform: uppercase;
+            @include media($xs) {
+                padding: $gutter/3 $gutter/4;
+            }
+            @include media($sm-up) {
+                padding: $gutter/2;
+            }
+        }
+
+        td {
+            border-right: 1px solid #e6e6e6;
+            vertical-align: middle;
+            text-align: left;
+            @include media($xs) {
+                padding: $gutter/3 $gutter/4;
+            }
+            @include media($sm-up) {
+                padding: $gutter/2;
+            }
+
+            .variation {
+                margin: 0;
+                font-style: italic;
+            }
+
+            dt {
+                float: left;
+                clear: left;
+                margin-right: 0.236rem;
+            }
+
+            dd {
+                margin-bottom: 0;
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
     }
 
-    .terms label {
-      display: inline;
+    #payment {
+        border: 1px solid $color-mercury-approx;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: $base-border-radius;
+        //Instead of the line below you could use @include background-clip($clip)
+        background-clip: padding-box;
+
+        &:after {
+            display: block;
+            clear: both;
+            overflow: hidden;
+            height: 0;
+            content: '\0020';
+        }
+
+        .create-account {
+            clear: both;
+        }
+
+        .payment_methods {
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid $color-mercury-approx;
+
+            li {
+                margin-left: 0;
+                padding: $gutter;
+                border-bottom: 1px solid $color-mercury-approx;
+                list-style: none;
+
+                img {
+                    float: right;
+                    padding: 0;
+                    border: 0;
+                }
+
+                &:last-child {
+                    padding-bottom: 0;
+                    border-bottom: 0;
+                }
+
+                label {
+                    display: inline-block;
+                    margin-left: 0.618rem;
+                    padding-top: 0;
+                    width: 92%;
+                    font-weight: bold;
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .payment_box {
+            margin: $gutter -1*$gutter -1*$gutter;
+            padding: $gutter;
+            border-top: 1px solid $color-mercury-approx;
+            background-color: $color-wild-sand-approx;
+            background-image: linear-gradient(to bottom, $color-wild-sand-approx, $color-seashell-approx);
+
+            fieldset {
+                margin: 0;
+                padding: $gutter 0 0;
+                border: 0;
+                font-size: 0.857rem;
+
+                label {
+                    margin-left: 0;
+                    width: auto;
+                }
+            }
+
+            .form-row {
+                margin-bottom: $gutter;
+            }
+
+            #cvv {
+                width: 22%;
+            }
+
+            .help {
+                float: right;
+                width: 75%;
+            }
+
+            .form-row-first select {
+                width: 48%;
+
+                &:nth-child(2n) {
+                    float: right;
+                }
+            }
+        }
+
+        .place-order {
+            float: none;
+            box-sizing: border-box;
+            margin-bottom: 0;
+            padding: $gutter;
+            width: 100%;
+
+            .button {
+                width: 100%;
+                font-size: 1.375rem;
+            }
+        }
+
+        .terms label {
+            display: inline;
+        }
     }
-  }
 }

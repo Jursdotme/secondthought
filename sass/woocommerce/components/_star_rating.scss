@@ -1,122 +1,92 @@
-// Star rating
+.star-rating,
+p.stars a {
+    font-weight: 400;
+    height: 1em;
+}
+
 .star-rating {
-  position: relative;
-  overflow: hidden;
-  width: em(76);
-  height: 1rem;
-  font-size: 1rem;
-  font-family: FontAwesome;
-  line-height: 1rem;
+    span:before {
+        content: '\f005\f005\f005\f005\f005';
+        top: 0;
+        left: 0;
+    }
 
-  &:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: $grey-light;
-    content: '\f005\f005\f005\f005\f005';
-  }
-
-  span {
-    position: absolute;
-    top: 0;
-    left: 0;
+    &:before {
+        content: '\f005\f005\f005\f005\f005';
+        top: 0;
+        left: 0;
+        opacity: 0.25;
+        float: left;
+        position: absolute;
+    }
     overflow: hidden;
-    padding-top: 1.5rem;
-  }
-
-  span:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: $alert-color;
-    content: '\f005\f005\f005\f005\f005';
-  }
-}
-
-.woocommerce-product-rating {
-  display: block;
-  line-height: 2rem;
-
-  .star-rating {
-    margin: .5em 4px 0 0;
-  }
-}
-
-.products {
-  .star-rating {
-    display: block;
-    float: none;
-    margin: 0 0 .5rem;
-  }
-}
-
-.hreview-aggregate {
-  .star-rating {
-    margin: 10px 0 0;
-  }
-}
-
-.comment-form-rating {
-  a {
-    margin-right: 10px;
-    width: 120px;
     position: relative;
-    text-align: left;
-    font-weight: 700;
-    color: $brand-color-1;
-    &:last-child {
-      margin-right: 0;
-    }
-    @extend %button-base;
-@extend %button-raised;
-    border: 3px solid #e5e5e5;
-    &:hover {
-      border: 3px solid #f1f1f1;
-    }
-    &:hover:after {
-      color: $alert-color;
-    }
-    &:after {
-      color: #e5e5e5;
-      display: inline-block;
-      right: 8px;
-      top: 11px;
-      position: absolute;
-      font: normal normal normal 14px/1 FontAwesome;
-      transition: all .2s ease-in-out;
-    }
-    transition: all .2s ease-in-out;
-    &.active {
-      border: 3px solid $brand-color-1;
-      &:after {
+    line-height: 1;
+    font-size: 1em;
+    width: 5.3em;
+    font-family: 'fontawesome';
 
-        color: $alert-color;
-      }
+    span {
+        overflow: hidden;
+        float: left;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding-top: 1.5em;
+
+        &:before {
+            position: absolute;
+            color: #2c2d33;
+        }
     }
-  }
-  .star-1 {
-    &:after {
-      content: "\f005";
+}
+
+p.stars {
+    a {
+        &:before,
+        &:hover ~ a:before {
+            color: #43454b;
+            opacity: 0.25;
+            content: 'S';
+        }
+        position: relative;
+        width: 1em;
+        text-indent: -999em;
+        margin-right: 0.5em;
+        color: rgba(#000,0);
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1em;
+            height: 1em;
+            line-height: 1;
+            font-family: 'fontawesome';
+            text-indent: 0;
+        }
     }
-  }
-  .star-2 {
-    &:after {
-      content: "\f005\f005";
+    margin: 0;
+
+    &.selected a.active:before,
+    &:hover a:before {
+        content: '\53';
+        color: $brand-color-1;
+        opacity: 1;
     }
-  }
-  .star-3 {
-    &:after {
-      content: "\f005\f005\f005";
+
+    &.selected a {
+        &.active ~ a:before {
+            content: '\53';
+            color: #43454b;
+            opacity: 0.25;
+        }
+
+        &:not(.active):before {
+            content: '\53';
+            color: $brand-color-1;
+            opacity: 1;
+        }
     }
-  }
-  .star-4 {
-    &:after {
-      content: "\f005\f005\f005\f005";
-    }
-  }
-  .star-5 {
-    &:after {
-      content: "\f005\f005\f005\f005\f005";
-    }
-  }
 }
