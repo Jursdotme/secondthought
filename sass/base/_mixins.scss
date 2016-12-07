@@ -1,73 +1,69 @@
 // Section Wrapper
-
 @mixin section-wrapper($background-color, $padding) {
-  background: $background-color;
-  padding: $padding 0;
+    background: $background-color;
+    padding: $padding 0;
 }
 
 %button-base {
-  background: transparent;
-  border: none;
-  border-radius: $button-border-radius;
-  color: $button-background-color;
-  display: block;
-  position: relative;
-  height: $button-height;
-  min-width: $button-min-width;
-  padding: 0 $button-padding;
-  display: inline-block;
-  font-size: $button-font-size;
-  font-weight: 500;
-  text-transform: uppercase;
-  line-height: 1;
-  letter-spacing: 0;
-  overflow: hidden;
-  will-change: box-shadow, transform;
-  transition: box-shadow 0.2s $animation-curve-fast-out-linear-in,
-              background-color 0.2s $animation-curve-default,
-              color 0.2s $animation-curve-default;
-  outline: none;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  line-height: $button-height;
-  vertical-align: middle;
-
-  &::-moz-focus-inner {
-    border: 0;
-  }
-
-  &:hover {
-    background-color: $grey-light;
+    background: transparent;
+    border: none;
+    border-radius: $button-border-radius;
     color: $button-background-color;
-  }
+    display: block;
+    position: relative;
+    min-width: $button-min-width;
+    padding: $button-padding/2 $button-padding;
+    display: inline-block;
+    font-size: $button-font-size;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow, transform;
+    transition: box-shadow 0.2s $animation-curve-fast-out-linear-in, background-color 0.2s $animation-curve-default, color 0.2s $animation-curve-default;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
 
-  &:focus:not(:active) {
-    background-color: $grey-light;
-  }
+    &::-moz-focus-inner {
+        border: 0;
+    }
 
-  &:active {
-    background-color: $grey-light;
-  }
+    &:hover {
+        background-color: $grey-light;
+        color: $button-background-color;
+    }
+
+    &:focus:not(:active) {
+        background-color: $grey-light;
+    }
+
+    &:active {
+        background-color: $grey-light;
+    }
 }
 
 %button-raised {
-  background: $button-background-color;
-  color: $button-text-color;
-  &:hover {
-    background: shade($button-background-color, 5%);
+    background: $button-background-color;
     color: $button-text-color;
-    @include shadow-3dp();
-  }
-  @include shadow-2dp();
 
-  &:active {
-    @include shadow-4dp();
-    background-color: shade($button-background-color, 5%);
-  }
+    &:hover {
+        background: shade($button-background-color, 5%);
+        color: $button-text-color;
+        @include shadow-3dp();
+    }
+    @include shadow-2dp();
 
-  &:focus:not(:active) {
-    @include focus-shadow();
-    background-color: shade($button-background-color, 5%);
-  }
+    &:active {
+        @include shadow-4dp();
+        background-color: shade($button-background-color, 5%);
+    }
+
+    &:focus:not(:active) {
+        @include focus-shadow();
+        background-color: shade($button-background-color, 5%);
+    }
 }

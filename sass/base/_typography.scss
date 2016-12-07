@@ -1,263 +1,290 @@
 // Fonts are loaded in footer.php via webfontloader
+
 html {
-  font-size: $base-font-size; // Scale typography on mobile
-  line-height: $base-line-height;
-  -webkit-font-smoothing: antialiased;
+    font-size: $base-font-size; // Scale typography on mobile
+    line-height: $base-line-height;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
-  position: relative;
-  z-index: 1;
-  background-color: $base-background-color;
-  color: $base-font-color;
-  font-family: $body-font;
-
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  //max-width: 760px;
-  //padding: 1.5rem;
-  //margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    background-color: $base-background-color;
+    color: $base-font-color;
+    font-family: $body-font;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 h1 {
-  font-family: $header-font;
-  font-weight: 600;
-  font-style: inherit;
-  font-size: 3rem;
-  line-height: 3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
+    font-family: $header-font;
+    font-weight: 600;
+    font-style: inherit;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
+
 h2 {
-  font-family: $header-font;
-  font-weight: 600;
-  font-style: inherit;
-  font-size: 2.0625rem;
-  line-height: 3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+    font-family: $header-font;
+    font-weight: 600;
+    font-style: inherit;
+    font-size: 2.0625rem;
+    line-height: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
+
 h3 {
-  font-family: $header-font;
-  font-weight: 600;
-  font-style: inherit;
-  font-size: 1.4375rem;
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
+    font-family: $header-font;
+    font-weight: 600;
+    font-style: inherit;
+    font-size: 1.4375rem;
+    line-height: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
+
 h4 {
-  font-family: $header-font;
-  font-weight: 600;
-  font-style: inherit;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
+    font-family: $header-font;
+    font-weight: 600;
+    font-style: inherit;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
+
 h5 {
-  font-family: $header-font;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0rem;
+    font-family: $header-font;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
-p, ul, ol, pre, table, blockquote {
-  margin-top: 0rem;
-  margin-bottom: 1.5rem;
+
+blockquote,
+ol,
+p,
+pre,
+table,
+ul {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
 }
-ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0;
-  margin-bottom: 0;
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
 hr {
-  border: 1px solid;
-  margin: -1px 0;
+    border: 1px solid;
+    margin: -1px 0;
 }
-b, strong, em, small, code {
-  line-height: 1;
+
+b,
+code,
+em,
+small,
+strong {
+    line-height: 1;
 }
+
 sup {
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-  top: -0.5em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    top: -0.5em;
 }
+
 sub {
-  bottom: -0.25em;
+    bottom: -0.25em;
 }
 
 p {
-  margin: 0 0 2em;
-  // line-height: 1.5em;
-  font-size: 1em; // same as $base-font-size
-  // font-family: $body-font;
-
-  &.date {
-    margin-bottom: .3em;
-    color: transparentize($base-font-color, .6);
-    font-style: italic;
-    font-size: .9em;
+    margin: 0 0 2em;
+    // line-height: 1.5em;
+    font-size: 1em; // same as $base-font-size
     // font-family: $body-font;
-  }
 
-  &.author {
-    // font-family: $body-font;
-  }
+    &.date {
+        margin-bottom: 0.3em;
+        color: transparentize($base-font-color, .6);
+        font-style: italic;
+        font-size: 0.9em;
+        // font-family: $body-font;
+    }
 
-  &.lead {
-    color: tint($base-font-color, 50%);
-    font-weight: 300;
-    font-size: 1.4em;
-    line-height: 1.5em;
-  }
+    &.author {
+        // font-family: $body-font;
+    }
+
+    &.lead {
+        color: tint($base-font-color, 50%);
+        font-weight: 300;
+        font-size: 1.4em;
+        line-height: 1.5em;
+    }
 }
 
 hr {
-  margin: $base-line-height 0;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 1px solid $base-border-color;
-  border-left: 0;
+    margin: $base-line-height 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid $base-border-color;
+    border-left: 0;
 }
 
 a {
-  color: $base-link-color;
-  text-decoration: none;
+    color: $base-link-color;
+    text-decoration: none;
 
-  transition: color .1s linear;
+    transition: color 0.1s linear;
 
-  &:hover {
-    color: $hover-link-color;
-  }
-
-  &:active,
-  &:focus {
-    outline: none;
-    color: $hover-link-color;
-  }
-
-  .read-more {
-    position: relative;
-    display: inline-block;
-    margin-left: .2em;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: .8em;
-    // font-family: $body-font;
-
-    span {
-      position: absolute;
-      top: -1px;
-      right: -12px;
-      font-style: normal;
-      font-size: 1.5em;
-      // font-family: $body-font;
+    &:hover {
+        color: $hover-link-color;
     }
-  }
+
+    &:active,
+    &:focus {
+        outline: none;
+        color: $hover-link-color;
+    }
+
+    .read-more {
+        position: relative;
+        display: inline-block;
+        margin-left: 0.2em;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.8em;
+        // font-family: $body-font;
+
+        span {
+            position: absolute;
+            top: -1px;
+            right: -12px;
+            font-style: normal;
+            font-size: 1.5em;
+            // font-family: $body-font;
+        }
+    }
 }
 
 img {
-  margin: 0;
-  max-width: 100%;
+    margin: 0;
+    max-width: 100%;
 }
 
 blockquote {
-  margin: $base-line-height 0;
-  padding-left: ($base-font-size * $base-line-height) / 2;
-  border-left: 2px solid $base-border-color;
-  color: tint($base-font-color, 15%);
+    margin: $base-line-height 0;
+    padding-left: ($base-font-size * $base-line-height) / 2;
+    border-left: 2px solid $base-border-color;
+    color: tint($base-font-color, 15%);
 }
 
 cite {
-  color: lighten($base-font-color, 25);
-  font-style: italic;
+    color: lighten($base-font-color, 25);
+    font-style: italic;
 
-  &:before {
-    content: '\2014 \00A0';
-  }
+    &:before {
+        content: '\2014 \00A0';
+    }
 }
 
 // Description Lists
 dl {
-  margin-top: 0; // emove browser default
-  margin-bottom: floor($computed-line-height * .75);
+    margin-top: 0; // emove browser default
+    margin-bottom: floor($computed-line-height * .75);
 }
 
-dt,
-dd {
-  line-height: $base-line-height;
+dd,
+dt {
+    line-height: $base-line-height;
 }
 
 dt {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 dd {
-  margin-left: 0; // Undo browser default
+    margin-left: 0; // Undo browser default
 }
 
 .display-1 {
-  font-size: 5.625em;
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -0.04em;
+    font-size: 5.625em;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.04em;
 }
 
 .display-2 {
-  font-size: 3.5em;
-  font-weight: 400;
-  line-height: 1.35;
-  letter-spacing: -0.02em;
+    font-size: 3.5em;
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
 }
 
 .display-3 {
-  font-size: 2.8em;
-  font-weight: 400;
-  line-height: 48px;
+    font-size: 2.8em;
+    font-weight: 400;
+    line-height: 48px;
 }
 
 .display-4 {
-  font-size: 2.152em;
-  font-weight: 400;
-  line-height: 40px;
+    font-size: 2.152em;
+    font-weight: 400;
+    line-height: 40px;
 }
 
 .simplePullQuote {
-  font-family: $header-font;
-  max-width: none;
-  margin: 0;
-  float: left;
-  background: none;
-  margin: $gutter/6 $gutter 0 0;
-  border-top: 5px solid $brand-color-1;
-  border-bottom: 5px solid $brand-color-1;
-  padding: 0px 0;
-  text-transform: uppercase;
-  font-style: italic;
-  font-weight: 800;
-  color: #000;
-  max-width: 300px;
-  padding: $gutter/2 0;
-  p {
-    font-size: 1.3em;
-  }
+    font-family: $header-font;
+    max-width: none;
+    margin: 0;
+    float: left;
+    background: none;
+    margin: $gutter/6 $gutter 0 0;
+    border-top: 5px solid $brand-color-1;
+    border-bottom: 5px solid $brand-color-1;
+    padding: 0;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 800;
+    color: #000;
+    max-width: 300px;
+    padding: $gutter/2 0;
+
+    p {
+        font-size: 1.3em;
+    }
 }
 
-h1, h2, h3, h4, h5, h6, p, main a {
-  &:last-child {
-    margin-bottom: 0;
-  }
-  &:first-child {
-    margin-top: 0;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+main a,
+p {
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 .colorcontrast {
-  opacity: 0.54;
+    opacity: 0.54;
 }

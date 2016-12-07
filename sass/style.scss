@@ -5,19 +5,15 @@
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 @import '../bower_components/neat/app/assets/stylesheets/neat-helpers';
 @import 'base/grid-settings';
-
 @import 'base/typography';
 @import 'base/mixins';
-
 @import 'base/image_alignment';
 @import 'base/lists';
 @import 'base/forms';
-
 @import 'base/tables';
 @import 'base/alerts';
 @import 'base/wordpress_customizer';
 @import 'vendors/slick';
-
 @import 'components/buttons';
 @import 'components/sidebar';
 @import 'components/searchform';
@@ -29,11 +25,8 @@
 @import 'components/gallery';
 @import 'components/footer';
 @import 'components/pagination';
-
 @import 'vendors/vendors';
-
 @import 'layout/default_page';
 // @import 'layout/frontpage';
 @import 'layout/news';
-
-// @import 'woocommerce/woocommerce_base';
+@import 'woocommerce/woocommerce_base';
