@@ -1,209 +1,192 @@
-.page-template-default.cart {
-  main {
-    @include secondthought-container;
-    @include pad($gutter*3 $gutter/2);
+.page-template-default.woocommerce-cart {
+    main {
+        @include secondthought-container;
+        @include pad($gutter*3 $gutter/2);
 
-    section {
-      @include span-columns(12);
-
-      @include media($sm-down) {
-        @include span-columns(12);
-        @include shift(0);
-      }
-
-      @include media($md-up) {
-        @include span-columns(12);
-        @include shift(0);
-      }
-    }
-  }
-
-
-  .shop_table.cart {
-    width: 100%;
-    border: 1px solid #e6e6e6;
-    border-spacing: 0;
-    border-collapse: separate;
-    border-radius: 4px;
-    background-clip: padding-box;
-    box-shadow: 0 1px 2px 0 #fff;
-    vertical-align: middle;
-  }
-
-  .cart .product-remove,
-  .cart .product-remove,
-  .cart .product-thumbnail,
-  .cart .product-thumbnail,
-  .cart .product-price,
-  .cart .product-price {
-    display: none;
-
-    @include media($md-up) {
-      display: table-cell;
-    }
-  }
-
-  table thead th {
-    border-right: 1px dotted #e4e4e3;
-    border-bottom: 0;
-    text-transform: uppercase;
-
-    @include media($sm-down) {
-      padding: $gutter/3 $gutter/4;
-    }
-
-    @include media($md-up) {
-      padding: $gutter;
-    }
-  }
-
-  table td,
-  table th {
-    border-right: 1px solid #e6e6e6;
-    vertical-align: middle;
-    text-align: left;
-
-    @include media($sm-down) {
-      padding: $gutter/3 $gutter/4;
-    }
-
-    @include media($md-up) {
-      padding: $gutter/2;
-    }
-  }
-
-  td {
-    &.product-thumbnail img {
-      max-width: 50px;
-    }
-
-    &.product-name {
-      a {
-        color: $base-font-color;
-        font-weight: 700;
-      }
-
-      .variation {
-        margin: 0;
-        font-style: italic;
-
-        dt {
-          float: left;
-          clear: left;
-          margin-right: .236rem;
+        section {
+            @include span-columns(12);
+            @include media($sm-down) {
+                 @include span-columns(12);
+                @include shift(0);
+            }
+            @include media($md-up) {
+                 @include span-columns(12);
+                @include shift(0);
+            }
         }
-
-        dd {
-          margin-bottom: 0;
-        }
-
-        p {
-          margin: 0;
-        }
-      }
     }
 
-    &.product-subtotal {
-      font-weight: 700;
+    .shop_table.cart {
+        width: 100%;
+        border: 1px solid #e6e6e6;
+        border-spacing: 0;
+        border-collapse: separate;
+        border-radius: 4px;
+        background-clip: padding-box;
+        box-shadow: 0 1px 2px 0 #fff;
+        vertical-align: middle;
     }
-  }
 
-  .actions {
-    text-align: right;
-
-    .coupon {
-      float: left;
-      margin: 0;
-      padding: 0;
-      border: 0;
-      text-align: left;
-
-      @include media($sm-down) {
-        @include span-columns(12);
-        @include shift(0);
-      }
-
-      @include media($md-up) {
-        @include span-columns(6);
-        @include shift(0);
-      }
-
-      label {
+    .cart .product-price,
+    .cart .product-price,
+    .cart .product-remove,
+    .cart .product-remove,
+    .cart .product-thumbnail,
+    .cart .product-thumbnail {
         display: none;
-        margin: 0 1em 0 0;
-        font-weight: bold;
-      }
-
-      .input-text {
-        display: inline;
-        margin-right: 2%;
-        padding: ($gutter/3)-1 $gutter/2;
-        font-size: .8rem;
-
-        @include media($sm-down) {
-          @include span-columns(6);
-          @include shift(0);
-        }
-
         @include media($md-up) {
-          @include span-columns(6);
-          @include shift(0);
+            display: table-cell;
         }
-      }
     }
 
-    .button {
-      display: inline;
-      float: none;
-      margin: 0;
-      width: auto;
-    }
-  }
-
-  .cross-sells {
-    @include media($sm-down) {
-      @include span-columns(6);
-      @include shift(0);
+    table thead th {
+        border-right: 1px dotted #e4e4e3;
+        border-bottom: 0;
+        text-transform: uppercase;
+        @include media($sm-down) {
+            padding: $gutter/3 $gutter/4;
+        }
+        @include media($md-up) {
+            padding: $gutter;
+        }
     }
 
-    @include media($md-up) {
-      @include span-columns(6);
-      @include shift(0);
+    table td,
+    table th {
+        border-right: 1px solid #e6e6e6;
+        vertical-align: middle;
+        text-align: left;
+        @include media($sm-down) {
+            padding: $gutter/3 $gutter/4;
+        }
+        @include media($md-up) {
+            padding: $gutter/2;
+        }
     }
 
-    .product {
-      padding-bottom: $gutter*2;
+    td {
+        &.product-thumbnail img {
+            max-width: 50px;
+        }
 
-      @include media($xs) {
-        @include span-columns(12);
-      }
+        &.product-name {
+            a {
+                color: $base-font-color;
+                font-weight: 700;
+            }
 
-      @include media($sm-up) {
-        @include span-columns(6);
-        @include omega(2n);
-      }
+            .variation {
+                margin: 0;
+                font-style: italic;
+
+                dt {
+                    float: left;
+                    clear: left;
+                    margin-right: 0.236rem;
+                }
+
+                dd {
+                    margin-bottom: 0;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+
+        &.product-subtotal {
+            font-weight: 700;
+        }
     }
-  }
 
-  .cart_totals {
-    @include media($xs) {
-      @include span-columns(6);
+    .actions {
+        text-align: right;
+
+        .coupon {
+            float: left;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            text-align: left;
+            @include media($sm-down) {
+                 @include span-columns(12);
+                @include shift(0);
+            }
+            @include media($md-up) {
+                 @include span-columns(6);
+                @include shift(0);
+            }
+
+            label {
+                display: none;
+                margin: 0 1em 0 0;
+                font-weight: bold;
+            }
+
+            .input-text {
+                display: inline;
+                margin-right: 2%;
+                padding: ($gutter/3)-1 $gutter/2;
+                font-size: 0.8rem;
+                @include media($sm-down) {
+                     @include span-columns(6);
+                    @include shift(0);
+                }
+                @include media($md-up) {
+                     @include span-columns(6);
+                    @include shift(0);
+                }
+            }
+        }
+
+        .button {
+            display: inline;
+            float: none;
+            margin: 0;
+            width: auto;
+        }
     }
 
-    @include media($md-up) {
-      @include span-columns(6);
-      @include omega;
-    }
-  }
+    .cross-sells {
+        @include media($sm-down) {
+             @include span-columns(6);
+            @include shift(0);
+        }
+        @include media($md-up) {
+             @include span-columns(6);
+            @include shift(0);
+        }
 
-  .shipping_calculator {
-    @include media($xs) {
-      @include span-columns(6);
+        .product {
+            padding-bottom: $gutter*2;
+            @include media($xs) {
+                 @include span-columns(12);
+            }
+            @include media($sm-up) {
+                 @include span-columns(6);
+                @include omega(2n);
+            }
+        }
     }
 
-    @include media($md-up) {
-      @include span-columns(6);
-      @include shift(0);
+    .cart_totals {
+        @include media($xs) {
+             @include span-columns(6);
+        }
+        @include media($md-up) {
+             @include span-columns(6);
+            @include omega;
+        }
     }
-  }
+
+    .shipping_calculator {
+        @include media($xs) {
+             @include span-columns(6);
+        }
+        @include media($md-up) {
+             @include span-columns(6);
+            @include shift(0);
+        }
+    }
 }
