@@ -35,7 +35,7 @@ var paths = {
   images: 'img/**/*',
   vendorscripts: [
 
-    'bower_components/modernizr/modernizr.js',
+    //'bower_components/modernizr/modernizr.js',
     'bower_components/slick-carousel/slick/slick.js',
     'bower_components/matchHeight/jquery.matchHeight.js',
     'bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js',
