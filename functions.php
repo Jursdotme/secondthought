@@ -17,8 +17,10 @@ require_once( 'functions/styles-scripts-loader.php' ); // Load stylesheets and j
 require_once( 'functions/excerpts.php' ); // Build custom excerpts
 require_once( 'functions/pagination.php' ); // Build custom pagination
 require_once( 'functions/widget-areas.php' ); // Declare Widget Areas
-require_once( 'functions/woocommerce-functions.php' ); // Woo Commerce Functions
-require_once( 'functions/custom_settings.php' ); // Woo Commerce Functions
+if ( class_exists( 'WooCommerce' ) ) {
+  require_once( 'functions/woocommerce-functions.php' ); // Woo Commerce Functions
+}
+require_once( 'functions/custom_settings.php' ); // Woo Commerce Func tions
 require_once( 'functions/admin_dashboard.php' ); // Custom Admin Dashboard settings
 require_once( 'functions/comments.php' ); // Custom Comments callback
 require_once( 'functions/options-pages.php' ); // Define options page (ACF)
@@ -65,7 +67,7 @@ add_filter('the_category', 'remove_category_rel_from_category_list'); // Remove 
 add_filter('the_excerpt', 'shortcode_unautop'); // Remove auto <p> tags in Excerpt (Manual Excerpts only)
 add_filter('the_excerpt', 'do_shortcode'); // Allows Shortcodes to be executed in Excerpt (Manual Excerpts only)
 add_filter('excerpt_more', 'secondthought_view_article'); // Add 'Read more' button instead of [...] for Excerpts
-add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
+// add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
 add_filter('style_loader_tag', 'secondthought_style_remove'); // Remove 'text/css' from enqueued stylesheet
 add_filter('post_thumbnail_html', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to thumbnails
 add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to post images
